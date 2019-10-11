@@ -1,0 +1,10 @@
+@mixin def_font($siz,$wig){
+  font-family: 'VTB';
+  font-size: $siz;
+  font-weight: $wig;
+}
+@mixin def_font_cond($sizc,$wigc){
+  font-family: 'VTB Cond';
+  font-size: $sizc;
+  font-weight: $wigc;
+}

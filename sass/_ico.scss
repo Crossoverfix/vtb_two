@@ -1,0 +1,29 @@
+.ico{
+  background-size: contain!important;
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+  &__like{
+    background: url("../assets/img/ico/ico_like.png");
+    &_w{
+      background: url("../assets/img/ico/ico_like_w.png");
+    }
+  }
+  &__comment{
+    background: url("../assets/img/ico/ico_comment.png");
+    &_w{
+      background: url("../assets/img/ico/ico_comment_w.png");
+    }
+  }
+  &__watch{
+    background: url("../assets/img/ico/ico_watch.png");
+    &_w{
+      background: url("../assets/img/ico/ico_watch_w.png");
+    }
+  }
+  &__prev{
+    background: url("../assets/img/ico/ico_prev.png");
+  }
+  &__next{
+    background: url("../assets/img/ico/ico_next.png");
+  }
+}
