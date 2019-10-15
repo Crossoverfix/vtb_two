@@ -9,16 +9,16 @@
 }
 
 .container{
-  max-width: 850px;
-  width: 850px;
+  max-width: 880px;
+  width: 880px;
   position: relative;
   display: inline-block;
   vertical-align: top;
   &-fluid {
     vertical-align: top;
     display: block;
-    max-width: 1140px;
-    width: 1140px;
+    max-width: 1180px;
+    width: 1180px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -26,8 +26,8 @@
   &-small{
     display: inline-block;
     float: right;
-    max-width: 262px;
-    width: 262px;
+    max-width: 280px;
+    width: 280px;
     vertical-align: top;
   }
 }
