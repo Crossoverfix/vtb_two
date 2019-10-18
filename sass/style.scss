@@ -24,6 +24,7 @@
     position: relative;
   }
   &-small{
+    position: relative;
     display: inline-block;
     float: right;
     max-width: 280px;
@@ -31,13 +32,16 @@
     vertical-align: top;
   }
 }
+main{
+  padding-top: 20px;
+}
 body{
   height: 100%;
   margin: 0;
   padding: 0;
   @include def_font(14px,400);
   overflow-x: hidden;
-  background-color: white;
+  background-color: #F8F9FD;
 } /* Стиль по умолчанию */
 @import "header"; /* Шапка */
 @import "page"; /* Основные стили */

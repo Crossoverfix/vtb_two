@@ -1,0 +1,33 @@
+.footer{
+  width: 100%;
+  position: relative;
+  height: 60px;
+  box-shadow: 0px 0px 7px rgba(19, 37, 76, 0.13);
+  &__wrap{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__copyright{
+    display: inline-block;
+    @include def_font(13px,300);
+    color: #414141;
+    line-height: 17px;
+  }
+  &__link{
+    position: relative;
+    a{
+      display: inline-block;
+      margin-left: 25px;
+      @include def_font(13px,300);
+      color: #33549B;
+      text-decoration: none;
+      &:hover{
+        color: #00ACFF;
+      }
+    }
+  }
+}

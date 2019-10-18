@@ -12,10 +12,10 @@
 <body>
 <header>
     <div class="header">
-        <div class="container-fluid">
-            <div class="container">
+        <div class="container-fluid header__wrap">
+            <div class="container header__origin">
                 <a href="#" class="header__logo">
-                    <img src="assets/img/ico/logo_vtb.png" alt="logo">
+                    <img src="assets/img/ico/logo_vtb.svg" alt="logo">
                 </a>
                 <form class="header__search">
                     <div class="header__search__field">
@@ -32,28 +32,356 @@
                             <span>По сотрудникам</span>
                         </label>
                         <label>
-                            <input type="radio" name="type" value="second">
+                            <input type="radio" name="type" value="second" checked>
                             <span>По порталу</span>
                         </label>
                     </div>
                 </form>
             </div>
-            <div class="container-small">
-                <div class="header__user">
+            <div class="container-small header__user">
                     <a href="#" class="header__user__wrap">
                         <div class="header__user__wrap__avatar" style="background: url('assets/img/photo/avatar_hot.jpg')"></div>
                         <span>Анастасия Гайнуллова</span>
                     </a>
+            </div>
+        </div>
+    </div>
+    <div class="header__nav">
+        <nav class="container-fluid header__nav__wrap">
+            <ul>
+                <li><a href="#">О Банке</a></li>
+                <li><a href="#">Cотруднику</a></li>
+                <li><a href="#">Департаменты</a></li>
+                <li><a href="#">Филиалы</a></li>
+                <li><a href="#">Сервисы</a></li>
+                <li><a href="#">Справочники</a></li>
+                <li><a href="#">Процессы</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="container-fluid">
+    <div class="container">
+        <div class="slider">
+            <div class="slider__control">
+                <ul data-js-slide-control="li a">
+                    <li><a href="#" class="active"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="slider__pic" data-js-slide="slider__pic__object">
+                    <a href="#" class="slider__pic__object" style="background: url('assets/img/photo/slider_1.jpg')"></a>
+                    <a href="#" class="slider__pic__object" style="background: url('assets/img/photo/slider_2.jpg')"></a>
+                    <div class="slider__pic__object" style="background: url('assets/img/photo/slider_1.jpg')"></div>
+                </div>
+            <div class="slider__info" data-js-slide="slider__info__body">
+                    <div class="slider__info__body">
+                        <a href="#" class="slider__info__body__object" style="left: 0">Новая стратегия Банка ВТБ</a>
+                    </div>
+                    <div class="slider__info__body">
+                        <a href="#" class="slider__info__body__object">О новой стратегии</a>
+                    </div>
+                    <div class="slider__info__body">
+                        <span class="slider__info__body__object">видении и ценностях</span>
+                    </div>
+                </div>
+        </div>
+        <div class="nav-line">
+            <ul>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Видео</a></li>
+                <li><a href="#">Объявления</a></li>
+            </ul>
+        </div>
+        <div class="news-lazy empty">
+            <div class="news-lazy__card">
+                <div class="news-lazy__card__pic">
+                    <a href="#" class="news-lazy__card__pic__object" style="background: url('assets/img/photo/news_1.jpg')"></a>
+                </div>
+                <div class="news-lazy__card__body">
+                    <span class="news-lazy__card__body__category">Новости</span>
+                    <a href="#" class="news-lazy__card__body__title">Группа ВТБ провела День инвестора в Москве</a>
+                    <div class="news-lazy__card__body__footer">
+                        <div class="news-lazy__card__body__footer__social" data-js-social="true">
+                            <a href="#" class="social__like">5</a>
+                            <a href="#" class="social__comment">7</a>
+                            <a href="#" class="social__view">37</a>
+                        </div>
+                        <span class="news-lazy__card__body__footer__date">Сегодня</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news-lazy__card">
+                <div class="news-lazy__card__pic">
+                    <a href="#" class="news-lazy__card__pic__object" style="background: url('assets/img/photo/news_5.jpg')"></a>
+                </div>
+                <div class="news-lazy__card__body">
+                    <span class="news-lazy__card__body__category">Спорт</span>
+                    <a href="#" class="news-lazy__card__body__title">Турнир по гольфу</a>
+                    <div class="news-lazy__card__body__footer">
+                        <div class="news-lazy__card__body__footer__social" data-js-social="true">
+                            <a href="#" class="social__like">5</a>
+                            <a href="#" class="social__comment">7</a>
+                            <a href="#" class="social__view">37</a>
+                        </div>
+                        <span class="news-lazy__card__body__footer__date">Вчера</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news-lazy__card">
+                <div class="news-lazy__card__pic">
+                    <a href="#" class="news-lazy__card__pic__object" style="background: url('assets/img/photo/news_2.jpg')"></a>
+                </div>
+                <div class="news-lazy__card__body">
+                    <span class="news-lazy__card__body__category">Региональная сеть</span>
+                    <a href="#" class="news-lazy__card__body__title">Региональная сеть ВТБ достигла 505 точек</a>
+                    <div class="news-lazy__card__body__footer">
+                        <div class="news-lazy__card__body__footer__social" data-js-social="true">
+                            <a href="#" class="social__like">5</a>
+                            <a href="#" class="social__comment">7</a>
+                            <a href="#" class="social__view">37</a>
+                        </div>
+                        <span class="news-lazy__card__body__footer__date">Вчера</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news-lazy__card video">
+                <div class="news-lazy__card__pic">
+                    <a href="#" class="news-lazy__card__pic__object" style="background: url('assets/img/photo/news_3.jpg')"></a>
+                </div>
+                <div class="news-lazy__card__body">
+                    <span class="news-lazy__card__body__category">Новое на портале</span>
+                    <a href="#" class="news-lazy__card__body__title">Награды ВТБ</a>
+                    <div class="news-lazy__card__body__footer">
+                        <div class="news-lazy__card__body__footer__social" data-js-social="true">
+                            <a href="#" class="social__like">5</a>
+                            <a href="#" class="social__comment">7</a>
+                            <a href="#" class="social__view">37</a>
+                        </div>
+                        <span class="news-lazy__card__body__footer__date">2 дня назад</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news-lazy__card">
+                <div class="news-lazy__card__pic">
+                    <a href="#" class="news-lazy__card__pic__object" style="background: url('assets/img/photo/news_4.jpg')"></a>
+                </div>
+                <div class="news-lazy__card__body">
+                    <span class="news-lazy__card__body__category">Культура</span>
+                    <a href="#" class="news-lazy__card__body__title">Выставка Репина в Третьяковской галерее</a>
+                    <div class="news-lazy__card__body__footer">
+                        <div class="news-lazy__card__body__footer__social" data-js-social="true">
+                            <a href="#" class="social__like">5</a>
+                            <a href="#" class="social__comment">7</a>
+                            <a href="#" class="social__view">37</a>
+                        </div>
+                        <span class="news-lazy__card__body__footer__date">8 августа</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news-lazy__card">
+                <div class="news-lazy__card__pic">
+                    <a href="#" class="news-lazy__card__pic__object" style="background: url('assets/img/photo/news_5.jpg')"></a>
+                </div>
+                <div class="news-lazy__card__body">
+                    <span class="news-lazy__card__body__category">Новости</span>
+                    <a href="#" class="news-lazy__card__body__title">Группа ВТБ провела День инвестора в Москве</a>
+                    <div class="news-lazy__card__body__footer">
+                        <div class="news-lazy__card__body__footer__social" data-js-social="true">
+                            <a href="#" class="social__like">5</a>
+                            <a href="#" class="social__comment">7</a>
+                            <a href="#" class="social__view">37</a>
+                        </div>
+                        <span class="news-lazy__card__body__footer__date">Сегодня</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news-lazy__card">
+                <div class="news-lazy__card__pic">
+                    <a href="#" class="news-lazy__card__pic__object" style="background: url('assets/img/photo/news_1.jpg')"></a>
+                </div>
+                <div class="news-lazy__card__body">
+                    <span class="news-lazy__card__body__category">Новости</span>
+                    <a href="#" class="news-lazy__card__body__title">Группа ВТБ провела День инвестора в Москве</a>
+                    <div class="news-lazy__card__body__footer">
+                        <div class="news-lazy__card__body__footer__social" data-js-social="true">
+                            <a href="#" class="social__like">5</a>
+                            <a href="#" class="social__comment">7</a>
+                            <a href="#" class="social__view">37</a>
+                        </div>
+                        <span class="news-lazy__card__body__footer__date">Сегодня</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news-lazy__card video">
+                <div class="news-lazy__card__pic">
+                    <a href="#" class="news-lazy__card__pic__object" style="background: url('assets/img/photo/news_3.jpg')"></a>
+                </div>
+                <div class="news-lazy__card__body">
+                    <span class="news-lazy__card__body__category">Новости</span>
+                    <a href="#" class="news-lazy__card__body__title">Группа ВТБ провела День инвестора в Москве</a>
+                    <div class="news-lazy__card__body__footer">
+                        <div class="news-lazy__card__body__footer__social" data-js-social="true">
+                            <a href="#" class="social__like">5</a>
+                            <a href="#" class="social__comment">7</a>
+                            <a href="#" class="social__view">37</a>
+                        </div>
+                        <span class="news-lazy__card__body__footer__date">Сегодня</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news-lazy__card">
+                <div class="news-lazy__card__pic">
+                    <a href="#" class="news-lazy__card__pic__object" style="background: url('assets/img/photo/news_2.jpg')"></a>
+                </div>
+                <div class="news-lazy__card__body">
+                    <span class="news-lazy__card__body__category">Новости</span>
+                    <a href="#" class="news-lazy__card__body__title">Группа ВТБ провела День инвестора в Москве</a>
+                    <div class="news-lazy__card__body__footer">
+                        <div class="news-lazy__card__body__footer__social" data-js-social="true">
+                            <a href="#" class="social__like">5</a>
+                            <a href="#" class="social__comment">7</a>
+                            <a href="#" class="social__view">37</a>
+                        </div>
+                        <span class="news-lazy__card__body__footer__date">Сегодня</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news-lazy__card">
+                <div class="news-lazy__card__pic">
+                    <a href="#" class="news-lazy__card__pic__object" style="background: url('assets/img/photo/news_5.jpg')"></a>
+                </div>
+                <div class="news-lazy__card__body">
+                    <span class="news-lazy__card__body__category">Новости</span>
+                    <a href="#" class="news-lazy__card__body__title">Группа ВТБ провела День инвестора в Москве</a>
+                    <div class="news-lazy__card__body__footer">
+                        <div class="news-lazy__card__body__footer__social" data-js-social="true">
+                            <a href="#" class="social__like">5</a>
+                            <a href="#" class="social__comment">7</a>
+                            <a href="#" class="social__view">37</a>
+                        </div>
+                        <span class="news-lazy__card__body__footer__date">Сегодня</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news-lazy__card">
+                <div class="news-lazy__card__pic">
+                    <a href="#" class="news-lazy__card__pic__object" style="background: url('assets/img/photo/news_4.jpg')"></a>
+                </div>
+                <div class="news-lazy__card__body">
+                    <span class="news-lazy__card__body__category">Новости</span>
+                    <a href="#" class="news-lazy__card__body__title">Группа ВТБ провела День инвестора в Москве</a>
+                    <div class="news-lazy__card__body__footer">
+                        <div class="news-lazy__card__body__footer__social" data-js-social="true">
+                            <a href="#" class="social__like">5</a>
+                            <a href="#" class="social__comment">7</a>
+                            <a href="#" class="social__view">37</a>
+                        </div>
+                        <span class="news-lazy__card__body__footer__date">Сегодня</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news-lazy__footer">
+                <div class="news-lazy__footer__shadow"></div>
+                <div class="news-lazy__footer__fill">
+                    <a href="#" class="news-lazy__footer__more">показать еще</a>
                 </div>
             </div>
         </div>
     </div>
-</header>
-<main class="container-fluid">
-    <div class="container"></div>
-    <div class="container-small"></div>
+    <div class="container-small">
+        <div class="navigation nav-blue">
+            <span class="navigation__title">Полезные ссылки</span>
+            <ul class="navigation__list">
+                <li>
+                    <label class="ico ico__phone-w"></label>
+                    <a href="#">Телефонный справочник</a>
+                </li>
+                <li>
+                    <label class="ico ico__phone-w"></label>
+                    <a href="#">Горячая линия по нарушениям и злоупотреблениям</a>
+                </li>
+                <li>
+                    <label class="ico ico__flag-w"></label>
+                    <a href="#">ИТ-поддержка пользователей</a>
+                </li>
+                <li>
+                    <label class="ico ico__flag-w"></label>
+                    <a href="#">Архив портала ВТБ</a>
+                </li>
+                <li>
+                    <label class="ico ico__flag-w"></label>
+                    <a href="#">Архив портала розничного бизнеса</a>
+                </li>
+                <li>
+                    <label class="ico ico__flag-w"></label>
+                    <a href="#">FATCA и CRS</a>
+                </li>
+                <li>
+                    <label class="ico ico__flag-w"></label>
+                    <a href="#">Сервисы для сотрудников</a>
+                </li>
+                <li>
+                    <label class="ico ico__flag-w"></label>
+                    <a href="#">Обратная связь по порталу</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navigation nav-white">
+            <span class="navigation__title">Сотруднику</span>
+            <ul class="navigation__list">
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">Льготы и скидки</a>
+                </li>
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">Банковские продукты</a>
+                </li>
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">Проектное сообщество</a>
+                </li>
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">Клуб привилегий</a>
+                </li>
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">Документы</a>
+                </li>
+            </ul>
+        </div>
+        <div class="side-banner">
+            <div class="side-banner__pic">
+                <a href="#" class="side-banner__pic__obj" style="background: url('assets/img/photo/banner_1.jpg')"></a>
+            </div>
+            <div class="side-banner__info">
+                <a href="#">Портал корпоративного обучения</a>
+            </div>
+        </div>
+        <div class="side-banner">
+            <div class="side-banner__pic">
+                <div class="side-banner__pic__obj" style="background: url('assets/img/photo/banner_2.jpg')"></div>
+            </div>
+            <div class="side-banner__info">
+                <a href="#">Корпоративный журнал «Энергия команды»</a>
+            </div>
+        </div>
+    </div>
 </main>
 <footer>
+    <div class="footer">
+        <div class="container-fluid footer__wrap">
+            <span class="footer__copyright">© 2018 Корпоративный портал, Банк ВТБ</span>
+            <div class="footer__link">
+                <a href="#">Карта портала</a>
+                <a href="#">Поддержка пользователей</a>
+                <a href="#">Помощь по порталу</a>
+            </div>
+        </div>
+    </div>
 </footer>
 </body>
 </html>

@@ -1,29 +1,27 @@
 .ico{
-  background-size: contain!important;
-  background-position: center!important;
-  background-repeat: no-repeat!important;
-  &__like{
-    background: url("../assets/img/ico/ico_like.png");
-    &_w{
-      background: url("../assets/img/ico/ico_like_w.png");
+  &__phone{
+    &-w{
+      width: 14px;
+      height: 14px;
+      background: url("../assets/img/ico/phone_w.svg")no-repeat center;
+      background-size: contain;
     }
   }
-  &__comment{
-    background: url("../assets/img/ico/ico_comment.png");
-    &_w{
-      background: url("../assets/img/ico/ico_comment_w.png");
+  &__flag{
+    &-w{
+      width: 14px;
+      height: 12px;
+      background: url("../assets/img/ico/flag_w.svg")no-repeat center;
+      background-size: contain;
     }
   }
-  &__watch{
-    background: url("../assets/img/ico/ico_watch.png");
-    &_w{
-      background: url("../assets/img/ico/ico_watch_w.png");
+  &__dot{
+    &-b{
+      top: 7px!important;
+      width: 4px;
+      height: 4px;
+      background: url("../assets/img/ico/dot_b.svg")no-repeat center;
+      background-size: contain;
     }
-  }
-  &__prev{
-    background: url("../assets/img/ico/ico_prev.png");
-  }
-  &__next{
-    background: url("../assets/img/ico/ico_next.png");
   }
 }
