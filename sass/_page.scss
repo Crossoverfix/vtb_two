@@ -251,10 +251,6 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: -150px;
-  &.empty{
-    margin-bottom: 0;
-  }
   &__card{
     &:nth-child(3n + 3){
       margin-right: 0;
@@ -288,7 +284,7 @@
     &__pic{
       position: relative;
       width: 100%;
-      height: 160px;
+      height: 157px;
       &__object{
         display: block;
         text-decoration: none;
@@ -359,6 +355,12 @@
                   background: url("../assets/img/ico/ico_like.svg")no-repeat center;
                   background-size: contain;
                 }
+                &.active{
+                  &:before{
+                    background: url("../assets/img/ico/ico_like_a.svg")no-repeat center;
+                    background-size: contain;
+                  }
+                }
               }
               &__comment{
                 &:before{
@@ -367,6 +369,12 @@
                   background: url("../assets/img/ico/ico_comment.svg")no-repeat center;
                   background-size: contain;
                 }
+                &.active{
+                  &:before{
+                    background: url("../assets/img/ico/ico_comment_a.svg")no-repeat center;
+                    background-size: contain;
+                  }
+                }
               }
               &__view{
                 &:before{
@@ -374,6 +382,12 @@
                   height: 12px;
                   background: url("../assets/img/ico/ico_view.svg")no-repeat center;
                   background-size: contain;
+                }
+                &.active{
+                  &:before{
+                    background: url("../assets/img/ico/ico_view.svg")no-repeat center;
+                    background-size: contain;
+                  }
                 }
               }
             }
@@ -412,7 +426,7 @@
       background-color: #F8F9FD;
       position: relative;
       padding-top: 20px;
-      height: 260px;
+      height: 100px;
       &:before{
         top: 0;
         content: "";
