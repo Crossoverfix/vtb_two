@@ -28,6 +28,27 @@
   font-weight: 500;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'VTB';
+  src:  url('../assets/font/Vtb_book__obl.eot');
+  src:  url('../assets/font/Vtb_book__obl.eot?#iefix') format('embedded-opentype'),
+  url('../assets/font/Vtb_book__obl.ttf') format('truetype'),
+  url('../assets/font/Vtb_book__obl.woff') format('woff'),
+  url('../assets/font/Vtb_book__obl.svg') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'VTB';
+  src:  url('../assets/font/Vtb_light__obl.eot');
+  src:  url('../assets/font/Vtb_light__obl.eot?#iefix') format('embedded-opentype'),
+  url('../assets/font/Vtb_light__obl.ttf') format('truetype'),
+  url('../assets/font/Vtb_light__obl.woff') format('woff'),
+  url('../assets/font/Vtb_light__obl.svg') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
 @font-face {
   font-family: 'VTB';
   src:  url('../assets/font/Vtb_book_normal.eot');
@@ -48,6 +69,7 @@
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'VTB Cond';
   src:  url('../assets/font/Vtb_extraBold_cond.eot');
