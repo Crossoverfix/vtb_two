@@ -178,4 +178,14 @@ $(document).ready(function () {
         $breakingStatus = false;
         setTimeout(() => $breakingStatus = true, 600);
     }
+    var $mobilCollapse = $('[data-js-collapse="nav-bar"]');
+    $mobilCollapse.on('click',function () {
+        $('.header__nav').toggleClass('active');
+        return false;
+    })
+    var $mobilCollapseNav = $('[data-js-collapse="nav"]');
+    $mobilCollapseNav.on('click',function () {
+        $(this).parent('.navigation ').toggleClass('active');
+        return false;
+    })
 })

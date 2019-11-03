@@ -15,6 +15,9 @@
             color: white;
           }
         }
+        &__btn{
+          background: url("../assets/img/ico/mob_drop_down_w.svg")no-repeat center;
+        }
       }
     }
     &-white{
@@ -29,19 +32,21 @@
             color: #38529D;
           }
         }
+        &__btn{
+          background: url("../assets/img/ico/mob_drop_down_b.svg")no-repeat center;
+        }
       }
     }
   }
   &__title{
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: auto;
     @include def_font(19px,300);
-    margin-bottom: 15px;
     margin-top: 0;
   }
   &__list{
     list-style-type: none;
-    margin: 0;
+    margin: 15px 0 0 0;
     padding: 15px 0 0 0;
     border-top: 1px solid #DAE1E6;
     display: flex;
@@ -75,7 +80,7 @@
     }
   }
   &__form{
-    margin: 0;
+    margin: 15px 0 0 0;
     padding: 15px 0 0 0;
     border-top: 1px solid #DAE1E6;
     display: flex;
@@ -137,6 +142,13 @@
         height: 9px;
       }
     }
+  }
+  &__btn{
+    display: inline-block;
+    width: 11px;
+    height: 6px;
+    margin-left: auto;
+    background-size: contain;
   }
 }
 .side{

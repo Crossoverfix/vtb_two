@@ -197,6 +197,14 @@
         display: inline-block;
       }
     }
+    &__collapse{
+      display: none;
+      width: 24px;
+      height: 16px;
+      background: url("../assets/img/ico/menu.svg")no-repeat center;
+      background-size: contain;
+      margin-left: auto;
+    }
   }
   &__nav{
     background-color: #E6EDFB;
