@@ -11,9 +11,10 @@
       padding: 20px 20px 15px 20px;
     }
     .navigation__list{
-      height: 140px;
       padding-top: 15px;
       border-top: 1px solid #DAE1E6;
+      height: auto;
+      max-height: 200px;
     }
     &.navigation.nav-blue .navigation__btn{
       background: url("../assets/img/ico/mob_drop_up_w.svg") no-repeat center;
@@ -28,11 +29,11 @@
   .navigation__list{
     transition: all linear 0.1s;
     overflow: hidden;
-    //height: 140px;
-    height: 0;
+    //height: 0;
+    max-height: 0;
     padding-top: 0;
     border-top: none;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
@@ -44,9 +45,8 @@
     }
   }
   .navigation__list li{
-    width: 32%;
-    min-height: calc(30% - 5px);
-    margin-bottom: 5px;
-    max-height: calc(50% - 5px);
+    width: calc((100% - 30px) / 3);
+    margin-bottom: 10px;
+    margin-right: 10px;
   }
 }
