@@ -38,14 +38,38 @@
                         </label>
                     </div>
                 </form>
+                <a href="#" class="header__search__collapse" data-js-collapse="search"></a>
             </div>
             <div class="container-small header__user">
-                    <a href="#" class="header__user__wrap">
-                        <div class="header__user__wrap__avatar" style="background: url('assets/img/photo/avatar_hot.jpg')"></div>
-                        <span>Анастасия Гайнуллова</span>
-                    </a>
+                <a href="#" class="header__user__wrap">
+                    <div class="header__user__wrap__avatar" style="background: url('assets/img/photo/avatar_hot.jpg')"></div>
+                    <span>Анастасия Гайнуллова</span>
+                </a>
+                <a href="#" class="header__user__collapse" data-js-collapse="nav-bar"></a>
             </div>
         </div>
+    </div>
+    <div class="header__mobil__search">
+        <form class="header__search">
+            <div class="header__search__field">
+                <label class="header__search__field__text">
+                    <input type="text" name="search" placeholder="Поиск по порталу">
+                </label>
+                <label class="header__search__field__submit">
+                    <input type="submit">
+                </label>
+            </div>
+            <div class="header__search__type">
+                <label>
+                    <input type="radio" name="type" value="first">
+                    <span>По сотрудникам</span>
+                </label>
+                <label>
+                    <input type="radio" name="type" value="second" checked>
+                    <span>По порталу</span>
+                </label>
+            </div>
+        </form>
     </div>
     <div class="header__nav">
         <nav class="container-fluid header__nav__wrap">
@@ -61,7 +85,7 @@
         </nav>
     </div>
 </header>
-<main class="container-fluid">
+<main class="container-fluid mod__one-news">
     <div class="container">
         <div class="news">
             <div class="breadcrumb">
@@ -406,6 +430,60 @@
             <div class="comment__footer">
                 <a href="#" class="comment__footer__more">Читать все комментарии</a>
             </div>
+        </div>
+        <div class="navigation nav-white mobil-collapse">
+            <span class="navigation__title" data-js-collapse="nav">Рубрики</span>
+            <a href="#" class="navigation__btn" data-js-collapse="nav"></a>
+            <ul class="navigation__list">
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#" class="active">Все рубрики</a>
+                </li>
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">Назначения</a>
+                </li>
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">Сотруднику</a>
+                </li>
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">Бизнес ВТБ</a>
+                </li>
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">События</a>
+                </li>
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">Новости филиалов</a>
+                </li>
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">Спорт</a>
+                </li>
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">Культура</a>
+                </li>
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">Награды</a>
+                </li>
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">Технологии</a>
+                </li>
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">Инвестиции</a>
+                </li>
+                <li>
+                    <label class="ico ico__dot-b"></label>
+                    <a href="#">Трансформация</a>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="container-small">

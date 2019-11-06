@@ -181,6 +181,13 @@ $(document).ready(function () {
     var $mobilCollapse = $('[data-js-collapse="nav-bar"]');
     $mobilCollapse.on('click',function () {
         $('.header__nav').toggleClass('active');
+        $('.header__wrap').toggleClass('show');
+        return false;
+    })
+    var $mobilCollapseSearch = $('[data-js-collapse="search"]');
+    $mobilCollapseSearch.on('click',function () {
+        $('.header__mobil__search').toggleClass('active');
+        $('.header__wrap').toggleClass('show-search');
         return false;
     })
     var $mobilCollapseNav = $('[data-js-collapse="nav"]');

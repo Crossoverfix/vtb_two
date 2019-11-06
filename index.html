@@ -49,6 +49,28 @@
             </div>
         </div>
     </div>
+    <div class="header__mobil__search">
+        <form class="header__search">
+            <div class="header__search__field">
+                <label class="header__search__field__text">
+                    <input type="text" name="search" placeholder="Поиск по порталу">
+                </label>
+                <label class="header__search__field__submit">
+                    <input type="submit">
+                </label>
+            </div>
+            <div class="header__search__type">
+                <label>
+                    <input type="radio" name="type" value="first">
+                    <span>По сотрудникам</span>
+                </label>
+                <label>
+                    <input type="radio" name="type" value="second" checked>
+                    <span>По порталу</span>
+                </label>
+            </div>
+        </form>
+    </div>
     <div class="header__nav">
         <nav class="container-fluid header__nav__wrap">
             <ul>
@@ -91,7 +113,7 @@
                 </div>
         </div>
         <div class="navigation nav-blue mobil-collapse">
-            <span class="navigation__title">Полезные ссылки</span>
+            <span class="navigation__title" data-js-collapse="nav">Полезные ссылки</span>
             <a href="#" class="navigation__btn" data-js-collapse="nav"></a>
             <ul class="navigation__list">
                 <li>
@@ -129,7 +151,7 @@
             </ul>
         </div>
         <div class="navigation nav-white mobil-collapse">
-            <span class="navigation__title">Сотруднику</span>
+            <span class="navigation__title" data-js-collapse="nav">Сотруднику</span>
             <a href="#" class="navigation__btn" data-js-collapse="nav"></a>
             <ul class="navigation__list">
                 <li>

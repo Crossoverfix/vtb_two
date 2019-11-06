@@ -10,6 +10,12 @@
     &.navigation{
       padding: 20px 20px 15px 20px;
     }
+    .navigation__form{
+      padding-top: 15px;
+      border-top: 1px solid #DAE1E6;
+      height: auto;
+      max-height: 200px;
+    }
     .navigation__list{
       padding-top: 15px;
       border-top: 1px solid #DAE1E6;
@@ -25,6 +31,24 @@
   }
   &.navigation{
     padding: 20px 20px 0 20px;
+  }
+  .navigation__form{
+    transition: all linear 0.1s;
+    overflow: hidden;
+    //height: 0;
+    max-height: 0;
+    padding-top: 0;
+    border-top: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    &:after{
+      content: "";
+      display: block;
+      width: 100%;
+      margin-left: auto;
+    }
   }
   .navigation__list{
     transition: all linear 0.1s;
@@ -49,4 +73,55 @@
     margin-bottom: 10px;
     margin-right: 10px;
   }
+  .navigation__title{
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 }
+.show{
+  &.header__wrap{
+    .header__user__collapse{
+      background: url("../assets/img/ico/cross_b.svg")no-repeat center;
+      background-size: contain;
+    }
+  }
+  &-search{
+    .header__user{
+      display: none;
+    }
+    .header__origin{
+      width: 100%;
+      max-width: 100%;
+    }
+    .header__search__collapse{
+      background: url("../assets/img/ico/cross_b.svg")no-repeat center;
+      background-size: contain;
+    }
+  }
+}
+.navigation-group{
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  .mobil-collapse .navigation__list li{
+    width: calc(50% - 10px);
+  }
+  .group{
+    &__small{
+      width: calc(35% - 20px);
+    }
+    &__big{
+      width: 65%;
+    }
+  }
+}
+
