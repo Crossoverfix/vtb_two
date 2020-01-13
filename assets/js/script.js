@@ -195,4 +195,10 @@ $(document).ready(function () {
         $(this).parent('.navigation ').toggleClass('active');
         return false;
     })
+    var btnSwitch = $('[data-js-switch="trigger"]');
+    var contentSwitch = $('[data-js-switch="target"]');
+    btnSwitch.on('click',function () {
+        $(this).toggleClass('active');
+        contentSwitch.toggleClass('edit');
+    })
 })

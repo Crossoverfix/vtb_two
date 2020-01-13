@@ -30,6 +30,26 @@ button, button:active, button:hover, button:visited, button:focus {
   background: url("../assets/img/ico/dot_b.svg") no-repeat center;
   background-size: contain;
 }
+/* line 28, _ico.scss */
+.ico__arr-left {
+  background: url("../assets/img/ico/arr_left_b.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 33, _ico.scss */
+.ico__three-dot {
+  background: url("../assets/img/ico/three_dot_b.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 37, _ico.scss */
+.ico__save {
+  background: url("../assets/img/ico/save.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 41, _ico.scss */
+.ico__plus {
+  background: url("../assets/img/ico/plus.svg") no-repeat center;
+  background-size: contain;
+}
 
 /* Иконки */
 /* Модальное окно */
@@ -2991,6 +3011,421 @@ body {
 .comment__footer__more:hover {
   color: #0A2973;
   text-decoration: underline;
+}
+
+/* line 2158, _page.scss */
+.mail {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+/* line 2164, _page.scss */
+.mail__header {
+  width: 100%;
+  min-height: 55px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #DAE1E6;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+/* line 2175, _page.scss */
+.mail__header__link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 2180, _page.scss */
+.mail__header__link:hover span {
+  opacity: 0.6;
+}
+/* line 2184, _page.scss */
+.mail__header__link i {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 14px;
+}
+/* line 2190, _page.scss */
+.mail__header__link span {
+  display: inline-block;
+  font-family: 'VTB';
+  font-size: 22px;
+  font-weight: 500;
+  color: #000000;
+}
+/* line 2197, _page.scss */
+.mail__header__btn-group {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+/* line 2204, _page.scss */
+.mail__header__btn-group a, .mail__header__btn-group button {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  margin-left: 15px;
+  padding: 5px;
+  position: relative;
+  border: none;
+}
+/* line 2213, _page.scss */
+.mail__header__btn-group a:hover, .mail__header__btn-group button:hover {
+  opacity: 0.6;
+}
+/* line 2216, _page.scss */
+.mail__header__btn-group a i, .mail__header__btn-group button i {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 2223, _page.scss */
+.mail__header__btn__grey {
+  background-color: #E6EDFB;
+}
+/* line 2226, _page.scss */
+.mail__header__btn__blue {
+  background-color: #00AAFF;
+}
+/* line 2231, _page.scss */
+.mail__body {
+  width: 100%;
+  position: relative;
+  padding: 28px 20px 44px 20px;
+}
+/* line 2235, _page.scss */
+.mail__body__tabs {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-bottom: 1px solid #E6E8F2;
+}
+/* line 2244, _page.scss */
+.mail__body__tabs label {
+  cursor: pointer;
+  margin-right: 5px;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+/* line 2250, _page.scss */
+.mail__body__tabs label input {
+  display: none;
+}
+/* line 2252, _page.scss */
+.mail__body__tabs label input:checked ~ span {
+  border-color: #E6EDFB;
+  background-color: #E6EDFB;
+  color: #002882;
+}
+/* line 2258, _page.scss */
+.mail__body__tabs label span {
+  border-top: 1px solid #97A4B1;
+  border-left: 1px solid #97A4B1;
+  border-right: 1px solid #97A4B1;
+  border-bottom: 1px solid transparent;
+  background-color: white;
+  border-radius: 4px 4px 0px 0px;
+  display: inline-block;
+  height: 40px;
+  padding: 0 25px;
+  line-height: 40px;
+  font-family: 'VTB';
+  font-size: 14px;
+  font-weight: 400;
+  color: #404040;
+}
+/* line 2275, _page.scss */
+.mail__body__content {
+  width: 100%;
+  position: relative;
+  padding: 25px 20px 0 20px;
+}
+/* line 2279, _page.scss */
+.mail__body__content__wrap {
+  width: 100%;
+  position: relative;
+}
+/* line 2288, _page.scss */
+.mail__body__content__header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20px;
+}
+/* line 2296, _page.scss */
+.mail__body__content__header__switch {
+  margin-right: auto;
+}
+/* line 2298, _page.scss */
+.mail__body__content__header__switch__btn {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  background-color: transparent;
+  border: none;
+}
+/* line 2308, _page.scss */
+.mail__body__content__header__switch__btn.active .mail__body__content__header__switch__first {
+  color: #97A4B1;
+}
+/* line 2311, _page.scss */
+.mail__body__content__header__switch__btn.active .mail__body__content__header__switch__second {
+  color: #00AAFF;
+}
+/* line 2315, _page.scss */
+.mail__body__content__header__switch__btn.active .mail__body__content__header__switch__status:before {
+  margin-left: 22px;
+}
+/* line 2321, _page.scss */
+.mail__body__content__header__switch__btn span {
+  display: inline-block;
+  font-family: 'VTB';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* line 2327, _page.scss */
+.mail__body__content__header__switch__first {
+  color: #00AAFF;
+}
+/* line 2330, _page.scss */
+.mail__body__content__header__switch__second {
+  color: #97A4B1;
+}
+/* line 2333, _page.scss */
+.mail__body__content__header__switch__status {
+  margin: 0 10px;
+  position: relative;
+  width: 44px;
+  height: 22px;
+  border-radius: 11px;
+  background-color: #D0D2D7;
+  padding: 2px;
+}
+/* line 2341, _page.scss */
+.mail__body__content__header__switch__status:before {
+  content: "";
+  display: block;
+  position: relative;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: white;
+  transition: all linear 0.2s;
+}
+/* line 2354, _page.scss */
+.mail__body__content__header__field input {
+  min-width: 220px;
+  height: 30px;
+  line-height: 28px;
+  border: 1px solid #E6ECF2;
+  padding: 0 10px;
+  color: #000000;
+  font-family: 'VTB';
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 3px;
+}
+/* line 2365, _page.scss */
+.mail__body__content__header__btn {
+  margin-left: 10px;
+}
+/* line 2367, _page.scss */
+.mail__body__content__header__btn button {
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  display: block;
+  padding: 0 20px;
+  line-height: 30px;
+}
+/* line 2374, _page.scss */
+.mail__body__content__header__btn button:hover {
+  opacity: 0.6;
+}
+/* line 2378, _page.scss */
+.mail__body__content__header__btn__blue {
+  background-color: #00AAFF;
+  color: white;
+}
+/* line 2384, _page.scss */
+.mail__body__content__body {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  background: url("../assets/img/ico/checker.png") repeat left top;
+  background-size: 16px 16px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+/* line 2397, _page.scss */
+.mail__body__content__body.edit:before {
+  display: none;
+}
+/* line 2401, _page.scss */
+.mail__body__content__body.edit .mail__body__content__body__block__btn {
+  display: block;
+}
+/* line 2404, _page.scss */
+.mail__body__content__body.edit .mail__body__content__body__block.control {
+  display: flex;
+}
+/* line 2409, _page.scss */
+.mail__body__content__body:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #d0d2d7;
+}
+/* line 2419, _page.scss */
+.mail__body__content__body__block {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+/* line 2428, _page.scss */
+.mail__body__content__body__block__btn {
+  margin-top: 30px;
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 3px;
+  display: none;
+  padding: 7px;
+  position: relative;
+}
+/* line 2437, _page.scss */
+.mail__body__content__body__block__btn i {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* line 2442, _page.scss */
+.mail__body__content__body__block__btn:hover {
+  opacity: 0.6;
+}
+/* line 2446, _page.scss */
+.mail__body__content__body__block__btn.btn__blue {
+  background-color: #00AAFF;
+}
+/* line 2449, _page.scss */
+.mail__body__content__body__block__btn.btn__blue .ico__bar {
+  background: url("../assets/img/ico/bar_w.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 2453, _page.scss */
+.mail__body__content__body__block__btn.btn__blue .ico__trash {
+  background: url("../assets/img/ico/trash_w.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 2459, _page.scss */
+.mail__body__content__body__block__btn.btn__white {
+  background-color: #FFFFFF;
+}
+/* line 2462, _page.scss */
+.mail__body__content__body__block__btn.btn__white .ico__bar {
+  background: url("../assets/img/ico/bar_b.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 2466, _page.scss */
+.mail__body__content__body__block__btn.btn__white .ico__trash {
+  background: url("../assets/img/ico/trash_b.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 2474, _page.scss */
+.mail__body__content__body__block__content {
+  margin: 0 30px;
+  width: 600px;
+  position: relative;
+  min-height: 90px;
+  background-color: gray;
+  border-bottom: 1px solid red;
+}
+/* line 2482, _page.scss */
+.mail__body__content__body__block.control {
+  margin-top: 30px;
+  display: none;
+}
+/* line 2487, _page.scss */
+.mail__body__content__body__add {
+  border: none;
+  background-color: #00AAFF;
+  border-radius: 3px;
+  height: 30px;
+  padding: 0 10px;
+}
+/* line 2493, _page.scss */
+.mail__body__content__body__add:hover {
+  opacity: 0.6;
+}
+/* line 2496, _page.scss */
+.mail__body__content__body__add i {
+  margin: 0 8px;
+  display: inline-block;
+  height: 30px;
+  vertical-align: top;
+  width: 15px;
+}
+/* line 2503, _page.scss */
+.mail__body__content__body__add span {
+  vertical-align: top;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  color: white;
+  font-family: 'VTB';
+  font-size: 14px;
+  font-weight: 300;
+}
+/* line 2516, _page.scss */
+.mail__block__title {
+  width: 100%;
+  height: 200px;
+}
+/* line 2520, _page.scss */
+.mail__block__text {
+  width: 100%;
+}
+/* line 2523, _page.scss */
+.mail__block__user {
+  width: 100%;
+}
+/* line 2526, _page.scss */
+.mail__block__footer {
+  width: 100%;
 }
 
 /* Основные стили */

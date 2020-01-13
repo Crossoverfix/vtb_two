@@ -24,4 +24,22 @@
       background-size: contain;
     }
   }
+  &__arr{
+    &-left{
+      background: url("../assets/img/ico/arr_left_b.svg")no-repeat center;
+      background-size: contain;
+    }
+  }
+  &__three-dot{
+    background: url("../assets/img/ico/three_dot_b.svg")no-repeat center;
+    background-size: contain;
+  }
+  &__save{
+    background: url("../assets/img/ico/save.svg")no-repeat center;
+    background-size: contain;
+  }
+  &__plus{
+    background: url("../assets/img/ico/plus.svg")no-repeat center;
+    background-size: contain;
+  }
 }
