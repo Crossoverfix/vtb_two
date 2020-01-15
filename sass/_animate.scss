@@ -1,0 +1,14 @@
+@keyframes shake {
+  from,to{
+    transform: rotate(0);
+  }
+  20%{
+    transform: rotate(20deg);
+  }
+  40%{
+    transform: rotate(0);
+  }
+  60%{
+    transform: rotate(-20deg);
+  }
+}

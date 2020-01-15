@@ -50,6 +50,57 @@ button, button:active, button:hover, button:visited, button:focus {
   background: url("../assets/img/ico/plus.svg") no-repeat center;
   background-size: contain;
 }
+/* line 46, _ico.scss */
+.ico__drop-down_b {
+  background: url("../assets/img/ico/drop_down_mail_b.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 51, _ico.scss */
+.ico__mails {
+  background: url("../assets/img/ico/mails.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 55, _ico.scss */
+.ico__times {
+  background: url("../assets/img/ico/times.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 59, _ico.scss */
+.ico__user-edit {
+  background: url("../assets/img/ico/user_edit.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 63, _ico.scss */
+.ico__history-mail {
+  background: url("../assets/img/ico/history_mail.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 67, _ico.scss */
+.ico__rotate {
+  width: 16px !important;
+  height: 16px !important;
+  margin-left: 2px;
+  background: url("../assets/img/ico/rotate.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 74, _ico.scss */
+.ico__calendar {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background: url("../assets/img/ico/calendar.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 81, _ico.scss */
+.ico__cross {
+  background: url("../assets/img/ico/cross.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 85, _ico.scss */
+.ico__arr_u_d {
+  background: url("../assets/img/ico/arr_u_d.svg") no-repeat center;
+  background-size: contain;
+}
 
 /* Иконки */
 /* Модальное окно */
@@ -138,12 +189,27 @@ button, button:active, button:hover, button:visited, button:focus {
   font-style: normal;
 }
 /* Модальное окно */
-/* line 7, style.scss */
+@keyframes shake {
+  from,to {
+    transform: rotate(0);
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(0);
+  }
+  60% {
+    transform: rotate(-20deg);
+  }
+}
+/* Анимации */
+/* line 8, style.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 11, style.scss */
+/* line 12, style.scss */
 .container {
   max-width: 880px;
   width: 880px;
@@ -151,7 +217,7 @@ button, button:active, button:hover, button:visited, button:focus {
   display: inline-block;
   vertical-align: top;
 }
-/* line 17, style.scss */
+/* line 18, style.scss */
 .container-fluid {
   vertical-align: top;
   display: block;
@@ -161,7 +227,7 @@ button, button:active, button:hover, button:visited, button:focus {
   margin-right: auto;
   position: relative;
 }
-/* line 26, style.scss */
+/* line 27, style.scss */
 .container-small {
   position: relative;
   display: inline-block;
@@ -171,12 +237,12 @@ button, button:active, button:hover, button:visited, button:focus {
   vertical-align: top;
 }
 
-/* line 35, style.scss */
+/* line 36, style.scss */
 main {
   padding-top: 20px;
 }
 
-/* line 38, style.scss */
+/* line 39, style.scss */
 body {
   height: 100%;
   margin: 0;
@@ -3022,6 +3088,10 @@ body {
   margin-bottom: 50px;
 }
 /* line 2164, _page.scss */
+.mail .pagination {
+  padding-bottom: 50px;
+}
+/* line 2167, _page.scss */
 .mail__header {
   width: 100%;
   min-height: 55px;
@@ -3034,24 +3104,24 @@ body {
   padding-left: 30px;
   padding-right: 20px;
 }
-/* line 2175, _page.scss */
+/* line 2178, _page.scss */
 .mail__header__link {
   display: block;
   text-decoration: none;
   cursor: pointer;
 }
-/* line 2180, _page.scss */
+/* line 2183, _page.scss */
 .mail__header__link:hover span {
   opacity: 0.6;
 }
-/* line 2184, _page.scss */
+/* line 2187, _page.scss */
 .mail__header__link i {
   display: inline-block;
   width: 17px;
   height: 17px;
   margin-right: 14px;
 }
-/* line 2190, _page.scss */
+/* line 2193, _page.scss */
 .mail__header__link span {
   display: inline-block;
   font-family: 'VTB';
@@ -3059,7 +3129,7 @@ body {
   font-weight: 500;
   color: #000000;
 }
-/* line 2197, _page.scss */
+/* line 2200, _page.scss */
 .mail__header__btn-group {
   position: relative;
   display: flex;
@@ -3068,7 +3138,7 @@ body {
   align-items: center;
   justify-content: flex-end;
 }
-/* line 2204, _page.scss */
+/* line 2207, _page.scss */
 .mail__header__btn-group a, .mail__header__btn-group button {
   display: inline-block;
   width: 30px;
@@ -3079,31 +3149,31 @@ body {
   position: relative;
   border: none;
 }
-/* line 2213, _page.scss */
-.mail__header__btn-group a:hover, .mail__header__btn-group button:hover {
-  opacity: 0.6;
+/* line 2217, _page.scss */
+.mail__header__btn-group a:hover i, .mail__header__btn-group button:hover i {
+  animation: shake 0.2s linear;
 }
-/* line 2216, _page.scss */
+/* line 2221, _page.scss */
 .mail__header__btn-group a i, .mail__header__btn-group button i {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 2223, _page.scss */
+/* line 2228, _page.scss */
 .mail__header__btn__grey {
   background-color: #E6EDFB;
 }
-/* line 2226, _page.scss */
+/* line 2231, _page.scss */
 .mail__header__btn__blue {
   background-color: #00AAFF;
 }
-/* line 2231, _page.scss */
+/* line 2236, _page.scss */
 .mail__body {
   width: 100%;
   position: relative;
   padding: 28px 20px 44px 20px;
 }
-/* line 2235, _page.scss */
+/* line 2240, _page.scss */
 .mail__body__tabs {
   width: 100%;
   position: relative;
@@ -3114,7 +3184,7 @@ body {
   justify-content: flex-start;
   border-bottom: 1px solid #E6E8F2;
 }
-/* line 2244, _page.scss */
+/* line 2249, _page.scss */
 .mail__body__tabs label {
   cursor: pointer;
   margin-right: 5px;
@@ -3122,17 +3192,17 @@ body {
   position: relative;
   text-align: center;
 }
-/* line 2250, _page.scss */
+/* line 2255, _page.scss */
 .mail__body__tabs label input {
   display: none;
 }
-/* line 2252, _page.scss */
+/* line 2257, _page.scss */
 .mail__body__tabs label input:checked ~ span {
   border-color: #E6EDFB;
   background-color: #E6EDFB;
   color: #002882;
 }
-/* line 2258, _page.scss */
+/* line 2263, _page.scss */
 .mail__body__tabs label span {
   border-top: 1px solid #97A4B1;
   border-left: 1px solid #97A4B1;
@@ -3149,18 +3219,18 @@ body {
   font-weight: 400;
   color: #404040;
 }
-/* line 2275, _page.scss */
+/* line 2280, _page.scss */
 .mail__body__content {
   width: 100%;
   position: relative;
   padding: 25px 20px 0 20px;
 }
-/* line 2279, _page.scss */
+/* line 2284, _page.scss */
 .mail__body__content__wrap {
   width: 100%;
   position: relative;
 }
-/* line 2288, _page.scss */
+/* line 2293, _page.scss */
 .mail__body__content__header {
   width: 100%;
   display: flex;
@@ -3170,11 +3240,11 @@ body {
   align-items: center;
   padding-bottom: 20px;
 }
-/* line 2296, _page.scss */
+/* line 2301, _page.scss */
 .mail__body__content__header__switch {
   margin-right: auto;
 }
-/* line 2298, _page.scss */
+/* line 2303, _page.scss */
 .mail__body__content__header__switch__btn {
   display: flex;
   flex-wrap: nowrap;
@@ -3184,19 +3254,19 @@ body {
   background-color: transparent;
   border: none;
 }
-/* line 2308, _page.scss */
+/* line 2313, _page.scss */
 .mail__body__content__header__switch__btn.active .mail__body__content__header__switch__first {
   color: #97A4B1;
 }
-/* line 2311, _page.scss */
+/* line 2316, _page.scss */
 .mail__body__content__header__switch__btn.active .mail__body__content__header__switch__second {
   color: #00AAFF;
 }
-/* line 2315, _page.scss */
+/* line 2320, _page.scss */
 .mail__body__content__header__switch__btn.active .mail__body__content__header__switch__status:before {
   margin-left: 22px;
 }
-/* line 2321, _page.scss */
+/* line 2326, _page.scss */
 .mail__body__content__header__switch__btn span {
   display: inline-block;
   font-family: 'VTB';
@@ -3204,15 +3274,15 @@ body {
   font-weight: 400;
   line-height: 24px;
 }
-/* line 2327, _page.scss */
+/* line 2332, _page.scss */
 .mail__body__content__header__switch__first {
   color: #00AAFF;
 }
-/* line 2330, _page.scss */
+/* line 2335, _page.scss */
 .mail__body__content__header__switch__second {
   color: #97A4B1;
 }
-/* line 2333, _page.scss */
+/* line 2338, _page.scss */
 .mail__body__content__header__switch__status {
   margin: 0 10px;
   position: relative;
@@ -3222,7 +3292,7 @@ body {
   background-color: #D0D2D7;
   padding: 2px;
 }
-/* line 2341, _page.scss */
+/* line 2346, _page.scss */
 .mail__body__content__header__switch__status:before {
   content: "";
   display: block;
@@ -3233,7 +3303,7 @@ body {
   background-color: white;
   transition: all linear 0.2s;
 }
-/* line 2354, _page.scss */
+/* line 2359, _page.scss */
 .mail__body__content__header__field input {
   min-width: 220px;
   height: 30px;
@@ -3246,11 +3316,11 @@ body {
   font-weight: 300;
   border-radius: 3px;
 }
-/* line 2365, _page.scss */
+/* line 2370, _page.scss */
 .mail__body__content__header__btn {
   margin-left: 10px;
 }
-/* line 2367, _page.scss */
+/* line 2372, _page.scss */
 .mail__body__content__header__btn button {
   height: 30px;
   border: none;
@@ -3259,16 +3329,16 @@ body {
   padding: 0 20px;
   line-height: 30px;
 }
-/* line 2374, _page.scss */
+/* line 2379, _page.scss */
 .mail__body__content__header__btn button:hover {
   opacity: 0.6;
 }
-/* line 2378, _page.scss */
+/* line 2383, _page.scss */
 .mail__body__content__header__btn__blue {
   background-color: #00AAFF;
   color: white;
 }
-/* line 2384, _page.scss */
+/* line 2389, _page.scss */
 .mail__body__content__body {
   position: relative;
   width: 100%;
@@ -3282,19 +3352,19 @@ body {
   padding-top: 60px;
   padding-bottom: 30px;
 }
-/* line 2397, _page.scss */
+/* line 2402, _page.scss */
 .mail__body__content__body.edit:before {
   display: none;
 }
-/* line 2401, _page.scss */
+/* line 2406, _page.scss */
 .mail__body__content__body.edit .mail__body__content__body__block__btn {
   display: block;
 }
-/* line 2404, _page.scss */
+/* line 2409, _page.scss */
 .mail__body__content__body.edit .mail__body__content__body__block.control {
   display: flex;
 }
-/* line 2409, _page.scss */
+/* line 2414, _page.scss */
 .mail__body__content__body:before {
   content: "";
   position: absolute;
@@ -3305,7 +3375,7 @@ body {
   top: 0;
   background-color: #d0d2d7;
 }
-/* line 2419, _page.scss */
+/* line 2424, _page.scss */
 .mail__body__content__body__block {
   position: relative;
   width: 100%;
@@ -3316,7 +3386,7 @@ body {
   align-items: flex-start;
   justify-content: center;
 }
-/* line 2428, _page.scss */
+/* line 2433, _page.scss */
 .mail__body__content__body__block__btn {
   margin-top: 30px;
   height: 30px;
@@ -3327,45 +3397,45 @@ body {
   padding: 7px;
   position: relative;
 }
-/* line 2437, _page.scss */
+/* line 2442, _page.scss */
 .mail__body__content__body__block__btn i {
   width: 100%;
   height: 100%;
   display: block;
 }
-/* line 2442, _page.scss */
+/* line 2447, _page.scss */
 .mail__body__content__body__block__btn:hover {
   opacity: 0.6;
 }
-/* line 2446, _page.scss */
+/* line 2451, _page.scss */
 .mail__body__content__body__block__btn.btn__blue {
   background-color: #00AAFF;
 }
-/* line 2449, _page.scss */
+/* line 2454, _page.scss */
 .mail__body__content__body__block__btn.btn__blue .ico__bar {
   background: url("../assets/img/ico/bar_w.svg") no-repeat center;
   background-size: contain;
 }
-/* line 2453, _page.scss */
+/* line 2458, _page.scss */
 .mail__body__content__body__block__btn.btn__blue .ico__trash {
   background: url("../assets/img/ico/trash_w.svg") no-repeat center;
   background-size: contain;
 }
-/* line 2459, _page.scss */
+/* line 2464, _page.scss */
 .mail__body__content__body__block__btn.btn__white {
   background-color: #FFFFFF;
 }
-/* line 2462, _page.scss */
+/* line 2467, _page.scss */
 .mail__body__content__body__block__btn.btn__white .ico__bar {
   background: url("../assets/img/ico/bar_b.svg") no-repeat center;
   background-size: contain;
 }
-/* line 2466, _page.scss */
+/* line 2471, _page.scss */
 .mail__body__content__body__block__btn.btn__white .ico__trash {
   background: url("../assets/img/ico/trash_b.svg") no-repeat center;
   background-size: contain;
 }
-/* line 2474, _page.scss */
+/* line 2479, _page.scss */
 .mail__body__content__body__block__content {
   margin: 0 30px;
   width: 600px;
@@ -3373,12 +3443,12 @@ body {
   min-height: 90px;
   background-color: gray;
 }
-/* line 2481, _page.scss */
+/* line 2486, _page.scss */
 .mail__body__content__body__block.control {
   margin-top: 30px;
   display: none;
 }
-/* line 2486, _page.scss */
+/* line 2491, _page.scss */
 .mail__body__content__body__add {
   border: none;
   background-color: #00AAFF;
@@ -3386,11 +3456,11 @@ body {
   height: 30px;
   padding: 0 10px;
 }
-/* line 2492, _page.scss */
+/* line 2497, _page.scss */
 .mail__body__content__body__add:hover {
   opacity: 0.6;
 }
-/* line 2495, _page.scss */
+/* line 2500, _page.scss */
 .mail__body__content__body__add i {
   margin: 0 8px;
   display: inline-block;
@@ -3398,7 +3468,7 @@ body {
   vertical-align: top;
   width: 15px;
 }
-/* line 2502, _page.scss */
+/* line 2507, _page.scss */
 .mail__body__content__body__add span {
   vertical-align: top;
   height: 30px;
@@ -3409,22 +3479,396 @@ body {
   font-size: 14px;
   font-weight: 300;
 }
-/* line 2515, _page.scss */
+/* line 2518, _page.scss */
+.mail__body__filter {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 20px 20px 10px 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+/* line 2529, _page.scss */
+.mail__body__filter__separate {
+  height: 1px;
+  width: 16px;
+  flex-shrink: 0;
+  margin: 0 15px;
+  background-color: #B2BECB;
+}
+/* line 2536, _page.scss */
+.mail__body__filter__group {
+  flex-grow: 1;
+  max-width: calc(50% - 50px);
+  width: 40%;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+}
+/* line 2548, _page.scss */
+.mail__body__filter__group span {
+  display: inline-block;
+  font-family: 'VTB';
+  font-size: 14px;
+  font-weight: 300;
+  color: #97A4B1;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+/* line 2555, _page.scss */
+.mail__body__filter__group__wrap {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 2562, _page.scss */
+.mail__body__filter__group__wrap label {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  border: 1px solid #E6ECF2;
+  border-radius: 3px;
+  height: 30px;
+}
+/* line 2574, _page.scss */
+.mail__body__filter__group__wrap label input {
+  flex-grow: 1;
+  width: 100%;
+  line-height: 28px;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+}
+/* line 2582, _page.scss */
+.mail__body__filter__group__wrap label i {
+  flex-shrink: 0;
+  margin-right: 10px;
+  display: block;
+  cursor: pointer;
+  min-width: 10px;
+  min-height: 10px;
+}
+/* line 2593, _page.scss */
+.mail__body__filter__single {
+  flex-shrink: 0;
+  margin-bottom: 15px;
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* line 2603, _page.scss */
+.mail__body__filter__single:hover i {
+  animation: shake 0.2s linear;
+}
+/* line 2606, _page.scss */
+.mail__body__filter__single:hover input {
+  text-decoration: underline;
+}
+/* line 2610, _page.scss */
+.mail__body__filter__single input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-family: 'VTB';
+  font-size: 14px;
+  font-weight: 300;
+  color: #00ACFF;
+  line-height: 28px;
+  padding: 0;
+  flex-grow: 1;
+  cursor: pointer;
+}
+/* line 2623, _page.scss */
+.mail__body__filter__single i {
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  flex-shrink: 0;
+  display: block;
+}
+/* line 2630, _page.scss */
+.mail__body__filter__single__btn {
+  background-color: #00AAFF !important;
+  border-radius: 3px;
+  color: white !important;
+  font-size: 13px !important;
+  cursor: pointer;
+}
+/* line 2636, _page.scss */
+.mail__body__filter__single__btn:hover {
+  opacity: 0.6;
+  text-decoration: none !important;
+}
+/* line 2643, _page.scss */
+.mail__body__tabl {
+  width: 100%;
+  position: relative;
+  overflow: auto;
+}
+/* line 2647, _page.scss */
+.mail__body__tabl table {
+  min-width: 100%;
+}
+/* line 2654, _page.scss */
+.mail__body__tabl th {
+  height: 50px;
+  text-align: left;
+  padding: 0 20px;
+  background-color: #E6EDFB;
+  white-space: nowrap;
+}
+/* line 2660, _page.scss */
+.mail__body__tabl th i {
+  width: 7px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 2666, _page.scss */
+.mail__body__tabl th span {
+  font-family: 'VTB';
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.85);
+}
+/* line 2671, _page.scss */
+.mail__body__tabl td {
+  height: 50px;
+  text-align: left;
+  padding: 0 20px;
+  background-color: white;
+  border-bottom: 1px solid #E6E8F2;
+  white-space: nowrap;
+}
+/* line 2678, _page.scss */
+.mail__body__tabl td span {
+  white-space: nowrap;
+  font-family: 'VTB';
+  font-size: 14px;
+  font-weight: 300;
+  color: #404040;
+}
+/* line 2683, _page.scss */
+.mail__body__tabl td a {
+  font-family: 'VTB';
+  font-size: 14px;
+  font-weight: 300;
+  color: #002882;
+  text-decoration: none;
+}
+/* line 2687, _page.scss */
+.mail__body__tabl td a:hover {
+  text-decoration: underline;
+}
+/* line 2695, _page.scss */
 .mail__block__title {
   width: 100%;
   height: 200px;
 }
-/* line 2519, _page.scss */
+/* line 2699, _page.scss */
 .mail__block__text {
   width: 100%;
 }
-/* line 2522, _page.scss */
+/* line 2702, _page.scss */
 .mail__block__user {
   width: 100%;
 }
-/* line 2525, _page.scss */
+/* line 2705, _page.scss */
 .mail__block__footer {
   width: 100%;
+}
+
+/* line 2710, _page.scss */
+.newsletter {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  min-height: 600px;
+}
+/* line 2717, _page.scss */
+.newsletter__header {
+  width: 100%;
+  position: relative;
+  height: 55px;
+  border-bottom: 1px solid #DAE1E6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 30px;
+}
+/* line 2728, _page.scss */
+.newsletter__header__drop {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  z-index: 1;
+}
+/* line 2738, _page.scss */
+.newsletter__header__drop:hover i {
+  transform: rotate(-90deg);
+}
+/* line 2741, _page.scss */
+.newsletter__header__drop:hover span {
+  opacity: 0.6;
+}
+/* line 2745, _page.scss */
+.newsletter__header__drop input {
+  display: none;
+}
+/* line 2748, _page.scss */
+.newsletter__header__drop input:checked ~ .newsletter__header__drop__content {
+  display: flex;
+}
+/* line 2751, _page.scss */
+.newsletter__header__drop input:checked ~ i {
+  transform: rotate(-180deg);
+}
+/* line 2756, _page.scss */
+.newsletter__header__drop i {
+  transition: all linear 0.1s;
+  display: inline-block;
+  width: 17px;
+  height: 10px;
+  margin-right: 15px;
+}
+/* line 2763, _page.scss */
+.newsletter__header__drop span {
+  display: inline-block;
+  font-family: 'VTB';
+  font-size: 22px;
+  font-weight: 400;
+  color: #002882;
+  line-height: 34px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+/* line 2772, _page.scss */
+.newsletter__header__drop__content {
+  left: 0;
+  top: 100%;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 24px rgba(19, 37, 76, 0.25);
+  width: 220px;
+}
+/* line 2784, _page.scss */
+.newsletter__header__drop__content a {
+  display: inline-block;
+  width: 100%;
+  min-height: 30px;
+  line-height: 30px;
+  background-color: white;
+  padding: 0 12px;
+  font-family: 'VTB';
+  font-size: 14px;
+  font-weight: 300;
+  color: #414141;
+  text-decoration: none;
+}
+/* line 2794, _page.scss */
+.newsletter__header__drop__content a:hover {
+  background: linear-gradient(0deg, #F0F5F9, #F0F5F9), #FFFFFF;
+  color: #002882;
+}
+/* line 2798, _page.scss */
+.newsletter__header__drop__content a.active {
+  background: linear-gradient(0deg, #F0F5F9, #F0F5F9), #FFFFFF;
+}
+/* line 2805, _page.scss */
+.newsletter__body {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+/* line 2815, _page.scss */
+.newsletter__body__link {
+  width: calc(50% - 20px);
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #E6EDFB;
+  margin-bottom: 20px;
+}
+/* line 2828, _page.scss */
+.newsletter__body__link:hover span {
+  text-decoration: underline;
+}
+/* line 2832, _page.scss */
+.newsletter__body__link:hover .newsletter__body__link__circle i {
+  animation: shake 0.2s linear;
+}
+/* line 2837, _page.scss */
+.newsletter__body__link__circle {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding: 15px;
+}
+/* line 2847, _page.scss */
+.newsletter__body__link__circle i {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* line 2853, _page.scss */
+.newsletter__body__link span {
+  display: inline-block;
+  margin-left: 15px;
+  font-family: 'VTB';
+  font-size: 18px;
+  font-weight: 300;
+  color: #002882;
 }
 
 /* Основные стили */
@@ -3877,192 +4321,204 @@ body {
     width: calc((100% - 20px) / 3);
     height: 113px;
   }
+
+  /* line 183, _media.scss */
+  .mail__body__filter__group {
+    max-width: calc(50% - 10px);
+    width: 50%;
+  }
+
+  /* line 187, _media.scss */
+  .mail__body__filter__single {
+    order: 1;
+    margin-right: 30px;
+  }
 }
 @media screen and (max-width: 767px) {
-  /* line 185, _media.scss */
+  /* line 193, _media.scss */
   .container-fluid {
     width: 590px;
     max-width: 590px;
   }
 
-  /* line 190, _media.scss */
+  /* line 198, _media.scss */
   header .container {
     width: 470px;
     max-width: 470px;
   }
-  /* line 194, _media.scss */
+  /* line 202, _media.scss */
   header .container-small {
     width: 120px;
     max-width: 120px;
   }
 
-  /* line 200, _media.scss */
+  /* line 208, _media.scss */
   main .container {
     width: 590px;
     max-width: 590px;
   }
-  /* line 204, _media.scss */
+  /* line 212, _media.scss */
   main .container-small {
     width: 590px;
     max-width: 590px;
   }
 
-  /* line 210, _media.scss */
+  /* line 218, _media.scss */
   .slider__pic {
     height: 160px;
   }
 
-  /* line 213, _media.scss */
+  /* line 221, _media.scss */
   .news-lazy__card {
     height: 320px;
   }
 
-  /* line 216, _media.scss */
+  /* line 224, _media.scss */
   .news-lazy__card__pic {
     height: 159px;
   }
 
-  /* line 219, _media.scss */
+  /* line 227, _media.scss */
   .search__form__secondary {
     flex-wrap: wrap;
   }
 
-  /* line 222, _media.scss */
+  /* line 230, _media.scss */
   .search__form__group.f-no-shrink {
     width: 100%;
     margin-bottom: 10px;
   }
 
-  /* line 226, _media.scss */
+  /* line 234, _media.scss */
   .search__form {
     max-height: 195px;
   }
 
-  /* line 229, _media.scss */
+  /* line 237, _media.scss */
   .search__form__group__wrap {
     width: 100%;
   }
 
-  /* line 232, _media.scss */
+  /* line 240, _media.scss */
   .side-card__pic {
     height: 103px;
   }
 
-  /* line 235, _media.scss */
+  /* line 243, _media.scss */
   .news__gallery__body__object {
     height: 93px;
   }
 }
 @media screen and (max-width: 574px) {
-  /* line 240, _media.scss */
+  /* line 248, _media.scss */
   .search__form__group {
     width: 100%;
     margin-right: 0;
     margin-bottom: 10px;
   }
 
-  /* line 245, _media.scss */
+  /* line 253, _media.scss */
   .search__form__group__date {
     width: 110px;
     max-width: calc(50% - 10px);
   }
 
-  /* line 249, _media.scss */
+  /* line 257, _media.scss */
   .search__form__group__separate {
     margin: 0 3px;
     width: 10px;
   }
 
-  /* line 253, _media.scss */
+  /* line 261, _media.scss */
   .search__form {
     max-height: 195px;
   }
 
-  /* line 256, _media.scss */
+  /* line 264, _media.scss */
   .search__form__group__wrap {
     justify-content: space-between;
     width: 100%;
   }
 
-  /* line 260, _media.scss */
+  /* line 268, _media.scss */
   .container-fluid {
     width: 280px;
     max-width: 280px;
   }
 
-  /* line 265, _media.scss */
+  /* line 273, _media.scss */
   header .container {
     width: 175px;
     max-width: 175px;
   }
-  /* line 269, _media.scss */
+  /* line 277, _media.scss */
   header .container-small {
     width: 105px;
     max-width: 105px;
   }
 
-  /* line 275, _media.scss */
+  /* line 283, _media.scss */
   main .container {
     width: 280px;
     max-width: 280px;
   }
-  /* line 279, _media.scss */
+  /* line 287, _media.scss */
   main .container-small {
     width: 280px;
     max-width: 280px;
   }
-  /* line 284, _media.scss */
+  /* line 292, _media.scss */
   main.mod__one-news .container-fluid {
     width: 320px;
     max-width: 320px;
   }
-  /* line 288, _media.scss */
+  /* line 296, _media.scss */
   main.mod__one-news .container {
     width: 320px;
     max-width: 320px;
   }
-  /* line 292, _media.scss */
+  /* line 300, _media.scss */
   main.mod__one-news .container-small {
     width: 320px;
     max-width: 320px;
   }
 
-  /* line 298, _media.scss */
+  /* line 306, _media.scss */
   .header__search {
     display: none;
   }
-  /* line 300, _media.scss */
+  /* line 308, _media.scss */
   .header__search__collapse {
     display: inline-block;
   }
 
-  /* line 304, _media.scss */
+  /* line 312, _media.scss */
   .header__origin {
     align-items: center;
   }
 
-  /* line 307, _media.scss */
+  /* line 315, _media.scss */
   .header__user {
     padding-left: 20px;
   }
 
-  /* line 310, _media.scss */
+  /* line 318, _media.scss */
   .slider__pic {
     height: 76px;
   }
 
-  /* line 313, _media.scss */
+  /* line 321, _media.scss */
   .slider__info {
     height: auto;
     padding-bottom: 30px;
   }
 
-  /* line 317, _media.scss */
+  /* line 325, _media.scss */
   .slider__info__body {
     text-align: center;
   }
 
-  /* line 320, _media.scss */
+  /* line 328, _media.scss */
   .slider__control ul {
     right: 0;
     bottom: 20px;
@@ -4072,75 +4528,75 @@ body {
     padding-right: 5px;
   }
 
-  /* line 328, _media.scss */
+  /* line 336, _media.scss */
   .mobil-collapse .navigation__list li {
     width: 100%;
     margin-right: 0;
   }
 
-  /* line 332, _media.scss */
+  /* line 340, _media.scss */
   .news-lazy__card {
     width: 100%;
     margin-right: 0;
     height: auto;
   }
 
-  /* line 337, _media.scss */
+  /* line 345, _media.scss */
   .news-lazy__card:nth-child(3n + 3) {
     margin-right: 0;
   }
 
-  /* line 340, _media.scss */
+  /* line 348, _media.scss */
   .news-lazy__card__pic {
     height: 178px;
   }
 
-  /* line 343, _media.scss */
+  /* line 351, _media.scss */
   main .container-small {
     flex-direction: column;
   }
 
-  /* line 346, _media.scss */
+  /* line 354, _media.scss */
   .side-banner {
     width: 100%;
   }
 
-  /* line 349, _media.scss */
+  /* line 357, _media.scss */
   .footer__link {
     display: none;
   }
 
-  /* line 352, _media.scss */
+  /* line 360, _media.scss */
   .footer__copyright {
     margin-bottom: 0;
   }
 
-  /* line 357, _media.scss */
+  /* line 365, _media.scss */
   .show.header__wrap .header__search__collapse {
     display: none;
   }
-  /* line 360, _media.scss */
+  /* line 368, _media.scss */
   .show.header__wrap .header__user__wrap {
     display: none;
   }
 
-  /* line 365, _media.scss */
+  /* line 373, _media.scss */
   .header__nav__wrap ul {
     align-items: flex-start;
   }
 
-  /* line 368, _media.scss */
+  /* line 376, _media.scss */
   .header__logo {
     margin-right: auto;
     width: 100px;
   }
-  /* line 371, _media.scss */
+  /* line 379, _media.scss */
   .header__logo img {
     width: 100%;
     height: auto;
   }
 
-  /* line 376, _media.scss */
+  /* line 384, _media.scss */
   .header__user__wrap:hover .header__user__wrap__avatar {
     width: 48px;
     height: 48px;
@@ -4149,43 +4605,43 @@ body {
     margin-right: 12px;
   }
 
-  /* line 383, _media.scss */
+  /* line 391, _media.scss */
   .navigation-group {
     flex-direction: column;
   }
-  /* line 385, _media.scss */
+  /* line 393, _media.scss */
   .navigation-group .mobil-collapse .navigation__list li {
     width: 100%;
   }
-  /* line 389, _media.scss */
+  /* line 397, _media.scss */
   .navigation-group .group__small {
     width: 100%;
   }
-  /* line 392, _media.scss */
+  /* line 400, _media.scss */
   .navigation-group .group__big {
     width: 100%;
   }
 
-  /* line 397, _media.scss */
+  /* line 405, _media.scss */
   .pagination {
     flex-direction: column;
     text-align: center;
   }
-  /* line 400, _media.scss */
+  /* line 408, _media.scss */
   .pagination__result {
     margin-bottom: 25px;
     margin-right: 0;
   }
-  /* line 403, _media.scss */
+  /* line 411, _media.scss */
   .pagination__result__title {
     font-size: 16px;
   }
-  /* line 406, _media.scss */
+  /* line 414, _media.scss */
   .pagination__result__value {
     font-size: 16px;
   }
 
-  /* line 411, _media.scss */
+  /* line 419, _media.scss */
   .news {
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 0;
@@ -4193,122 +4649,122 @@ body {
     padding: 20px;
   }
 
-  /* line 417, _media.scss */
+  /* line 425, _media.scss */
   .news__gallery__header {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  /* line 421, _media.scss */
+  /* line 429, _media.scss */
   .news__gallery__header__number {
     margin-right: 0;
   }
 
-  /* line 424, _media.scss */
+  /* line 432, _media.scss */
   .news__gallery__body__object {
     width: calc((100% - 10px) / 2);
   }
 
-  /* line 427, _media.scss */
+  /* line 435, _media.scss */
   .news__block {
     flex-direction: column;
   }
 
-  /* line 431, _media.scss */
+  /* line 439, _media.scss */
   .news__block__small {
     width: 100%;
     margin-bottom: 10px;
   }
-  /* line 435, _media.scss */
+  /* line 443, _media.scss */
   .news__block__big {
     width: 100%;
     margin-bottom: 10px;
   }
 
-  /* line 440, _media.scss */
+  /* line 448, _media.scss */
   .news__comment {
     padding: 0;
   }
 
-  /* line 443, _media.scss */
+  /* line 451, _media.scss */
   .news__comment__wrap {
     flex-direction: column;
   }
 
-  /* line 446, _media.scss */
+  /* line 454, _media.scss */
   .news__comment__user {
     width: 100%;
     margin-bottom: 20px;
   }
 
-  /* line 450, _media.scss */
+  /* line 458, _media.scss */
   .news__comment__info {
     width: 100%;
   }
 
-  /* line 453, _media.scss */
+  /* line 461, _media.scss */
   .news__title {
     text-align: center;
   }
 
-  /* line 456, _media.scss */
+  /* line 464, _media.scss */
   .news__list__title {
     text-align: center;
   }
 
-  /* line 459, _media.scss */
+  /* line 467, _media.scss */
   .news__list ol {
     padding: 0;
   }
 
-  /* line 462, _media.scss */
+  /* line 470, _media.scss */
   .news__direct {
     padding: 0;
   }
 
-  /* line 465, _media.scss */
+  /* line 473, _media.scss */
   .news__direct__wrap {
     flex-direction: column;
   }
 
-  /* line 468, _media.scss */
+  /* line 476, _media.scss */
   .news__direct__pic {
     width: 100%;
     margin-bottom: 20px;
   }
 
-  /* line 472, _media.scss */
+  /* line 480, _media.scss */
   .news__direct__info__category {
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 476, _media.scss */
+  /* line 484, _media.scss */
   .news__list ul {
     padding: 0;
   }
 
-  /* line 479, _media.scss */
+  /* line 487, _media.scss */
   .news__footer__social__btn {
     margin-right: auto;
   }
 
-  /* line 482, _media.scss */
+  /* line 490, _media.scss */
   .comment {
     padding: 20px;
   }
 
-  /* line 485, _media.scss */
+  /* line 493, _media.scss */
   .comment__field__footer__user__avatar {
     flex-shrink: 0;
   }
 
-  /* line 488, _media.scss */
+  /* line 496, _media.scss */
   .comment__body__point {
     flex-direction: column;
   }
 
-  /* line 491, _media.scss */
+  /* line 499, _media.scss */
   .comment__body__user {
     flex-direction: row;
     width: 100%;
@@ -4317,43 +4773,84 @@ body {
     margin-bottom: 10px;
   }
 
-  /* line 498, _media.scss */
+  /* line 506, _media.scss */
   .comment__body__user__avatar {
     flex-shrink: 0;
     margin-right: 10px;
   }
 
-  /* line 502, _media.scss */
+  /* line 510, _media.scss */
   .comment__body__content__wrap:before {
     left: 15px;
     top: -1px;
     transform: translateY(-50%) rotate(45deg);
   }
 
-  /* line 508, _media.scss */
+  /* line 516, _media.scss */
   .comment__body .comment__field__footer {
     flex-wrap: wrap;
   }
-  /* line 511, _media.scss */
+  /* line 519, _media.scss */
   .comment__body .comment__field__footer__cancel {
     order: 1;
     margin-top: 10px;
     font-size: 15px;
   }
-  /* line 516, _media.scss */
+  /* line 524, _media.scss */
   .comment__body .comment__field__footer__user {
     margin-left: 0;
     max-width: 50%;
   }
-  /* line 520, _media.scss */
+  /* line 528, _media.scss */
   .comment__body .comment__field__footer__btn {
     max-width: calc(50% - 10px);
     margin-right: auto;
   }
 
-  /* line 525, _media.scss */
+  /* line 533, _media.scss */
   .side-card {
     width: 100%;
+  }
+
+  /* line 536, _media.scss */
+  .newsletter__body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* line 540, _media.scss */
+  .newsletter__body__link {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* line 544, _media.scss */
+  .mail__body__filter__group {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* line 549, _media.scss */
+  .mail__body__filter__single {
+    order: 1;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  /* line 554, _media.scss */
+  .mail__body__filter__group__wrap {
+    flex-direction: column;
+  }
+
+  /* line 557, _media.scss */
+  .mail__body__filter__separate {
+    height: 16px;
+    background-color: transparent;
+    border-left: 1px solid #B2BECB;
+    border-right: 1px solid #B2BECB;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 /* Медиа запросы */

@@ -42,4 +42,48 @@
     background: url("../assets/img/ico/plus.svg")no-repeat center;
     background-size: contain;
   }
+  &__drop-down{
+    &_b{
+      background: url("../assets/img/ico/drop_down_mail_b.svg")no-repeat center;
+      background-size: contain;
+    }
+  }
+  &__mails{
+    background: url("../assets/img/ico/mails.svg")no-repeat center;
+    background-size: contain;
+  }
+  &__times{
+    background: url("../assets/img/ico/times.svg")no-repeat center;
+    background-size: contain;
+  }
+  &__user-edit{
+    background: url("../assets/img/ico/user_edit.svg")no-repeat center;
+    background-size: contain;
+  }
+  &__history-mail{
+    background: url("../assets/img/ico/history_mail.svg")no-repeat center;
+    background-size: contain;
+  }
+  &__rotate{
+    width: 16px!important;
+    height: 16px!important;
+    margin-left: 2px;
+    background: url("../assets/img/ico/rotate.svg")no-repeat center;
+    background-size: contain;
+  }
+  &__calendar{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    background: url("../assets/img/ico/calendar.svg")no-repeat center;
+    background-size: contain;
+  }
+  &__cross{
+    background: url("../assets/img/ico/cross.svg")no-repeat center;
+    background-size: contain;
+  }
+  &__arr_u_d{
+    background: url("../assets/img/ico/arr_u_d.svg")no-repeat center;
+    background-size: contain;
+  }
 }
