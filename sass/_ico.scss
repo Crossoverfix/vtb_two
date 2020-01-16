@@ -86,4 +86,19 @@
     background: url("../assets/img/ico/arr_u_d.svg")no-repeat center;
     background-size: contain;
   }
+  &__arr_r{
+    width: 18px!important;
+    height: 17px!important;
+    margin-right: 0!important;
+    background: url("../assets/img/ico/arr_r.svg")no-repeat center;
+    background-size: contain;
+  }
+  &__search{
+    background: url("../assets/img/ico/ico_search.svg")no-repeat center;
+    background-size: contain;
+  }
+  &__close{
+    background: url("../assets/img/ico/ico_close.svg")no-repeat center;
+    background-size: contain;
+  }
 }

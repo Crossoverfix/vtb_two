@@ -201,4 +201,30 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         contentSwitch.toggleClass('edit');
     })
+    var $tableRowArea = $('[data-js-table="delete"] .mail__body__tabl__btn');
+    clearTableArea();
+    setTimeout(tableRowSearch, 300);
+    function tableRowSearch() {
+        let $tableRow = $('[data-js-table="delete"] tr:not(.hidden)');
+        for(i=1;i < $tableRow.length;i++){
+            let height = $tableRow.eq(i).outerHeight();
+            let top = $tableRow.eq(i).position();
+            createBtn(i,height,top.top);
+        }
+        var tableDelet = $('[data-js-tabl-close]');
+        tableDelet.on('click',function () {
+            let tempIndex = $(this).attr('data-js-tabl-close');
+            $tableRow.eq(tempIndex).addClass('hidden');
+            clearTableArea();
+            tableRowSearch();
+            return false;
+        })
+
+    }
+    function createBtn(index,height,top) {
+        $tableRowArea.append('<a href="#" style="top:' + top + 'px;height:' + (height - 1) + 'px" data-js-tabl-close="' + index + '"><i class="ico ico__close"></i></a>');
+    }
+    function clearTableArea() {
+        $tableRowArea.empty();
+    }
 })
