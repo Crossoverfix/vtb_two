@@ -227,4 +227,62 @@ $(document).ready(function () {
     function clearTableArea() {
         $tableRowArea.empty();
     }
+    var btnSwitchTemplate = $('[data-js-deleted="trigger"]');
+    var contentSwitchTemplate = $('[data-js-deleted="target"]');
+    var $tableRowAreaTemplate = $('[data-js-table="edit"] .mail__body__tabl__btn');
+    btnSwitchTemplate.on('click',function () {
+        $(this).toggleClass('active');
+        contentSwitchTemplate.toggleClass('show-deleted');
+        if(contentSwitchTemplate.hasClass('show-deleted')){
+            clearTableAreaTemplate();
+            tableRowSearchTemplate(true);
+        } else {
+            clearTableAreaTemplate();
+            tableRowSearchTemplate();
+        }
+    })
+    clearTableAreaTemplate();
+    setTimeout(tableRowSearchTemplate, 300);
+    function tableRowSearchTemplate(key) {
+        let tempkey = '[data-js-table="edit"] tr:not(.hidden)';
+        if(key){
+            tempkey = '[data-js-table="edit"] tr';
+        }
+        let $tableRow = $(tempkey);
+        for(i=1;i < $tableRow.length;i++){
+            let height = $tableRow.eq(i).outerHeight();
+            let top = $tableRow.eq(i).position();
+            createBtnTemplate(i,height,top.top);
+        }
+        var tableDelet = $('[data-js-tabl-option]');
+        tableDelet.on('click',function () {
+            let tempIndex = $(this).attr('data-js-tabl-option');
+            console.log('нажата кнопка строки №' + tempIndex);
+            clearTableAreaTemplate();
+            tableRowSearchTemplate();
+            return false;
+        })
+
+    }
+    function createBtnTemplate(index,height,top) {
+        $tableRowAreaTemplate.append('<a href="#" style="top:' + top + 'px;height:' + (height - 1) + 'px" data-js-tabl-option="' + index + '"><i class="ico ico__three-dot_b small-ico"></i></a>');
+    }
+    function clearTableAreaTemplate() {
+        $tableRowAreaTemplate.empty();
+    }
+    var mailsTab = $('[data-js-mail-tab="trigger"] label');
+    var mailsTabContent = $('[data-js-mail-tab="target"]');
+    mailsTab.on('click', function () {
+        if($breakingStatusSmall){
+            fBreakingSmall();
+            let $target = $(this).find('input').val();
+            mailsTabContent.removeClass('active');
+            mailsTabContent.filter($target).addClass('active');
+        }
+    })
+    var $breakingStatusSmall = true;
+    function fBreakingSmall(){
+        $breakingStatusSmall = false;
+        setTimeout(() => $breakingStatusSmall = true, 200);
+    }
 })

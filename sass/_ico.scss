@@ -33,6 +33,16 @@
   &__three-dot{
     background: url("../assets/img/ico/three_dot_b.svg")no-repeat center;
     background-size: contain;
+    &_b{
+      background: url("../assets/img/ico/thre_dot.svg")no-repeat center;
+      background-size: contain;
+      &.small-ico{
+        background-size: auto 10px;
+      }
+    }
+    &.small-ico{
+      background-size: auto 10px;
+    }
   }
   &__save{
     background: url("../assets/img/ico/save.svg")no-repeat center;
@@ -54,6 +64,10 @@
   }
   &__times{
     background: url("../assets/img/ico/times.svg")no-repeat center;
+    background-size: contain;
+  }
+  &__time{
+    background: url("../assets/img/ico/time.svg")no-repeat center;
     background-size: contain;
   }
   &__user-edit{
@@ -99,6 +113,10 @@
   }
   &__close{
     background: url("../assets/img/ico/ico_close.svg")no-repeat center;
+    background-size: contain;
+  }
+  &__select_drop{
+    background: url("../assets/img/ico/select_drop.svg")no-repeat center;
     background-size: contain;
   }
 }

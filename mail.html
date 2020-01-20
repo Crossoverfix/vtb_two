@@ -108,23 +108,71 @@
                </div>
            </div>
            <div class="mail__body">
-               <div class="mail__body__tabs">
-                   <label>
-                       <input type="radio" name="tabs">
+               <div class="mail__body__tabs" data-js-mail-tab="trigger">
+                   <label class="active">
+                       <input type="radio" name="tabs" checked value=".content_card">
                        <span>Карточка</span>
                    </label>
-                   <label class="active">
-                       <input type="radio" name="tabs" checked>
+                   <label>
+                       <input type="radio" name="tabs" value=".content_mail">
                        <span>Контент</span>
                    </label>
                    <label>
-                       <input type="radio" name="tabs">
+                       <input type="radio" name="tabs" value=".content_audit">
                        <span>Аудитория рассылки</span>
                    </label>
                </div>
                <div class="mail__body__content">
-                   <div class="mail__body__content__wrap content_card"></div>
-                   <div class="mail__body__content__wrap content_mail">
+                   <div class="mail__body__content__wrap content_card active" data-js-mail-tab="target">
+                       <form class="mail__body__content__form">
+                           <div class="mail__body__content__form__group">
+                               <div class="mail__body__content__form__input">
+                                   <span class="mail__body__content__form__input__name">Имя Рассылки</span>
+                                   <label class="mail__body__content__form__input__wrap">
+                                       <input type="text" name="name" value="Поздравление с НГ 2020 (Москва)">
+                                   </label>
+                               </div>
+                               <div class="mail__body__content__form__input">
+                                   <span class="mail__body__content__form__input__name">Тема письма</span>
+                                   <label class="mail__body__content__form__input__wrap">
+                                       <input type="text" name="name" value="Поздравление с Новым Годом 2020">
+                                   </label>
+                               </div>
+                               <div class="mail__body__content__form__input">
+                                   <span class="mail__body__content__form__input__name">От</span>
+                                   <label class="mail__body__content__form__input__wrap mod-select">
+                                       <input type="text" name="name" value="Департамент  Клавиотур">
+                                       <i class="ico ico__select_drop"></i>
+                                   </label>
+                               </div>
+                           </div>
+                           <div class="mail__body__content__form__group control-group">
+                               <div class="mail__body__content__form__switch">
+                                   <label>
+                                       <input type="checkbox" name="lock-edit">
+                                       <span>Готово к отправке</span>
+                                       <div class="switch__status"></div>
+                                   </label>
+                                   <span class="mail__body__content__form__switch__description">*Другой пользователь не сможет отредактировать данный шаблон</span>
+                               </div>
+                               <div class="mail__body__content__form__option">
+                                   <span class="mail__body__content__form__option__name">Дата рассылки</span>
+                                   <label class="mail__body__content__form__option__date">
+                                       <input type="text" name="date" value="30.12.2019">
+                                       <i class="ico ico__calendar"></i>
+                                   </label>
+                                   <label class="mail__body__content__form__option__time">
+                                       <input type="text" name="time" value="12:00">
+                                       <i class="ico ico__time"></i>
+                                   </label>
+                                   <label class="mail__body__content__form__option__submit">
+                                       <input type="submit" value="Поставить в очередь">
+                                   </label>
+                               </div>
+                           </div>
+                       </form>
+                   </div>
+                   <div class="mail__body__content__wrap content_mail" data-js-mail-tab="target">
                        <div class="mail__body__content__header">
                            <div class="mail__body__content__header__switch">
                                <button class="mail__body__content__header__switch__btn" data-js-switch="trigger">
@@ -284,7 +332,11 @@ margin-top: 0;margin-bottom: 0">Желаем Олегу Евгеньевичу �
 
                        </div>
                    </div>
-                   <div class="mail__body__content__wrap content_audit"></div>
+                   <div class="mail__body__content__wrap content_audit" data-js-mail-tab="target">
+                       <div class="mail__body__content__list">
+
+                       </div>
+                   </div>
                </div>
            </div>
        </div>
