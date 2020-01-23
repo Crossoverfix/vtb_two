@@ -51,12 +51,20 @@
   &__plus{
     background: url("../assets/img/ico/plus.svg")no-repeat center;
     background-size: contain;
+    &-beck{
+      &:before{
+        background: url("../assets/img/ico/plus.svg")no-repeat center;
+        background-size: contain;
+      }
+    }
   }
   &__drop-down{
     &_b{
       background: url("../assets/img/ico/drop_down_mail_b.svg")no-repeat center;
       background-size: contain;
     }
+    background: url("../assets/img/ico/drop_down_b.svg")no-repeat center;
+    background-size: contain;
   }
   &__mails{
     background: url("../assets/img/ico/mails.svg")no-repeat center;
