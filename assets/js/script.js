@@ -285,4 +285,12 @@ $(document).ready(function () {
         $breakingStatusSmall = false;
         setTimeout(() => $breakingStatusSmall = true, 200);
     }
+    var $searchDropTrigger = $('[data-js-drop-search="trigger"]');
+    var $searchDropTarget = $('[data-js-drop-search="target"] .mail__body__content__search__row.hidden');
+    $searchDropTrigger.on('click',function () {
+        $searchDropTarget.toggleClass('show');
+        $(this).toggleClass('active');
+        console.log('1');
+        return false;
+    })
 })

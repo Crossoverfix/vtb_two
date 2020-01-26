@@ -48,6 +48,36 @@
   .news__gallery__body__object{
     height: 84px;
   }
+  .mail__body__content__form__switch{
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .mail__body__content__form__option{
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .mail__body__content__form__switch__description{
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .mail__body__content__form__option__name{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .mail__body__content__form__option__date{
+    flex-grow: 1;
+  }
+  .mail__body__content__form__option__time{
+    flex-grow: 1;
+  }
+  .mail__body__content__form__option__submit{
+    flex-grow: 1;
+    margin-right: 0;
+  }
+
 }
 @media screen and (max-width: 991px){
   .container-fluid{
@@ -242,6 +272,52 @@
   }
   .news__gallery__body__object{
     height: 93px;
+  }
+  .mail__body__search__input{
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .mail__body__search__date{
+    width: calc((100% - 20px) / 2);
+    margin-right: 20px;
+  }
+  .mail__body__search__submit{
+    width: calc((100% - 20px) / 2);
+  }
+  .mail__body__content__form__option__date{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .mail__body__content__form__option__time{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .mail__body__content__form__option__submit{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .mail__body__content__list__modal__wrap{
+    width: 520px;
+    padding: 30px 50px;
+  }
+  .mail__body__content__search__wrap{
+    width: 100%;
+  }
+  .mail__body__content__search__row{
+    flex-wrap: wrap;
+    max-height: 230px;
+    margin-bottom: 0;
+  }
+  .mail__body__content__search__row.hidden.show{
+    max-height: 230px;
+    margin-bottom: 0;
+  }
+  .mail__body__content__search__wrap{
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 574px){
@@ -561,5 +637,115 @@
     border-right: 1px solid #B2BECB;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+  .mail__body__info__point{
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .mail__body__info__point__name{
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .mail__body__info__point__value{
+    width: 100%;
+    text-align: center;
+  }
+  .mail__body__search label{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .mail__header{
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .mail__header .mail__body__content__header__switch{
+    margin-top: 10px;
+    order: 1;
+    margin-left: 0;
+  }
+  .mail__body__content__form{
+    padding: 0;
+  }
+  .mail__body__content__form__group{
+    padding: 20px 0;
+  }
+  .mail__body__content__form__input{
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .mail__body__content__form__input__name{
+    padding: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .mail__body__tabs{
+    flex-wrap: wrap;
+  }
+  .mail__body__tabs label{
+    width: 100%;
+    margin-right: 0;
+  }
+  .mail__body__tabs label span{
+    width: 100%;
+  }
+  .mail__body__content__list__block__header{
+    flex-direction: column;
+  }
+  .mail__body__content__list__block__header__title{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .mail__body__content__list__modal__wrap{
+    width: 100%;
+    padding: 15px 30px;
+  }
+  .mail__body__content__list__modal__close{
+    right: 10px;
+    top: 10px;
+  }
+  .mail__body__content__search__drop{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .mail__body__content__search__group{
+    flex-direction: column;
+    width: 100%;
+  }
+  .mail__body__content__search__btn__ghost{
+    margin-bottom: 10px;
+  }
+  .mail__body__content__search__btn__blue{
+    margin-bottom: 10px;
+    input{
+      margin-left: 0;
+    }
+  }
+  .mail__body__content__search__btn__ico{
+    margin-left: 0;
+  }
+  .mail__header__btn-group a.mod-text, .mail__header__btn-group button.mod-text{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .mail__header__btn-group{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .mail__header{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .mail__body{
+    padding: 20px 15px;
+  }
+  .mail__body__content {
+    padding: 15px 5px 0 5px;
   }
 }
