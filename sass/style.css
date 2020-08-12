@@ -1110,8 +1110,18 @@ button, button:active, button:hover, button:visited, button:focus {
 /* line 283, _meeting.scss */
 .meeting__greed__name__item a {
   text-decoration: none;
+  color: #38529D;
+  font-family: 'VTB';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  text-decoration: none;
 }
-/* line 288, _meeting.scss */
+/* line 289, _meeting.scss */
+.meeting__greed__name__item a:hover {
+  color: #00AAFF;
+}
+/* line 295, _meeting.scss */
 .meeting__greed__time {
   width: calc(100% - 250px);
   height: auto;
@@ -1120,33 +1130,33 @@ button, button:active, button:hover, button:visited, button:focus {
   flex-shrink: 0;
   overflow-x: auto;
 }
-/* line 295, _meeting.scss */
+/* line 302, _meeting.scss */
 .meeting__greed__time::-webkit-scrollbar {
   /* 1 - скроллбар */
   background-color: white;
   height: 11px;
   width: 11px;
 }
-/* line 301, _meeting.scss */
+/* line 308, _meeting.scss */
 .meeting__greed__time::-webkit-scrollbar-button {
   /* 2 - кнопка */
   height: 0;
   width: 0;
   background-color: transparent;
 }
-/* line 307, _meeting.scss */
+/* line 314, _meeting.scss */
 .meeting__greed__time::-webkit-scrollbar-track {
   /* 3 - трек */
   background-color: transparent;
   width: 5px;
   height: 5px;
 }
-/* line 313, _meeting.scss */
+/* line 320, _meeting.scss */
 .meeting__greed__time::-webkit-scrollbar-track-piece {
   /* 4 - видимая часть трека */
   background-color: transparent;
 }
-/* line 317, _meeting.scss */
+/* line 324, _meeting.scss */
 .meeting__greed__time::-webkit-scrollbar-thumb {
   /* 5 - ползунок */
   background-color: #bfd4df;
@@ -1154,15 +1164,15 @@ button, button:active, button:hover, button:visited, button:focus {
   padding: 3px;
   border: 3px solid white;
 }
-/* line 324, _meeting.scss */
+/* line 331, _meeting.scss */
 .meeting__greed__time::-webkit-scrollbar-corner {
   /* 6 - уголок */
 }
-/* line 327, _meeting.scss */
+/* line 334, _meeting.scss */
 .meeting__greed__time::-webkit-resizer {
   /* 7 - изменение размеров */
 }
-/* line 330, _meeting.scss */
+/* line 337, _meeting.scss */
 .meeting__greed__time__fixed {
   position: absolute;
   display: flex;
@@ -1176,12 +1186,12 @@ button, button:active, button:hover, button:visited, button:focus {
   left: 0;
   top: 0;
 }
-/* line 344, _meeting.scss */
+/* line 351, _meeting.scss */
 .meeting__greed__time__content {
   padding-top: 33px;
   position: relative;
 }
-/* line 348, _meeting.scss */
+/* line 355, _meeting.scss */
 .meeting__greed__time__row {
   height: 32px;
   border-bottom: 1px solid #DAE1E6;
@@ -1192,14 +1202,14 @@ button, button:active, button:hover, button:visited, button:focus {
   align-items: flex-start;
   justify-content: flex-start;
 }
-/* line 358, _meeting.scss */
+/* line 365, _meeting.scss */
 .meeting__greed__time__item {
   height: 32px;
   border-right: 1px solid #DAE1E6;
   width: 60px;
   flex-shrink: 0;
 }
-/* line 364, _meeting.scss */
+/* line 371, _meeting.scss */
 .meeting__greed__time__item-head {
   width: 120px;
   flex-shrink: 0;
@@ -1212,7 +1222,7 @@ button, button:active, button:hover, button:visited, button:focus {
   border-right: 1px solid #DAE1E6;
   border-bottom: 1px solid #DAE1E6;
 }
-/* line 375, _meeting.scss */
+/* line 382, _meeting.scss */
 .meeting__greed__time__item-head span {
   font-family: 'VTB';
   font-size: 14px;
