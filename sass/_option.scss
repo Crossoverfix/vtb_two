@@ -241,4 +241,119 @@ $color: #DAE1E6;
     }
   }
 }
+.content__wrap *{
+  &::-webkit-scrollbar {
+    /* 1 - скроллбар */
+    background-color: white;
+    height: 11px;
+    width: 11px;
+  }
+  &::-webkit-scrollbar-button {
+    /* 2 - кнопка */
+    height: 0;
+    width: 0;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-track {
+    /* 3 - трек */
+    background-color: transparent;
+    width: 5px;
+    height: 5px;
+  }
+  &::-webkit-scrollbar-track-piece {
+    /* 4 - видимая часть трека */
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    /* 5 - ползунок */
+    background-color: #bfd4df;
+    border-radius: 5px;
+    padding: 3px;
+    border: 3px solid white;
+  }
+  &::-webkit-scrollbar-corner {
+    /* 6 - уголок */
+  }
+  &::-webkit-resizer {
+    /* 7 - изменение размеров */
+  }
+}
+.custom-scroll {
+  &__slim,&__slim * {
+    &::-webkit-scrollbar {
+      /* 1 - скроллбар */
+      background-color: white;
+      height: 11px;
+      width: 11px;
+    }
+    &::-webkit-scrollbar-button {
+      /* 2 - кнопка */
+      height: 0;
+      width: 0;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-track {
+      /* 3 - трек */
+      background-color: transparent;
+      width: 5px;
+      height: 5px;
+    }
+    &::-webkit-scrollbar-track-piece {
+      /* 4 - видимая часть трека */
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      /* 5 - ползунок */
+      background-color: #bfd4df;
+      border-radius: 5px;
+      padding: 3px;
+      border: 3px solid white;
+    }
+    &::-webkit-scrollbar-corner {
+      /* 6 - уголок */
+    }
+    &::-webkit-resizer {
+      /* 7 - изменение размеров */
+    }
+  }
+  &__edit,&__edit * {
+    &::-webkit-scrollbar {
+      /* 1 - скроллбар */
+      background-color: white;
+      width: 17px;
+      height: 17px;
+    }
+    &::-webkit-scrollbar-button {
+      background-color: transparent;
+      height: 0;
+      width: 0;
+      /* 2 - кнопка */
+    }
+    &::-webkit-scrollbar-track {
+      /* 3 - трек */
+      background-color: transparent;
+      width: 17px;
+      height: 17px;
+    }
+    &::-webkit-scrollbar-track-piece {
+      /* 4 - видимая часть трека */
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 9px;
+      height: 9px;
+      padding: 4px;
+      border: 3px solid white;
+      /* 5 - ползунок */
+      background-color: #d8d8d8;
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-corner {
+      /* 6 - уголок */
+    }
+    &::-webkit-resizer {
+      /* 7 - изменение размеров */
+    }
+  }
+}
 

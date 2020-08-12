@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
-    <title>VTB Portal</title>
+    <title>Meeting Room</title>
     <link href="sass/style.css" rel="stylesheet">
     <script src="assets/js/jquery-3.4.1.js"></script>
 </head>
@@ -89,82 +89,637 @@
     <div class="breadcrumb">
         <ul>
             <li><a href="index.html">Главная</a></li>
-            <li><a href="news.html">Рассылка</a></li>
+            <li><a href="meeting_room.html">Бронирование переговорных комнат</a></li>
         </ul>
     </div>
     <div class="pages-header">
-        <span class="pages-header__title">Рассылка</span>
+        <span class="pages-header__title">Бронирование переговорных комнат</span>
     </div>
-    <div class="container">
-      <div class="newsletter">
-          <div class="newsletter__header">
-              <label class="newsletter__header__drop">
-                  <input name="drop" type="checkbox">
-                  <i class="ico ico__drop-down_b"></i>
-                  <span>Весь банк</span>
-                  <div class="newsletter__header__drop__content">
-                      <a href="#" class="active">Весь банк</a>
-                      <a href="#">AO “Холдинг ВТБ Капитал”</a>
-                      <a href="#">Автоматизированныйе банковские технологии, ЗАО</a>
-                      <a href="#">AO ВТБ Девелопмент</a>
-                      <a href="#">Акционерное общество “Банк ВТБ (Грузия)“</a>
-                  </div>
-              </label>
+    <div class="container-fluid">
+      <div class="meeting">
+          <div class="meeting__header">
+             <div class="meeting__header__filter">
+                 <div class="meeting__header__filter__item item-small">
+                     <span class="meeting__header__filter__item__name">Город</span>
+                     <label class="meeting__header__filter__item__input">
+                         <input type="text" name="city" readonly>
+                         <i class="icon-arm"></i>
+                     </label>
+                 </div>
+                 <div class="meeting__header__filter__item item-big">
+                     <span class="meeting__header__filter__item__name">Территория</span>
+                     <label class="meeting__header__filter__item__input">
+                         <input type="text" name="city" readonly>
+                         <i class="icon-arm"></i>
+                     </label>
+                 </div>
+             </div>
           </div>
-          <div class="newsletter__body">
-              <a href="#" class="newsletter__body__link">
-                  <div class="newsletter__body__link__circle">
-                      <i class="ico ico__mails"></i>
+          <div class="meeting__body">
+              <div class="meeting__body__control">
+                  <a href="#" class="meeting__body__control__btn btn-ghost"><i class="icon-search"></i></a>
+                  <div class="meeting__body__control__calendar">
+                      <div class="meeting__body__control__calendar__wrap">
+                          <a href="#" class="meeting__body__control__calendar__arr"><i class="icon-ar_l"></i></a>
+                          <span class="meeting__body__control__calendar__value">23 Апреля 2020</span>
+                          <a href="#" class="meeting__body__control__calendar__btn"><i class="icon-calendar"></i></a>
+                          <a href="#" class="meeting__body__control__calendar__arr"><i class="icon-ar_r"></i></a>
+                      </div>
                   </div>
-                  <span>Рассылки</span>
-              </a>
-              <a href="#" class="newsletter__body__link">
-                  <div class="newsletter__body__link__circle">
-                      <i class="ico ico__times"></i>
+                  <a href="#" class="meeting__body__control__btn btn-primary-dark"><i class="icon-pencil"></i></a>
+              </div>
+              <div class="meeting__body__content">
+                  <div class="meeting__greed">
+                      <div class="meeting__greed__name">
+                          <div class="meeting__greed__name__fixed">
+                              <div class="meeting__greed__name__item">
+                                  <span>Переговорные</span>
+                              </div>
+                          </div>
+                          <div class="meeting__greed__name__content">
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Длинное название Переговорной M</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Переговорная Meeting Room 1</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">HeadOffice MR1</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Длинное название Переговорной M...</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">VideoConfRoom1</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">VideoConfRoom2</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Длинное название Main Meeting Roo...</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Переговорная Meeting Room 2</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Переговорная Meeting Room 3</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Переговорная Meeting Room 1</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Длинное название Переговорной M</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Переговорная Meeting Room 1</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">HeadOffice MR1</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Длинное название Переговорной M...</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">VideoConfRoom1</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">VideoConfRoom2</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Длинное название Main Meeting Roo...</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Переговорная Meeting Room 2</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Переговорная Meeting Room 3</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Переговорная Meeting Room 1</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Длинное название Переговорной M</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Переговорная Meeting Room 1</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">HeadOffice MR1</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Длинное название Переговорной M...</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">VideoConfRoom1</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">VideoConfRoom2</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Длинное название Main Meeting Roo...</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Переговорная Meeting Room 2</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Переговорная Meeting Room 3</a>
+                              </div>
+                              <div class="meeting__greed__name__item">
+                                  <a href="#">Переговорная Meeting Room 1</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="meeting__greed__time time-x">
+                          <div class="meeting__greed__time__fixed">
+                              <div class="meeting__greed__time__item-head"><span>8:00</span></div>
+                              <div class="meeting__greed__time__item-head"><span>9:00</span></div>
+                              <div class="meeting__greed__time__item-head"><span>10:00</span></div>
+                              <div class="meeting__greed__time__item-head"><span>11:00</span></div>
+                              <div class="meeting__greed__time__item-head"><span>12:00</span></div>
+                              <div class="meeting__greed__time__item-head"><span>13:00</span></div>
+                              <div class="meeting__greed__time__item-head"><span>14:00</span></div>
+                              <div class="meeting__greed__time__item-head"><span>15:00</span></div>
+                              <div class="meeting__greed__time__item-head"><span>16:00</span></div>
+                              <div class="meeting__greed__time__item-head"><span>17:00</span></div>
+                              <div class="meeting__greed__time__item-head"><span>18:00</span></div>
+                              <div class="meeting__greed__time__item-head"><span>19:00</span></div>
+                              <div class="meeting__greed__time__item-head"><span>20:00</span></div>
+                          </div>
+                          <div class="meeting__greed__time__content">
+                              <div class="meeting__greed__time__content__wrap">
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                                  <div class="meeting__greed__time__row">
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                      <div class="meeting__greed__time__item"></div>
+                                  </div>
+                              </div>
+                              <div class="meeting__greed__time__content__control">
+
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                  <span>Запланированные рассылки</span>
-              </a>
-              <a href="#" class="newsletter__body__link">
-                  <div class="newsletter__body__link__circle">
-                      <i class="ico ico__user-edit"></i>
-                  </div>
-                  <span>История изменений</span>
-              </a>
-              <a href="#" class="newsletter__body__link">
-                  <div class="newsletter__body__link__circle">
-                      <i class="ico ico__history-mail"></i>
-                  </div>
-                  <span>История Рассылок</span>
-              </a>
+              </div>
           </div>
       </div>
-    </div>
-    <div class="container-small">
-        <div class="navigation nav-white">
-            <span class="navigation__title">Список областей</span>
-            <ul class="navigation__list">
-                <li>
-                    <label class="ico ico__dot-b"></label>
-                    <a href="#">Весь банк</a>
-                </li>
-                <li>
-                    <label class="ico ico__dot-b"></label>
-                    <a href="#">AO “Холдинг ВТБ Капитал”</a>
-                </li>
-                <li>
-                    <label class="ico ico__dot-b"></label>
-                    <a href="#">Автоматизированныйе банковские технологии, ЗАО</a>
-                </li>
-                <li>
-                    <label class="ico ico__dot-b"></label>
-                    <a href="#">AO ВТБ Девелопмент</a>
-                </li>
-                <li>
-                    <label class="ico ico__dot-b"></label>
-                    <a href="#">Акционерное общество “Банк ВТБ (Грузия)“</a>
-                </li>
-            </ul>
-        </div>
     </div>
 </main>
 <footer>

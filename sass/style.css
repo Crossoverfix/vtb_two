@@ -244,6 +244,524 @@ button, button:active, button:hover, button:visited, button:focus {
   font-weight: 300;
   font-style: normal;
 }
+@font-face {
+  font-family: 'iconfont_vtb';
+  src: url("../assets/font/iconfont_vtb.eot?axt8st");
+  src: url("../assets/font/iconfont_vtb.eot?axt8st#iefix") format("embedded-opentype"), url("../assets/font/iconfont_vtb.ttf?axt8st") format("truetype"), url("../assets/font/iconfont_vtb.woff?axt8st") format("woff"), url("../assets/font/iconfont_vtb.svg?axt8st#iconfont_vtb") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+/* line 136, _font.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconfont_vtb' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 151, _font.scss */
+.icon-ar_l:before {
+  content: "\e960";
+}
+
+/* line 154, _font.scss */
+.icon-ar_r:before {
+  content: "\e961";
+}
+
+/* line 157, _font.scss */
+.icon-ar_up:before {
+  content: "\e962";
+}
+
+/* line 160, _font.scss */
+.icon-wifi:before {
+  content: "\e957";
+}
+
+/* line 163, _font.scss */
+.icon-webcam:before {
+  content: "\e958";
+}
+
+/* line 166, _font.scss */
+.icon-projector:before {
+  content: "\e959";
+}
+
+/* line 169, _font.scss */
+.icon-laptop:before {
+  content: "\e95a";
+}
+
+/* line 172, _font.scss */
+.icon-phone_classic:before {
+  content: "\e95b";
+}
+
+/* line 175, _font.scss */
+.icon-print1:before {
+  content: "\e95c";
+}
+
+/* line 178, _font.scss */
+.icon-project:before {
+  content: "\e95d";
+}
+
+/* line 181, _font.scss */
+.icon-tv:before {
+  content: "\e95e";
+}
+
+/* line 184, _font.scss */
+.icon-eye-invisible:before {
+  content: "\e95f";
+}
+
+/* line 187, _font.scss */
+.icon-attachment:before {
+  content: "\e951";
+}
+
+/* line 190, _font.scss */
+.icon-hashtag:before {
+  content: "\e952";
+}
+
+/* line 193, _font.scss */
+.icon-key:before {
+  content: "\e953";
+}
+
+/* line 196, _font.scss */
+.icon-locked:before {
+  content: "\e954";
+}
+
+/* line 199, _font.scss */
+.icon-star:before {
+  content: "\e955";
+}
+
+/* line 202, _font.scss */
+.icon-tool:before {
+  content: "\e956";
+}
+
+/* line 205, _font.scss */
+.icon-ruble:before {
+  content: "\e950";
+}
+
+/* line 208, _font.scss */
+.icon-euro:before {
+  content: "\e94e";
+}
+
+/* line 211, _font.scss */
+.icon-dollar:before {
+  content: "\e94f";
+}
+
+/* line 214, _font.scss */
+.icon-participant:before {
+  content: "\e94d";
+}
+
+/* line 217, _font.scss */
+.icon-pencil:before {
+  content: "\e94c";
+}
+
+/* line 220, _font.scss */
+.icon-email:before {
+  content: "\e947";
+}
+
+/* line 223, _font.scss */
+.icon-add_cloud:before {
+  content: "\e940";
+}
+
+/* line 226, _font.scss */
+.icon-add_file:before {
+  content: "\e941";
+}
+
+/* line 229, _font.scss */
+.icon-crop:before {
+  content: "\e942";
+}
+
+/* line 232, _font.scss */
+.icon-frame:before {
+  content: "\e943";
+}
+
+/* line 235, _font.scss */
+.icon-full_size:before {
+  content: "\e944";
+}
+
+/* line 238, _font.scss */
+.icon-export_pdf:before {
+  content: "\e945";
+}
+
+/* line 241, _font.scss */
+.icon-import_pdf:before {
+  content: "\e946";
+}
+
+/* line 244, _font.scss */
+.icon-text:before {
+  content: "\e900";
+}
+
+/* line 247, _font.scss */
+.icon-tick:before {
+  content: "\e901";
+}
+
+/* line 250, _font.scss */
+.icon-time:before {
+  content: "\e902";
+}
+
+/* line 253, _font.scss */
+.icon-zoom:before {
+  content: "\e903";
+}
+
+/* line 256, _font.scss */
+.icon-like:before {
+  content: "\e904";
+}
+
+/* line 259, _font.scss */
+.icon-like2:before {
+  content: "\e905";
+}
+
+/* line 262, _font.scss */
+.icon-look:before {
+  content: "\e906";
+}
+
+/* line 265, _font.scss */
+.icon-look2:before {
+  content: "\e907";
+}
+
+/* line 268, _font.scss */
+.icon-mail2:before {
+  content: "\e908";
+}
+
+/* line 271, _font.scss */
+.icon-mailing_history:before {
+  content: "\e909";
+}
+
+/* line 274, _font.scss */
+.icon-mailing:before {
+  content: "\e90a";
+}
+
+/* line 277, _font.scss */
+.icon-menu:before {
+  content: "\e90b";
+}
+
+/* line 280, _font.scss */
+.icon-nel:before {
+  content: "\e90c";
+}
+
+/* line 283, _font.scss */
+.icon-people:before {
+  content: "\e90d";
+}
+
+/* line 286, _font.scss */
+.icon-persone:before {
+  content: "\e90e";
+}
+
+/* line 289, _font.scss */
+.icon-phone_add:before {
+  content: "\e90f";
+}
+
+/* line 292, _font.scss */
+.icon-phone:before {
+  content: "\e910";
+}
+
+/* line 295, _font.scss */
+.icon-place:before {
+  content: "\e911";
+}
+
+/* line 298, _font.scss */
+.icon-planned:before {
+  content: "\e912";
+}
+
+/* line 301, _font.scss */
+.icon-print:before {
+  content: "\e913";
+}
+
+/* line 304, _font.scss */
+.icon-question:before {
+  content: "\e914";
+}
+
+/* line 307, _font.scss */
+.icon-quote:before {
+  content: "\e915";
+}
+
+/* line 310, _font.scss */
+.icon-refresh:before {
+  content: "\e916";
+}
+
+/* line 313, _font.scss */
+.icon-report:before {
+  content: "\e917";
+}
+
+/* line 316, _font.scss */
+.icon-request_study:before {
+  content: "\e918";
+}
+
+/* line 319, _font.scss */
+.icon-request:before {
+  content: "\e919";
+}
+
+/* line 322, _font.scss */
+.icon-resend:before {
+  content: "\e91a";
+}
+
+/* line 325, _font.scss */
+.icon-save:before {
+  content: "\e91b";
+}
+
+/* line 328, _font.scss */
+.icon-search:before {
+  content: "\e91c";
+}
+
+/* line 331, _font.scss */
+.icon-settings:before {
+  content: "\e91d";
+}
+
+/* line 334, _font.scss */
+.icon-sort:before {
+  content: "\e91e";
+}
+
+/* line 337, _font.scss */
+.icon-stop:before {
+  content: "\e91f";
+}
+
+/* line 340, _font.scss */
+.icon-study:before {
+  content: "\e920";
+}
+
+/* line 343, _font.scss */
+.icon-swap:before {
+  content: "\e921";
+}
+
+/* line 346, _font.scss */
+.icon-add:before {
+  content: "\e922";
+}
+
+/* line 349, _font.scss */
+.icon-alert_success:before {
+  content: "\e923";
+}
+
+/* line 352, _font.scss */
+.icon-ar_down:before {
+  content: "\e924";
+}
+
+/* line 355, _font.scss */
+.icon-ar:before {
+  content: "\e925";
+}
+
+/* line 358, _font.scss */
+.icon-arm:before {
+  content: "\e926";
+}
+
+/* line 361, _font.scss */
+.icon-arrow:before {
+  content: "\e927";
+}
+
+/* line 364, _font.scss */
+.icon-arrow2:before {
+  content: "\e928";
+}
+
+/* line 367, _font.scss */
+.icon-attention:before {
+  content: "\e929";
+}
+
+/* line 370, _font.scss */
+.icon-birth:before {
+  content: "\e92a";
+}
+
+/* line 373, _font.scss */
+.icon-building:before {
+  content: "\e92b";
+}
+
+/* line 376, _font.scss */
+.icon-calendar:before {
+  content: "\e92c";
+}
+
+/* line 379, _font.scss */
+.icon-change_history:before {
+  content: "\e92d";
+}
+
+/* line 382, _font.scss */
+.icon-check:before {
+  content: "\e92e";
+}
+
+/* line 385, _font.scss */
+.icon-close:before {
+  content: "\e92f";
+}
+
+/* line 388, _font.scss */
+.icon-comment:before {
+  content: "\e930";
+}
+
+/* line 391, _font.scss */
+.icon-comment2:before {
+  content: "\e931";
+}
+
+/* line 394, _font.scss */
+.icon-copy:before {
+  content: "\e932";
+}
+
+/* line 397, _font.scss */
+.icon-del:before {
+  content: "\e933";
+}
+
+/* line 400, _font.scss */
+.icon-dot_menu:before {
+  content: "\e934";
+}
+
+/* line 403, _font.scss */
+.icon-download_mag:before {
+  content: "\e935";
+}
+
+/* line 406, _font.scss */
+.icon-download:before {
+  content: "\e936";
+}
+
+/* line 409, _font.scss */
+.icon-edit:before {
+  content: "\e937";
+}
+
+/* line 412, _font.scss */
+.icon-error:before {
+  content: "\e938";
+}
+
+/* line 415, _font.scss */
+.icon-event:before {
+  content: "\e939";
+}
+
+/* line 418, _font.scss */
+.icon-exel_download:before {
+  content: "\e93a";
+}
+
+/* line 421, _font.scss */
+.icon-exel_upload:before {
+  content: "\e93b";
+}
+
+/* line 424, _font.scss */
+.icon-exel:before {
+  content: "\e93c";
+}
+
+/* line 427, _font.scss */
+.icon-flag:before {
+  content: "\e93d";
+}
+
+/* line 430, _font.scss */
+.icon-guests:before {
+  content: "\e93e";
+}
+
+/* line 433, _font.scss */
+.icon-hot_line:before {
+  content: "\e93f";
+}
+
+/* line 436, _font.scss */
+.icon-like-act:before {
+  content: "\e948";
+}
+
+/* line 439, _font.scss */
+.icon-like-inact:before {
+  content: "\e949";
+}
+
+/* line 442, _font.scss */
+.icon-tree_min:before {
+  content: "\e94a";
+}
+
+/* line 445, _font.scss */
+.icon-tree_plas:before {
+  content: "\e94b";
+}
+
 /* Модальное окно */
 @keyframes shake {
   from,to {
@@ -260,12 +778,456 @@ button, button:active, button:hover, button:visited, button:focus {
   }
 }
 /* Анимации */
-/* line 8, style.scss */
+/* line 1, _meeting.scss */
+.meeting {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  min-height: 600px;
+}
+/* line 8, _meeting.scss */
+.meeting__header {
+  width: 100%;
+  position: relative;
+  height: 55px;
+  border-bottom: 1px solid #DAE1E6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 25px;
+}
+/* line 19, _meeting.scss */
+.meeting__header__filter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 0;
+}
+/* line 27, _meeting.scss */
+.meeting__header__filter__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+/* line 35, _meeting.scss */
+.meeting__header__filter__item.item-small {
+  min-width: 350px;
+  margin-right: 20px;
+}
+/* line 39, _meeting.scss */
+.meeting__header__filter__item.item-big {
+  flex-grow: 1;
+}
+/* line 43, _meeting.scss */
+.meeting__header__filter__item__name {
+  font-family: 'VTB';
+  font-size: 14px;
+  font-weight: 300;
+  color: #97A4B1;
+  margin-right: 20px;
+  display: inline-block;
+  line-height: 18px;
+  flex-shrink: 0;
+}
+/* line 51, _meeting.scss */
+.meeting__header__filter__item__input {
+  flex-grow: 1;
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 30px;
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid #E6ECF2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* line 65, _meeting.scss */
+.meeting__header__filter__item__input input {
+  flex-grow: 1;
+  height: 28px;
+  padding: 0 10px;
+  margin: 0;
+  border: none;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+}
+/* line 75, _meeting.scss */
+.meeting__header__filter__item__input i {
+  margin-right: 12px;
+  flex-shrink: 0;
+  font-size: 6px;
+  color: #00AAFF;
+}
+/* line 85, _meeting.scss */
+.meeting__body {
+  width: 100%;
+  position: relative;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+/* line 90, _meeting.scss */
+.meeting__body__control {
+  width: 100%;
+  position: relative;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+/* line 100, _meeting.scss */
+.meeting__body__control__btn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+}
+/* line 108, _meeting.scss */
+.meeting__body__control__btn:hover {
+  text-decoration: none;
+}
+/* line 112, _meeting.scss */
+.meeting__body__control__btn.btn-ghost {
+  background-color: transparent;
+  border: 1px solid #E6ECF2;
+}
+/* line 115, _meeting.scss */
+.meeting__body__control__btn.btn-ghost:hover {
+  border: 1px solid #00AAFF;
+}
+/* line 118, _meeting.scss */
+.meeting__body__control__btn.btn-ghost i {
+  color: #00AAFF;
+}
+/* line 123, _meeting.scss */
+.meeting__body__control__btn.btn-primary-dark {
+  background-color: #C8D5EE;
+  border: 1px solid #C8D5EE;
+}
+/* line 126, _meeting.scss */
+.meeting__body__control__btn.btn-primary-dark i {
+  color: #002882;
+}
+/* line 129, _meeting.scss */
+.meeting__body__control__btn.btn-primary-dark:hover {
+  border: 1px solid #002882;
+}
+/* line 135, _meeting.scss */
+.meeting__body__control__btn i {
+  line-height: 28px;
+  display: inline-block;
+  font-size: 14px;
+}
+/* line 141, _meeting.scss */
+.meeting__body__control__calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  margin: 0;
+  position: relative;
+}
+/* line 150, _meeting.scss */
+.meeting__body__control__calendar__wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+/* line 158, _meeting.scss */
+.meeting__body__control__calendar__arr {
+  display: inline-block;
+  margin: 0 25px;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  padding: 3px 4px;
+}
+/* line 165, _meeting.scss */
+.meeting__body__control__calendar__arr i {
+  color: #00AAFF;
+  font-size: 16px;
+}
+/* line 168, _meeting.scss */
+.meeting__body__control__calendar__arr i:hover {
+  color: #002882;
+}
+/* line 173, _meeting.scss */
+.meeting__body__control__calendar__value {
+  font-family: 'VTB';
+  font-size: 19px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 24px;
+}
+/* line 178, _meeting.scss */
+.meeting__body__control__calendar__btn {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 10px;
+  color: #00AAFF;
+}
+/* line 183, _meeting.scss */
+.meeting__body__control__calendar__btn i {
+  font-size: 16px;
+}
+/* line 186, _meeting.scss */
+.meeting__body__control__calendar__btn:hover {
+  color: #002882;
+}
+/* line 192, _meeting.scss */
+.meeting__body__content {
+  width: 100%;
+  position: relative;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+/* line 199, _meeting.scss */
+.meeting__greed {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: calc(100vh - 110px);
+  max-height: calc(100vh - 110px);
+  overflow: hidden auto;
+  padding: 0 25px 25px 0;
+}
+/* line 211, _meeting.scss */
+.meeting__greed::-webkit-scrollbar {
+  /* 1 - скроллбар */
+  background-color: white;
+  height: 11px;
+  width: 11px;
+}
+/* line 217, _meeting.scss */
+.meeting__greed::-webkit-scrollbar-button {
+  /* 2 - кнопка */
+  height: 0;
+  width: 0;
+  background-color: transparent;
+}
+/* line 223, _meeting.scss */
+.meeting__greed::-webkit-scrollbar-track {
+  /* 3 - трек */
+  background-color: transparent;
+  width: 5px;
+  height: 5px;
+}
+/* line 229, _meeting.scss */
+.meeting__greed::-webkit-scrollbar-track-piece {
+  /* 4 - видимая часть трека */
+  background-color: transparent;
+}
+/* line 233, _meeting.scss */
+.meeting__greed::-webkit-scrollbar-thumb {
+  /* 5 - ползунок */
+  background-color: #bfd4df;
+  border-radius: 5px;
+  padding: 3px;
+  border: 3px solid white;
+}
+/* line 240, _meeting.scss */
+.meeting__greed::-webkit-scrollbar-corner {
+  /* 6 - уголок */
+}
+/* line 243, _meeting.scss */
+.meeting__greed::-webkit-resizer {
+  /* 7 - изменение размеров */
+}
+/* line 246, _meeting.scss */
+.meeting__greed__name {
+  width: 260px;
+  box-sizing: border-box;
+  border: 1px solid #DAE1E6;
+  flex-shrink: 0;
+  flex-grow: 0;
+  position: relative;
+}
+/* line 253, _meeting.scss */
+.meeting__greed__name__fixed {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 258, _meeting.scss */
+.meeting__greed__name__fixed .meeting__greed__name__item {
+  background-color: #E6ECF2;
+  color: #000000;
+  border-bottom: 1px solid #DAE1E6;
+}
+/* line 264, _meeting.scss */
+.meeting__greed__name__content {
+  width: 100%;
+  padding-top: 32px;
+  height: 100%;
+  position: relative;
+}
+/* line 269, _meeting.scss */
+.meeting__greed__name__content .meeting__greed__name__item:last-child {
+  border-bottom: 1px solid transparent;
+}
+/* line 273, _meeting.scss */
+.meeting__greed__name__item {
+  height: 32px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  background-color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 30px;
+  border-bottom: 1px solid #DAE1E6;
+}
+/* line 283, _meeting.scss */
+.meeting__greed__name__item a {
+  text-decoration: none;
+}
+/* line 288, _meeting.scss */
+.meeting__greed__time {
+  width: calc(100% - 250px);
+  height: auto;
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow-x: auto;
+}
+/* line 295, _meeting.scss */
+.meeting__greed__time::-webkit-scrollbar {
+  /* 1 - скроллбар */
+  background-color: white;
+  height: 11px;
+  width: 11px;
+}
+/* line 301, _meeting.scss */
+.meeting__greed__time::-webkit-scrollbar-button {
+  /* 2 - кнопка */
+  height: 0;
+  width: 0;
+  background-color: transparent;
+}
+/* line 307, _meeting.scss */
+.meeting__greed__time::-webkit-scrollbar-track {
+  /* 3 - трек */
+  background-color: transparent;
+  width: 5px;
+  height: 5px;
+}
+/* line 313, _meeting.scss */
+.meeting__greed__time::-webkit-scrollbar-track-piece {
+  /* 4 - видимая часть трека */
+  background-color: transparent;
+}
+/* line 317, _meeting.scss */
+.meeting__greed__time::-webkit-scrollbar-thumb {
+  /* 5 - ползунок */
+  background-color: #bfd4df;
+  border-radius: 5px;
+  padding: 3px;
+  border: 3px solid white;
+}
+/* line 324, _meeting.scss */
+.meeting__greed__time::-webkit-scrollbar-corner {
+  /* 6 - уголок */
+}
+/* line 327, _meeting.scss */
+.meeting__greed__time::-webkit-resizer {
+  /* 7 - изменение размеров */
+}
+/* line 330, _meeting.scss */
+.meeting__greed__time__fixed {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  width: auto;
+  border-top: 1px solid #DAE1E6;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+}
+/* line 344, _meeting.scss */
+.meeting__greed__time__content {
+  padding-top: 33px;
+  position: relative;
+}
+/* line 348, _meeting.scss */
+.meeting__greed__time__row {
+  height: 32px;
+  border-bottom: 1px solid #DAE1E6;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+/* line 358, _meeting.scss */
+.meeting__greed__time__item {
+  height: 32px;
+  border-right: 1px solid #DAE1E6;
+  width: 60px;
+  flex-shrink: 0;
+}
+/* line 364, _meeting.scss */
+.meeting__greed__time__item-head {
+  width: 120px;
+  flex-shrink: 0;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #E6ECF2;
+  border-right: 1px solid #DAE1E6;
+  border-bottom: 1px solid #DAE1E6;
+}
+/* line 375, _meeting.scss */
+.meeting__greed__time__item-head span {
+  font-family: 'VTB';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+}
+
+/* переговорные */
+/* line 9, style.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 12, style.scss */
+/* line 13, style.scss */
 .container {
   max-width: 880px;
   width: 880px;
@@ -273,7 +1235,7 @@ button, button:active, button:hover, button:visited, button:focus {
   display: inline-block;
   vertical-align: top;
 }
-/* line 18, style.scss */
+/* line 19, style.scss */
 .container-fluid {
   vertical-align: top;
   display: block;
@@ -283,7 +1245,7 @@ button, button:active, button:hover, button:visited, button:focus {
   margin-right: auto;
   position: relative;
 }
-/* line 27, style.scss */
+/* line 28, style.scss */
 .container-small {
   position: relative;
   display: inline-block;
@@ -293,12 +1255,12 @@ button, button:active, button:hover, button:visited, button:focus {
   vertical-align: top;
 }
 
-/* line 36, style.scss */
+/* line 37, style.scss */
 main {
   padding-top: 20px;
 }
 
-/* line 39, style.scss */
+/* line 40, style.scss */
 body {
   height: 100%;
   margin: 0;
@@ -5754,6 +6716,136 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
 /* line 239, _option.scss */
 .test__darken__75 {
   background-color: #1a2227;
+}
+
+/* line 245, _option.scss */
+.content__wrap *::-webkit-scrollbar {
+  /* 1 - скроллбар */
+  background-color: white;
+  height: 11px;
+  width: 11px;
+}
+/* line 251, _option.scss */
+.content__wrap *::-webkit-scrollbar-button {
+  /* 2 - кнопка */
+  height: 0;
+  width: 0;
+  background-color: transparent;
+}
+/* line 257, _option.scss */
+.content__wrap *::-webkit-scrollbar-track {
+  /* 3 - трек */
+  background-color: transparent;
+  width: 5px;
+  height: 5px;
+}
+/* line 263, _option.scss */
+.content__wrap *::-webkit-scrollbar-track-piece {
+  /* 4 - видимая часть трека */
+  background-color: transparent;
+}
+/* line 267, _option.scss */
+.content__wrap *::-webkit-scrollbar-thumb {
+  /* 5 - ползунок */
+  background-color: #bfd4df;
+  border-radius: 5px;
+  padding: 3px;
+  border: 3px solid white;
+}
+/* line 274, _option.scss */
+.content__wrap *::-webkit-scrollbar-corner {
+  /* 6 - уголок */
+}
+/* line 277, _option.scss */
+.content__wrap *::-webkit-resizer {
+  /* 7 - изменение размеров */
+}
+
+/* line 283, _option.scss */
+.custom-scroll__slim::-webkit-scrollbar, .custom-scroll__slim *::-webkit-scrollbar {
+  /* 1 - скроллбар */
+  background-color: white;
+  height: 11px;
+  width: 11px;
+}
+/* line 289, _option.scss */
+.custom-scroll__slim::-webkit-scrollbar-button, .custom-scroll__slim *::-webkit-scrollbar-button {
+  /* 2 - кнопка */
+  height: 0;
+  width: 0;
+  background-color: transparent;
+}
+/* line 295, _option.scss */
+.custom-scroll__slim::-webkit-scrollbar-track, .custom-scroll__slim *::-webkit-scrollbar-track {
+  /* 3 - трек */
+  background-color: transparent;
+  width: 5px;
+  height: 5px;
+}
+/* line 301, _option.scss */
+.custom-scroll__slim::-webkit-scrollbar-track-piece, .custom-scroll__slim *::-webkit-scrollbar-track-piece {
+  /* 4 - видимая часть трека */
+  background-color: transparent;
+}
+/* line 305, _option.scss */
+.custom-scroll__slim::-webkit-scrollbar-thumb, .custom-scroll__slim *::-webkit-scrollbar-thumb {
+  /* 5 - ползунок */
+  background-color: #bfd4df;
+  border-radius: 5px;
+  padding: 3px;
+  border: 3px solid white;
+}
+/* line 312, _option.scss */
+.custom-scroll__slim::-webkit-scrollbar-corner, .custom-scroll__slim *::-webkit-scrollbar-corner {
+  /* 6 - уголок */
+}
+/* line 315, _option.scss */
+.custom-scroll__slim::-webkit-resizer, .custom-scroll__slim *::-webkit-resizer {
+  /* 7 - изменение размеров */
+}
+/* line 320, _option.scss */
+.custom-scroll__edit::-webkit-scrollbar, .custom-scroll__edit *::-webkit-scrollbar {
+  /* 1 - скроллбар */
+  background-color: white;
+  width: 17px;
+  height: 17px;
+}
+/* line 326, _option.scss */
+.custom-scroll__edit::-webkit-scrollbar-button, .custom-scroll__edit *::-webkit-scrollbar-button {
+  background-color: transparent;
+  height: 0;
+  width: 0;
+  /* 2 - кнопка */
+}
+/* line 332, _option.scss */
+.custom-scroll__edit::-webkit-scrollbar-track, .custom-scroll__edit *::-webkit-scrollbar-track {
+  /* 3 - трек */
+  background-color: transparent;
+  width: 17px;
+  height: 17px;
+}
+/* line 338, _option.scss */
+.custom-scroll__edit::-webkit-scrollbar-track-piece, .custom-scroll__edit *::-webkit-scrollbar-track-piece {
+  /* 4 - видимая часть трека */
+  background-color: transparent;
+}
+/* line 342, _option.scss */
+.custom-scroll__edit::-webkit-scrollbar-thumb, .custom-scroll__edit *::-webkit-scrollbar-thumb {
+  width: 9px;
+  height: 9px;
+  padding: 4px;
+  border: 3px solid white;
+  /* 5 - ползунок */
+  background-color: #d8d8d8;
+  border-radius: 4px;
+}
+/* line 351, _option.scss */
+.custom-scroll__edit::-webkit-scrollbar-corner, .custom-scroll__edit *::-webkit-scrollbar-corner {
+  /* 6 - уголок */
+}
+/* line 354, _option.scss */
+.custom-scroll__edit::-webkit-resizer, .custom-scroll__edit *::-webkit-resizer {
+  /* 7 - изменение размеров */
 }
 
 /* Опциональные стили */
