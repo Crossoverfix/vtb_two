@@ -124,4 +124,121 @@
     }
   }
 }
+$color: #DAE1E6;
+.test{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 20px;
+  justify-content: space-around;
+  width: 100%;
+  &__block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    border: solid 1px black;
+    color: red;
+  }
+  &__origin{
+    background-color: $color;
+  }
+  &__lighten{
+    &__05{
+      background-color: lighten($color,05%);
+    }
+    &__10{
+      background-color: lighten($color,10%);
+    }
+    &__15{
+      background-color: lighten($color,15%);
+    }
+    &__20{
+      background-color: lighten($color,20%);
+    }
+    &__25{
+      background-color: lighten($color,25%);
+    }
+    &__30{
+      background-color: lighten($color,30%);
+    }
+    &__35{
+      background-color: lighten($color,35%);
+    }
+    &__40{
+      background-color: lighten($color,40%);
+    }
+    &__45{
+      background-color: lighten($color,45%);
+    }
+    &__50{
+      background-color: lighten($color,50%);
+    }
+    &__55{
+      background-color: lighten($color,55%);
+    }
+    &__60{
+      background-color: lighten($color,60%);
+    }
+    &__65{
+      background-color: lighten($color,65%);
+    }
+    &__70{
+      background-color: lighten($color,70%);
+    }
+    &__75{
+      background-color: lighten($color,75%);
+    }
+  }
+  &__darken{
+    &__05{
+      background-color: darken($color,05%);
+    }
+    &__10{
+      background-color: darken($color,10%);
+    }
+    &__15{
+      background-color: darken($color,15%);
+    }
+    &__20{
+      background-color: darken($color,20%);
+    }
+    &__25{
+      background-color: darken($color,25%);
+    }
+    &__30{
+      background-color: darken($color,30%);
+    }
+    &__35{
+      background-color: darken($color,35%);
+    }
+    &__40{
+      background-color: darken($color,40%);
+    }
+    &__45{
+      background-color: darken($color,45%);
+    }
+    &__50{
+      background-color: darken($color,50%);
+    }
+    &__55{
+      background-color: darken($color,55%);
+    }
+    &__60{
+      background-color: darken($color,60%);
+    }
+    &__65{
+      background-color: darken($color,65%);
+    }
+    &__70{
+      background-color: darken($color,70%);
+    }
+    &__75{
+      background-color: darken($color,75%);
+    }
+  }
+}
 

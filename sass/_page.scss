@@ -4176,3 +4176,152 @@
     }
   }
 }
+//.fixed-col-right{
+//  left: 0;
+//  right: auto;
+//  position: absolute;
+//  top: auto;
+//  width: 120px;
+//  display: flex;
+//  align-items: center;
+//  background:  linear-gradient(-90deg, rgba(230, 237, 251, 0) 0%, rgba(230, 237, 251, 1) 30% ,rgba(230, 237, 251, 1) 100%);
+//}
+//.fixed-col-left{
+//  left: auto;
+//  right: 0;
+//  position: absolute;
+//  top: auto;
+//  width: 120px;
+//  display: flex;
+//  align-items: center;
+//  background:  linear-gradient(90deg, rgba(230, 237, 251, 0) 0%, rgba(230, 237, 251, 1) 30% ,rgba(230, 237, 251, 1) 100%);
+//}
+//td.fixed-col-left{
+//  transform: translateY(5px);
+//  background:  linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 30% ,rgba(255, 255, 255, 1) 100%);
+//}
+//td.fixed-col-right{
+//  transform: translateY(5px);
+//  background:  linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 30% ,rgba(255, 255, 255, 1) 100%);
+//}
+.mail__body__tabl{
+  position: static;
+}
+table.tabl_abs{
+  position: absolute;
+  left: 0;
+  top: 0;
+  &.tabl{
+    &_left{
+      left: 0;
+      right: auto;
+      &.tabl_abs{
+        &_1{
+          tr{
+            th:not(:first-child),td:not(:first-child){
+              opacity: 0;
+              position: relative;
+              z-index: -1;
+            }
+            th:first-child{
+              background:  linear-gradient(-90deg, rgba(230, 237, 251, 0) 0%, rgba(230, 237, 251, 1) 20% ,rgba(230, 237, 251, 1) 100%);
+            }
+            td:first-child{
+              background:  linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 20% ,rgba(255, 255, 255, 1) 100%);
+            }
+          }
+        }
+        &_2{
+          tr{
+            th:not(:first-child):not(:nth-child(2)),td:not(:first-child):not(:nth-child(2)){
+              opacity: 0;
+              position: relative;
+              z-index: -1;
+            }
+            th:nth-child(2){
+              background:  linear-gradient(-90deg, rgba(230, 237, 251, 0) 0%, rgba(230, 237, 251, 1) 20% ,rgba(230, 237, 251, 1) 100%);
+            }
+            td:nth-child(2){
+              background:  linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 20% ,rgba(255, 255, 255, 1) 100%);
+            }
+          }
+        }
+      }
+    }
+    &_right{
+      left: auto;
+      right: 0;
+      &.tabl_abs{
+        &_1{
+          tr{
+            th:not(:last-child),td:not(:last-child){
+              opacity: 0;
+              position: relative;
+              z-index: -1;
+            }
+            th:last-child{
+              background:  linear-gradient(90deg, rgba(230, 237, 251, 0) 0%, rgba(230, 237, 251, 1) 20% ,rgba(230, 237, 251, 1) 100%);
+            }
+            td:last-child{
+              background:  linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 20% ,rgba(255, 255, 255, 1) 100%);
+            }
+          }
+        }
+        &_2{
+          tr{
+            th:not(:last-child):not(:nth-last-child(2)),td:not(:last-child):not(:nth-last-child(2)){
+              opacity: 0;
+              position: relative;
+              z-index: -1;
+            }
+            th:nth-last-child(2){
+              background:  linear-gradient(90deg, rgba(230, 237, 251, 0) 0%, rgba(230, 237, 251, 1) 20% ,rgba(230, 237, 251, 1) 100%);
+            }
+            td:nth-last-child(2){
+              background:  linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 20% ,rgba(255, 255, 255, 1) 100%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.test__origin{
+  position: relative;
+}
+.test__sort{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  &:before{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    display: block;
+    left: 10px;
+    top: calc(50% - 4px);
+    transform: translate(0,-50%);
+    width: 7px;
+    height: 5px;
+    border-bottom: 5px solid blue;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+  }
+  &:after{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    display: block;
+    left: 10px;
+    top: calc(50% + 4px);
+    transform: translate(0,-50%);
+    width: 7px;
+    height: 5px;
+    border-top: 5px solid blue;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+  }
+}
+
+
+

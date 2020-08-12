@@ -5349,6 +5349,126 @@ body {
   color: #002882;
 }
 
+/* line 4207, _page.scss */
+.mail__body__tabl {
+  position: static;
+}
+
+/* line 4210, _page.scss */
+table.tabl_abs {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 4215, _page.scss */
+table.tabl_abs.tabl_left {
+  left: 0;
+  right: auto;
+}
+/* line 4221, _page.scss */
+table.tabl_abs.tabl_left.tabl_abs_1 tr th:not(:first-child), table.tabl_abs.tabl_left.tabl_abs_1 tr td:not(:first-child) {
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+}
+/* line 4226, _page.scss */
+table.tabl_abs.tabl_left.tabl_abs_1 tr th:first-child {
+  background: linear-gradient(-90deg, rgba(230, 237, 251, 0) 0%, #e6edfb 20%, #e6edfb 100%);
+}
+/* line 4229, _page.scss */
+table.tabl_abs.tabl_left.tabl_abs_1 tr td:first-child {
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, white 20%, white 100%);
+}
+/* line 4236, _page.scss */
+table.tabl_abs.tabl_left.tabl_abs_2 tr th:not(:first-child):not(:nth-child(2)), table.tabl_abs.tabl_left.tabl_abs_2 tr td:not(:first-child):not(:nth-child(2)) {
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+}
+/* line 4241, _page.scss */
+table.tabl_abs.tabl_left.tabl_abs_2 tr th:nth-child(2) {
+  background: linear-gradient(-90deg, rgba(230, 237, 251, 0) 0%, #e6edfb 20%, #e6edfb 100%);
+}
+/* line 4244, _page.scss */
+table.tabl_abs.tabl_left.tabl_abs_2 tr td:nth-child(2) {
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, white 20%, white 100%);
+}
+/* line 4251, _page.scss */
+table.tabl_abs.tabl_right {
+  left: auto;
+  right: 0;
+}
+/* line 4257, _page.scss */
+table.tabl_abs.tabl_right.tabl_abs_1 tr th:not(:last-child), table.tabl_abs.tabl_right.tabl_abs_1 tr td:not(:last-child) {
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+}
+/* line 4262, _page.scss */
+table.tabl_abs.tabl_right.tabl_abs_1 tr th:last-child {
+  background: linear-gradient(90deg, rgba(230, 237, 251, 0) 0%, #e6edfb 20%, #e6edfb 100%);
+}
+/* line 4265, _page.scss */
+table.tabl_abs.tabl_right.tabl_abs_1 tr td:last-child {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, white 20%, white 100%);
+}
+/* line 4272, _page.scss */
+table.tabl_abs.tabl_right.tabl_abs_2 tr th:not(:last-child):not(:nth-last-child(2)), table.tabl_abs.tabl_right.tabl_abs_2 tr td:not(:last-child):not(:nth-last-child(2)) {
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+}
+/* line 4277, _page.scss */
+table.tabl_abs.tabl_right.tabl_abs_2 tr th:nth-last-child(2) {
+  background: linear-gradient(90deg, rgba(230, 237, 251, 0) 0%, #e6edfb 20%, #e6edfb 100%);
+}
+/* line 4280, _page.scss */
+table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, white 20%, white 100%);
+}
+
+/* line 4289, _page.scss */
+.test__origin {
+  position: relative;
+}
+
+/* line 4292, _page.scss */
+.test__sort {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* line 4296, _page.scss */
+.test__sort:before {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  display: block;
+  left: 10px;
+  top: calc(50% - 4px);
+  transform: translate(0, -50%);
+  width: 7px;
+  height: 5px;
+  border-bottom: 5px solid blue;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+/* line 4310, _page.scss */
+.test__sort:after {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  display: block;
+  left: 10px;
+  top: calc(50% + 4px);
+  transform: translate(0, -50%);
+  width: 7px;
+  height: 5px;
+  border-top: 5px solid blue;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
 /* Основные стили */
 /* line 1, _option.scss */
 .modal-show {
@@ -5488,6 +5608,152 @@ body {
 /* line 122, _option.scss */
 .navigation-group .group__big {
   width: 65%;
+}
+
+/* line 128, _option.scss */
+.test {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 20px;
+  justify-content: space-around;
+  width: 100%;
+}
+/* line 136, _option.scss */
+.test__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  border: solid 1px black;
+  color: red;
+}
+/* line 146, _option.scss */
+.test__origin {
+  background-color: #DAE1E6;
+}
+/* line 150, _option.scss */
+.test__lighten__05 {
+  background-color: #e9edf0;
+}
+/* line 153, _option.scss */
+.test__lighten__10 {
+  background-color: #f8fafb;
+}
+/* line 156, _option.scss */
+.test__lighten__15 {
+  background-color: white;
+}
+/* line 159, _option.scss */
+.test__lighten__20 {
+  background-color: white;
+}
+/* line 162, _option.scss */
+.test__lighten__25 {
+  background-color: white;
+}
+/* line 165, _option.scss */
+.test__lighten__30 {
+  background-color: white;
+}
+/* line 168, _option.scss */
+.test__lighten__35 {
+  background-color: white;
+}
+/* line 171, _option.scss */
+.test__lighten__40 {
+  background-color: white;
+}
+/* line 174, _option.scss */
+.test__lighten__45 {
+  background-color: white;
+}
+/* line 177, _option.scss */
+.test__lighten__50 {
+  background-color: white;
+}
+/* line 180, _option.scss */
+.test__lighten__55 {
+  background-color: white;
+}
+/* line 183, _option.scss */
+.test__lighten__60 {
+  background-color: white;
+}
+/* line 186, _option.scss */
+.test__lighten__65 {
+  background-color: white;
+}
+/* line 189, _option.scss */
+.test__lighten__70 {
+  background-color: white;
+}
+/* line 192, _option.scss */
+.test__lighten__75 {
+  background-color: white;
+}
+/* line 197, _option.scss */
+.test__darken__05 {
+  background-color: #cbd5dc;
+}
+/* line 200, _option.scss */
+.test__darken__10 {
+  background-color: #bcc8d1;
+}
+/* line 203, _option.scss */
+.test__darken__15 {
+  background-color: #acbcc7;
+}
+/* line 206, _option.scss */
+.test__darken__20 {
+  background-color: #9db0bd;
+}
+/* line 209, _option.scss */
+.test__darken__25 {
+  background-color: #8ea3b3;
+}
+/* line 212, _option.scss */
+.test__darken__30 {
+  background-color: #7f97a8;
+}
+/* line 215, _option.scss */
+.test__darken__35 {
+  background-color: #6f8b9e;
+}
+/* line 218, _option.scss */
+.test__darken__40 {
+  background-color: #627e92;
+}
+/* line 221, _option.scss */
+.test__darken__45 {
+  background-color: #587182;
+}
+/* line 224, _option.scss */
+.test__darken__50 {
+  background-color: #4e6473;
+}
+/* line 227, _option.scss */
+.test__darken__55 {
+  background-color: #445664;
+}
+/* line 230, _option.scss */
+.test__darken__60 {
+  background-color: #394955;
+}
+/* line 233, _option.scss */
+.test__darken__65 {
+  background-color: #2f3c46;
+}
+/* line 236, _option.scss */
+.test__darken__70 {
+  background-color: #252f36;
+}
+/* line 239, _option.scss */
+.test__darken__75 {
+  background-color: #1a2227;
 }
 
 /* Опциональные стили */
