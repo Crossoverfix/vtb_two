@@ -355,6 +355,7 @@
       &__row{
         height: 32px;
         border-bottom: 1px solid $ThFrameC;
+        width: max-content;
         width: auto;
         display: flex;
         flex-direction: row;

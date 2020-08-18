@@ -1195,6 +1195,7 @@ button, button:active, button:hover, button:visited, button:focus {
 .meeting__greed__time__row {
   height: 32px;
   border-bottom: 1px solid #DAE1E6;
+  width: max-content;
   width: auto;
   display: flex;
   flex-direction: row;
@@ -1202,14 +1203,14 @@ button, button:active, button:hover, button:visited, button:focus {
   align-items: flex-start;
   justify-content: flex-start;
 }
-/* line 365, _meeting.scss */
+/* line 366, _meeting.scss */
 .meeting__greed__time__item {
   height: 32px;
   border-right: 1px solid #DAE1E6;
   width: 60px;
   flex-shrink: 0;
 }
-/* line 371, _meeting.scss */
+/* line 372, _meeting.scss */
 .meeting__greed__time__item-head {
   width: 120px;
   flex-shrink: 0;
@@ -1222,7 +1223,7 @@ button, button:active, button:hover, button:visited, button:focus {
   border-right: 1px solid #DAE1E6;
   border-bottom: 1px solid #DAE1E6;
 }
-/* line 382, _meeting.scss */
+/* line 383, _meeting.scss */
 .meeting__greed__time__item-head span {
   font-family: 'VTB';
   font-size: 14px;
