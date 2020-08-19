@@ -198,196 +198,221 @@
   }
   &__greed{
     width: 100%;
-    position: relative;
+    border: 1px solid $ThFrameC;
+    border-bottom: none;
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
     justify-content: flex-start;
-    height: calc(100vh - 110px);
-    max-height: calc(100vh - 110px);
-    overflow: hidden auto ;
-    padding: 0 25px 25px 0;
-    &::-webkit-scrollbar {
-      /* 1 - скроллбар */
-      background-color: white;
-      height: 11px;
-      width: 11px;
+    position: relative;
+    &.greed{
+      &__horizontal{
+        width: calc(100% - 10px);
+        margin-right: 10px;
+        margin-bottom: 20px;
+      }
+      &__vertical{}
     }
-    &::-webkit-scrollbar-button {
-      /* 2 - кнопка */
-      height: 0;
-      width: 0;
-      background-color: transparent;
-    }
-    &::-webkit-scrollbar-track {
-      /* 3 - трек */
-      background-color: transparent;
-      width: 5px;
-      height: 5px;
-    }
-    &::-webkit-scrollbar-track-piece {
-      /* 4 - видимая часть трека */
-      background-color: transparent;
-    }
-    &::-webkit-scrollbar-thumb {
-      /* 5 - ползунок */
-      background-color: #bfd4df;
-      border-radius: 5px;
-      padding: 3px;
-      border: 3px solid white;
-    }
-    &::-webkit-scrollbar-corner {
-      /* 6 - уголок */
-    }
-    &::-webkit-resizer {
-      /* 7 - изменение размеров */
-    }
-    &__name{
-      width: 260px;
-      box-sizing: border-box;
-      border: 1px solid $ThFrameC;
+    &__static{
       flex-shrink: 0;
       flex-grow: 0;
+      border-right: 1px solid $ThFrameC;
+      width: 260px;
       position: relative;
-      &__fixed{
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        .meeting__greed__name__item{
-          background-color: $ThBorderC;
-          color: $ThTextC;
-          border-bottom: 1px solid $ThFrameC;
-        }
-      }
-      &__content{
-        width: 100%;
-        padding-top: 32px;
-        height: 100%;
-        position: relative;
-        .meeting__greed__name__item:last-child{
-          border-bottom: 1px solid transparent;
-        }
-      }
       &__item{
-        height: 32px;
+        position: relative;
         width: 100%;
-        box-sizing: border-box;
-        padding: 0 15px;
-        background-color: white;
-        text-decoration: none;
-        white-space: nowrap;
-        line-height: 30px;
+        max-width: 260px;
+        padding: 0 10px 0 15px;
         border-bottom: 1px solid $ThFrameC;
-        a{
-          text-decoration: none;
-          color: #38529D;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        > span{
+          display: inline-block;
           @include def_font(14px,300);
-          line-height: 18px;
-          text-decoration: none;
-          &:hover{
-            color: $ThSecondaryC;
+          white-space: nowrap;
+        }
+        &.item{
+          &__name{
+            background-color: $ThGreedBg;
+            > span{
+              font-size: 16px;
+              line-height: 20px;
+              color: $ThTextLC;
+              font-weight: 400;
+            }
+          }
+          &__card{
+            cursor: pointer;
+            > span{
+              color: $ThPrimarySoftC;
+            }
+            &:hover{
+              .meeting__greed__static__item__hover{
+                display: flex;
+              }
+            }
+          }
+        }
+        &__hover{
+          display: none;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: flex-start;
+          justify-content: flex-start;
+          width: 390px;
+          height: 90px;
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+          background-color: white;
+          position: absolute;
+          left: 0;
+          top: 100%;
+          z-index: 1;
+          .card{
+            &__photo{
+              width: 154px;
+              height: 100%;
+              background-size: cover;
+              background-position: center;
+              flex-shrink: 0;
+              flex-grow: 0;
+            }
+            &__info{
+              width: 100%;
+              flex-shrink: 1;
+              display: flex;
+              padding: 10px;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: space-between;
+              height: 100%;
+              &__name{
+                display: inline-block;
+                white-space: normal;
+                @include def_font(13px,300);
+                line-height: 17px;
+                color: $ThTextLC;
+                margin-bottom: auto;
+              }
+              &__status{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+                margin-top: auto;
+                &__capacity{
+                  color: $ThTextLC;
+                  @include def_font(13px,300);
+                  line-height: 17px;
+                  display: inline-block;
+                  margin-right: 10px;
+                  i{
+                    font-size: 15px;
+                    color: $ThGreyC;
+                    margin-right: 5px;
+                  }
+                }
+                &__scope{
+                  margin: 0 5px;
+                  i{
+                    font-size: 17px;
+                    margin-right: 8px;
+                    color: $ThGreyC;
+                    &.active{
+                      color: $ThPrimarySoftC;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
     }
-    &__time{
-      width: calc(100% - 250px);
-      height: auto;
+    &__scroll{
+      width: 100%;
+      height: calc(100% + 10px);
+      padding-bottom: 10px;
+      overflow-x: scroll;
+      overflow-y: hidden;
       position: relative;
-      flex-grow: 0;
-      flex-shrink: 0;
-      overflow-x: auto;
-      &::-webkit-scrollbar {
-        /* 1 - скроллбар */
-        background-color: white;
-        height: 11px;
-        width: 11px;
-      }
-      &::-webkit-scrollbar-button {
-        /* 2 - кнопка */
-        height: 0;
-        width: 0;
-        background-color: transparent;
-      }
-      &::-webkit-scrollbar-track {
-        /* 3 - трек */
-        background-color: transparent;
-        width: 5px;
-        height: 5px;
-      }
-      &::-webkit-scrollbar-track-piece {
-        /* 4 - видимая часть трека */
-        background-color: transparent;
-      }
-      &::-webkit-scrollbar-thumb {
-        /* 5 - ползунок */
-        background-color: #bfd4df;
-        border-radius: 5px;
-        padding: 3px;
-        border: 3px solid white;
-      }
-      &::-webkit-scrollbar-corner {
-        /* 6 - уголок */
-      }
-      &::-webkit-resizer {
-        /* 7 - изменение размеров */
-      }
-      &__fixed{
-        position: absolute;
+      &__content{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        flex-wrap: nowrap;
+        position: relative;
         width: auto;
-        border-top: 1px solid $ThFrameC;
-
-        box-sizing: border-box;
+        overflow: visible;
+        border-bottom: 1px solid $ThFrameC;
+      }
+      &__overlay{
+        position: absolute;
         left: 0;
         top: 0;
-      }
-      &__content{
-        padding-top: 33px;
-        position: relative;
+        width: 100%;
+        height: 100%;
       }
       &__row{
-        height: 32px;
-        border-bottom: 1px solid $ThFrameC;
-        width: max-content;
         width: auto;
+        border-bottom: 1px solid $ThFrameC;
+        height: 30px;
+        box-sizing: border-box;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: flex-start;
         justify-content: flex-start;
-      }
-      &__item{
-        height: 32px;
-        border-right: 1px solid $ThFrameC;
-        width: 60px;
         flex-shrink: 0;
-      }
-      &__item-head{
-        width: 120px;
-        flex-shrink: 0;
-        height: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: nowrap;
-        background-color: $ThBorderC;
-        border-right: 1px solid $ThFrameC;
-        border-bottom: 1px solid $ThFrameC;
-        span{
-          @include def_font(14px,400);
-          line-height: 18px;
-          color: $ThTextC;
+        flex-grow: 0;
+        &:last-child{
+          border-bottom: none;
         }
       }
     }
   }
+  //&::-webkit-scrollbar {
+  //  /* 1 - скроллбар */
+  //  background-color: white;
+  //  height: 11px;
+  //  width: 11px;
+  //}
+  //&::-webkit-scrollbar-button {
+  //  /* 2 - кнопка */
+  //  height: 0;
+  //  width: 0;
+  //  background-color: transparent;
+  //}
+  //&::-webkit-scrollbar-track {
+  //  /* 3 - трек */
+  //  background-color: transparent;
+  //  width: 5px;
+  //  height: 5px;
+  //}
+  //&::-webkit-scrollbar-track-piece {
+  //  /* 4 - видимая часть трека */
+  //  background-color: transparent;
+  //}
+  //&::-webkit-scrollbar-thumb {
+  //  /* 5 - ползунок */
+  //  background-color: #bfd4df;
+  //  border-radius: 5px;
+  //  padding: 3px;
+  //  border: 3px solid white;
+  //}
+  //&::-webkit-scrollbar-corner {
+  //  /* 6 - уголок */
+  //}
+  //&::-webkit-resizer {
+  //  /* 7 - изменение размеров */
+  //}
 }
 @media screen and (max-width: 1199px){
 
