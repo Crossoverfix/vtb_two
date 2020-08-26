@@ -1010,20 +1010,19 @@ button, button:active, button:hover, button:visited, button:focus {
 .meeting__greed {
   width: 100%;
   border: 1px solid #DAE1E6;
-  border-bottom: none;
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
 }
-/* line 209, _meeting.scss */
+/* line 208, _meeting.scss */
 .meeting__greed.greed__horizontal {
   width: calc(100% - 10px);
   margin-right: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-/* line 216, _meeting.scss */
+/* line 215, _meeting.scss */
 .meeting__greed__static {
   flex-shrink: 0;
   flex-grow: 0;
@@ -1031,7 +1030,7 @@ button, button:active, button:hover, button:visited, button:focus {
   width: 260px;
   position: relative;
 }
-/* line 222, _meeting.scss */
+/* line 221, _meeting.scss */
 .meeting__greed__static__item {
   position: relative;
   width: 100%;
@@ -1046,7 +1045,11 @@ button, button:active, button:hover, button:visited, button:focus {
   justify-content: flex-start;
   box-sizing: border-box;
 }
-/* line 235, _meeting.scss */
+/* line 234, _meeting.scss */
+.meeting__greed__static__item:last-child {
+  border-bottom: none;
+}
+/* line 237, _meeting.scss */
 .meeting__greed__static__item > span {
   display: inline-block;
   font-family: 'VTB';
@@ -1054,30 +1057,30 @@ button, button:active, button:hover, button:visited, button:focus {
   font-weight: 300;
   white-space: nowrap;
 }
-/* line 241, _meeting.scss */
+/* line 243, _meeting.scss */
 .meeting__greed__static__item.item__name {
   background-color: #E6EDFB;
 }
-/* line 243, _meeting.scss */
+/* line 245, _meeting.scss */
 .meeting__greed__static__item.item__name > span {
   font-size: 16px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.85);
   font-weight: 400;
 }
-/* line 250, _meeting.scss */
+/* line 252, _meeting.scss */
 .meeting__greed__static__item.item__card {
   cursor: pointer;
 }
-/* line 252, _meeting.scss */
+/* line 254, _meeting.scss */
 .meeting__greed__static__item.item__card > span {
   color: #38529D;
 }
-/* line 256, _meeting.scss */
+/* line 258, _meeting.scss */
 .meeting__greed__static__item.item__card:hover .meeting__greed__static__item__hover {
   display: flex;
 }
-/* line 262, _meeting.scss */
+/* line 264, _meeting.scss */
 .meeting__greed__static__item__hover {
   display: none;
   flex-direction: row;
@@ -1093,7 +1096,7 @@ button, button:active, button:hover, button:visited, button:focus {
   top: 100%;
   z-index: 1;
 }
-/* line 277, _meeting.scss */
+/* line 279, _meeting.scss */
 .meeting__greed__static__item__hover .card__photo {
   width: 154px;
   height: 100%;
@@ -1102,7 +1105,7 @@ button, button:active, button:hover, button:visited, button:focus {
   flex-shrink: 0;
   flex-grow: 0;
 }
-/* line 285, _meeting.scss */
+/* line 287, _meeting.scss */
 .meeting__greed__static__item__hover .card__info {
   width: 100%;
   flex-shrink: 1;
@@ -1113,7 +1116,7 @@ button, button:active, button:hover, button:visited, button:focus {
   justify-content: space-between;
   height: 100%;
 }
-/* line 294, _meeting.scss */
+/* line 296, _meeting.scss */
 .meeting__greed__static__item__hover .card__info__name {
   display: inline-block;
   white-space: normal;
@@ -1124,7 +1127,7 @@ button, button:active, button:hover, button:visited, button:focus {
   color: rgba(0, 0, 0, 0.85);
   margin-bottom: auto;
 }
-/* line 302, _meeting.scss */
+/* line 304, _meeting.scss */
 .meeting__greed__static__item__hover .card__info__status {
   width: 100%;
   display: flex;
@@ -1134,7 +1137,7 @@ button, button:active, button:hover, button:visited, button:focus {
   flex-wrap: nowrap;
   margin-top: auto;
 }
-/* line 310, _meeting.scss */
+/* line 312, _meeting.scss */
 .meeting__greed__static__item__hover .card__info__status__capacity {
   color: rgba(0, 0, 0, 0.85);
   font-family: 'VTB';
@@ -1144,33 +1147,31 @@ button, button:active, button:hover, button:visited, button:focus {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 316, _meeting.scss */
+/* line 318, _meeting.scss */
 .meeting__greed__static__item__hover .card__info__status__capacity i {
   font-size: 15px;
   color: #97A4B1;
   margin-right: 5px;
 }
-/* line 322, _meeting.scss */
+/* line 324, _meeting.scss */
 .meeting__greed__static__item__hover .card__info__status__scope {
   margin: 0 5px;
 }
-/* line 324, _meeting.scss */
+/* line 326, _meeting.scss */
 .meeting__greed__static__item__hover .card__info__status__scope i {
   font-size: 17px;
   margin-right: 8px;
   color: #97A4B1;
 }
-/* line 328, _meeting.scss */
+/* line 330, _meeting.scss */
 .meeting__greed__static__item__hover .card__info__status__scope i.active {
   color: #38529D;
 }
-/* line 339, _meeting.scss */
+/* line 341, _meeting.scss */
 .meeting__greed__scroll {
   width: 100%;
-  height: calc(100% + 10px);
-  padding-bottom: 10px;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  height: 100%;
+  overflow: hidden;
   position: relative;
 }
 /* line 346, _meeting.scss */
@@ -1182,9 +1183,12 @@ button, button:active, button:hover, button:visited, button:focus {
   position: relative;
   width: auto;
   overflow: visible;
-  border-bottom: 1px solid #DAE1E6;
 }
-/* line 356, _meeting.scss */
+/* line 355, _meeting.scss */
+.meeting__greed__scroll__scroler {
+  position: relative;
+}
+/* line 358, _meeting.scss */
 .meeting__greed__scroll__overlay {
   position: absolute;
   left: 0;
@@ -1192,8 +1196,9 @@ button, button:active, button:hover, button:visited, button:focus {
   width: 100%;
   height: 100%;
 }
-/* line 363, _meeting.scss */
+/* line 365, _meeting.scss */
 .meeting__greed__scroll__row {
+  min-width: 100%;
   width: auto;
   border-bottom: 1px solid #DAE1E6;
   height: 30px;
@@ -1206,9 +1211,67 @@ button, button:active, button:hover, button:visited, button:focus {
   flex-shrink: 0;
   flex-grow: 0;
 }
-/* line 375, _meeting.scss */
+/* line 379, _meeting.scss */
+.meeting__greed__scroll__row.row-header {
+  background-color: #E6EDFB;
+}
+/* line 385, _meeting.scss */
+.meeting__greed__scroll__row .row-col__big {
+  width: 112px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-right: 1px solid #DAE1E6;
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 30px;
+  max-height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+/* line 399, _meeting.scss */
+.meeting__greed__scroll__row .row-col__big:last-child {
+  border-right: 0;
+}
+/* line 403, _meeting.scss */
+.meeting__greed__scroll__row .row-col__small {
+  width: 56px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-right: 1px solid #DAE1E6;
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 30px;
+  max-height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+/* line 417, _meeting.scss */
+.meeting__greed__scroll__row .row-col__small:last-child {
+  border-right: 0;
+}
+/* line 422, _meeting.scss */
 .meeting__greed__scroll__row:last-child {
   border-bottom: none;
+}
+/* line 427, _meeting.scss */
+.meeting__greed__control {
+  width: 100%;
+  position: relative;
+}
+/* line 430, _meeting.scss */
+.meeting__greed__control__scroll {
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  background-color: #BFD4DF;
 }
 
 /* переговорные */
