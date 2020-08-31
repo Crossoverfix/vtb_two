@@ -88,14 +88,14 @@
         <counts>
           <entry key="html" value="5908" />
           <entry key="js" value="1956" />
-          <entry key="scss" value="16312" />
+          <entry key="scss" value="16313" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="5908" />
           <entry key="JavaScript" value="1956" />
-          <entry key="SCSS" value="16312" />
+          <entry key="SCSS" value="16313" />
         </counts>
       </usages-collector>
     </session>
@@ -679,7 +679,7 @@
             <entry file="file://$PROJECT_DIR$/meeting_room.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="306">
-                  <caret line="292" column="74" lean-forward="true" selection-start-line="292" selection-start-column="74" selection-end-line="292" selection-end-column="74" />
+                  <caret line="292" column="74" selection-start-line="292" selection-start-column="74" selection-end-line="292" selection-end-column="74" />
                   <folding>
                     <element signature="n#head#0;n#html#0;n#!!top" />
                     <element signature="n#meta#1;n#head#0;n#html#0;n#!!top" />
@@ -805,8 +805,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/_meeting.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="704">
-                  <caret line="413" column="20" selection-start-line="413" selection-start-column="20" selection-end-line="413" selection-end-column="20" />
+                <state relative-caret-position="330">
+                  <caret line="222" column="16" selection-start-line="222" selection-start-column="16" selection-end-line="222" selection-end-column="16" />
                   <folding>
                     <element signature="e#175#2010#0" />
                     <element signature="e#433#2006#0" />
@@ -841,7 +841,6 @@
                     <element signature="e#4416#4458#0" />
                     <element signature="e#4476#4521#0" />
                     <element signature="e#4560#4667#0" />
-                    <element signature="e#5607#5721#0" />
                     <element signature="e#5736#6248#0" />
                     <element signature="e#5755#5972#0" />
                     <element signature="e#5817#5960#0" />
@@ -1142,12 +1141,12 @@
       <workItem from="1598421468554" duration="4353000" />
       <workItem from="1598629872396" duration="599000" />
       <workItem from="1598864708115" duration="15000" />
-      <workItem from="1598871254755" duration="1022000" />
+      <workItem from="1598871254755" duration="1207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212547000" />
+    <option name="totallyTimeSpent" value="212732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1992,8 +1991,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_meeting.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="413" column="20" selection-start-line="413" selection-start-column="20" selection-end-line="413" selection-end-column="20" />
+        <state relative-caret-position="330">
+          <caret line="222" column="16" selection-start-line="222" selection-start-column="16" selection-end-line="222" selection-end-column="16" />
           <folding>
             <element signature="e#175#2010#0" />
             <element signature="e#433#2006#0" />
@@ -2028,7 +2027,6 @@
             <element signature="e#4416#4458#0" />
             <element signature="e#4476#4521#0" />
             <element signature="e#4560#4667#0" />
-            <element signature="e#5607#5721#0" />
             <element signature="e#5736#6248#0" />
             <element signature="e#5755#5972#0" />
             <element signature="e#5817#5960#0" />
