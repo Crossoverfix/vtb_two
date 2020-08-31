@@ -435,7 +435,7 @@
         }
         .row-col{
           &__big{
-            width: 112px;
+            width: 120px;
             flex-shrink: 0;
             flex-grow: 0;
             border-right: 1px solid $ThFrameC;
@@ -453,7 +453,7 @@
             }
           }
           &__small{
-            width: 56px;
+            width: 60px;
             flex-shrink: 0;
             flex-grow: 0;
             border-right: 1px solid $ThFrameC;
