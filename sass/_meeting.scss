@@ -196,6 +196,43 @@
       padding-bottom: 10px;
     }
   }
+  &__group{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    min-height: 560px;
+    &__small{
+      position: relative;
+      padding: 25px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 32%;
+      flex-shrink: 0;
+    }
+    &__big{
+      width: 100%;
+      flex-grow: 1;
+      padding: 30px 20px 20px 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      overflow: hidden;
+      .meeting__body__control__calendar{
+        flex-grow: 0;
+        margin-bottom: 25px;
+      }
+    }
+  }
   &__greed{
     width: 100%;
     border: 1px solid $ThFrameC;
@@ -210,7 +247,97 @@
         margin-right: 10px;
         margin-bottom: 10px;
       }
-      &__vertical{}
+      &__vertical{
+        flex-direction: column;
+        overflow: visible;
+        .meeting__greed{
+          &__static{
+            width: 100%;
+            height: 54px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            border-right: 0;
+            border-bottom: 1px solid $ThFrameC;
+            background-color: $ThGreedBg;
+            &__item{
+              height: 100%;
+              border-bottom: none;
+              border-right: 1px solid $ThFrameC;
+              flex-direction: column;
+              flex-shrink: 0;
+              padding: 0 5px;
+              justify-content: center;
+              span{}
+              p{
+                margin: 0;
+              }
+              &:last-child{
+                border-right: none;
+              }
+              &.item{
+                &__empty{
+                  width: 70px;
+                }
+                &__card{
+                  width: calc((100% - 70px) / 7);
+                }
+              }
+            }
+          }
+          &__scroll{
+            padding-left: 0;
+            padding-top: 54px;
+            width: 100%;
+            &__content{
+              flex-direction: row;
+              width: 100%;
+
+            }
+            &__overlay{
+            }
+            &__row{
+              min-width: auto;
+              height: auto;
+              border-bottom: none;
+              border-right: 1px solid $ThFrameC;
+              &:last-child{
+                border-right: none;
+              }
+              .row-col{
+                &__big{
+                  width: 100%;
+                  border-right: none;
+                  border-bottom: 1px solid $ThFrameC;
+                  &:last-child{
+                    border-bottom: none;
+                  }
+                }
+                &__small{
+                  width: 100%;
+                  border-right: none;
+                  border-bottom: 1px solid $ThFrameC;
+                  &:last-child{
+                    border-bottom: none;
+                  }
+                }
+              }
+              &.row{
+                &-header{
+                  width: 70px;
+                  flex-direction: column;
+                }
+                &-body{
+                  width: calc((100% - 70px) / 7);
+                  flex-direction: column;
+                }
+              }
+            }
+          }
+        }
+      }
     }
     &__static{
       flex-shrink: 0;
@@ -476,6 +603,110 @@
         }
       }
     }
+  }
+  &__card{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    &__header{
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 15px;
+      span{
+        display: inline-block;
+      }
+      &__tag{
+        @include def_font(13px,400);
+        line-height: 19px;
+        height: 19px;
+        padding: 0 5px;
+        background-color: #F2F3F8;
+        color: #89969C;
+        margin-right: 20px;
+      }
+      &__id{
+        @include def_font(14,300);
+        color: $ThTextC;
+        line-height: 19px;
+        i{
+          color: $ThGreyC;
+          display: inline-block;
+          line-height: 19px;
+          margin-right: 7px;
+        }
+      }
+    }
+    &__name{
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 20px;
+      @include def_font(15px,500);
+      line-height: 19px;
+      color: #33549B;
+    }
+    &__info{
+      &__status{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        margin-top: auto;
+        margin-bottom: 15px;
+        &__capacity{
+          color: $ThTextLC;
+          @include def_font(13px,300);
+          line-height: 17px;
+          display: inline-block;
+          margin-right: 10px;
+          i{
+            font-size: 15px;
+            color: $ThGreyC;
+            margin-right: 5px;
+          }
+        }
+        &__scope{
+          margin: 0 5px;
+          i{
+            font-size: 17px;
+            margin-right: 8px;
+            color: $ThGreyC;
+            &.active{
+              color: $ThPrimarySoftC;
+            }
+          }
+        }
+      }
+    }
+    &__picture{
+      position: relative;
+      width: 100%;
+      img{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.back-link{
+  text-decoration: none;
+  padding-left: 5px;
+  @include def_font(22px,400);
+  color: $ThTextC;
+  display: inline-block;
+  cursor: pointer;
+  i{
+    color: $ThSecondaryC;
+    margin-right: 15px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 1199px){
