@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Meeting Room</title>
+    <link href="sass/style.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.4.1.js"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="container-fluid header__wrap">
+            <div class="container header__origin">
+                <a href="#" class="header__logo">
+                    <img src="assets/img/ico/logo_vtb.svg" alt="logo">
+                </a>
+                <form class="header__search">
+                    <div class="header__search__field">
+                        <label class="header__search__field__text">
+                            <input type="text" name="search" placeholder="Поиск по порталу">
+                        </label>
+                        <label class="header__search__field__submit">
+                            <input type="submit">
+                        </label>
+                    </div>
+                    <div class="header__search__type">
+                        <label>
+                            <input type="radio" name="type" value="first">
+                            <span>По сотрудникам</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="type" value="second" checked>
+                            <span>По порталу</span>
+                        </label>
+                    </div>
+                </form>
+                <a href="#" class="header__search__collapse" data-js-collapse="search"></a>
+            </div>
+            <div class="container-small header__user">
+                <a href="#" class="header__user__wrap">
+                    <div class="header__user__wrap__avatar" style="background: url('assets/img/photo/avatar_hot.jpg')"></div>
+                    <span>Анастасия Гайнуллова</span>
+                </a>
+                <a href="#" class="header__user__collapse" data-js-collapse="nav-bar"></a>
+            </div>
+        </div>
+    </div>
+    <div class="header__mobil__search">
+        <form class="header__search">
+            <div class="header__search__field">
+                <label class="header__search__field__text">
+                    <input type="text" name="search" placeholder="Поиск по порталу">
+                </label>
+                <label class="header__search__field__submit">
+                    <input type="submit">
+                </label>
+            </div>
+            <div class="header__search__type">
+                <label>
+                    <input type="radio" name="type" value="first">
+                    <span>По сотрудникам</span>
+                </label>
+                <label>
+                    <input type="radio" name="type" value="second" checked>
+                    <span>По порталу</span>
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="header__nav">
+        <nav class="container-fluid header__nav__wrap">
+            <ul>
+                <li><a href="#">О Банке</a></li>
+                <li><a href="#">Cотруднику</a></li>
+                <li><a href="#">Департаменты</a></li>
+                <li><a href="#">Филиалы</a></li>
+                <li><a href="#">Сервисы</a></li>
+                <li><a href="#">Справочники</a></li>
+                <li><a href="#">Процессы</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="container-fluid">
+    <div class="breadcrumb">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="meeting_room.html">Бронирование переговорных комнат</a></li>
+        </ul>
+    </div>
+    <div class="pages-header">
+        <span class="pages-header__title">Бронирование переговорных комнат</span>
+    </div>
+    <div class="container-fluid">
+      <div class="meeting">
+          <div class="meeting__header">
+             <a href="#" class="back-link"><i class="icon-ar"></i>Назад</a>
+              <a href="#" class="meeting__header__btn btn__secondary">Скачать файл бронирования</a>
+          </div>
+          <div class="meeting__group">
+              <div class="meeting__group__small">
+                  <div class="meeting__card">
+                      <div class="meeting__card__header">
+                          <span class="meeting__card__header__tag">Переговорная</span>
+                          <span class="meeting__card__header__id"><i>#</i>358</span>
+                      </div>
+                      <span class="meeting__card__name">Длинное название Переговорной Meeting Room 2</span>
+                      <div class="meeting__card__info__status">
+                          <span class="meeting__card__info__status__capacity"><i class="icon-people"></i>99</span>
+                          <div class="meeting__card__info__status__scope">
+                              <i class="icon-project active"></i>
+                              <i class="icon-webcam active"></i>
+                              <i class="icon-phone_classic"></i>
+                          </div>
+                      </div>
+                      <div class="meeting__card__picture">
+                          <img alt="photo" src="assets/img/meeting/card_big.jpg">
+                      </div>
+                      <div class="meeting__card__input">
+                          <span>Тема события</span>
+                          <textarea placeholder="Тема будет доступна для просмотра в календаре другим пользователям"></textarea>
+                      </div>
+                  </div>
+              </div>
+              <div class="meeting__group__big">
+                  <div class="meeting__card__input mod-small">
+                      <span>Тема события</span>
+                      <textarea placeholder="Тема будет доступна для просмотра в календаре другим пользователям"></textarea>
+                  </div>
+                  <div class="meeting__body__control">
+                      <div class="meeting__body__control__calendar">
+                          <div class="meeting__body__control__calendar__wrap">
+                              <a href="#" class="meeting__body__control__calendar__arr"><i class="icon-ar_l"></i></a>
+                              <span class="meeting__body__control__calendar__value">23 Апреля 2020</span>
+                              <a href="#" class="meeting__body__control__calendar__btn"><i class="icon-calendar"></i></a>
+                              <a href="#" class="meeting__body__control__calendar__arr"><i class="icon-ar_r"></i></a>
+                          </div>
+                      </div>
+                      <a href="#" class="meeting__body__control__btn btn-secondary"><i class="icon-add"></i><span>Участники</span></a>
+                  </div>
+                  <div class="meeting__greed greed__horizontal">
+                      <div class="meeting__greed__static">
+                          <div class="meeting__greed__static__item item__name">
+                          </div>
+                          <div class="meeting__greed__static__item item__card mod-big-row">
+                              <span class="name__room">Длинное название Переговорной M...</span>
+
+                          </div>
+                          <div class="meeting__greed__static__item item__card">
+                              <i class="icon-close"></i><span class="name__user">Анастасия Гайнуллова</span>
+                          </div>
+                          <div class="meeting__greed__static__item item__card">
+                              <i class="icon-close"></i><span class="name__user">Татьяна Титова</span>
+                          </div>
+                          <div class="meeting__greed__static__item item__card">
+                              <i class="icon-close"></i><span class="name__user">Анастасия Гайнуллова</span>
+                          </div>
+                          <div class="meeting__greed__static__item item__card">
+                              <i class="icon-close"></i><span class="name__user">Татьяна Титова</span>
+                          </div>
+                          <div class="meeting__greed__static__item item__card">
+                              <i class="icon-close"></i><span class="name__user">Анастасия Гайнуллова</span>
+                          </div>
+                          <div class="meeting__greed__static__item item__card">
+                              <i class="icon-close"></i><span class="name__user">Татьяна Титова</span>
+                          </div>
+                          <div class="meeting__greed__static__item item__card">
+                              <i class="icon-close"></i><span class="name__user">Анастасия Гайнуллова</span>
+                          </div>
+                          <div class="meeting__greed__static__item item__card">
+                              <i class="icon-close"></i><span class="name__user">Татьяна Титова</span>
+                          </div>
+                      </div>
+                      <div class="meeting__greed__scroll">
+                          <div class="meeting__greed__scroll__content">
+                              <div class="meeting__greed__scroll__overlay">
+                                  <div class="meeting__greed__scroll__overlay__item" style="left: 60px;top:80px;width: 60px;">Занято</div>
+                                  <div class="meeting__greed__scroll__overlay__item" style="left: 0px;top:170px;width: 120px;">Занято</div>
+                                  <div class="meeting__greed__scroll__overlay__item" style="left: 120px;top:110px;width: 180px;">Занято</div>
+                              </div>
+                              <div class="meeting__greed__scroll__row row-header">
+                                  <div class="row-col__big"><span>8:00</span></div>
+                                  <div class="row-col__big"><span>9:00</span></div>
+                                  <div class="row-col__big"><span>10:00</span></div>
+                                  <div class="row-col__big"><span>11:00</span></div>
+                                  <div class="row-col__big"><span>12:00</span></div>
+                                  <div class="row-col__big"><span>13:00</span></div>
+                                  <div class="row-col__big"><span>14:00</span></div>
+                                  <div class="row-col__big"><span>15:00</span></div>
+                                  <div class="row-col__big"><span>16:00</span></div>
+                                  <div class="row-col__big"><span>17:00</span></div>
+                                  <div class="row-col__big"><span>18:00</span></div>
+                                  <div class="row-col__big"><span>19:00</span></div>
+                                  <div class="row-col__big"><span>20:00</span></div>
+                                  <div class="row-col__big"><span>21:00</span></div>
+                                  <div class="row-col__big"><span>22:00</span></div>
+                              </div>
+                              <div class="meeting__greed__scroll__row row-body mod-big-row">
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                              </div>
+                              <div class="meeting__greed__scroll__row row-body">
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                              </div>
+                              <div class="meeting__greed__scroll__row row-body">
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                              </div>
+                              <div class="meeting__greed__scroll__row row-body">
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                              </div>
+                              <div class="meeting__greed__scroll__row row-body">
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                              </div>
+                              <div class="meeting__greed__scroll__row row-body">
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                              </div>
+                              <div class="meeting__greed__scroll__row row-body">
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                              </div>
+                              <div class="meeting__greed__scroll__row row-body">
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                              </div>
+                              <div class="meeting__greed__scroll__row row-body">
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                                  <div class="row-col__small"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="container-fluid footer__wrap">
+            <span class="footer__copyright">© 2018 Корпоративный портал, Банк ВТБ</span>
+            <div class="footer__link">
+                <a href="#">Карта портала</a>
+                <a href="#">Поддержка пользователей</a>
+                <a href="#">Помощь по порталу</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/script.js" defer></script>
+<script src="assets/js/meeting.js" defer></script>
+</body>
+</html>

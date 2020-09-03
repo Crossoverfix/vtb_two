@@ -873,14 +873,33 @@ button, button:active, button:hover, button:visited, button:focus {
   font-size: 6px;
   color: #00AAFF;
 }
-/* line 85, _meeting.scss */
+/* line 86, _meeting.scss */
+.meeting__header__btn.btn__secondary {
+  background: #00AAFF;
+  border: 1px solid #00AAFF;
+  border-radius: 3px;
+  height: 30px;
+  padding: 0 12px;
+  line-height: 30px;
+  color: white;
+  font-weight: 300;
+  font-size: 13px;
+  margin-left: auto;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 99, _meeting.scss */
+.meeting__header__btn.btn__secondary:hover {
+  border: 1px solid #002882;
+}
+/* line 106, _meeting.scss */
 .meeting__body {
   width: 100%;
   position: relative;
   padding-left: 25px;
   padding-top: 25px;
 }
-/* line 90, _meeting.scss */
+/* line 111, _meeting.scss */
 .meeting__body__control {
   width: 100%;
   position: relative;
@@ -892,7 +911,7 @@ button, button:active, button:hover, button:visited, button:focus {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-/* line 100, _meeting.scss */
+/* line 121, _meeting.scss */
 .meeting__body__control__btn {
   display: inline-block;
   width: 30px;
@@ -902,43 +921,67 @@ button, button:active, button:hover, button:visited, button:focus {
   text-decoration: none;
   text-align: center;
 }
-/* line 108, _meeting.scss */
+/* line 129, _meeting.scss */
 .meeting__body__control__btn:hover {
   text-decoration: none;
 }
-/* line 112, _meeting.scss */
+/* line 133, _meeting.scss */
 .meeting__body__control__btn.btn-ghost {
   background-color: transparent;
   border: 1px solid #E6ECF2;
 }
-/* line 115, _meeting.scss */
+/* line 136, _meeting.scss */
 .meeting__body__control__btn.btn-ghost:hover {
   border: 1px solid #00AAFF;
 }
-/* line 118, _meeting.scss */
+/* line 139, _meeting.scss */
 .meeting__body__control__btn.btn-ghost i {
   color: #00AAFF;
 }
-/* line 123, _meeting.scss */
+/* line 144, _meeting.scss */
 .meeting__body__control__btn.btn-primary-dark {
   background-color: #C8D5EE;
   border: 1px solid #C8D5EE;
 }
-/* line 126, _meeting.scss */
+/* line 147, _meeting.scss */
 .meeting__body__control__btn.btn-primary-dark i {
   color: #002882;
 }
-/* line 129, _meeting.scss */
+/* line 150, _meeting.scss */
 .meeting__body__control__btn.btn-primary-dark:hover {
   border: 1px solid #002882;
 }
-/* line 135, _meeting.scss */
+/* line 155, _meeting.scss */
+.meeting__body__control__btn.btn-secondary {
+  width: auto;
+  border: 1px solid #00AAFF;
+  background-color: white;
+  padding: 0 10px;
+  margin-left: auto;
+}
+/* line 161, _meeting.scss */
+.meeting__body__control__btn.btn-secondary:hover {
+  border: 1px solid #002882;
+}
+/* line 164, _meeting.scss */
+.meeting__body__control__btn.btn-secondary i {
+  font-size: 14px;
+  color: #00AAFF;
+}
+/* line 168, _meeting.scss */
+.meeting__body__control__btn.btn-secondary span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #00AAFF;
+}
+/* line 176, _meeting.scss */
 .meeting__body__control__btn i {
   line-height: 28px;
   display: inline-block;
   font-size: 14px;
 }
-/* line 141, _meeting.scss */
+/* line 182, _meeting.scss */
 .meeting__body__control__calendar {
   display: flex;
   align-items: center;
@@ -949,7 +992,7 @@ button, button:active, button:hover, button:visited, button:focus {
   margin: 0;
   position: relative;
 }
-/* line 150, _meeting.scss */
+/* line 191, _meeting.scss */
 .meeting__body__control__calendar__wrap {
   display: flex;
   flex-direction: row;
@@ -958,7 +1001,7 @@ button, button:active, button:hover, button:visited, button:focus {
   flex-shrink: 0;
   position: relative;
 }
-/* line 158, _meeting.scss */
+/* line 199, _meeting.scss */
 .meeting__body__control__calendar__arr {
   display: inline-block;
   margin: 0 25px;
@@ -967,16 +1010,16 @@ button, button:active, button:hover, button:visited, button:focus {
   position: relative;
   padding: 3px 4px;
 }
-/* line 165, _meeting.scss */
+/* line 206, _meeting.scss */
 .meeting__body__control__calendar__arr i {
   color: #00AAFF;
   font-size: 16px;
 }
-/* line 168, _meeting.scss */
+/* line 209, _meeting.scss */
 .meeting__body__control__calendar__arr i:hover {
   color: #002882;
 }
-/* line 173, _meeting.scss */
+/* line 214, _meeting.scss */
 .meeting__body__control__calendar__value {
   font-family: 'VTB';
   font-size: 19px;
@@ -984,29 +1027,29 @@ button, button:active, button:hover, button:visited, button:focus {
   color: #000000;
   line-height: 24px;
 }
-/* line 178, _meeting.scss */
+/* line 219, _meeting.scss */
 .meeting__body__control__calendar__btn {
   text-decoration: none;
   display: inline-block;
   margin-left: 10px;
   color: #00AAFF;
 }
-/* line 183, _meeting.scss */
+/* line 224, _meeting.scss */
 .meeting__body__control__calendar__btn i {
   font-size: 16px;
 }
-/* line 186, _meeting.scss */
+/* line 227, _meeting.scss */
 .meeting__body__control__calendar__btn:hover {
   color: #002882;
 }
-/* line 192, _meeting.scss */
+/* line 233, _meeting.scss */
 .meeting__body__content {
   width: 100%;
   position: relative;
   padding-right: 10px;
   padding-bottom: 10px;
 }
-/* line 199, _meeting.scss */
+/* line 240, _meeting.scss */
 .meeting__group {
   position: relative;
   width: 100%;
@@ -1017,7 +1060,7 @@ button, button:active, button:hover, button:visited, button:focus {
   flex-wrap: nowrap;
   min-height: 560px;
 }
-/* line 208, _meeting.scss */
+/* line 249, _meeting.scss */
 .meeting__group__small {
   position: relative;
   padding: 25px;
@@ -1030,7 +1073,7 @@ button, button:active, button:hover, button:visited, button:focus {
   width: 32%;
   flex-shrink: 0;
 }
-/* line 220, _meeting.scss */
+/* line 261, _meeting.scss */
 .meeting__group__big {
   width: 100%;
   flex-grow: 1;
@@ -1042,12 +1085,20 @@ button, button:active, button:hover, button:visited, button:focus {
   flex-direction: column;
   overflow: hidden;
 }
-/* line 230, _meeting.scss */
+/* line 271, _meeting.scss */
 .meeting__group__big .meeting__body__control__calendar {
   flex-grow: 0;
   margin-bottom: 25px;
 }
-/* line 236, _meeting.scss */
+/* line 275, _meeting.scss */
+.meeting__group__big .meeting__body__control {
+  padding-right: 10px;
+}
+/* line 277, _meeting.scss */
+.meeting__group__big .meeting__body__control .meeting__body__control__calendar {
+  margin-bottom: 0;
+}
+/* line 283, _meeting.scss */
 .meeting__greed {
   width: 100%;
   border: 1px solid #DAE1E6;
@@ -1057,18 +1108,18 @@ button, button:active, button:hover, button:visited, button:focus {
   justify-content: flex-start;
   position: relative;
 }
-/* line 245, _meeting.scss */
+/* line 292, _meeting.scss */
 .meeting__greed.greed__horizontal {
   width: calc(100% - 10px);
   margin-right: 10px;
   margin-bottom: 10px;
 }
-/* line 250, _meeting.scss */
+/* line 297, _meeting.scss */
 .meeting__greed.greed__vertical {
   flex-direction: column;
   overflow: visible;
 }
-/* line 254, _meeting.scss */
+/* line 301, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__static {
   width: 100%;
   height: 54px;
@@ -1081,7 +1132,7 @@ button, button:active, button:hover, button:visited, button:focus {
   border-bottom: 1px solid #DAE1E6;
   background-color: #E6EDFB;
 }
-/* line 265, _meeting.scss */
+/* line 312, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__static__item {
   height: 100%;
   border-bottom: none;
@@ -1091,75 +1142,75 @@ button, button:active, button:hover, button:visited, button:focus {
   padding: 0 5px;
   justify-content: center;
 }
-/* line 274, _meeting.scss */
+/* line 321, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__static__item p {
   margin: 0;
 }
-/* line 277, _meeting.scss */
+/* line 324, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__static__item:last-child {
   border-right: none;
 }
-/* line 281, _meeting.scss */
+/* line 328, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__static__item.item__empty {
   width: 70px;
 }
-/* line 284, _meeting.scss */
+/* line 331, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__static__item.item__card {
   width: calc((100% - 70px) / 7);
 }
-/* line 290, _meeting.scss */
+/* line 337, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__scroll {
   padding-left: 0;
   padding-top: 54px;
   width: 100%;
 }
-/* line 294, _meeting.scss */
+/* line 341, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__scroll__content {
   flex-direction: row;
   width: 100%;
 }
-/* line 301, _meeting.scss */
+/* line 348, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__scroll__row {
   min-width: auto;
   height: auto;
   border-bottom: none;
   border-right: 1px solid #DAE1E6;
 }
-/* line 306, _meeting.scss */
+/* line 353, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__scroll__row:last-child {
   border-right: none;
 }
-/* line 310, _meeting.scss */
+/* line 357, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__scroll__row .row-col__big {
   width: 100%;
   border-right: none;
   border-bottom: 1px solid #DAE1E6;
 }
-/* line 314, _meeting.scss */
+/* line 361, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__scroll__row .row-col__big:last-child {
   border-bottom: none;
 }
-/* line 318, _meeting.scss */
+/* line 365, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__scroll__row .row-col__small {
   width: 100%;
   border-right: none;
   border-bottom: 1px solid #DAE1E6;
 }
-/* line 322, _meeting.scss */
+/* line 369, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__scroll__row .row-col__small:last-child {
   border-bottom: none;
 }
-/* line 328, _meeting.scss */
+/* line 375, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__scroll__row.row-header {
   width: 70px;
   flex-direction: column;
 }
-/* line 332, _meeting.scss */
+/* line 379, _meeting.scss */
 .meeting__greed.greed__vertical .meeting__greed__scroll__row.row-body {
   width: calc((100% - 70px) / 7);
   flex-direction: column;
 }
-/* line 342, _meeting.scss */
+/* line 389, _meeting.scss */
 .meeting__greed__static {
   flex-shrink: 0;
   flex-grow: 0;
@@ -1171,7 +1222,7 @@ button, button:active, button:hover, button:visited, button:focus {
   z-index: 2;
   background-color: white;
 }
-/* line 352, _meeting.scss */
+/* line 399, _meeting.scss */
 .meeting__greed__static__item {
   position: relative;
   width: 100%;
@@ -1186,7 +1237,11 @@ button, button:active, button:hover, button:visited, button:focus {
   justify-content: flex-start;
   box-sizing: border-box;
 }
-/* line 368, _meeting.scss */
+/* line 412, _meeting.scss */
+.meeting__greed__static__item.mod-big-row {
+  height: 50px;
+}
+/* line 418, _meeting.scss */
 .meeting__greed__static__item > span {
   display: inline-block;
   font-family: 'VTB';
@@ -1194,30 +1249,38 @@ button, button:active, button:hover, button:visited, button:focus {
   font-weight: 300;
   white-space: nowrap;
 }
-/* line 374, _meeting.scss */
+/* line 424, _meeting.scss */
 .meeting__greed__static__item.item__name {
   background-color: #E6EDFB;
 }
-/* line 376, _meeting.scss */
+/* line 426, _meeting.scss */
 .meeting__greed__static__item.item__name > span {
   font-size: 16px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.85);
   font-weight: 400;
 }
-/* line 383, _meeting.scss */
+/* line 433, _meeting.scss */
 .meeting__greed__static__item.item__card {
   cursor: pointer;
 }
-/* line 385, _meeting.scss */
+/* line 435, _meeting.scss */
 .meeting__greed__static__item.item__card > span {
   color: #38529D;
 }
-/* line 389, _meeting.scss */
+/* line 438, _meeting.scss */
+.meeting__greed__static__item.item__card > span.name__room {
+  color: #000000;
+}
+/* line 441, _meeting.scss */
+.meeting__greed__static__item.item__card > span.name__user {
+  color: rgba(0, 0, 0, 0.85);
+}
+/* line 447, _meeting.scss */
 .meeting__greed__static__item.item__card:hover .meeting__greed__static__item__hover {
   display: flex;
 }
-/* line 395, _meeting.scss */
+/* line 453, _meeting.scss */
 .meeting__greed__static__item__hover {
   display: none;
   flex-direction: row;
@@ -1233,7 +1296,7 @@ button, button:active, button:hover, button:visited, button:focus {
   top: 100%;
   z-index: 1;
 }
-/* line 410, _meeting.scss */
+/* line 468, _meeting.scss */
 .meeting__greed__static__item__hover .card__photo {
   width: 154px;
   height: 100%;
@@ -1242,7 +1305,7 @@ button, button:active, button:hover, button:visited, button:focus {
   flex-shrink: 0;
   flex-grow: 0;
 }
-/* line 418, _meeting.scss */
+/* line 476, _meeting.scss */
 .meeting__greed__static__item__hover .card__info {
   width: 100%;
   flex-shrink: 1;
@@ -1253,7 +1316,7 @@ button, button:active, button:hover, button:visited, button:focus {
   justify-content: space-between;
   height: 100%;
 }
-/* line 427, _meeting.scss */
+/* line 485, _meeting.scss */
 .meeting__greed__static__item__hover .card__info__name {
   display: inline-block;
   white-space: normal;
@@ -1264,7 +1327,7 @@ button, button:active, button:hover, button:visited, button:focus {
   color: rgba(0, 0, 0, 0.85);
   margin-bottom: auto;
 }
-/* line 435, _meeting.scss */
+/* line 493, _meeting.scss */
 .meeting__greed__static__item__hover .card__info__status {
   width: 100%;
   display: flex;
@@ -1274,7 +1337,7 @@ button, button:active, button:hover, button:visited, button:focus {
   flex-wrap: nowrap;
   margin-top: auto;
 }
-/* line 443, _meeting.scss */
+/* line 501, _meeting.scss */
 .meeting__greed__static__item__hover .card__info__status__capacity {
   color: rgba(0, 0, 0, 0.85);
   font-family: 'VTB';
@@ -1284,27 +1347,52 @@ button, button:active, button:hover, button:visited, button:focus {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 449, _meeting.scss */
+/* line 507, _meeting.scss */
 .meeting__greed__static__item__hover .card__info__status__capacity i {
   font-size: 15px;
   color: #97A4B1;
   margin-right: 5px;
 }
-/* line 455, _meeting.scss */
+/* line 513, _meeting.scss */
 .meeting__greed__static__item__hover .card__info__status__scope {
   margin: 0 5px;
 }
-/* line 457, _meeting.scss */
+/* line 515, _meeting.scss */
 .meeting__greed__static__item__hover .card__info__status__scope i {
   font-size: 17px;
   margin-right: 8px;
   color: #97A4B1;
 }
-/* line 461, _meeting.scss */
+/* line 519, _meeting.scss */
 .meeting__greed__static__item__hover .card__info__status__scope i.active {
   color: #38529D;
 }
-/* line 472, _meeting.scss */
+/* line 529, _meeting.scss */
+.meeting__greed__static__item .name__room {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+/* line 535, _meeting.scss */
+.meeting__greed__static__item .name__user {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.85);
+}
+/* line 542, _meeting.scss */
+.meeting__greed__static__item i {
+  font-size: 10px;
+  cursor: pointer;
+  color: #00AAFF;
+  margin-right: 8px;
+}
+/* line 547, _meeting.scss */
+.meeting__greed__static__item i:hover {
+  color: #002882;
+}
+/* line 553, _meeting.scss */
 .meeting__greed__scroll {
   width: 100%;
   height: 100%;
@@ -1312,33 +1400,33 @@ button, button:active, button:hover, button:visited, button:focus {
   position: relative;
   padding-left: 260px;
 }
-/* line 478, _meeting.scss */
+/* line 559, _meeting.scss */
 .meeting__greed__scroll::-webkit-scrollbar {
   /* 1 - скроллбар */
   background-color: white;
   height: 11px;
   width: 11px;
 }
-/* line 484, _meeting.scss */
+/* line 565, _meeting.scss */
 .meeting__greed__scroll::-webkit-scrollbar-button {
   /* 2 - кнопка */
   height: 0;
   width: 0;
   background-color: transparent;
 }
-/* line 490, _meeting.scss */
+/* line 571, _meeting.scss */
 .meeting__greed__scroll::-webkit-scrollbar-track {
   /* 3 - трек */
   background-color: transparent;
   width: 5px;
   height: 5px;
 }
-/* line 496, _meeting.scss */
+/* line 577, _meeting.scss */
 .meeting__greed__scroll::-webkit-scrollbar-track-piece {
   /* 4 - видимая часть трека */
   background-color: transparent;
 }
-/* line 500, _meeting.scss */
+/* line 581, _meeting.scss */
 .meeting__greed__scroll::-webkit-scrollbar-thumb {
   /* 5 - ползунок */
   background-color: #bfd4df;
@@ -1346,15 +1434,15 @@ button, button:active, button:hover, button:visited, button:focus {
   padding: 3px;
   border: 3px solid white;
 }
-/* line 507, _meeting.scss */
+/* line 588, _meeting.scss */
 .meeting__greed__scroll::-webkit-scrollbar-corner {
   /* 6 - уголок */
 }
-/* line 510, _meeting.scss */
+/* line 591, _meeting.scss */
 .meeting__greed__scroll::-webkit-resizer {
   /* 7 - изменение размеров */
 }
-/* line 513, _meeting.scss */
+/* line 594, _meeting.scss */
 .meeting__greed__scroll__content {
   display: flex;
   flex-direction: column;
@@ -1364,7 +1452,7 @@ button, button:active, button:hover, button:visited, button:focus {
   width: auto;
   overflow: visible;
 }
-/* line 522, _meeting.scss */
+/* line 603, _meeting.scss */
 .meeting__greed__scroll__overlay {
   position: absolute;
   left: 0;
@@ -1372,7 +1460,7 @@ button, button:active, button:hover, button:visited, button:focus {
   width: 100%;
   height: 100%;
 }
-/* line 528, _meeting.scss */
+/* line 609, _meeting.scss */
 .meeting__greed__scroll__overlay__item {
   display: flex;
   flex-direction: row;
@@ -1390,7 +1478,7 @@ button, button:active, button:hover, button:visited, button:focus {
   cursor: pointer;
   z-index: 1;
 }
-/* line 544, _meeting.scss */
+/* line 625, _meeting.scss */
 .meeting__greed__scroll__row {
   min-width: 100%;
   width: auto;
@@ -1405,11 +1493,20 @@ button, button:active, button:hover, button:visited, button:focus {
   flex-shrink: 0;
   flex-grow: 0;
 }
-/* line 558, _meeting.scss */
+/* line 638, _meeting.scss */
+.meeting__greed__scroll__row.mod-big-row {
+  height: 50px;
+}
+/* line 640, _meeting.scss */
+.meeting__greed__scroll__row.mod-big-row .row-col__small {
+  height: 50px;
+  max-height: 50px;
+}
+/* line 646, _meeting.scss */
 .meeting__greed__scroll__row.row-header {
   background-color: #E6EDFB;
 }
-/* line 564, _meeting.scss */
+/* line 652, _meeting.scss */
 .meeting__greed__scroll__row .row-col__big {
   width: 120px;
   flex-shrink: 0;
@@ -1425,11 +1522,11 @@ button, button:active, button:hover, button:visited, button:focus {
   justify-content: center;
   flex-wrap: nowrap;
 }
-/* line 578, _meeting.scss */
+/* line 666, _meeting.scss */
 .meeting__greed__scroll__row .row-col__big:last-child {
   border-right: 0;
 }
-/* line 582, _meeting.scss */
+/* line 670, _meeting.scss */
 .meeting__greed__scroll__row .row-col__small {
   width: 60px;
   flex-shrink: 0;
@@ -1445,11 +1542,11 @@ button, button:active, button:hover, button:visited, button:focus {
   justify-content: center;
   flex-wrap: nowrap;
 }
-/* line 596, _meeting.scss */
+/* line 684, _meeting.scss */
 .meeting__greed__scroll__row .row-col__small:last-child {
   border-right: 0;
 }
-/* line 607, _meeting.scss */
+/* line 695, _meeting.scss */
 .meeting__card {
   width: 100%;
   position: relative;
@@ -1458,7 +1555,7 @@ button, button:active, button:hover, button:visited, button:focus {
   align-items: flex-start;
   justify-content: flex-start;
 }
-/* line 614, _meeting.scss */
+/* line 702, _meeting.scss */
 .meeting__card__header {
   display: flex;
   width: 100%;
@@ -1467,11 +1564,11 @@ button, button:active, button:hover, button:visited, button:focus {
   justify-content: flex-start;
   margin-bottom: 15px;
 }
-/* line 621, _meeting.scss */
+/* line 709, _meeting.scss */
 .meeting__card__header span {
   display: inline-block;
 }
-/* line 624, _meeting.scss */
+/* line 712, _meeting.scss */
 .meeting__card__header__tag {
   font-family: 'VTB';
   font-size: 13px;
@@ -1483,7 +1580,7 @@ button, button:active, button:hover, button:visited, button:focus {
   color: #89969C;
   margin-right: 20px;
 }
-/* line 633, _meeting.scss */
+/* line 721, _meeting.scss */
 .meeting__card__header__id {
   font-family: 'VTB';
   font-size: 14;
@@ -1491,14 +1588,14 @@ button, button:active, button:hover, button:visited, button:focus {
   color: #000000;
   line-height: 19px;
 }
-/* line 637, _meeting.scss */
+/* line 725, _meeting.scss */
 .meeting__card__header__id i {
   color: #97A4B1;
   display: inline-block;
   line-height: 19px;
   margin-right: 7px;
 }
-/* line 645, _meeting.scss */
+/* line 733, _meeting.scss */
 .meeting__card__name {
   width: 100%;
   display: inline-block;
@@ -1509,7 +1606,7 @@ button, button:active, button:hover, button:visited, button:focus {
   line-height: 19px;
   color: #33549B;
 }
-/* line 654, _meeting.scss */
+/* line 742, _meeting.scss */
 .meeting__card__info__status {
   width: 100%;
   display: flex;
@@ -1520,7 +1617,7 @@ button, button:active, button:hover, button:visited, button:focus {
   margin-top: auto;
   margin-bottom: 15px;
 }
-/* line 663, _meeting.scss */
+/* line 751, _meeting.scss */
 .meeting__card__info__status__capacity {
   color: rgba(0, 0, 0, 0.85);
   font-family: 'VTB';
@@ -1530,39 +1627,75 @@ button, button:active, button:hover, button:visited, button:focus {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 669, _meeting.scss */
+/* line 757, _meeting.scss */
 .meeting__card__info__status__capacity i {
   font-size: 15px;
   color: #97A4B1;
   margin-right: 5px;
 }
-/* line 675, _meeting.scss */
+/* line 763, _meeting.scss */
 .meeting__card__info__status__scope {
   margin: 0 5px;
 }
-/* line 677, _meeting.scss */
+/* line 765, _meeting.scss */
 .meeting__card__info__status__scope i {
   font-size: 17px;
   margin-right: 8px;
   color: #97A4B1;
 }
-/* line 681, _meeting.scss */
+/* line 769, _meeting.scss */
 .meeting__card__info__status__scope i.active {
   color: #38529D;
 }
-/* line 688, _meeting.scss */
+/* line 776, _meeting.scss */
 .meeting__card__picture {
   position: relative;
   width: 100%;
 }
-/* line 691, _meeting.scss */
+/* line 779, _meeting.scss */
 .meeting__card__picture img {
   display: block;
   width: 100%;
   margin-bottom: 10px;
 }
+/* line 785, _meeting.scss */
+.meeting__card__input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+/* line 793, _meeting.scss */
+.meeting__card__input.mod-small {
+  margin-top: 0;
+}
+/* line 795, _meeting.scss */
+.meeting__card__input.mod-small span {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+/* line 800, _meeting.scss */
+.meeting__card__input span {
+  font-family: 'VTB';
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #000000;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #DAE1E6;
+  margin-bottom: 20px;
+}
+/* line 810, _meeting.scss */
+.meeting__card__input textarea {
+  width: 100%;
+}
 
-/* line 699, _meeting.scss */
+/* line 816, _meeting.scss */
 .back-link {
   text-decoration: none;
   padding-left: 5px;
@@ -1573,7 +1706,7 @@ button, button:active, button:hover, button:visited, button:focus {
   display: inline-block;
   cursor: pointer;
 }
-/* line 706, _meeting.scss */
+/* line 823, _meeting.scss */
 .back-link i {
   color: #00AAFF;
   margin-right: 15px;
