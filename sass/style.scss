@@ -6,6 +6,7 @@
 @import "font"; /* Модальное окно */
 @import "animate"; /* Анимации */
 @import "meeting"; /* переговорные */
+
 *{
   box-sizing: border-box;
 }
@@ -51,3 +52,4 @@ body{
 @import "footer"; /* Подвал */
 @import "ie"; /* IE */
 @import "media"; /* Медиа запросы */
+@import "widget"; /* переговорные */
