@@ -1,8 +1,17 @@
 $(document).ready(function () {
-    activeTab(1)
+    var typeTab = $('.business-cards__header__type__item input');
+    typeTab.on('change',function () {
+        $('[data-js-bs-tabs]').addClass('hidden');
+        $('[data-js-bs-tabs="'+ $(this).val() +'"]').removeClass('hidden');
+    })
+    activeTab(1);
+    activeTab(2);
+    activeTab(3);
     function activeTab(tabNumber) {
         let controlLeft = $('[data-js-bs-tabs="'+ tabNumber +'"] .arr__left');
         let controlRight = $('[data-js-bs-tabs="'+ tabNumber +'"] .arr__right');
+        controlRight.off('click');
+        controlLeft.off('click');
         let slides = $('[data-js-bs-tabs="'+ tabNumber +'"] .business-cards__content__slider__item');
         let currSlide = 1;
         let capSlide = slides.length;
