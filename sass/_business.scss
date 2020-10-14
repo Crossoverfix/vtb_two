@@ -1,0 +1,354 @@
+@keyframes big-an-1 {
+    0%{
+      left: 10px;
+      bottom: 10px;
+      width: 320px;
+      height: 320px;
+    }
+    50%{
+      left: 0px;
+      bottom: 0px;
+      width: 340px;
+      height: 340px;
+    }
+    100%{
+      left: 10px;
+      bottom: 10px;
+      width: 320px;
+      height: 320px;
+  
+    }
+  }
+  @keyframes big-an-2 {
+    0%{
+      left: 10px;
+      bottom: 10px;
+    }
+    50%{
+      left: 0px;
+      bottom: 0px;
+    }
+    100%{
+      left: 10px;
+      bottom: 10px;
+    }
+  }
+  @keyframes big-an-3 {
+    0%{
+
+    }
+    20%{
+      border-radius: 30% 50% 50% 50%;
+    }
+    40%{
+      border-radius: 50% 20% 50% 50%;
+    }
+    60%{
+      border-radius: 50% 60% 40% 50%;
+    }
+    80%{
+      border-radius: 70% 50% 50% 30%;
+    }
+    100%{
+      border-radius: 50% 50% 50% 50%;
+    }
+  }
+  @keyframes small-an-1 {
+    0%{
+      right: 0px;
+      top: 0px;
+      width: 80px;
+      height: 80px;
+    }
+    50%{
+      right: 10px;
+      top: 10px;
+      width: 60px;
+      height: 60px;
+    }
+    100%{
+      right: 0px;
+      top: 0px;
+      width: 80px;
+      height: 80px;
+  
+    }
+  }
+  @keyframes small-an-2 {
+    0%{
+      right: 0px;
+      top: 0px;
+    }
+    50%{
+      right: 10px;
+      top: 10px;
+    }
+    100%{
+      right: 0px;
+      top: 0px;
+  
+    }
+  }
+  @keyframes small-an-3 {
+    0%{
+      background: radial-gradient(circle, rgba(0,170,255,1) 50%, rgba(0,70,255,0.0) 70%);
+    }
+    50%{
+      background: radial-gradient(circle, rgba(0,170,255,1) 40%, rgba(0,70,255,0.0) 70%);
+    }
+    100%{
+      background: radial-gradient(circle, rgba(0,170,255,1) 50%, rgba(0,70,255,0.0) 70%);
+  
+    }
+  }
+  .business-cards{
+    width: 100%;
+    position: relative;
+    background-color: #E6EDFB;
+    padding: 37px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "VTB";
+    &__header{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      &__setting{
+        width: 320px;
+        margin-right: 160px;
+        flex-shrink: 0;
+        &__title{
+          display: inline-block;
+          font-size: 20px;
+          line-height: 24px;
+          color: #23262F;
+          font-weight: 400;
+          margin-bottom: 24px;
+        }
+        &__switch{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: flex-start;
+          margin-bottom: 18px;
+          cursor: pointer;
+          width: auto;
+          &__indicator{
+            position: relative;
+            width: 44px;
+            height: 22px;
+            background-color: rgba(151, 164, 177, 0.5);
+            transition: all linear 0.15s;
+            margin-right: 8px;
+            border-radius: 11px;
+            &:before{
+              content: "";
+              position: absolute;
+              left: 2px;
+              top: 2px;
+              width: 18px;
+              height: 18px;
+              border-radius: 50%;
+              background-color: white;
+              transition: all linear 0.15s;
+            }
+          }
+          &__name{
+            display: inline-block;
+            font-size: 15px;
+            line-height: 24px;
+            color: #676C77;
+            font-weight: 400;
+            margin: 0;
+          }
+          input{
+            display: none;
+            &:checked{
+              & ~ .business-cards__header__setting__switch__indicator{
+                background-color: #00AAFF;
+                &:before{
+                  left: 24px;
+                }
+              }
+              & ~ .business-cards__header__setting__switch__name{
+                color: #242424;
+              }
+            }
+          }
+        }
+        form{
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+      }
+      &__type{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        form{
+          position: relative;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-wrap: nowrap;
+        }
+        &__item{
+          width: 140px;
+          text-align: center;
+          cursor: pointer;
+          position: relative;
+          &:hover{
+            .business-cards__header__type__item__img{
+              transform: scale(1.5);
+            }
+          }
+          &__img{
+            box-sizing: border-box;
+            width: 80px;
+            height: 50px;
+            margin: 0 auto 20px auto;
+            background-color: white;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 3px;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+            border: 2px solid transparent;
+            transition: all linear 0.15s;
+          }
+          &__name{
+            display: inline-block;
+            text-align: center;
+            font-size: 15px;
+            line-height: 18px;
+            color: #676C77;
+          }
+          input{
+            display: none;
+            &:checked{
+              & ~ .business-cards__header__type__item__img{
+                border: 2px solid #00AAFF;
+              }
+              & ~ .business-cards__header__type__item__name{
+                color: #103070;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__content{
+      width: 100%;
+      &__tabs{
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        box-sizing: border-box;
+        min-height: 350px;
+        &.hidden{
+          display: none;
+        }
+      }
+      &__back-control{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        &__arr{
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          top: 50%;
+          display: block;
+          cursor: pointer;
+          border-style: solid;
+          border-color: #33549B;
+          border-width: 2px 2px 0 0;
+          opacity: 0.6;
+          &.disable{
+            opacity: 0.3;
+          }
+          &:hover:not(.disable){
+            opacity: 1;
+          }
+          &.arr{
+            &__left{
+              left: 0;
+              transform: translateY(-50%) rotate(-135deg);
+            }
+            &__right{
+              right: 0;
+              transform: translateY(-50%) rotate(45deg);
+            }
+          }
+        }
+        &__bg{
+          width: 350px;
+          height: 350px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          &.bg-animation-1{
+            .big-bg{
+              animation: big-an-1 2s infinite linear;
+            }
+            .small-bg{
+              animation: small-an-1 1.7s infinite linear;
+            }
+          }
+          &.bg-animation-2{
+            .big-bg{
+              animation: big-an-2 2s infinite linear;
+            }
+            .small-bg{
+              animation: small-an-2 1.7s infinite linear;
+            }
+          }
+          &.bg-animation-3{
+            .big-bg{
+              animation: big-an-3 2s infinite linear;
+            }
+            .small-bg{
+              animation: small-an-3 1.7s infinite linear;
+            }
+          }
+          .big-bg{
+            width: 320px;
+            height: 320px;
+            position: absolute;
+            border-radius: 50%;
+            left: 10px;
+            bottom: 10px;
+            background: radial-gradient(circle, rgba(0,45,155,1) 60%, rgba(0,45,155,0.0) 70%);
+          }
+          .small-bg{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            border-radius: 50%;
+            right: 0;
+            top: 0;
+            background: radial-gradient(circle, rgba(0,170,255,1) 50%, rgba(0,70,255,0.0) 70%);
+          }
+        }
+      }
+      &__slider{}
+    }
+    &__footer{}
+  }
