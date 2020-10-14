@@ -35,22 +35,22 @@
   }
   @keyframes big-an-3 {
     0%{
-
+      transform: skew(0);
     }
     20%{
-      border-radius: 30% 50% 50% 50%;
+      transform: skew(6deg,0);
     }
     40%{
-      border-radius: 50% 20% 50% 50%;
+      transform: skew(2deg,8deg);
     }
     60%{
-      border-radius: 50% 60% 40% 50%;
+      transform: skew(-4deg,2deg);
     }
     80%{
-      border-radius: 70% 50% 50% 30%;
+      transform: skew(8deg,-4deg);
     }
     100%{
-      border-radius: 50% 50% 50% 50%;
+      transform: skew(0);
     }
   }
   @keyframes small-an-1 {
@@ -91,25 +91,33 @@
   }
   @keyframes small-an-3 {
     0%{
-      background: radial-gradient(circle, rgba(0,170,255,1) 50%, rgba(0,70,255,0.0) 70%);
+      transform: skew(0);
     }
-    50%{
-      background: radial-gradient(circle, rgba(0,170,255,1) 40%, rgba(0,70,255,0.0) 70%);
+    20%{
+      transform: skew(6deg,0);
+    }
+    40%{
+      transform: skew(2deg,8deg);
+    }
+    60%{
+      transform: skew(-4deg,2deg);
+    }
+    80%{
+      transform: skew(8deg,-4deg);
     }
     100%{
-      background: radial-gradient(circle, rgba(0,170,255,1) 50%, rgba(0,70,255,0.0) 70%);
-  
+      transform: skew(0);
     }
   }
-  .business-cards{
-    width: 100%;
-    position: relative;
-    background-color: #E6EDFB;
-    padding: 37px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: "VTB";
-    &__header{
+.business-cards{
+  width: 100%;
+  position: relative;
+  background-color: #E6EDFB;
+  padding: 37px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "VTB";
+  &__header{
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -251,9 +259,9 @@
         }
       }
     }
-    &__content{
-      width: 100%;
-      &__tabs{
+  &__content{
+    width: 100%;
+    &__tabs{
         width: 100%;
         padding: 20px;
         position: relative;
@@ -263,7 +271,7 @@
           display: none;
         }
       }
-      &__back-control{
+    &__back-control{
         position: absolute;
         width: 100%;
         height: 100%;
@@ -325,7 +333,7 @@
               animation: big-an-3 2s infinite linear;
             }
             .small-bg{
-              animation: small-an-3 1.7s infinite linear;
+              animation: small-an-3 1.4s infinite linear;
             }
           }
           .big-bg{
@@ -348,7 +356,77 @@
           }
         }
       }
-      &__slider{}
+    &__slider{
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      padding-left: calc(50% - (100% / 6));
+      white-space: nowrap;
+      &__item{
+        width: calc(100% / 2);
+        display: inline-block;
+        white-space: normal;
+        text-align: center;
+        position: relative;
+        padding: 420px 15px 0 15px;
+        &.active{
+
+        }
+        &__card{
+          &-front{
+            position: absolute;
+            width: 350px;
+            height: 221px;
+            background-color: white;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            transform: scale(0.7) translate(-80%,-80%);
+            transition: all linear 0.8s;
+          }
+          &-back{
+            position: absolute;
+            width: 350px;
+            height: 221px;
+            background-color: white;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+            left: calc(50% + 50px);
+            top: calc(50% + 60px);
+            transform: scale(0.7) translate(-80%,-80%);
+            transition: all linear 0.8s;
+          }
+          &-name{
+            display: inline-block;
+            font-size: 14px;
+            line-height: 18px;
+            color: #103070;
+            font-weight: 400;
+            padding: 3px 15px;
+            margin: 0 auto;
+            max-width: 240px;
+          }
+        }
+      }
+      &.slider-animation-1{
+        .business-cards__content__slider__item{
+          &.active{
+            .business-cards__content__slider__item__card-front{
+              transform: scale(0.9) translate(-70%,-90%) rotate(-20deg) skew(5deg,10deg);
+            }
+            .business-cards__content__slider__item__card-back{
+              transform: scale(0.9) translate(-70%,-70%) rotate(17deg) skew(10deg,-10deg);
+            }
+          }
+        }
+      }
     }
-    &__footer{}
-  }
+    }
+  &__footer{}
+}
