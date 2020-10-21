@@ -1828,11 +1828,9 @@ button, button:active, button:hover, button:visited, button:focus {
   position: relative;
   background-color: #E6EDFB;
   padding: 37px;
-  margin-top: 10px;
-  margin-bottom: 10px;
   font-family: "VTB";
 }
-/* line 120, _business.scss */
+/* line 122, _business.scss */
 .business-cards__header {
   width: 100%;
   display: flex;
@@ -1841,13 +1839,13 @@ button, button:active, button:hover, button:visited, button:focus {
   align-items: flex-start;
   justify-content: flex-start;
 }
-/* line 127, _business.scss */
+/* line 129, _business.scss */
 .business-cards__header__setting {
   width: 320px;
   margin-right: 310px;
   flex-shrink: 0;
 }
-/* line 131, _business.scss */
+/* line 133, _business.scss */
 .business-cards__header__setting__title {
   display: inline-block;
   font-size: 20px;
@@ -1856,7 +1854,7 @@ button, button:active, button:hover, button:visited, button:focus {
   font-weight: 400;
   margin-bottom: 24px;
 }
-/* line 139, _business.scss */
+/* line 141, _business.scss */
 .business-cards__header__setting__switch {
   display: flex;
   flex-direction: row;
@@ -1867,7 +1865,7 @@ button, button:active, button:hover, button:visited, button:focus {
   cursor: pointer;
   width: auto;
 }
-/* line 148, _business.scss */
+/* line 150, _business.scss */
 .business-cards__header__setting__switch__indicator {
   position: relative;
   width: 44px;
@@ -1877,7 +1875,7 @@ button, button:active, button:hover, button:visited, button:focus {
   margin-right: 8px;
   border-radius: 11px;
 }
-/* line 156, _business.scss */
+/* line 158, _business.scss */
 .business-cards__header__setting__switch__indicator:before {
   content: "";
   position: absolute;
@@ -1889,7 +1887,7 @@ button, button:active, button:hover, button:visited, button:focus {
   background-color: white;
   transition: all linear 0.15s;
 }
-/* line 168, _business.scss */
+/* line 170, _business.scss */
 .business-cards__header__setting__switch__name {
   display: inline-block;
   font-size: 15px;
@@ -1898,23 +1896,23 @@ button, button:active, button:hover, button:visited, button:focus {
   font-weight: 400;
   margin: 0;
 }
-/* line 176, _business.scss */
+/* line 178, _business.scss */
 .business-cards__header__setting__switch input {
   display: none;
 }
-/* line 179, _business.scss */
+/* line 181, _business.scss */
 .business-cards__header__setting__switch input:checked ~ .business-cards__header__setting__switch__indicator {
   background-color: #00AAFF;
 }
-/* line 181, _business.scss */
+/* line 183, _business.scss */
 .business-cards__header__setting__switch input:checked ~ .business-cards__header__setting__switch__indicator:before {
   left: 24px;
 }
-/* line 185, _business.scss */
+/* line 187, _business.scss */
 .business-cards__header__setting__switch input:checked ~ .business-cards__header__setting__switch__name {
   color: #242424;
 }
-/* line 191, _business.scss */
+/* line 193, _business.scss */
 .business-cards__header__setting form {
   margin: 0;
   padding: 0;
@@ -1923,7 +1921,7 @@ button, button:active, button:hover, button:visited, button:focus {
   align-items: flex-start;
   justify-content: flex-start;
 }
-/* line 200, _business.scss */
+/* line 202, _business.scss */
 .business-cards__header__type {
   position: relative;
   width: 100%;
@@ -1933,7 +1931,7 @@ button, button:active, button:hover, button:visited, button:focus {
   justify-content: flex-start;
   flex-wrap: nowrap;
 }
-/* line 208, _business.scss */
+/* line 210, _business.scss */
 .business-cards__header__type form {
   position: relative;
   width: 100%;
@@ -1943,18 +1941,18 @@ button, button:active, button:hover, button:visited, button:focus {
   justify-content: flex-start;
   flex-wrap: nowrap;
 }
-/* line 217, _business.scss */
+/* line 219, _business.scss */
 .business-cards__header__type__item {
   width: 140px;
   text-align: center;
   cursor: pointer;
   position: relative;
 }
-/* line 223, _business.scss */
+/* line 225, _business.scss */
 .business-cards__header__type__item:hover .business-cards__header__type__item__img {
   transform: scale(1.5);
 }
-/* line 227, _business.scss */
+/* line 229, _business.scss */
 .business-cards__header__type__item__img {
   box-sizing: border-box;
   width: 80px;
@@ -1969,7 +1967,7 @@ button, button:active, button:hover, button:visited, button:focus {
   border: 2px solid transparent;
   transition: all linear 0.15s;
 }
-/* line 241, _business.scss */
+/* line 243, _business.scss */
 .business-cards__header__type__item__name {
   display: inline-block;
   text-align: center;
@@ -1977,23 +1975,23 @@ button, button:active, button:hover, button:visited, button:focus {
   line-height: 18px;
   color: #676C77;
 }
-/* line 248, _business.scss */
+/* line 250, _business.scss */
 .business-cards__header__type__item input {
   display: none;
 }
-/* line 251, _business.scss */
+/* line 253, _business.scss */
 .business-cards__header__type__item input:checked ~ .business-cards__header__type__item__img {
   border: 2px solid #00AAFF;
 }
-/* line 254, _business.scss */
+/* line 256, _business.scss */
 .business-cards__header__type__item input:checked ~ .business-cards__header__type__item__name {
   color: #103070;
 }
-/* line 262, _business.scss */
+/* line 264, _business.scss */
 .business-cards__content {
   width: 100%;
 }
-/* line 264, _business.scss */
+/* line 266, _business.scss */
 .business-cards__content__tabs {
   width: 100%;
   padding: 20px;
@@ -2001,11 +1999,11 @@ button, button:active, button:hover, button:visited, button:focus {
   box-sizing: border-box;
   min-height: 350px;
 }
-/* line 270, _business.scss */
+/* line 272, _business.scss */
 .business-cards__content__tabs.hidden {
   display: none;
 }
-/* line 274, _business.scss */
+/* line 276, _business.scss */
 .business-cards__content__back-control {
   position: absolute;
   width: 100%;
@@ -2013,7 +2011,7 @@ button, button:active, button:hover, button:visited, button:focus {
   left: 0;
   top: 0;
 }
-/* line 280, _business.scss */
+/* line 282, _business.scss */
 .business-cards__content__back-control__arr {
   position: absolute;
   width: 16px;
@@ -2026,25 +2024,25 @@ button, button:active, button:hover, button:visited, button:focus {
   border-width: 2px 2px 0 0;
   opacity: 0.6;
 }
-/* line 291, _business.scss */
+/* line 293, _business.scss */
 .business-cards__content__back-control__arr.disable {
   opacity: 0.3;
 }
-/* line 294, _business.scss */
+/* line 296, _business.scss */
 .business-cards__content__back-control__arr:hover:not(.disable) {
   opacity: 1;
 }
-/* line 298, _business.scss */
+/* line 300, _business.scss */
 .business-cards__content__back-control__arr.arr__left {
   left: 0;
   transform: translateY(-50%) rotate(-135deg);
 }
-/* line 302, _business.scss */
+/* line 304, _business.scss */
 .business-cards__content__back-control__arr.arr__right {
   right: 0;
   transform: translateY(-50%) rotate(45deg);
 }
-/* line 308, _business.scss */
+/* line 310, _business.scss */
 .business-cards__content__back-control__bg {
   width: 350px;
   height: 350px;
@@ -2053,31 +2051,31 @@ button, button:active, button:hover, button:visited, button:focus {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 316, _business.scss */
+/* line 318, _business.scss */
 .business-cards__content__back-control__bg.bg-animation-1 .big-bg {
   animation: big-an-1 2s infinite linear;
 }
-/* line 319, _business.scss */
+/* line 321, _business.scss */
 .business-cards__content__back-control__bg.bg-animation-1 .small-bg {
   animation: small-an-1 1.7s infinite linear;
 }
-/* line 324, _business.scss */
+/* line 326, _business.scss */
 .business-cards__content__back-control__bg.bg-animation-2 .big-bg {
   animation: big-an-2 2s infinite linear;
 }
-/* line 327, _business.scss */
+/* line 329, _business.scss */
 .business-cards__content__back-control__bg.bg-animation-2 .small-bg {
   animation: small-an-2 1.7s infinite linear;
 }
-/* line 332, _business.scss */
+/* line 334, _business.scss */
 .business-cards__content__back-control__bg.bg-animation-3 .big-bg {
   animation: big-an-3 2s infinite linear;
 }
-/* line 335, _business.scss */
+/* line 337, _business.scss */
 .business-cards__content__back-control__bg.bg-animation-3 .small-bg {
   animation: small-an-3 1.4s infinite linear;
 }
-/* line 339, _business.scss */
+/* line 341, _business.scss */
 .business-cards__content__back-control__bg .big-bg {
   width: 320px;
   height: 320px;
@@ -2087,7 +2085,7 @@ button, button:active, button:hover, button:visited, button:focus {
   bottom: 10px;
   background: radial-gradient(circle, #002d9b 60%, rgba(0, 45, 155, 0) 70%);
 }
-/* line 348, _business.scss */
+/* line 350, _business.scss */
 .business-cards__content__back-control__bg .small-bg {
   width: 80px;
   height: 80px;
@@ -2097,7 +2095,7 @@ button, button:active, button:hover, button:visited, button:focus {
   top: 0;
   background: radial-gradient(circle, #00aaff 50%, rgba(0, 70, 255, 0) 70%);
 }
-/* line 359, _business.scss */
+/* line 361, _business.scss */
 .business-cards__content__slider {
   width: 100%;
   position: relative;
@@ -2105,7 +2103,7 @@ button, button:active, button:hover, button:visited, button:focus {
   padding-left: calc(50% - (100% / 6));
   white-space: nowrap;
 }
-/* line 365, _business.scss */
+/* line 367, _business.scss */
 .business-cards__content__slider__item {
   width: calc(100% / 2);
   display: inline-block;
@@ -2114,7 +2112,7 @@ button, button:active, button:hover, button:visited, button:focus {
   position: relative;
   padding: 420px 15px 0 15px;
 }
-/* line 376, _business.scss */
+/* line 378, _business.scss */
 .business-cards__content__slider__item__card-front {
   position: absolute;
   width: 350px;
@@ -2130,7 +2128,7 @@ button, button:active, button:hover, button:visited, button:focus {
   transform: scale(0.7) translate(-80%, -80%);
   transition: all linear 0.8s;
 }
-/* line 391, _business.scss */
+/* line 393, _business.scss */
 .business-cards__content__slider__item__card-back {
   position: absolute;
   width: 350px;
@@ -2145,7 +2143,7 @@ button, button:active, button:hover, button:visited, button:focus {
   transform: scale(0.7) translate(-80%, -80%);
   transition: all linear 0.8s;
 }
-/* line 405, _business.scss */
+/* line 407, _business.scss */
 .business-cards__content__slider__item__card-name {
   display: inline-block;
   font-size: 14px;
@@ -2156,46 +2154,46 @@ button, button:active, button:hover, button:visited, button:focus {
   margin: 0 auto;
   max-width: 240px;
 }
-/* line 420, _business.scss */
+/* line 422, _business.scss */
 .business-cards__content__slider.slider-animation-1 .business-cards__content__slider__item.active .business-cards__content__slider__item__card-front {
   transform: scale(0.9) translate(-77%, -100%) rotate(-20deg) skew(0deg, 7deg);
 }
-/* line 423, _business.scss */
+/* line 425, _business.scss */
 .business-cards__content__slider.slider-animation-1 .business-cards__content__slider__item.active .business-cards__content__slider__item__card-back {
   transform: scale(0.9) translate(-70%, -55%) rotate(17deg) skew(0deg, 0deg);
   box-shadow: -20px 20px 31px rgba(54, 85, 140, 0.4);
 }
-/* line 432, _business.scss */
+/* line 434, _business.scss */
 .business-cards__content__slider.slider-animation-2 .business-cards__content__slider__item .business-cards__content__slider__item__card-front {
   transform: scale(0.6) translate(-77%, -100%) rotate(-20deg) skew(0deg, 7deg);
 }
-/* line 435, _business.scss */
+/* line 437, _business.scss */
 .business-cards__content__slider.slider-animation-2 .business-cards__content__slider__item .business-cards__content__slider__item__card-back {
   transform: scale(0.6) translate(-70%, -55%) rotate(17deg) skew(0deg, 0deg);
   box-shadow: -20px 20px 31px rgba(54, 85, 140, 0.4);
 }
-/* line 440, _business.scss */
+/* line 442, _business.scss */
 .business-cards__content__slider.slider-animation-2 .business-cards__content__slider__item.active .business-cards__content__slider__item__card-front {
   transform: scale(0.9) translate(-80%, -100%) rotate(-20deg) skew(0deg, 7deg);
 }
-/* line 443, _business.scss */
+/* line 445, _business.scss */
 .business-cards__content__slider.slider-animation-2 .business-cards__content__slider__item.active .business-cards__content__slider__item__card-back {
   transform: scale(0.9) translate(-80%, -55%) rotate(17deg) skew(0deg, 0deg);
   box-shadow: -20px 20px 31px rgba(54, 85, 140, 0.4);
 }
-/* line 455, _business.scss */
+/* line 457, _business.scss */
 .business-cards__content__slider.slider-animation-3 .business-cards__content__slider__item .business-cards__content__slider__item__card-back {
   transform: scale(0.5) translate(-110%, -120%);
 }
-/* line 459, _business.scss */
+/* line 461, _business.scss */
 .business-cards__content__slider.slider-animation-3 .business-cards__content__slider__item.active .business-cards__content__slider__item__card-front {
   transform: scale(1) translate(-65%, -90%);
 }
-/* line 462, _business.scss */
+/* line 464, _business.scss */
 .business-cards__content__slider.slider-animation-3 .business-cards__content__slider__item.active .business-cards__content__slider__item__card-back {
   transform: scale(0.8) translate(-80%, -45%);
 }
-/* line 470, _business.scss */
+/* line 472, _business.scss */
 .business-cards__footer {
   width: 100%;
   position: relative;
@@ -2204,7 +2202,7 @@ button, button:active, button:hover, button:visited, button:focus {
   align-items: center;
   justify-content: flex-start;
 }
-/* line 478, _business.scss */
+/* line 480, _business.scss */
 .business-cards__footer__btn__solid {
   color: white;
   font-size: 14px;
@@ -2219,11 +2217,11 @@ button, button:active, button:hover, button:visited, button:focus {
   background-color: #00AAFF;
   border: 1px solid #00AAFF;
 }
-/* line 491, _business.scss */
+/* line 493, _business.scss */
 .business-cards__footer__btn__solid:hover {
   border: 1px solid #38529D;
 }
-/* line 495, _business.scss */
+/* line 497, _business.scss */
 .business-cards__footer__btn__ghost {
   position: relative;
   display: inline-block;
@@ -2234,7 +2232,7 @@ button, button:active, button:hover, button:visited, button:focus {
   padding-left: 22px;
   text-decoration: none;
 }
-/* line 504, _business.scss */
+/* line 506, _business.scss */
 .business-cards__footer__btn__ghost .change-ico {
   position: absolute;
   left: 0;
@@ -2244,8 +2242,283 @@ button, button:active, button:hover, button:visited, button:focus {
   width: 17px;
   height: 13px;
   background-color: red;
-  background: url("/assets/img/card/change.svg") no-repeat center;
+  background: url("../assets/img/card/change.svg") no-repeat center;
   background-size: contain;
+}
+
+/* line 522, _business.scss */
+.business {
+  font-family: "VTB";
+  width: 100%;
+}
+/* line 525, _business.scss */
+.business__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  background-color: white;
+  height: 56px;
+  padding: 0 20px;
+  margin-bottom: 15px;
+}
+/* line 535, _business.scss */
+.business__header__info {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+/* line 542, _business.scss */
+.business__header__info span {
+  font-size: 15px;
+  display: inline-block;
+  line-height: 20px;
+  margin-left: 20px;
+  font-weight: 400;
+}
+/* line 549, _business.scss */
+.business__header__info i {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 13px;
+  line-height: 20px;
+}
+/* line 554, _business.scss */
+.business__header__info i.icon-round {
+  width: 13px;
+  height: 20px;
+  background: url("../assets/img/card/round.svg") no-repeat center;
+  background-size: contain;
+  vertical-align: bottom;
+}
+/* line 562, _business.scss */
+.business__header__info__name {
+  color: #676C77;
+}
+/* line 565, _business.scss */
+.business__header__info__value {
+  color: #242424;
+}
+/* line 571, _business.scss */
+.business__form__row {
+  width: 100%;
+  margin: 10px auto 15px auto;
+  max-width: 760px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+/* line 582, _business.scss */
+.business__form__row__input-select {
+  width: 100%;
+  position: relative;
+  height: 30px;
+  background-color: transparent;
+}
+/* line 587, _business.scss */
+.business__form__row__input-select input {
+  width: 100%;
+  height: 100%;
+  line-height: 28px;
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid #E6ECF2;
+  font-size: 14px;
+  color: #414141;
+  padding: 0 10px;
+}
+/* line 597, _business.scss */
+.business__form__row__input-select input:focus {
+  border: 1px solid #bfc5cb;
+  outline: none;
+}
+/* line 602, _business.scss */
+.business__form__row__input-select i {
+  font-size: 7px;
+  width: 11px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00AAFF;
+}
+/* line 611, _business.scss */
+.business__form__row__input-select.mod-big {
+  height: 40px;
+}
+/* line 616, _business.scss */
+.business__form__row__input-select.mod-about {
+  padding-right: 21px;
+}
+/* line 621, _business.scss */
+.business__form__row__input-select.mod-about i {
+  right: 31px;
+}
+/* line 624, _business.scss */
+.business__form__row__input-select.mod-about a {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  color: #00AAFF;
+}
+/* line 631, _business.scss */
+.business__form__row__input-select.mod-about a i {
+  right: 0;
+  width: auto;
+  font-size: 13px;
+}
+/* line 638, _business.scss */
+.business__form__row__input-select__full {
+  display: inline-block;
+  margin-top: 10px;
+  word-break: break-word;
+  width: 100%;
+  font-size: 15px;
+  line-height: 24px;
+  color: #242424;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+/* line 651, _business.scss */
+.business__form__row__name {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #242424;
+  display: inline-block;
+}
+/* line 658, _business.scss */
+.business__form__row__status {
+  display: inline-block;
+  color: #414141;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  margin-right: 24px;
+}
+/* line 666, _business.scss */
+.business__form__row__info {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  background-color: #54CA85;
+  border-radius: 4px;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 10px;
+}
+/* line 676, _business.scss */
+.business__form__row__info.mod-red {
+  background-color: #EB5757;
+}
+/* line 680, _business.scss */
+.business__form__row__optional {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 22px;
+  color: #676C77;
+  font-weight: 400;
+}
+/* line 689, _business.scss */
+.business__form__row__optional.mod-red {
+  color: #EB5757;
+}
+/* line 693, _business.scss */
+.business__form__row__optional b {
+  font-weight: 500;
+  color: #242424;
+}
+/* line 698, _business.scss */
+.business__form__row__control {
+  display: inline-block;
+  color: #676C77;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+/* line 705, _business.scss */
+.business__form__row__control + a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  vertical-align: bottom;
+  color: #00AAFF;
+}
+/* line 711, _business.scss */
+.business__form__row__control + a:hover {
+  color: #33549B;
+}
+/* line 718, _business.scss */
+.business__form__col-small {
+  flex-shrink: 0;
+  width: 210px;
+  padding-right: 30px;
+  padding-top: 3px;
+}
+/* line 724, _business.scss */
+.business__form__col-big {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+/* line 735, _business.scss */
+.business__form__group-one {
+  background-color: white;
+  width: 100%;
+  padding: 20px 0;
+}
+/* line 740, _business.scss */
+.business__form__group-two {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+/* line 746, _business.scss */
+.business__form__group-two__first {
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: calc(50% + 10px);
+  padding: 35px 45px 10px 35px;
+  position: relative;
+}
+/* line 753, _business.scss */
+.business__form__group-two__second {
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: calc(50% - 10px);
+  position: relative;
+}
+/* line 760, _business.scss */
+.business__form__group__info {
+  width: 100%;
+  border-bottom: 1px solid #DAE1E6;
+}
+/* line 764, _business.scss */
+.business__form__group__adrr {
+  width: 100%;
+  border-bottom: 1px solid #DAE1E6;
+}
+/* line 768, _business.scss */
+.business__form__group__contat {
+  width: 100%;
 }
 
 /* Визитки */
