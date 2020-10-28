@@ -2314,14 +2314,14 @@ button, button:active, button:hover, button:visited, button:focus {
   justify-content: flex-start;
   flex-wrap: nowrap;
 }
-/* line 582, _business.scss */
+/* line 581, _business.scss */
 .business__form__row__input-select {
   width: 100%;
   position: relative;
   height: 30px;
   background-color: transparent;
 }
-/* line 587, _business.scss */
+/* line 586, _business.scss */
 .business__form__row__input-select input {
   width: 100%;
   height: 100%;
@@ -2333,12 +2333,12 @@ button, button:active, button:hover, button:visited, button:focus {
   color: #414141;
   padding: 0 10px;
 }
-/* line 597, _business.scss */
+/* line 596, _business.scss */
 .business__form__row__input-select input:focus {
   border: 1px solid #bfc5cb;
   outline: none;
 }
-/* line 602, _business.scss */
+/* line 601, _business.scss */
 .business__form__row__input-select i {
   font-size: 7px;
   width: 11px;
@@ -2348,19 +2348,19 @@ button, button:active, button:hover, button:visited, button:focus {
   transform: translateY(-50%);
   color: #00AAFF;
 }
-/* line 611, _business.scss */
+/* line 610, _business.scss */
 .business__form__row__input-select.mod-big {
   height: 40px;
 }
-/* line 616, _business.scss */
+/* line 615, _business.scss */
 .business__form__row__input-select.mod-about {
   padding-right: 21px;
 }
-/* line 621, _business.scss */
+/* line 620, _business.scss */
 .business__form__row__input-select.mod-about i {
   right: 31px;
 }
-/* line 624, _business.scss */
+/* line 623, _business.scss */
 .business__form__row__input-select.mod-about a {
   position: absolute;
   right: 0;
@@ -2369,13 +2369,13 @@ button, button:active, button:hover, button:visited, button:focus {
   display: inline-block;
   color: #00AAFF;
 }
-/* line 631, _business.scss */
+/* line 630, _business.scss */
 .business__form__row__input-select.mod-about a i {
   right: 0;
   width: auto;
   font-size: 13px;
 }
-/* line 638, _business.scss */
+/* line 637, _business.scss */
 .business__form__row__input-select__full {
   display: inline-block;
   margin-top: 10px;
@@ -2387,7 +2387,7 @@ button, button:active, button:hover, button:visited, button:focus {
   font-weight: 400;
   margin-bottom: 10px;
 }
-/* line 651, _business.scss */
+/* line 650, _business.scss */
 .business__form__row__name {
   font-size: 15px;
   line-height: 24px;
@@ -2395,7 +2395,7 @@ button, button:active, button:hover, button:visited, button:focus {
   color: #242424;
   display: inline-block;
 }
-/* line 658, _business.scss */
+/* line 657, _business.scss */
 .business__form__row__status {
   display: inline-block;
   color: #414141;
@@ -2404,7 +2404,7 @@ button, button:active, button:hover, button:visited, button:focus {
   font-weight: 300;
   margin-right: 24px;
 }
-/* line 666, _business.scss */
+/* line 665, _business.scss */
 .business__form__row__info {
   display: inline-block;
   height: 30px;
@@ -2416,11 +2416,11 @@ button, button:active, button:hover, button:visited, button:focus {
   font-weight: 400;
   padding: 0 10px;
 }
-/* line 676, _business.scss */
+/* line 675, _business.scss */
 .business__form__row__info.mod-red {
   background-color: #EB5757;
 }
-/* line 680, _business.scss */
+/* line 679, _business.scss */
 .business__form__row__optional {
   display: inline-block;
   width: 100%;
@@ -2430,16 +2430,16 @@ button, button:active, button:hover, button:visited, button:focus {
   color: #676C77;
   font-weight: 400;
 }
-/* line 689, _business.scss */
+/* line 688, _business.scss */
 .business__form__row__optional.mod-red {
   color: #EB5757;
 }
-/* line 693, _business.scss */
+/* line 692, _business.scss */
 .business__form__row__optional b {
   font-weight: 500;
   color: #242424;
 }
-/* line 698, _business.scss */
+/* line 697, _business.scss */
 .business__form__row__control {
   display: inline-block;
   color: #676C77;
@@ -2448,7 +2448,7 @@ button, button:active, button:hover, button:visited, button:focus {
   font-weight: 400;
   margin-right: 10px;
 }
-/* line 705, _business.scss */
+/* line 704, _business.scss */
 .business__form__row__control + a {
   text-decoration: none;
   font-size: 14px;
@@ -2456,18 +2456,18 @@ button, button:active, button:hover, button:visited, button:focus {
   vertical-align: bottom;
   color: #00AAFF;
 }
-/* line 711, _business.scss */
+/* line 710, _business.scss */
 .business__form__row__control + a:hover {
   color: #33549B;
 }
-/* line 718, _business.scss */
+/* line 717, _business.scss */
 .business__form__col-small {
   flex-shrink: 0;
   width: 210px;
   padding-right: 30px;
   padding-top: 3px;
 }
-/* line 724, _business.scss */
+/* line 723, _business.scss */
 .business__form__col-big {
   flex-grow: 1;
   width: 100%;
@@ -2477,13 +2477,13 @@ button, button:active, button:hover, button:visited, button:focus {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-/* line 735, _business.scss */
+/* line 734, _business.scss */
 .business__form__group-one {
   background-color: white;
   width: 100%;
   padding: 20px 0;
 }
-/* line 740, _business.scss */
+/* line 739, _business.scss */
 .business__form__group-two {
   display: flex;
   flex-direction: row;
@@ -2491,7 +2491,7 @@ button, button:active, button:hover, button:visited, button:focus {
   align-items: stretch;
   justify-content: flex-start;
 }
-/* line 746, _business.scss */
+/* line 745, _business.scss */
 .business__form__group-two__first {
   flex-shrink: 0;
   flex-grow: 0;
@@ -2499,26 +2499,315 @@ button, button:active, button:hover, button:visited, button:focus {
   padding: 35px 45px 10px 35px;
   position: relative;
 }
-/* line 753, _business.scss */
+/* line 752, _business.scss */
 .business__form__group-two__second {
   flex-shrink: 0;
   flex-grow: 0;
   width: calc(50% - 10px);
   position: relative;
 }
-/* line 760, _business.scss */
+/* line 759, _business.scss */
 .business__form__group__info {
   width: 100%;
   border-bottom: 1px solid #DAE1E6;
+  margin-bottom: 15px;
 }
-/* line 764, _business.scss */
+/* line 763, _business.scss */
+.business__form__group__info__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* line 772, _business.scss */
+.business__form__group__info__name {
+  width: 160px;
+  flex-shrink: 0;
+  display: inline-block;
+  color: #242424;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+/* line 781, _business.scss */
+.business__form__group__info__value {
+  display: inline-block;
+  color: #242424;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+/* line 788, _business.scss */
+.business__form__group__info__tree {
+  width: 100%;
+  position: relative;
+}
+/* line 791, _business.scss */
+.business__form__group__info__tree ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+/* line 797, _business.scss */
+.business__form__group__info__tree ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  margin-bottom: 15px;
+}
+/* line 806, _business.scss */
+.business__form__group__info__tree ul li:last-child {
+  margin-bottom: 0;
+}
+/* line 809, _business.scss */
+.business__form__group__info__tree ul li > ul {
+  margin-top: 15px;
+  padding-left: 24px;
+}
+/* line 812, _business.scss */
+.business__form__group__info__tree ul li > ul:before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  box-sizing: border-box;
+  border-bottom: 2px solid rgba(138, 152, 155, 0.6);
+  border-left: 2px solid rgba(138, 152, 155, 0.6);
+  top: 1px;
+  left: 7px;
+}
+/* line 824, _business.scss */
+.business__form__group__info__tree ul li label {
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+}
+/* line 828, _business.scss */
+.business__form__group__info__tree ul li label input {
+  display: none;
+}
+/* line 831, _business.scss */
+.business__form__group__info__tree ul li label input:checked ~ .label-cb {
+  background-color: #00ACFF;
+  border-color: #00ACFF;
+}
+/* line 834, _business.scss */
+.business__form__group__info__tree ul li label input:checked ~ .label-cb:before {
+  content: "\e92e";
+  font-family: "iconfont_vtb";
+  color: white;
+  font-size: 8px;
+  line-height: 14px;
+  height: 16px;
+  vertical-align: top;
+}
+/* line 846, _business.scss */
+.business__form__group__info__tree ul li label .label-cb {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #DAE1E6;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 856, _business.scss */
+.business__form__group__info__tree ul li span {
+  color: #242424;
+  display: inline-block;
+  line-height: 16px;
+  font-size: 15px;
+  font-weight: 400;
+}
+/* line 867, _business.scss */
 .business__form__group__adrr {
   width: 100%;
   border-bottom: 1px solid #DAE1E6;
+  margin-bottom: 15px;
 }
-/* line 768, _business.scss */
-.business__form__group__contat {
+/* line 871, _business.scss */
+.business__form__group__adrr__row {
+  display: flex;
   width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+/* line 878, _business.scss */
+.business__form__group__adrr__row-fluid {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  min-height: 22px;
+  margin-bottom: 15px;
+}
+/* line 886, _business.scss */
+.business__form__group__adrr__name {
+  color: #242424;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+/* line 893, _business.scss */
+.business__form__group__adrr__checkbox {
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+  width: 16px;
+  vertical-align: top;
+}
+/* line 900, _business.scss */
+.business__form__group__adrr__checkbox input {
+  display: none;
+}
+/* line 903, _business.scss */
+.business__form__group__adrr__checkbox input:checked ~ .label-cb {
+  background-color: #00ACFF;
+  border-color: #00ACFF;
+}
+/* line 906, _business.scss */
+.business__form__group__adrr__checkbox input:checked ~ .label-cb:before {
+  content: "\e92e";
+  font-family: "iconfont_vtb";
+  color: white;
+  font-size: 8px;
+  line-height: 14px;
+  height: 16px;
+  vertical-align: top;
+}
+/* line 918, _business.scss */
+.business__form__group__adrr__checkbox .label-cb {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #DAE1E6;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 927, _business.scss */
+.business__form__group__adrr__checkbox__name {
+  color: #242424;
+  font-size: 15px;
+  line-height: 16px;
+  display: inline-block;
+  font-weight: 400;
+  margin-right: 8px;
+}
+/* line 935, _business.scss */
+.business__form__group__adrr__checkbox__about {
+  display: inline-block;
+  text-decoration: none;
+  flex-shrink: 0;
+  color: #00AAFF;
+  font-size: 13px;
+  line-height: 16px;
+}
+/* line 945, _business.scss */
+.business__form__group__contact {
+  width: 100%;
+}
+/* line 947, _business.scss */
+.business__form__group__contact__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* line 956, _business.scss */
+.business__form__group__contact__name {
+  width: 160px;
+  flex-shrink: 0;
+  display: inline-block;
+  color: #242424;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+/* line 965, _business.scss */
+.business__form__group__contact__value {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+/* line 973, _business.scss */
+.business__form__group__contact__input {
+  width: 100%;
+  position: relative;
+  height: 30px;
+  background-color: transparent;
+}
+/* line 978, _business.scss */
+.business__form__group__contact__input input {
+  width: 100%;
+  height: 100%;
+  line-height: 28px;
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid #E6ECF2;
+  font-size: 14px;
+  color: #414141;
+  padding: 0 10px;
+}
+/* line 988, _business.scss */
+.business__form__group__contact__input input:focus {
+  border: 1px solid #bfc5cb;
+  outline: none;
+}
+/* line 994, _business.scss */
+.business__form__group__contact__checkbox {
+  display: inline-block;
+  margin-left: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+  width: 16px;
+}
+/* line 1000, _business.scss */
+.business__form__group__contact__checkbox input {
+  display: none;
+}
+/* line 1003, _business.scss */
+.business__form__group__contact__checkbox input:checked ~ .label-cb {
+  background-color: #00ACFF;
+  border-color: #00ACFF;
+}
+/* line 1006, _business.scss */
+.business__form__group__contact__checkbox input:checked ~ .label-cb:before {
+  content: "\e92e";
+  font-family: "iconfont_vtb";
+  color: white;
+  font-size: 8px;
+  line-height: 14px;
+  height: 16px;
+  vertical-align: top;
+}
+/* line 1018, _business.scss */
+.business__form__group__contact__checkbox .label-cb {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #DAE1E6;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /* Визитки */
