@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Переменные */
+/* Переменные редизайна */
 /* Миксины */
 /* line 1, _btn.scss */
 button, button:active, button:hover, button:visited, button:focus {
@@ -2811,12 +2812,12 @@ button, button:active, button:hover, button:visited, button:focus {
 }
 
 /* Визитки */
-/* line 11, style.scss */
+/* line 12, style.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 15, style.scss */
+/* line 16, style.scss */
 .container {
   max-width: 880px;
   width: 880px;
@@ -2824,7 +2825,7 @@ button, button:active, button:hover, button:visited, button:focus {
   display: inline-block;
   vertical-align: top;
 }
-/* line 21, style.scss */
+/* line 22, style.scss */
 .container-fluid {
   vertical-align: top;
   display: block;
@@ -2834,7 +2835,7 @@ button, button:active, button:hover, button:visited, button:focus {
   margin-right: auto;
   position: relative;
 }
-/* line 30, style.scss */
+/* line 31, style.scss */
 .container-small {
   position: relative;
   display: inline-block;
@@ -2844,12 +2845,12 @@ button, button:active, button:hover, button:visited, button:focus {
   vertical-align: top;
 }
 
-/* line 39, style.scss */
+/* line 40, style.scss */
 main {
   padding-top: 20px;
 }
 
-/* line 42, style.scss */
+/* line 43, style.scss */
 body {
   height: 100%;
   margin: 0;
@@ -9718,4 +9719,316 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
 }
 
 /* переговорные */
+/* line 2, _vtbn.scss */
+.vtb__pages {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-family: 'VTB';
+  margin-bottom: 35px;
+}
+/* line 10, _vtbn.scss */
+.vtb__content {
+  width: 1186px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 15, _vtbn.scss */
+.vtb__header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  height: 56px;
+  background-color: #ffffff;
+  padding: 0 20px;
+  border-bottom: 1px solid #DAE1E6;
+  position: relative;
+}
+/* line 29, _vtbn.scss */
+.vtb__btn-menu {
+  text-decoration: none;
+  margin-left: auto;
+  position: relative;
+}
+/* line 33, _vtbn.scss */
+.vtb__btn-menu__link {
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+/* line 42, _vtbn.scss */
+.vtb__btn-menu__link:hover .vtb__btn-menu__title {
+  color: #00AAFF;
+}
+/* line 50, _vtbn.scss */
+.vtb__btn-menu__title {
+  flex-shrink: 0;
+  display: inline-block;
+  color: #002882;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 400;
+}
+/* line 58, _vtbn.scss */
+.vtb__btn-menu i {
+  flex-shrink: 0;
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 13px;
+  color: #00AAFF;
+}
+/* line 67, _vtbn.scss */
+.vtb__body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+}
+/* line 77, _vtbn.scss */
+.vtb__column-big {
+  flex-shrink: 0;
+  width: 794px;
+  position: relative;
+  flex-grow: 1;
+}
+/* line 83, _vtbn.scss */
+.vtb__column-small {
+  flex-shrink: 0;
+  width: 392px;
+  position: relative;
+}
+/* line 90, _vtbn.scss */
+.vtb-marketing__content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #ffffff;
+}
+/* line 95, _vtbn.scss */
+.vtb-marketing__content-wrapp {
+  width: 100%;
+  position: relative;
+  padding: 24px 21px 40px 37px;
+}
+/* line 101, _vtbn.scss */
+.vtb-marketing__header {
+  width: 100%;
+  position: relative;
+  padding: 8px 21px 0 37px;
+  background-image: url("../assets/img/vtb_marketing/marketing_bg_1.png"), url("../assets/img/vtb_marketing/marketing_bg_2.png");
+  background-repeat: no-repeat,no-repeat;
+  background-size: 330px auto,190px auto;
+  background-position: left 0 top 0,right 0 top 21px;
+}
+/* line 110, _vtbn.scss */
+.vtb-marketing__header__banner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  height: 84px;
+  margin-bottom: 8px;
+}
+/* line 121, _vtbn.scss */
+.vtb-marketing__header__banner__img {
+  position: absolute;
+  height: 84px;
+  width: 115px;
+  top: 50%;
+  left: -3px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+  transform: translateY(-50%);
+}
+/* line 133, _vtbn.scss */
+.vtb-marketing__header__banner__title {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  width: 100%;
+  color: #002882;
+  margin: 0;
+}
+/* line 144, _vtbn.scss */
+.vtb-marketing__header__filter {
+  width: 100%;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  background: url("../assets/img/vtb_marketing/filter.png") no-repeat center;
+  background-size: contain;
+  height: 100px;
+}
+/* line 152, _vtbn.scss */
+.vtb-marketing__optional {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(140.21deg, #f9f9f9 12.25%, white 65.75%);
+}
+/* line 158, _vtbn.scss */
+.vtb-marketing__block-header {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+/* line 168, _vtbn.scss */
+.vtb-marketing__title {
+  margin: 0;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #23262F;
+}
+/* line 176, _vtbn.scss */
+.vtb-marketing__category {
+  width: calc(100% + 20px);
+  position: relative;
+  left: -10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+/* line 185, _vtbn.scss */
+.vtb-marketing__category__card {
+  width: calc((100% / 3) - 20px);
+  margin: 0 10px 15px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 150px;
+  box-shadow: 0px 1.12176px 2.24352px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  border-radius: 2px;
+  position: relative;
+  background: linear-gradient(180deg, #f8f8f8 1%, white 70%);
+}
+/* line 199, _vtbn.scss */
+.vtb-marketing__category__card:hover {
+  box-shadow: 0px 1.12176px 2.24352px rgba(0, 0, 0, 0.2);
+}
+/* line 202, _vtbn.scss */
+.vtb-marketing__category__card__status {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 8px;
+  z-index: 1;
+}
+/* line 212, _vtbn.scss */
+.vtb-marketing__category__card__status__number {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(151, 164, 177, 0.15);
+  border-radius: 4px;
+  text-align: center;
+  line-height: 25px;
+  vertical-align: middle;
+  color: #414141;
+  font-size: 13px;
+  font-weight: 400;
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+/* line 227, _vtbn.scss */
+.vtb-marketing__category__card__status__tag {
+  height: 25px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 0 8px 0 20px;
+  line-height: 25px;
+  vertical-align: middle;
+  color: #414141;
+  font-size: 13px;
+  font-weight: 400;
+  margin-right: 8px;
+  position: relative;
+  margin-bottom: 5px;
+}
+/* line 240, _vtbn.scss */
+.vtb-marketing__category__card__status__tag:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 254, _vtbn.scss */
+.vtb-marketing__category__card__status__tag.tag-green:before {
+  background-color: #54CA85;
+}
+/* line 259, _vtbn.scss */
+.vtb-marketing__category__card__status__tag.tag-yellow:before {
+  background-color: #FFF170;
+}
+/* line 264, _vtbn.scss */
+.vtb-marketing__category__card__status__tag.tag-red:before {
+  background-color: #EB5757;
+}
+/* line 271, _vtbn.scss */
+.vtb-marketing__category__card__img {
+  position: absolute;
+  width: 98px;
+  height: 98px;
+  right: 8px;
+  top: 8px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* line 280, _vtbn.scss */
+.vtb-marketing__category__card__title {
+  z-index: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0 55px 16px 16px;
+}
+/* line 290, _vtbn.scss */
+.vtb-marketing__category__card__title span {
+  color: #002882;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
 /* новые стили */

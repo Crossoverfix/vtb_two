@@ -1,0 +1,300 @@
+.vtb{
+  &__pages{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: 'VTB';
+    margin-bottom: 35px;
+  }
+  &__content{
+    width: 1186px;
+    margin: 0 auto;
+    position: relative;
+  }
+  &__header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    height: 56px;
+    background-color: $VtbWhiteC;
+    padding: 0 20px;
+    border-bottom: 1px solid $VtbGreyC;
+    position: relative;
+  }
+  &__btn{
+    &-menu{
+      text-decoration: none;
+      margin-left: auto;
+      position: relative;
+      &__link{
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        &:hover{
+          .vtb__btn-menu__title{
+            color: $VtbSecondaryC;
+          }
+          i{
+
+          }
+        }
+      }
+      &__title{
+        flex-shrink: 0;
+        display: inline-block;
+        color: $VtbPrimaryC;
+        line-height: 24px;
+        font-size: 15px;
+        font-weight: 400;
+      }
+      i{
+        flex-shrink: 0;
+        display: inline-block;
+        margin-left: 15px;
+        font-size: 13px;
+        color: $VtbSecondaryC;
+      }
+    }
+  }
+  &__body{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    position: relative;
+  }
+  &__column{
+    &-big{
+      flex-shrink: 0;
+      width: 794px;
+      position: relative;
+      flex-grow: 1;
+    }
+    &-small{
+      flex-shrink: 0;
+      width: 392px;
+      position: relative;
+    }
+  }
+  &-marketing{
+    &__content{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background-color: $VtbWhiteC;
+      &-wrapp{
+        width: 100%;
+        position: relative;
+        padding: 24px 21px 40px 37px;
+      }
+    }
+    &__header{
+      width: 100%;
+      position: relative;
+      padding: 8px 21px 0 37px;
+      background-image: url("../assets/img/vtb_marketing/marketing_bg_1.png"),url("../assets/img/vtb_marketing/marketing_bg_2.png");
+      background-repeat: no-repeat,no-repeat;
+      background-size: 330px auto,190px auto;
+      background-position: left 0 top 0,right 0 top 21px;
+
+      &__banner{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        height: 84px;
+        margin-bottom: 8px;
+        &__img{
+          position: absolute;
+          height: 84px;
+          width: 115px;
+          top: 50%;
+          left: -3px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          flex-shrink: 0;
+          transform: translateY(-50%);
+        }
+        &__title{
+          display: inline-block;
+          font-size: 28px;
+          font-weight: 400;
+          line-height: 32px;
+          text-align: center;
+          width: 100%;
+          color: $VtbPrimaryC;
+          margin: 0;
+        }
+      }
+      &__filter{
+        width: 100%;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+        background: url("../assets/img/vtb_marketing/filter.png")no-repeat center;
+        background-size: contain;
+        height: 100px;
+      }
+    }
+    &__optional{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background: linear-gradient(140.21deg, rgb(249, 249, 249) 12.25%, rgb(255, 255, 255) 65.75%);
+    }
+    &__block-header{
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    &__title{
+      margin: 0;
+      display: inline-block;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: $VtbTitleC;
+    }
+    &__category{
+      width: calc(100% + 20px);
+      position: relative;
+      left: -10px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      &__card{
+        width: calc((100% / 3) - 20px);
+        margin: 0 10px 15px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 150px;
+        box-shadow: 0px 1.12176px 2.24352px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        border-radius: 2px;
+        position: relative;
+        background: linear-gradient(180deg, rgb(248, 248, 248) 1%, rgb(255, 255, 255) 70%);
+
+        &:hover{
+          box-shadow: 0px 1.12176px 2.24352px rgba(0, 0, 0, 0.2);
+        }
+        &__status{
+          position: relative;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          padding: 8px;
+          z-index: 1;
+          &__number{
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: rgba(151, 164, 177, 0.15);
+            border-radius: 4px;
+            text-align: center;
+            line-height: 25px;
+            vertical-align: middle;
+            color: $VtbTextC;
+            font-size: 13px;
+            font-weight: 400;
+            margin-right: 8px;
+            margin-bottom: 5px;
+          }
+          &__tag{
+            height: 25px;
+            border-radius: 4px;
+            background-color: $VtbWhiteC;
+            padding: 0 8px 0 20px;
+            line-height: 25px;
+            vertical-align: middle;
+            color: $VtbTextC;
+            font-size: 13px;
+            font-weight: 400;
+            margin-right: 8px;
+            position: relative;
+            margin-bottom: 5px;
+            &:before{
+              content: "";
+              position: absolute;
+              display: block;
+              width: 6px;
+              height: 6px;
+              border-radius: 3px;
+              overflow: hidden;
+              left: 8px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+            &.tag{
+              &-green{
+                &:before{
+                  background-color: #54CA85;
+                }
+              }
+              &-yellow{
+                &:before{
+                  background-color: #FFF170;
+                }
+              }
+              &-red{
+                &:before{
+                  background-color: #EB5757;
+                }
+              }
+            }
+          }
+        }
+        &__img{
+          position: absolute;
+          width: 98px;
+          height: 98px;
+          right: 8px;
+          top: 8px;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        &__title{
+          z-index: 1;
+          flex-grow: 1;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-end;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          position: relative;
+          padding: 0 55px 16px 16px;
+          span{
+            color: $VtbPrimaryC;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
