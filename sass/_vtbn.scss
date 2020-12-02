@@ -195,7 +195,35 @@
         border-radius: 2px;
         position: relative;
         background: linear-gradient(180deg, rgb(248, 248, 248) 1%, rgb(255, 255, 255) 70%);
-
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        &.card-bg{
+          &-1{
+            background-image: url("../assets/img/vtb_marketing/bg_1.png");
+          }
+          &-2{
+            background-image: url("../assets/img/vtb_marketing/bg_2.png");
+          }
+          &-3{
+            background-image: url("../assets/img/vtb_marketing/bg_3.png");
+          }
+          &-4{
+            background-image: url("../assets/img/vtb_marketing/bg_4.png");
+          }
+          &-5{
+            background-image: url("../assets/img/vtb_marketing/bg_5.png");
+          }
+          &-6{
+            background-image: url("../assets/img/vtb_marketing/bg_6.png");
+          }
+          &-7{
+            background-image: url("../assets/img/vtb_marketing/bg_7.png");
+          }
+          &-8{
+            background-image: url("../assets/img/vtb_marketing/bg_8.png");
+          }
+        }
         &:hover{
           box-shadow: 0px 1.12176px 2.24352px rgba(0, 0, 0, 0.2);
         }

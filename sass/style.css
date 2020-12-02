@@ -9928,12 +9928,47 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   border-radius: 2px;
   position: relative;
   background: linear-gradient(180deg, #f8f8f8 1%, white 70%);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
-/* line 199, _vtbn.scss */
+/* line 202, _vtbn.scss */
+.vtb-marketing__category__card.card-bg-1 {
+  background-image: url("../assets/img/vtb_marketing/bg_1.png");
+}
+/* line 205, _vtbn.scss */
+.vtb-marketing__category__card.card-bg-2 {
+  background-image: url("../assets/img/vtb_marketing/bg_2.png");
+}
+/* line 208, _vtbn.scss */
+.vtb-marketing__category__card.card-bg-3 {
+  background-image: url("../assets/img/vtb_marketing/bg_3.png");
+}
+/* line 211, _vtbn.scss */
+.vtb-marketing__category__card.card-bg-4 {
+  background-image: url("../assets/img/vtb_marketing/bg_4.png");
+}
+/* line 214, _vtbn.scss */
+.vtb-marketing__category__card.card-bg-5 {
+  background-image: url("../assets/img/vtb_marketing/bg_5.png");
+}
+/* line 217, _vtbn.scss */
+.vtb-marketing__category__card.card-bg-6 {
+  background-image: url("../assets/img/vtb_marketing/bg_6.png");
+}
+/* line 220, _vtbn.scss */
+.vtb-marketing__category__card.card-bg-7 {
+  background-image: url("../assets/img/vtb_marketing/bg_7.png");
+}
+/* line 223, _vtbn.scss */
+.vtb-marketing__category__card.card-bg-8 {
+  background-image: url("../assets/img/vtb_marketing/bg_8.png");
+}
+/* line 227, _vtbn.scss */
 .vtb-marketing__category__card:hover {
   box-shadow: 0px 1.12176px 2.24352px rgba(0, 0, 0, 0.2);
 }
-/* line 202, _vtbn.scss */
+/* line 230, _vtbn.scss */
 .vtb-marketing__category__card__status {
   position: relative;
   width: 100%;
@@ -9945,7 +9980,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   padding: 8px;
   z-index: 1;
 }
-/* line 212, _vtbn.scss */
+/* line 240, _vtbn.scss */
 .vtb-marketing__category__card__status__number {
   display: inline-block;
   width: 25px;
@@ -9961,7 +9996,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   margin-right: 8px;
   margin-bottom: 5px;
 }
-/* line 227, _vtbn.scss */
+/* line 255, _vtbn.scss */
 .vtb-marketing__category__card__status__tag {
   height: 25px;
   border-radius: 4px;
@@ -9976,7 +10011,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   position: relative;
   margin-bottom: 5px;
 }
-/* line 240, _vtbn.scss */
+/* line 268, _vtbn.scss */
 .vtb-marketing__category__card__status__tag:before {
   content: "";
   position: absolute;
@@ -9989,19 +10024,19 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 254, _vtbn.scss */
+/* line 282, _vtbn.scss */
 .vtb-marketing__category__card__status__tag.tag-green:before {
   background-color: #54CA85;
 }
-/* line 259, _vtbn.scss */
+/* line 287, _vtbn.scss */
 .vtb-marketing__category__card__status__tag.tag-yellow:before {
   background-color: #FFF170;
 }
-/* line 264, _vtbn.scss */
+/* line 292, _vtbn.scss */
 .vtb-marketing__category__card__status__tag.tag-red:before {
   background-color: #EB5757;
 }
-/* line 271, _vtbn.scss */
+/* line 299, _vtbn.scss */
 .vtb-marketing__category__card__img {
   position: absolute;
   width: 98px;
@@ -10011,7 +10046,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background-repeat: no-repeat;
   background-size: contain;
 }
-/* line 280, _vtbn.scss */
+/* line 308, _vtbn.scss */
 .vtb-marketing__category__card__title {
   z-index: 1;
   flex-grow: 1;
@@ -10023,7 +10058,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   position: relative;
   padding: 0 55px 16px 16px;
 }
-/* line 290, _vtbn.scss */
+/* line 318, _vtbn.scss */
 .vtb-marketing__category__card__title span {
   color: #002882;
   font-size: 15px;
