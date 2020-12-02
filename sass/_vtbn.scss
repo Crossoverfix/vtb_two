@@ -162,6 +162,7 @@
       height: 100%;
       position: relative;
       background: linear-gradient(140.21deg, rgb(249, 249, 249) 12.25%, rgb(255, 255, 255) 65.75%);
+      padding: 24px 32px;
       &-link{
         text-decoration: none;
         display: inline-block;
@@ -186,6 +187,98 @@
           display: inline-block;
           background: url("../assets/img/vtb_marketing/gog.svg")no-repeat center;
           background-size: contain;
+        }
+      }
+      &__banner{
+        width: 100%;
+        position: relative;
+        margin-bottom: 40px;
+        &__title{
+          margin-top: 0;
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 400;
+          color: $VtbTitleC;
+        }
+        &__img{
+          display: block;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        &__text{
+          text-align: center;
+          font-size: 13px;
+          line-height: 20px;
+          font-weight: 400;
+          display: block;
+          margin-bottom: 15px;
+          b{
+            font-weight: 600;
+          }
+        }
+        &__btn{
+          line-height: 48px;
+          height: 48px;
+          background-color: $VtbSecondaryC;
+          color: $VtbWhiteC;
+          font-size: 17px;
+          font-weight: 400;
+          padding: 0 20px;
+          display: inline-block;
+          margin: 0 auto;
+          text-decoration: none;
+          border-radius: 3px;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      &__list{
+        width: 100%;
+        position: relative;
+        &__title{
+          margin-top: 0;
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 400;
+          color: $VtbTitleC;
+          margin-bottom: 20px;
+        }
+        ul{
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          position: relative;
+          list-style-type: none;
+          li{
+            display: block;
+            width: 100%;
+            position: relative;
+            padding-left: 22px;
+            margin-bottom: 15px;
+            &:before{
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 8px;
+              width: 4px;
+              height: 4px;
+              border-radius: 2px;
+              background-color: $VtbSecondaryC;
+              display: block;
+            }
+            a{
+              display: inline-block;
+              text-decoration: none;
+              font-size: 15px;
+              line-height: 19px;
+              font-weight: 400;
+              color: $VtbPrimaryC;
+              &:hover{
+                color: $VtbSecondaryC;
+              }
+            }
+          }
         }
       }
     }
@@ -682,3 +775,99 @@
     }
   }
 }
+@media screen and (max-width: 1199px){
+  .vtb__content{
+    width: 940px;
+  }
+  .vtb-marketing__optional{
+    padding: 20px 15px;
+  }
+  .vtb__column-small{
+    width: 300px;
+  }
+  .vtb__column-big{
+    width: 640px;
+  }
+  .vtb-marketing__header{
+    padding: 8px 10px 0 15px;
+  }
+  .vtb-marketing__content-wrapp{
+    padding: 24px 10px 30px 15px;
+  }
+}
+@media screen and (max-width: 991px){
+  .vtb__content{
+    width: 700px;
+  }
+  .vtb__body{
+    flex-wrap: wrap;
+  }
+  .vtb__column-big{
+    width: 100%;
+  }
+  .vtb__column-small{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px){
+  .vtb__content{
+    width: 590px;
+  }
+  .vtb-marketing__category__card{
+    width: calc((100% / 2) - 20px);
+  }
+  .vtb-marketing__subscript__card{
+    height: 150px;
+  }
+}
+@media screen and (max-width: 574px){
+  .vtb__content{
+    width: 280px;
+  }
+  .vtb-marketing__header__banner__img{
+    display: none;
+  }
+  .vtb-marketing__category__card{
+    width: 100%;
+  }
+  .vtb-marketing__header{
+    padding: 8px 10px 0 10px;
+  }
+  .vtb-marketing__content-wrapp {
+    padding: 24px 10px 20px 10px;
+  }
+  .vtb-marketing__optional-link{
+    margin-top: 10px;
+  }
+  .vtb-marketing__subscript__card{
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .vtb-marketing__subscript__card__photo{
+    height: 120px;
+    width: 100%;
+  }
+  .vtb-marketing__subscript__card__info{
+    padding: 10px 35px 0 10px;
+  }
+  .vtb-marketing__subscript__card__info__like{
+    right: 5px;
+  }
+  .vtb-marketing__subscript__card__info__id{
+    right: 5px;
+  }
+  .vtb-marketing__subscript__btn-ghost{
+    width: 100%;
+  }
+  .vtb-marketing__block-split .block-split{
+    width: 100%;
+  }
+  .vtb-marketing__block-text{
+    padding: 0 5px;
+  }
+  .vtb-marketing__subscript__card__info__tag__item{
+    height: auto;
+  }
+
+}
+@media screen and (max-width: 320px){}
