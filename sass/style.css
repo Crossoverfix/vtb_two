@@ -9809,19 +9809,26 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   position: relative;
 }
 /* line 90, _vtbn.scss */
+.vtb__separate-h {
+  width: 100%;
+  height: 2px;
+  background-color: #E6E8F2;
+  margin: 25px 0;
+}
+/* line 98, _vtbn.scss */
 .vtb-marketing__content {
   width: 100%;
   height: 100%;
   position: relative;
   background-color: #ffffff;
 }
-/* line 95, _vtbn.scss */
+/* line 103, _vtbn.scss */
 .vtb-marketing__content-wrapp {
   width: 100%;
   position: relative;
   padding: 24px 21px 40px 37px;
 }
-/* line 101, _vtbn.scss */
+/* line 109, _vtbn.scss */
 .vtb-marketing__header {
   width: 100%;
   position: relative;
@@ -9831,7 +9838,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background-size: 330px auto,190px auto;
   background-position: left 0 top 0,right 0 top 21px;
 }
-/* line 110, _vtbn.scss */
+/* line 118, _vtbn.scss */
 .vtb-marketing__header__banner {
   position: relative;
   width: 100%;
@@ -9844,7 +9851,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   height: 84px;
   margin-bottom: 8px;
 }
-/* line 121, _vtbn.scss */
+/* line 129, _vtbn.scss */
 .vtb-marketing__header__banner__img {
   position: absolute;
   height: 84px;
@@ -9857,7 +9864,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   flex-shrink: 0;
   transform: translateY(-50%);
 }
-/* line 133, _vtbn.scss */
+/* line 141, _vtbn.scss */
 .vtb-marketing__header__banner__title {
   display: inline-block;
   font-size: 28px;
@@ -9868,7 +9875,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   color: #002882;
   margin: 0;
 }
-/* line 144, _vtbn.scss */
+/* line 152, _vtbn.scss */
 .vtb-marketing__header__filter {
   width: 100%;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
@@ -9876,14 +9883,42 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background-size: contain;
   height: 100px;
 }
-/* line 152, _vtbn.scss */
+/* line 160, _vtbn.scss */
 .vtb-marketing__optional {
   width: 100%;
   height: 100%;
   position: relative;
   background: linear-gradient(140.21deg, #f9f9f9 12.25%, white 65.75%);
 }
-/* line 158, _vtbn.scss */
+/* line 165, _vtbn.scss */
+.vtb-marketing__optional-link {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: auto;
+}
+/* line 170, _vtbn.scss */
+.vtb-marketing__optional-link:hover span {
+  color: #00AAFF;
+}
+/* line 174, _vtbn.scss */
+.vtb-marketing__optional-link span {
+  vertical-align: top;
+  font-size: 15px;
+  line-height: 18px;
+  color: #002882;
+  font-weight: 400;
+  display: inline-block;
+}
+/* line 182, _vtbn.scss */
+.vtb-marketing__optional-link i {
+  margin-left: 10px;
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  background: url("../assets/img/vtb_marketing/gog.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 193, _vtbn.scss */
 .vtb-marketing__block-header {
   width: 100%;
   position: relative;
@@ -9894,7 +9929,61 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   flex-wrap: wrap;
   margin-bottom: 24px;
 }
-/* line 168, _vtbn.scss */
+/* line 203, _vtbn.scss */
+.vtb-marketing__block-split {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/* line 210, _vtbn.scss */
+.vtb-marketing__block-split .block-split {
+  width: 50%;
+  flex-shrink: 0;
+  position: relative;
+}
+/* line 216, _vtbn.scss */
+.vtb-marketing__block-text {
+  width: 100%;
+  position: relative;
+  padding: 0 15px;
+}
+/* line 220, _vtbn.scss */
+.vtb-marketing__block-text p, .vtb-marketing__block-text span {
+  font-size: 15px;
+  line-height: 24px;
+  color: #414141;
+  font-weight: 400;
+}
+/* line 226, _vtbn.scss */
+.vtb-marketing__block-text p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+/* line 230, _vtbn.scss */
+.vtb-marketing__block-text a {
+  text-decoration: none;
+  color: #002882;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+/* line 238, _vtbn.scss */
+.vtb-marketing__block-text a:hover {
+  color: #00AAFF;
+}
+/* line 241, _vtbn.scss */
+.vtb-marketing__block-text a i {
+  color: #97A4B1;
+  display: inline-block;
+  margin-right: 12px;
+  line-height: 24px;
+}
+/* line 250, _vtbn.scss */
 .vtb-marketing__title {
   margin: 0;
   display: inline-block;
@@ -9903,7 +9992,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   line-height: 24px;
   color: #23262F;
 }
-/* line 176, _vtbn.scss */
+/* line 258, _vtbn.scss */
 .vtb-marketing__category {
   width: calc(100% + 20px);
   position: relative;
@@ -9914,7 +10003,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-/* line 185, _vtbn.scss */
+/* line 267, _vtbn.scss */
 .vtb-marketing__category__card {
   width: calc((100% / 3) - 20px);
   margin: 0 10px 15px 10px;
@@ -9932,43 +10021,43 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-/* line 202, _vtbn.scss */
+/* line 284, _vtbn.scss */
 .vtb-marketing__category__card.card-bg-1 {
   background-image: url("../assets/img/vtb_marketing/bg_1.png");
 }
-/* line 205, _vtbn.scss */
+/* line 287, _vtbn.scss */
 .vtb-marketing__category__card.card-bg-2 {
   background-image: url("../assets/img/vtb_marketing/bg_2.png");
 }
-/* line 208, _vtbn.scss */
+/* line 290, _vtbn.scss */
 .vtb-marketing__category__card.card-bg-3 {
   background-image: url("../assets/img/vtb_marketing/bg_3.png");
 }
-/* line 211, _vtbn.scss */
+/* line 293, _vtbn.scss */
 .vtb-marketing__category__card.card-bg-4 {
   background-image: url("../assets/img/vtb_marketing/bg_4.png");
 }
-/* line 214, _vtbn.scss */
+/* line 296, _vtbn.scss */
 .vtb-marketing__category__card.card-bg-5 {
   background-image: url("../assets/img/vtb_marketing/bg_5.png");
 }
-/* line 217, _vtbn.scss */
+/* line 299, _vtbn.scss */
 .vtb-marketing__category__card.card-bg-6 {
   background-image: url("../assets/img/vtb_marketing/bg_6.png");
 }
-/* line 220, _vtbn.scss */
+/* line 302, _vtbn.scss */
 .vtb-marketing__category__card.card-bg-7 {
   background-image: url("../assets/img/vtb_marketing/bg_7.png");
 }
-/* line 223, _vtbn.scss */
+/* line 305, _vtbn.scss */
 .vtb-marketing__category__card.card-bg-8 {
   background-image: url("../assets/img/vtb_marketing/bg_8.png");
 }
-/* line 227, _vtbn.scss */
+/* line 309, _vtbn.scss */
 .vtb-marketing__category__card:hover {
   box-shadow: 0px 1.12176px 2.24352px rgba(0, 0, 0, 0.2);
 }
-/* line 230, _vtbn.scss */
+/* line 312, _vtbn.scss */
 .vtb-marketing__category__card__status {
   position: relative;
   width: 100%;
@@ -9980,7 +10069,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   padding: 8px;
   z-index: 1;
 }
-/* line 240, _vtbn.scss */
+/* line 322, _vtbn.scss */
 .vtb-marketing__category__card__status__number {
   display: inline-block;
   width: 25px;
@@ -9996,7 +10085,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   margin-right: 8px;
   margin-bottom: 5px;
 }
-/* line 255, _vtbn.scss */
+/* line 337, _vtbn.scss */
 .vtb-marketing__category__card__status__tag {
   height: 25px;
   border-radius: 4px;
@@ -10011,7 +10100,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   position: relative;
   margin-bottom: 5px;
 }
-/* line 268, _vtbn.scss */
+/* line 350, _vtbn.scss */
 .vtb-marketing__category__card__status__tag:before {
   content: "";
   position: absolute;
@@ -10024,19 +10113,19 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 282, _vtbn.scss */
+/* line 364, _vtbn.scss */
 .vtb-marketing__category__card__status__tag.tag-green:before {
   background-color: #54CA85;
 }
-/* line 287, _vtbn.scss */
+/* line 369, _vtbn.scss */
 .vtb-marketing__category__card__status__tag.tag-yellow:before {
   background-color: #FFF170;
 }
-/* line 292, _vtbn.scss */
+/* line 374, _vtbn.scss */
 .vtb-marketing__category__card__status__tag.tag-red:before {
   background-color: #EB5757;
 }
-/* line 299, _vtbn.scss */
+/* line 381, _vtbn.scss */
 .vtb-marketing__category__card__img {
   position: absolute;
   width: 98px;
@@ -10046,7 +10135,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background-repeat: no-repeat;
   background-size: contain;
 }
-/* line 308, _vtbn.scss */
+/* line 390, _vtbn.scss */
 .vtb-marketing__category__card__title {
   z-index: 1;
   flex-grow: 1;
@@ -10058,12 +10147,301 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   position: relative;
   padding: 0 55px 16px 16px;
 }
-/* line 318, _vtbn.scss */
+/* line 400, _vtbn.scss */
 .vtb-marketing__category__card__title span {
   color: #002882;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
+}
+/* line 409, _vtbn.scss */
+.vtb-marketing__subscript {
+  width: 100%;
+  position: relative;
+}
+/* line 412, _vtbn.scss */
+.vtb-marketing__subscript__header {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+/* line 422, _vtbn.scss */
+.vtb-marketing__subscript__checkbox {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  white-space: nowrap;
+  cursor: pointer;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+/* line 431, _vtbn.scss */
+.vtb-marketing__subscript__checkbox input {
+  display: none;
+}
+/* line 435, _vtbn.scss */
+.vtb-marketing__subscript__checkbox input:checked ~ .checkbox__content:before {
+  font-size: 9px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #00AAFF;
+  border-color: #00AAFF;
+}
+/* line 447, _vtbn.scss */
+.vtb-marketing__subscript__checkbox .checkbox__content {
+  position: relative;
+  padding-left: 26px;
+}
+/* line 450, _vtbn.scss */
+.vtb-marketing__subscript__checkbox .checkbox__content:before {
+  content: "\e92e";
+  font-family: 'iconfont_vtb' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid #DAE1E6;
+  font-size: 0;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+/* line 474, _vtbn.scss */
+.vtb-marketing__subscript__checkbox .checkbox__title {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #414141;
+}
+/* line 482, _vtbn.scss */
+.vtb-marketing__subscript__body {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* line 486, _vtbn.scss */
+.vtb-marketing__subscript__card {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  height: 115px;
+  box-shadow: 0px 1.12176px 2.24352px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+/* line 498, _vtbn.scss */
+.vtb-marketing__subscript__card__photo {
+  flex-shrink: 0;
+  position: relative;
+  width: 230px;
+  height: 100%;
+  border-radius: 3px 0px 0px 3px;
+  background-color: #97A4B1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 510, _vtbn.scss */
+.vtb-marketing__subscript__card__photo.status-new:before {
+  content: "Новое";
+  height: 24px;
+  line-height: 24px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-left: 20px;
+  padding-right: 8px;
+  display: block;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+}
+/* line 526, _vtbn.scss */
+.vtb-marketing__subscript__card__photo.status-new:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  left: 16px;
+  top: 17px;
+  background-color: #54CA85;
+}
+/* line 540, _vtbn.scss */
+.vtb-marketing__subscript__card__info {
+  position: relative;
+  padding: 10px 50px 0 22px;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+/* line 546, _vtbn.scss */
+.vtb-marketing__subscript__card__info__category {
+  display: block;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+  color: rgba(103, 108, 119, 0.5);
+  margin-bottom: 5px;
+}
+/* line 554, _vtbn.scss */
+.vtb-marketing__subscript__card__info__title {
+  text-decoration: none;
+  display: inline-block;
+  color: #002882;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+/* line 562, _vtbn.scss */
+.vtb-marketing__subscript__card__info__title:hover {
+  color: #00AAFF;
+}
+/* line 566, _vtbn.scss */
+.vtb-marketing__subscript__card__info__optional {
+  width: 100%;
+  margin-bottom: 3px;
+}
+/* line 569, _vtbn.scss */
+.vtb-marketing__subscript__card__info__optional__date {
+  display: inline-block;
+  color: rgba(103, 108, 119, 0.5);
+  font-size: 13px;
+  line-height: 17px;
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+/* line 577, _vtbn.scss */
+.vtb-marketing__subscript__card__info__optional__section {
+  font-size: 13px;
+  line-height: 17px;
+  display: inline-block;
+  font-weight: 400;
+  margin-right: 8px;
+  color: #002882;
+}
+/* line 586, _vtbn.scss */
+.vtb-marketing__subscript__card__info__tag {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+/* line 593, _vtbn.scss */
+.vtb-marketing__subscript__card__info__tag__item {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 0 6px;
+  background-color: #E6EDFB;
+  border-radius: 3px;
+  color: #404040;
+  font-size: 13px;
+  font-weight: 400;
+}
+/* line 607, _vtbn.scss */
+.vtb-marketing__subscript__card__info__id {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  color: #676C77;
+  font-size: 13px;
+  line-height: 17px;
+  opacity: 0.5;
+}
+/* line 615, _vtbn.scss */
+.vtb-marketing__subscript__card__info__id:before {
+  content: "# ";
+}
+/* line 619, _vtbn.scss */
+.vtb-marketing__subscript__card__info__like {
+  position: absolute;
+  right: 20px;
+  bottom: 14px;
+  cursor: pointer;
+  color: #00AAFF;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+}
+/* line 628, _vtbn.scss */
+.vtb-marketing__subscript__card__info__like:before {
+  content: "\e904";
+  font-family: 'iconfont_vtb' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 11px;
+  line-height: 17px;
+  color: #00AAFF;
+  display: inline-block;
+  margin-right: 5px;
+}
+/* line 645, _vtbn.scss */
+.vtb-marketing__subscript__card__info__like.active:before {
+  content: "\e905";
+}
+/* line 652, _vtbn.scss */
+.vtb-marketing__subscript__footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 662, _vtbn.scss */
+.vtb-marketing__subscript__btn-ghost {
+  display: inline-block;
+  text-decoration: none;
+  height: 30px;
+  line-height: 28px;
+  width: 50%;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #00AAFF;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: #00AAFF;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+/* line 677, _vtbn.scss */
+.vtb-marketing__subscript__btn-ghost:hover {
+  border: 1px solid #002882;
 }
 
 /* новые стили */
