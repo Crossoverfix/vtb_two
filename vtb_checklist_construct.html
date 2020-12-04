@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Meeting Room</title>
+    <link href="sass/style.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.4.1.js"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="container-fluid header__wrap">
+            <div class="container header__origin">
+                <a href="#" class="header__logo">
+                    <img src="assets/img/ico/logo_vtb.svg" alt="logo">
+                </a>
+                <form class="header__search">
+                    <div class="header__search__field">
+                        <label class="header__search__field__text">
+                            <input type="text" name="search" placeholder="Поиск по порталу">
+                        </label>
+                        <label class="header__search__field__submit">
+                            <input type="submit">
+                        </label>
+                    </div>
+                    <div class="header__search__type">
+                        <label>
+                            <input type="radio" name="type" value="first">
+                            <span>По сотрудникам</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="type" value="second" checked>
+                            <span>По порталу</span>
+                        </label>
+                    </div>
+                </form>
+                <a href="#" class="header__search__collapse" data-js-collapse="search"></a>
+            </div>
+            <div class="container-small header__user">
+                <a href="#" class="header__user__wrap">
+                    <div class="header__user__wrap__avatar" style="background: url('assets/img/photo/avatar_hot.jpg')"></div>
+                    <span>Анастасия Гайнуллова</span>
+                </a>
+                <a href="#" class="header__user__collapse" data-js-collapse="nav-bar"></a>
+            </div>
+        </div>
+    </div>
+    <div class="header__mobil__search">
+        <form class="header__search">
+            <div class="header__search__field">
+                <label class="header__search__field__text">
+                    <input type="text" name="search" placeholder="Поиск по порталу">
+                </label>
+                <label class="header__search__field__submit">
+                    <input type="submit">
+                </label>
+            </div>
+            <div class="header__search__type">
+                <label>
+                    <input type="radio" name="type" value="first">
+                    <span>По сотрудникам</span>
+                </label>
+                <label>
+                    <input type="radio" name="type" value="second" checked>
+                    <span>По порталу</span>
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="header__nav">
+        <nav class="container-fluid header__nav__wrap">
+            <ul>
+                <li><a href="#">О Банке</a></li>
+                <li><a href="#">Cотруднику</a></li>
+                <li><a href="#">Департаменты</a></li>
+                <li><a href="#">Филиалы</a></li>
+                <li><a href="#">Сервисы</a></li>
+                <li><a href="#">Справочники</a></li>
+                <li><a href="#">Процессы</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="container-fluid">
+    <div class="breadcrumb">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="meeting_room.html">Бронирование переговорных комнат</a></li>
+        </ul>
+    </div>
+    <div class="pages-header">
+        <span class="pages-header__title">Бронирование переговорных комнат</span>
+    </div>
+    <div class="vtb__pages">
+        <div class="vtb__content">
+            <div class="vtb__header">
+                <a href="#" class="back-link"><i class="icon-ar"></i>Назад</a>
+                <div class="vtb__status-bar">
+                    <span class="vtb__status-bar__id">34576</span>
+                    <span class="vtb__status-bar__status">Черновик</span>
+                </div>
+                <div class="vtb__btn-menu">
+                    <a href="#" class="vtb__btn-menu__link">
+                        <span class="vtb__btn-menu__title">Меню</span>
+                        <i class="icon-menu"></i>
+                    </a>
+                </div>
+                <div class="vtb__btn-save">
+                    <a href="#" class="vtb__btn-save__link">
+                        <i class="icon-save"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="vtb__body">
+                <div class="vtb-checklist">
+                    <div class="vtb-checklist__construct">
+                        <div class="vtb-checklist__construct__header">
+                            <h3 class="vtb-checklist__construct__title">Конструктор вопросов</h3>
+                            <div class="vtb-checklist__construct__bar">
+                                <label class="vtb-checklist__construct__bar__switch">
+                                    <input type="checkbox">
+                                    <div class="switch__body">
+                                        <span class="switch__body__name unchecked">Режим редактирования </span>
+                                        <div class="switch__body__position"></div>
+                                        <span class="switch__body__name checked">Режим просмотра</span>
+                                    </div>
+                                </label>
+                                <a href="#" class="vtb-checklist__construct__bar__add-btn">
+                                    <i class="icon-add"></i>
+                                    <span>Добавить блок</span>
+                                </a>
+                                <div class="vtb-checklist__construct__bar__control-group">
+                                    <a href="#" class="control-group__btn"><i class="icon-up"></i></a>
+                                    <a href="#" class="control-group__btn"><i class="icon-down"></i></a>
+                                    <a href="#" class="control-group__btn"><i class="icon-asterisk"></i></a>
+                                    <a href="#" class="control-group__btn"><i class="icon-link"></i></a>
+                                    <a href="#" class="control-group__btn"><i class="icon-del"></i></a>
+                                </div>
+                            </div>
+                            <div class="vtb-checklist__construct__setting">
+                                <div class="setting__block">
+                                    <div class="setting__header">
+                                        <h4 class="setting__title">Варианты ответов:</h4>
+                                        <a href="#" class="setting__add"><i class="icon-add"></i></a>
+                                    </div>
+                                    <div class="setting__row">
+                                        <span class="setting__input__name">Бал:</span>
+                                        <div class="setting__input input__num"><input type="text" value="1"></div>
+                                        <div class="setting__control">
+                                            <a href="#" class="setting__control__btn"><i class="icon-ar_up"></i></a>
+                                            <a href="#" class="setting__control__btn down"><i class="icon-ar_up"></i></a>
+                                        </div>
+                                        <span class="setting__input__name">Цвет:</span>
+                                        <div class="setting__input input__color">
+                                            <input type="text" value="Зелёный">
+                                            <div class="setting__input__control not-empty">
+                                                <a href="#" class="setting__input__control__btn">
+                                                    <i class="icon-arm"></i>
+                                                    <i class="icon-close"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="setting__row">
+                                        <span class="setting__input__name">Бал:</span>
+                                        <div class="setting__input input__num"><input type="text" value="0,5"></div>
+                                        <div class="setting__control">
+                                            <a href="#" class="setting__control__btn"><i class="icon-ar_up"></i></a>
+                                            <a href="#" class="setting__control__btn down"><i class="icon-ar_up"></i></a>
+                                        </div>
+                                        <span class="setting__input__name">Цвет:</span>
+                                        <div class="setting__input input__color">
+                                            <input type="text" value="Оранжевый">
+                                            <div class="setting__input__control not-empty">
+                                                <a href="#" class="setting__input__control__btn">
+                                                    <i class="icon-arm"></i>
+                                                    <i class="icon-close"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="setting__row">
+                                        <span class="setting__input__name">Бал:</span>
+                                        <div class="setting__input input__num"><input type="text" value="0"></div>
+                                        <div class="setting__control">
+                                            <a href="#" class="setting__control__btn"><i class="icon-ar_up"></i></a>
+                                            <a href="#" class="setting__control__btn down"><i class="icon-ar_up"></i></a>
+                                        </div>
+                                        <span class="setting__input__name">Цвет:</span>
+                                        <div class="setting__input input__color">
+                                            <input type="text" value="" placeholder="Выберите цвет">
+                                            <div class="setting__input__control">
+                                                <a href="#" class="setting__input__control__btn">
+                                                    <i class="icon-arm"></i>
+                                                    <i class="icon-close"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="setting__block">
+                                    <div class="setting__header">
+                                        <h4 class="setting__title">Диапазон итогового значения по цветам:</h4>
+                                        <a href="#" class="setting__add"><i class="icon-add"></i></a>
+                                    </div>
+                                    <div class="setting__row">
+                                        <span class="setting__input__name">Значение1:</span>
+                                        <div class="setting__input input__num"><input type="text" value="1"></div>
+                                        <div class="setting__control">
+                                            <a href="#" class="setting__control__btn"><i class="icon-ar_up"></i></a>
+                                            <a href="#" class="setting__control__btn down"><i class="icon-ar_up"></i></a>
+                                        </div>
+                                        <div class="setting__input input__num"><input type="text" value="1"></div>
+                                        <div class="setting__control">
+                                            <a href="#" class="setting__control__btn"><i class="icon-ar_up"></i></a>
+                                            <a href="#" class="setting__control__btn down"><i class="icon-ar_up"></i></a>
+                                        </div>
+                                        <span class="setting__input__name">Цвет:</span>
+                                        <div class="setting__input input__color">
+                                            <input type="text" value="Зелёный">
+                                            <div class="setting__input__control not-empty">
+                                                <a href="#" class="setting__input__control__btn">
+                                                    <i class="icon-arm"></i>
+                                                    <i class="icon-close"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="setting__row">
+                                        <span class="setting__input__name">Значение2:</span>
+                                        <div class="setting__input input__num"><input type="text" value="0,5"></div>
+                                        <div class="setting__control">
+                                            <a href="#" class="setting__control__btn"><i class="icon-ar_up"></i></a>
+                                            <a href="#" class="setting__control__btn down"><i class="icon-ar_up"></i></a>
+                                        </div>
+                                        <div class="setting__input input__num"><input type="text" value="0,5"></div>
+                                        <div class="setting__control">
+                                            <a href="#" class="setting__control__btn"><i class="icon-ar_up"></i></a>
+                                            <a href="#" class="setting__control__btn down"><i class="icon-ar_up"></i></a>
+                                        </div>
+                                        <span class="setting__input__name">Цвет:</span>
+                                        <div class="setting__input input__color">
+                                            <input type="text" value="Оранжевый">
+                                            <div class="setting__input__control not-empty">
+                                                <a href="#" class="setting__input__control__btn">
+                                                    <i class="icon-arm"></i>
+                                                    <i class="icon-close"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="setting__row">
+                                        <span class="setting__input__name">Значение3:</span>
+                                        <div class="setting__input input__num"><input type="text" value="0"></div>
+                                        <div class="setting__control">
+                                            <a href="#" class="setting__control__btn"><i class="icon-ar_up"></i></a>
+                                            <a href="#" class="setting__control__btn down"><i class="icon-ar_up"></i></a>
+                                        </div>
+                                        <div class="setting__input input__num"><input type="text" value="0"></div>
+                                        <div class="setting__control">
+                                            <a href="#" class="setting__control__btn"><i class="icon-ar_up"></i></a>
+                                            <a href="#" class="setting__control__btn down"><i class="icon-ar_up"></i></a>
+                                        </div>
+                                        <span class="setting__input__name">Цвет:</span>
+                                        <div class="setting__input input__color">
+                                            <input type="text" value="" placeholder="Выберите цвет">
+                                            <div class="setting__input__control">
+                                                <a href="#" class="setting__input__control__btn">
+                                                    <i class="icon-arm"></i>
+                                                    <i class="icon-close"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vtb-checklist__construct__tree">
+                            <div class="tree__block">
+                                <div class="tree__block__header">
+                                    <label class="tree__block__header__ratio">
+                                        <input type="radio" name="select">
+                                        <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                    </label>
+                                    <span class="tree__block__header__title">Название первого блока</span>
+                                    <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                </div>
+                                <div class="tree__block__content">
+                                    <div class="tree__block">
+                                        <div class="tree__block__header">
+                                            <label class="tree__block__header__ratio">
+                                                <input type="radio" name="select">
+                                                <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                            </label>
+                                            <span class="tree__block__header__title">1. Прилегающая территория к офису</span>
+                                            <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                        </div>
+                                        <div class="tree__block__content">
+                                            <div class="tree__block__content__row">
+                                                <label class="tree__block__header__ratio">
+                                                    <input type="radio" name="select">
+                                                    <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                                </label>
+                                                <span class="tree__block__content__number">1.1</span>
+                                                <span class="tree__block__content__title">В летний период — территория убрана, отсутствует мусор, отсутствуют разбитые и неухоженные газоны, доступ к офису свободен</span>
+                                                <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите направление">
+                                                    <div class="tree__block__content__input__control ">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите решение" value="Клиниг">
+                                                    <div class="tree__block__content__input__control not-empty">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__number">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                            <div class="tree__block__content__row">
+                                                <label class="tree__block__header__ratio">
+                                                    <input type="radio" name="select">
+                                                    <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                                </label>
+                                                <span class="tree__block__content__number">1.1</span>
+                                                <span class="tree__block__content__title">В летний период — территория убрана, отсутствует мусор, отсутствуют разбитые и неухоженные газоны, доступ к офису свободен</span>
+                                                <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите направление">
+                                                    <div class="tree__block__content__input__control ">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите решение" value="Клиниг">
+                                                    <div class="tree__block__content__input__control not-empty">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__number">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                            <div class="tree__block__content__row">
+                                                <label class="tree__block__header__ratio">
+                                                    <input type="radio" name="select">
+                                                    <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                                </label>
+                                                <span class="tree__block__content__number">1.1</span>
+                                                <span class="tree__block__content__title">В летний период — территория убрана, отсутствует мусор, отсутствуют разбитые и неухоженные газоны, доступ к офису свободен</span>
+                                                <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите направление">
+                                                    <div class="tree__block__content__input__control ">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите решение" value="Клиниг">
+                                                    <div class="tree__block__content__input__control not-empty">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__number">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tree__block">
+                                        <div class="tree__block__header">
+                                            <label class="tree__block__header__ratio">
+                                                <input type="radio" name="select">
+                                                <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                            </label>
+                                            <span class="tree__block__header__title">1. Прилегающая территория к офису</span>
+                                            <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                        </div>
+                                        <div class="tree__block__content">
+                                            <div class="tree__block__content__row">
+                                                <label class="tree__block__header__ratio">
+                                                    <input type="radio" name="select">
+                                                    <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                                </label>
+                                                <span class="tree__block__content__number">1.1</span>
+                                                <span class="tree__block__content__title">В летний период — территория убрана, отсутствует мусор, отсутствуют разбитые и неухоженные газоны, доступ к офису свободен</span>
+                                                <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите направление">
+                                                    <div class="tree__block__content__input__control ">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите решение" value="Клиниг">
+                                                    <div class="tree__block__content__input__control not-empty">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__number">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                            <div class="tree__block__content__row">
+                                                <label class="tree__block__header__ratio">
+                                                    <input type="radio" name="select">
+                                                    <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                                </label>
+                                                <span class="tree__block__content__number">1.1</span>
+                                                <span class="tree__block__content__title">В летний период — территория убрана, отсутствует мусор, отсутствуют разбитые и неухоженные газоны, доступ к офису свободен</span>
+                                                <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите направление">
+                                                    <div class="tree__block__content__input__control ">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите решение" value="Клиниг">
+                                                    <div class="tree__block__content__input__control not-empty">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__number">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                            <div class="tree__block__content__row">
+                                                <label class="tree__block__header__ratio">
+                                                    <input type="radio" name="select">
+                                                    <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                                </label>
+                                                <span class="tree__block__content__number">1.1</span>
+                                                <span class="tree__block__content__title">В летний период — территория убрана, отсутствует мусор, отсутствуют разбитые и неухоженные газоны, доступ к офису свободен</span>
+                                                <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите направление">
+                                                    <div class="tree__block__content__input__control ">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите решение" value="Клиниг">
+                                                    <div class="tree__block__content__input__control not-empty">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__number">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tree__block">
+                                <div class="tree__block__header">
+                                    <label class="tree__block__header__ratio">
+                                        <input type="radio" name="select">
+                                        <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                    </label>
+                                    <span class="tree__block__header__title">Название первого блока</span>
+                                    <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                </div>
+                                <div class="tree__block__content">
+                                    <div class="tree__block">
+                                        <div class="tree__block__header">
+                                            <label class="tree__block__header__ratio">
+                                                <input type="radio" name="select">
+                                                <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                            </label>
+                                            <span class="tree__block__header__title">1. Прилегающая территория к офису</span>
+                                            <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                        </div>
+                                        <div class="tree__block__content">
+                                            <div class="tree__block__content__row">
+                                                <label class="tree__block__header__ratio">
+                                                    <input type="radio" name="select">
+                                                    <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                                </label>
+                                                <span class="tree__block__content__number">1.1</span>
+                                                <span class="tree__block__content__title">В летний период — территория убрана, отсутствует мусор, отсутствуют разбитые и неухоженные газоны, доступ к офису свободен</span>
+                                                <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите направление">
+                                                    <div class="tree__block__content__input__control ">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите решение" value="Клиниг">
+                                                    <div class="tree__block__content__input__control not-empty">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__number">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                            <div class="tree__block__content__row">
+                                                <label class="tree__block__header__ratio">
+                                                    <input type="radio" name="select">
+                                                    <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                                </label>
+                                                <span class="tree__block__content__number">1.1</span>
+                                                <span class="tree__block__content__title">В летний период — территория убрана, отсутствует мусор, отсутствуют разбитые и неухоженные газоны, доступ к офису свободен</span>
+                                                <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите направление">
+                                                    <div class="tree__block__content__input__control ">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите решение" value="Клиниг">
+                                                    <div class="tree__block__content__input__control not-empty">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__number">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                            <div class="tree__block__content__row">
+                                                <label class="tree__block__header__ratio">
+                                                    <input type="radio" name="select">
+                                                    <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                                </label>
+                                                <span class="tree__block__content__number">1.1</span>
+                                                <span class="tree__block__content__title">В летний период — территория убрана, отсутствует мусор, отсутствуют разбитые и неухоженные газоны, доступ к офису свободен</span>
+                                                <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите направление">
+                                                    <div class="tree__block__content__input__control ">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите решение" value="Клиниг">
+                                                    <div class="tree__block__content__input__control not-empty">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__number">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tree__block">
+                                        <div class="tree__block__header">
+                                            <label class="tree__block__header__ratio">
+                                                <input type="radio" name="select">
+                                                <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                            </label>
+                                            <span class="tree__block__header__title">1. Прилегающая территория к офису</span>
+                                            <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                        </div>
+                                        <div class="tree__block__content">
+                                            <div class="tree__block__content__row">
+                                                <label class="tree__block__header__ratio">
+                                                    <input type="radio" name="select">
+                                                    <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                                </label>
+                                                <span class="tree__block__content__number">1.1</span>
+                                                <span class="tree__block__content__title">В летний период — территория убрана, отсутствует мусор, отсутствуют разбитые и неухоженные газоны, доступ к офису свободен</span>
+                                                <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите направление">
+                                                    <div class="tree__block__content__input__control ">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите решение" value="Клиниг">
+                                                    <div class="tree__block__content__input__control not-empty">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__number">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                            <div class="tree__block__content__row">
+                                                <label class="tree__block__header__ratio">
+                                                    <input type="radio" name="select">
+                                                    <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                                </label>
+                                                <span class="tree__block__content__number">1.1</span>
+                                                <span class="tree__block__content__title">В летний период — территория убрана, отсутствует мусор, отсутствуют разбитые и неухоженные газоны, доступ к офису свободен</span>
+                                                <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите направление">
+                                                    <div class="tree__block__content__input__control ">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите решение" value="Клиниг">
+                                                    <div class="tree__block__content__input__control not-empty">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__number">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                            <div class="tree__block__content__row">
+                                                <label class="tree__block__header__ratio">
+                                                    <input type="radio" name="select">
+                                                    <div class="tree__block__header__ratio__checked"><i class="icon-check"></i></div>
+                                                </label>
+                                                <span class="tree__block__content__number">1.1</span>
+                                                <span class="tree__block__content__title">В летний период — территория убрана, отсутствует мусор, отсутствуют разбитые и неухоженные газоны, доступ к офису свободен</span>
+                                                <a href="#" class="tree__block__header__btn"><i class="icon-pencil"></i></a>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите направление">
+                                                    <div class="tree__block__content__input__control ">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__select">
+                                                    <input type="text" placeholder="Выберите решение" value="Клиниг">
+                                                    <div class="tree__block__content__input__control not-empty">
+                                                        <a href="#" class="tree__block__content__input__control__btn">
+                                                            <i class="icon-arm"></i>
+                                                            <i class="icon-close"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tree__block__content__input input__number">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="container-fluid footer__wrap">
+            <span class="footer__copyright">© 2018 Корпоративный портал, Банк ВТБ</span>
+            <div class="footer__link">
+                <a href="#">Карта портала</a>
+                <a href="#">Поддержка пользователей</a>
+                <a href="#">Помощь по порталу</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/script.js" defer></script>
+<script src="assets/js/business.js" defer></script>
+</body>
+</html>
