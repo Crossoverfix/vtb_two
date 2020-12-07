@@ -11172,20 +11172,34 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   color: #00AAFF;
   font-size: 16px;
 }
-/* line 1287, _vtbn.scss */
+/* line 1286, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__header__status {
+  width: 30px;
+  flex-shrink: 0;
+}
+/* line 1290, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__header__number {
+  width: 50px;
+  flex-shrink: 0;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 24px;
+  color: #414141;
+}
+/* line 1299, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content {
   width: 100%;
   position: relative;
   padding-left: 30px;
   padding-top: 10px;
 }
-/* line 1288, _vtbn.scss */
+/* line 1300, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content .tree__block__header__title {
   text-transform: none;
   font-size: 19px;
   line-height: 24px;
 }
-/* line 1297, _vtbn.scss */
+/* line 1309, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__row {
   padding-top: 20px;
   display: flex;
@@ -11196,11 +11210,11 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   justify-content: flex-start;
   flex-wrap: nowrap;
 }
-/* line 1307, _vtbn.scss */
+/* line 1319, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content .tree__block__header__btn {
   margin-right: 20px;
 }
-/* line 1310, _vtbn.scss */
+/* line 1322, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__number {
   display: inline-block;
   margin-right: 10px;
@@ -11211,7 +11225,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   color: #414141;
   flex-shrink: 0;
 }
-/* line 1320, _vtbn.scss */
+/* line 1332, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__title {
   display: inline-block;
   width: 430px;
@@ -11221,7 +11235,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   color: #414141;
   flex-shrink: 0;
 }
-/* line 1329, _vtbn.scss */
+/* line 1341, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__input {
   height: 30px;
   border: 1px solid #E6ECF2;
@@ -11236,7 +11250,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   position: relative;
   margin-right: 8px;
 }
-/* line 1342, _vtbn.scss */
+/* line 1354, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__input__control {
   position: relative;
   height: 100%;
@@ -11244,7 +11258,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   width: 20px;
   padding-right: 10px;
 }
-/* line 1348, _vtbn.scss */
+/* line 1360, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__input__control__btn {
   display: flex;
   flex-direction: row;
@@ -11255,44 +11269,44 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   flex-shrink: 0;
   text-decoration: none;
 }
-/* line 1359, _vtbn.scss */
+/* line 1371, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__input__control__btn:hover i {
   color: #002882;
 }
-/* line 1363, _vtbn.scss */
+/* line 1375, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__input__control__btn i {
   color: #00AAFF;
   font-size: 10px;
 }
-/* line 1366, _vtbn.scss */
+/* line 1378, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__input__control__btn i.icon-arm {
   font-size: 7px;
 }
-/* line 1369, _vtbn.scss */
+/* line 1381, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__input__control__btn i:last-child {
   display: none;
 }
-/* line 1372, _vtbn.scss */
+/* line 1384, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__input__control__btn i:first-child {
   display: block;
 }
-/* line 1380, _vtbn.scss */
+/* line 1392, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__input__control.not-empty .tree__block__content__input__control__btn i:last-child {
   display: block;
 }
-/* line 1383, _vtbn.scss */
+/* line 1395, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__input__control.not-empty .tree__block__content__input__control__btn i:first-child {
   display: none;
 }
-/* line 1391, _vtbn.scss */
+/* line 1403, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__input.input__number {
   width: 50px;
 }
-/* line 1394, _vtbn.scss */
+/* line 1406, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__input.input__select {
   width: 200px;
 }
-/* line 1398, _vtbn.scss */
+/* line 1410, _vtbn.scss */
 .vtb-checklist__construct__tree .tree__block__content__input input {
   border: none;
   box-shadow: none;
@@ -11306,149 +11320,439 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   font-weight: 400;
   color: #000000;
 }
+/* line 1424, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__status {
+  width: 30px;
+  flex-shrink: 0;
+  position: relative;
+}
+/* line 1430, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__status.status__un-touch:before {
+  font-family: 'iconfont_vtb' !important;
+  content: "\e92e";
+  position: relative;
+  left: 7px;
+  top: 3px;
+  color: #BFD4DF;
+  font-size: 12px;
+  display: block;
+}
+/* line 1442, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__status.status__touch:before {
+  font-family: 'iconfont_vtb' !important;
+  content: "\e92e";
+  position: relative;
+  left: 7px;
+  top: 3px;
+  color: #00AAFF;
+  font-size: 12px;
+  display: block;
+}
+/* line 1452, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__status.status__touch ~ .tree__block__content__title {
+  opacity: 0.4;
+}
+/* line 1458, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__status.status__touch ~ .tree__block__content__answer input:not(:checked) ~ .tree__block__content__answer__point__label {
+  background-color: white !important;
+}
+/* line 1466, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__status.status__skip:before {
+  font-family: 'iconfont_vtb' !important;
+  content: "\e94a";
+  position: relative;
+  left: 7px;
+  top: 7px;
+  color: #414141;
+  font-size: 3px;
+  display: block;
+}
+/* line 1476, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__status.status__skip ~ .tree__block__content__title {
+  opacity: 0.4;
+}
+/* line 1480, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__status.status__skip ~ .tree__block__content__answer .tree__block__content__answer__point__label {
+  background-color: white !important;
+  border-color: #BFD4DF !important;
+}
+/* line 1489, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__answer {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-self: center;
+}
+/* line 1497, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__answer__point {
+  width: 30px;
+  height: 30px;
+  margin: 0 7px;
+  position: relative;
+}
+/* line 1502, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__answer__point input {
+  display: none;
+}
+/* line 1506, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__answer__point input:checked ~ .tree__block__content__answer__point__label:before {
+  font-family: 'iconfont_vtb' !important;
+  content: "\e92e";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  display: block;
+}
+/* line 1520, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__answer__point__label {
+  border: 3px solid;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+/* line 1531, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__answer.answer__round .tree__block__content__answer__point__label {
+  border-radius: 50%;
+}
+/* line 1536, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__answer.answer__block .tree__block__content__answer__point__label {
+  border-radius: 4px;
+}
+/* line 1542, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__about {
+  display: block;
+  position: relative;
+  width: 16px;
+  margin: 0 10px;
+  align-self: center;
+}
+/* line 1548, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__about i {
+  font-size: 16px;
+  color: #00AAFF;
+}
+/* line 1553, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__comment {
+  flex-grow: 1;
+  align-self: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #414141;
+}
+/* line 1561, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__check-box {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+/* line 1570, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__check-box label {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+/* line 1573, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__check-box label input {
+  display: none;
+}
+/* line 1576, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__check-box label input:checked ~ .tree__block__content__check-box__label {
+  border: 1px solid #00ACFF;
+  background-color: #00ACFF;
+}
+/* line 1579, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__check-box label input:checked ~ .tree__block__content__check-box__label:before {
+  font-family: 'iconfont_vtb' !important;
+  content: "\e92e";
+  position: absolute;
+  font-size: 8px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+/* line 1593, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__check-box__label {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #DAE1E6;
+  background-color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+}
+/* line 1602, _vtbn.scss */
+.vtb-checklist__construct__tree .tree__block__content__check-box__title {
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #414141;
+}
+/* line 1616, _vtbn.scss */
+.vtb-checklist__construct__tree.mod-user .tree__block__content {
+  padding-left: 0;
+}
+/* line 1618, _vtbn.scss */
+.vtb-checklist__construct__tree.mod-user .tree__block__content__number {
+  margin-right: 0;
+  width: 50px;
+}
+/* line 1622, _vtbn.scss */
+.vtb-checklist__construct__tree.mod-user .tree__block__content .tree__block__header__btn {
+  align-self: center;
+  margin-right: 10px;
+}
+/* line 1627, _vtbn.scss */
+.vtb-checklist__construct__tree.mod-user .tree__block.collaps {
+  overflow: hidden;
+}
+/* line 1629, _vtbn.scss */
+.vtb-checklist__construct__tree.mod-user .tree__block.collaps .tree__block__content {
+  height: 0;
+  overflow: hidden;
+}
+/* line 1634, _vtbn.scss */
+.vtb-checklist__construct__tree.mod-user .tree__block.collaps .tree__block__header__btn i {
+  transform: rotate(180deg);
+}
+/* line 1643, _vtbn.scss */
+.vtb-checklist__info {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding: 0 50px;
+}
+/* line 1651, _vtbn.scss */
+.vtb-checklist__info__block {
+  width: 50%;
+  flex-shrink: 0;
+}
+/* line 1655, _vtbn.scss */
+.vtb-checklist__info__row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+/* line 1664, _vtbn.scss */
+.vtb-checklist__info__row__name {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 120px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  color: #97A4B1;
+}
+/* line 1674, _vtbn.scss */
+.vtb-checklist__info__row__value {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  color: #414141;
+}
+/* line 1682, _vtbn.scss */
+.vtb-checklist__info__total {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+/* line 1686, _vtbn.scss */
+.vtb-checklist__info__total__title {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  color: #97A4B1;
+  margin-bottom: 4px;
+}
+/* line 1695, _vtbn.scss */
+.vtb-checklist__info__total__progress {
+  width: 100%;
+  position: relative;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: #E6EDFB;
+  display: block;
+}
+/* line 1702, _vtbn.scss */
+.vtb-checklist__info__total__progress__bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: #00AAFF;
+  display: block;
+}
 
 @media screen and (max-width: 1199px) {
-  /* line 1419, _vtbn.scss */
+  /* line 1717, _vtbn.scss */
   .vtb__content {
     width: 940px;
   }
 
-  /* line 1422, _vtbn.scss */
+  /* line 1720, _vtbn.scss */
   .vtb-marketing__optional {
     padding: 20px 15px;
   }
 
-  /* line 1425, _vtbn.scss */
+  /* line 1723, _vtbn.scss */
   .vtb__column-small {
     width: 300px;
   }
 
-  /* line 1428, _vtbn.scss */
+  /* line 1726, _vtbn.scss */
   .vtb__column-big {
     width: 640px;
   }
 
-  /* line 1431, _vtbn.scss */
+  /* line 1729, _vtbn.scss */
   .vtb-marketing__header {
     padding: 8px 10px 0 15px;
   }
 
-  /* line 1434, _vtbn.scss */
+  /* line 1732, _vtbn.scss */
   .vtb-marketing__content-wrapp {
     padding: 24px 10px 30px 15px;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 1439, _vtbn.scss */
+  /* line 1737, _vtbn.scss */
   .vtb__content {
     width: 700px;
   }
 
-  /* line 1442, _vtbn.scss */
+  /* line 1740, _vtbn.scss */
   .vtb__body {
     flex-wrap: wrap;
   }
 
-  /* line 1445, _vtbn.scss */
+  /* line 1743, _vtbn.scss */
   .vtb__column-big {
     width: 100%;
   }
 
-  /* line 1448, _vtbn.scss */
+  /* line 1746, _vtbn.scss */
   .vtb__column-small {
     width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 1453, _vtbn.scss */
+  /* line 1751, _vtbn.scss */
   .vtb__content {
     width: 590px;
   }
 
-  /* line 1456, _vtbn.scss */
+  /* line 1754, _vtbn.scss */
   .vtb-marketing__category__card {
     width: calc((100% / 2) - 20px);
   }
 
-  /* line 1459, _vtbn.scss */
+  /* line 1757, _vtbn.scss */
   .vtb-marketing__subscript__card {
     height: 150px;
   }
 }
 @media screen and (max-width: 574px) {
-  /* line 1464, _vtbn.scss */
+  /* line 1762, _vtbn.scss */
   .vtb__content {
     width: 280px;
   }
 
-  /* line 1467, _vtbn.scss */
+  /* line 1765, _vtbn.scss */
   .vtb-marketing__header__banner__img {
     display: none;
   }
 
-  /* line 1470, _vtbn.scss */
+  /* line 1768, _vtbn.scss */
   .vtb-marketing__category__card {
     width: 100%;
   }
 
-  /* line 1473, _vtbn.scss */
+  /* line 1771, _vtbn.scss */
   .vtb-marketing__header {
     padding: 8px 10px 0 10px;
   }
 
-  /* line 1476, _vtbn.scss */
+  /* line 1774, _vtbn.scss */
   .vtb-marketing__content-wrapp {
     padding: 24px 10px 20px 10px;
   }
 
-  /* line 1479, _vtbn.scss */
+  /* line 1777, _vtbn.scss */
   .vtb-marketing__optional-link {
     margin-top: 10px;
   }
 
-  /* line 1482, _vtbn.scss */
+  /* line 1780, _vtbn.scss */
   .vtb-marketing__subscript__card {
     height: auto;
     flex-wrap: wrap;
   }
 
-  /* line 1486, _vtbn.scss */
+  /* line 1784, _vtbn.scss */
   .vtb-marketing__subscript__card__photo {
     height: 120px;
     width: 100%;
   }
 
-  /* line 1490, _vtbn.scss */
+  /* line 1788, _vtbn.scss */
   .vtb-marketing__subscript__card__info {
     padding: 10px 35px 0 10px;
   }
 
-  /* line 1493, _vtbn.scss */
+  /* line 1791, _vtbn.scss */
   .vtb-marketing__subscript__card__info__like {
     right: 5px;
   }
 
-  /* line 1496, _vtbn.scss */
+  /* line 1794, _vtbn.scss */
   .vtb-marketing__subscript__card__info__id {
     right: 5px;
   }
 
-  /* line 1499, _vtbn.scss */
+  /* line 1797, _vtbn.scss */
   .vtb-marketing__subscript__btn-ghost {
     width: 100%;
   }
 
-  /* line 1502, _vtbn.scss */
+  /* line 1800, _vtbn.scss */
   .vtb-marketing__block-split .block-split {
     width: 100%;
   }
 
-  /* line 1505, _vtbn.scss */
+  /* line 1803, _vtbn.scss */
   .vtb-marketing__block-text {
     padding: 0 5px;
   }
 
-  /* line 1508, _vtbn.scss */
+  /* line 1806, _vtbn.scss */
   .vtb-marketing__subscript__card__info__tag__item {
     height: auto;
   }
