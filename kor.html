@@ -1,0 +1,296 @@
+<file name="+/123.txt">{{<foreach name=mintime path="456.*" where="hide !='on' &&  hide2 !='on' && del !='on' && city !='' && mintime !=''  && mintime != '0' && location !='on' && profile gt 30" sort="-#mintime">
+    <if <foreach[mintime]._count> ==1><set mintime_max="<foreach[mintime].mintime>"></if>
+</foreach>
+
+    <foreach name=price path="456.*" where="hide !='on' &&  hide2 !='on' && del !='on' && price !='' && city !='' && price != '0' && location !='on' && profile gt 30" sort="#price">
+
+        <if <foreach[price]._count> ==1><set price_min="<foreach[price].price>">{{ <foreach[price].price>-<foreach[price]._name>}}</if>
+
+    </foreach>
+    <foreach name=price path="456.*" where="hide !='on' &&  hide2 !='on' && del !='on' && price2 !='' && city !='' && price2 !='0' && location !='on' && profile gt 30" sort="#price2">
+        <if <foreach[price]._count> ==<foreach[price]._total>><set price_max="<foreach[price].price2>"></if>
+    </foreach>
+    <foreach name=p path="456.*" where="hide !='on' && hide2 !='on' && del !='on'  && city=33  && ceiling !='' && location !='on' && profile gt 30" sort="#ceiling">
+        <if <foreach[p]._count> ==1><set ceiling_min="<foreach[p].ceiling>"></if>
+        <if <foreach[p]._count> ==<foreach[p]._total>><set ceiling_max="<foreach[p].ceiling>"></if>
+    </foreach>
+
+    }}
+
+    <set mintime_max="5">
+        <?php
+	if(isset($_REQUEST['mintime_start']) && $_REQUEST['mintime_start'] != "") 	{ $mintime_min = $_REQUEST['mintime_start']; 	} else { $mintime_min = "0"; }
+?>
+
+        <set price_min = "200">
+            <set price_max = "15000">
+                <set area_min = "200">
+                    <set area_max = "15000">
+                        <set ceiling_min = "200">
+                            <set ceiling_max = "15000">
+                                <?php
+	if(isset($_REQUEST['price_start']) && $_REQUEST['price_start'] != "") 	{ $price_min = $_REQUEST['price_start']; 	} else { $price_min = "<var[price_min]>"; }
+                                if(isset($_REQUEST['price_end']) && $_REQUEST['price_end'] != "") 		{ $price_max = $_REQUEST['price_end']; 		} else { $price_max = "<var[price_max]>"; }
+                                ?>
+
+                                <foreach name=area path="456.*" where="hide !='on' && hide2 !='on' && del !='on'  && area !='' && area gt '1' && location !='on' && profile gt 30" sort="#area">
+                                    <if <foreach[area]._count> ==1><set area_min="<foreach[area].area>">{{<foreach[area]._id>}}</if>
+                                    <if <foreach[area]._count> ==<foreach[area]._total>><set area_max="<foreach[area].area>"></if>
+                                </foreach>
+
+                                <?php
+	if(isset($_REQUEST['area_start']) && $_REQUEST['area_start'] != "") 	{ $area_min = $_REQUEST['area_start']; 		} else { $area_min = "<var[area_min]>"; }
+                                if(isset($_REQUEST['area_end']) && $_REQUEST['area_end'] != "") 		{ $area_max = $_REQUEST['area_end']; 		} else { $area_max = "<var[area_max]>"; }
+                                ?>
+                                <?php
+	if(isset($_REQUEST['ceiling_start']) && $_REQUEST['ceiling_start'] != "") 	{ $ceiling_min = $_REQUEST['ceiling_start']; 	} else { $ceiling_min = "<var[ceiling_min]>"; }
+                                if(isset($_REQUEST['ceiling_end']) && $_REQUEST['ceiling_end'] != "") 		{ $ceiling_max = $_REQUEST['ceiling_end']; 		} else { $ceiling_max = "<var[ceiling_max]>"; }
+                                ?>
+
+
+                                <?php if(!isset($city)) { $city = '33';}  ?>
+
+
+
+                                <aside class="w mt-4 px-0 py-0">
+                                    <form name=search id="ys_form" method="get">
+                                        <div class="filter-container">
+                                            <div class="h5 d-block bg-danger p-3 text-white">Поиск по параметрам  <i class="fa fa-sliders d-none d-lg-inline ml-4" aria-hidden="true"></i>
+                                                <a href="#" class="filterPopup"><i class="fa fa-times d-lg-none float-right text-white" aria-hidden="true"></i></a>
+                                            </div>
+
+                                            {{<div class="h5 mb-3 d-none d-lg-block"><i class="fa fa-sliders" aria-hidden="true"></i> Поиск по параметрам</div>}}
+                                            <div class="px-5 px-lg-4" {{ id="SearchBlock"}}>
+                                                <input type="hidden" name="city" id="searchCity" value="<?php echo $city; ?>">
+
+                                                <?php if($city == '33')	{ ?>
+                                                <div class='filterblock'>
+                                                    <a class="name collapsed" data-toggle="collapse" href="#collapsePlace" role="button" aria-expanded="false" aria-controls="collapsePlace">Расположение</a>
+
+                                                    <a class="filterlabel" href="#">Москва</a> <a class="filterlabel" href="#">ВАО</a>  <a class="filterlabel" href="#">ЦАО</a>
+
+                                                    <div class="collapse pl-4" id="collapsePlace">
+
+                                                        <a href="#" class="btn btn-danger btn-sm disabled"><b>Москва</b></a>  <a href="/spb/studios/" class="btn btn-outline-danger btn-sm">Санкт-Петербург</a>
+                                                        <foreach name=way path="main.data.region.way.$" sort="_sort"><div class="form-check"><label class="form-check-label"><input type="checkbox" name="okrug[]" value="<foreach[way]._id>" <?php if (in_array(<foreach[way]._id.raw>, $way_request ?? [])) { ?>checked<?php } ?> id="<foreach[way]._id>"  class="form-check-input"> <foreach[way]._name></label></div></foreach>
+                                                    </div>
+                                                </div>
+
+                                                <div class='filterblock'>
+                                                    <a class="name collapsed" data-toggle="collapse" href="#collapseMetro" role="button" aria-expanded="false" aria-controls="collapseMetro">Метро</a>
+                                                    <div class="collapse pl-4" id="collapseMetro" style="max-height: 450px; overflow-y: auto;">
+                                                        <foreach name=metro path="main.data.metro.moscow.$" sort="_name" where="add != '0'"><div class="form-check"><label class="form-check-label"><input type="checkbox" name="metro[]" value="<foreach[metro]._id>" <?php if (in_array(<foreach[metro]._id.raw>, $metro_request ?? [])) { ?>checked<?php } ?> id="<foreach[metro]._id>"  class="form-check-input"> <foreach[metro]._name></label></div></foreach>
+                                                    </div>
+                                                </div>
+
+                                                {{
+
+                                                <a href="#" class="btn btn-danger btn-sm disabled"><b>Москва</b></a>  <a href="/spb/studios/" class="btn btn-outline-danger btn-sm">Санкт-Петербург</a>
+                                                <div class='filterblock'>
+                                                    <a href="javascript:void(0)" class="show_all slide"><span>Расположение</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                                    <a href="javascript:void(0)" class="hide_all slide"><span>Расположение</span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                    <foreach name=way path="main.data.region.way.$" sort="_sort"><div class="form-check hiddenCat"><label class="form-check-label"><input type="checkbox" name="okrug[]" value="<foreach[way]._id>" <?php if (in_array(<foreach[way]._id.raw>, $way_request ?? [])) { ?>checked<?php } ?> id="<foreach[way]._id>"  class="form-check-input"> <foreach[way]._name></label></div></foreach>
+                                                </div>
+
+                                                <div class='filterblock' style="max-height: 450px; overflow-y: auto;">
+                                                    <a href="javascript:void(0)" class="show_all slide"><span>Метро</span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                    <a href="javascript:void(0)" class="hide_all slide pb-3"><span>Метро</span> <i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                                                    <foreach name=metro path="main.data.metro.moscow.$" sort="_name"><div class="form-check hiddenCat"><label class="form-check-label"><input type="checkbox" name="metro[]" value="<foreach[metro]._id>" <?php if (in_array(<foreach[metro]._id.raw>, $metro_request ?? [])) { ?>checked<?php } ?> id="<foreach[metro]._id>"  class="form-check-input"> <foreach[metro]._name></label></div></foreach>
+
+                                                </div>
+                                                }}
+
+                                                <?php } else { ?>
+                                                <a href="/studios/" class="btn btn-danger btn-sm"><b>Москва</b></a>  <a href="#" class="btn btn-danger btn-sm disabled">Санкт-Петербург</a>
+
+                                                <div class='filterblock'>
+                                                    <a href="javascript:void(0)" class="show_all slide"><span>Расположение</span> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                    <foreach name=way path="main.data.region.spb.$" sort="_sort"><div class="form-check hiddenCat"><label class="form-check-label"><input type="checkbox" name="raion_spb[]" value="<foreach[way]._id>" <?php if (in_array(<foreach[way]._id.raw>, $way_piter ?? [])) { ?>checked<?php } ?> id="<foreach[way]._id>"  class="form-check-input"> <foreach[way]._name></label></div></foreach>
+                                                    <a href="javascript:void(0)" class="hide_all slide btn btn-sm btn-light"><span>Расположение</span> <i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                                                </div>
+                                                <?php } ?>
+
+
+
+
+                                                <div class='filterblock'>
+                                                    <a class="name collapsed" data-toggle="collapse" href="#collapsePrice" role="button" aria-expanded="false" aria-controls="collapsePrice">Цена в час</a>
+                                                    <div class="collapse show mobile-hidden" id="collapsePrice">
+                                                        <div class="form-group">
+                                                            <div class="row">
+                                                                <div class='col'>от <input id="price_start" name="price_start" type="text" value="<var[cgi:price_start]>" class="blank" placeholder="<var[price_min]>"></div>
+                                                                <div class='col'>до <input id="price_end" 	 name="price_end" type="text" value="<var[cgi:price_end]>" class="blank" placeholder="<var[price_max]>"></div>
+                                                            </div>
+                                                            <input id="priceSlider" type="text" class="slider-track" value="" data-slider-min="<var[price_min]>" data-slider-max="<var[price_max]>" data-slider-step="100" data-slider-value="[<?php print $price_min .','. $price_max;?>]"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class='filterblock'>
+                                                    <a class="name collapsed" data-toggle="collapse" href="#collapseTime" role="button" aria-expanded="false" aria-controls="collapseTime">Минимальное время аренды</a>
+                                                    <div class="collapse" id="collapseTime">
+
+                                                        <div class="form-group">
+                                                            <div class="row justify-content-center">
+                                                                <div class='col'>от</div><div class='col'><input id="mintime_start" 	name="mintime_start" type="text" value="<var[cgi:mintime_start]>" class="blank" placeholder="<var[mintime_min]>"></div><div class='col'>час.</div>
+                                                                {{<div class='col'><input id="mintime_end" 	name="mintime_end" type="text" value="<var[cgi:mintime_end]>" class="blank" placeholder="<var[mintime_max]>"></div>}}
+                                                            </div>
+                                                            <input id="mintimeSlider" type="text" class="slider-track" value="" data-slider-min="0" data-slider-max="<var[mintime_max]>" data-slider-step="1" data-slider-value="<?php print $mintime_min;?>" {{data-slider-value="[<?php print $mintime_min .','. $mintime_max;?>]"}}/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class='filterblock'>
+                                                    <a class="name collapsed" data-toggle="collapse" href="#collapseArea" role="button" aria-expanded="false" aria-controls="collapseArea">Площадь</a>
+                                                    <div class="collapse" id="collapseArea">
+
+                                                        <div class="form-group">
+                                                            <div class="row">
+                                                                <div class='col'>от <input id="area_start" name="area_start" type="text" value="<var[cgi:area_start]>" class="blank" placeholder="<var[area_min]>">м2</div>
+                                                                <div class='col'>до <input id="area_end" 	name="area_end" type="text" value="<var[cgi:area_end]>" class="blank" placeholder="<var[area_max]>">м2</div>
+                                                            </div>
+                                                            <input id="areaSlider" type="text" class="slider-track" value="" data-slider-min="<var[area_min]>" data-slider-max="<var[area_max]>" data-slider-step="10" data-slider-value="[<?php print $area_min .','. $area_max;?>]"/>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class='filterblock '>
+                                                    <a class="name collapsed" data-toggle="collapse" href="#collapseInterier" role="button" aria-expanded="false" aria-controls="collapseInterier collapseInterierTag" data-target=".multi-collapse">Интерьеры</a>
+                                                    <div class="collapse multi-collapse mobile-show" id="collapseInterierTag">
+                                                        <foreach name=il path="455" type="content" sort="_sort"><if <foreach[il]._tab> == "Интерьеры"><?php if ((isset($_REQUEST['<foreach[il]._code>'])?$_REQUEST['<foreach[il]._code>']:'') == 'on') { ?> <a class="filterlabel" href="#" data-label="<foreach[il]._code>"><foreach[il]._description></a><?php } ?></if></foreach>
+                                                        {{<a class="filterlabel" href="#" data-label="children">Детские</a> <a class="filterlabel" href="#">Квартира</a>  <a class="filterlabel" href="#">Имитация медицинского кабинета</a>}}
+                                                    </div>
+
+
+
+
+                                                    <div class="collapse multi-collapse show mobile-hidden pl-4" id="collapseInterier">
+                                                        <div class="form-check"><label class="form-check-label"><input type="checkbox" name="ny" value="on" <if <var['cgi:ny']> == 'on'>checked</if> id="ny" class="form-check-input"><b class="text-danger">Новогодний интерьер</b></label></div>
+                                                        {{<div class="form-check"><label class="form-check-label"><input type="checkbox" name="love" value="on" <if <var['cgi:love']> == 'on'>checked</if> id="love"  class="form-check-input"><b>14-е февраля</b></label></div>}}
+                                                        <foreach name=i path="455" type="content" sort="_sort"><if <foreach[i]._tab> == "Интерьеры"><div class="form-check {{hiddenCat}}"><label class="form-check-label"><input type="checkbox" name="<foreach[i]._code>" id="<foreach[i]._code>" value="on" <if <var['cgi:<foreach[i]._code>']> == 'on'>checked</if> class="form-check-input"> <foreach[i]._description></label></div></if></foreach>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class='filterblock'>
+                                                    <a class="name collapsed" data-toggle="collapse" href="#collapseColor" role="button" aria-expanded="false" aria-controls="collapseColor">Цветовая гамма зала</a>
+
+                                                    <div class="collapse collapsed-lg pl-4" id="collapseColor">
+                                                        <div class="form-check"><label class="form-check-label"><input type="checkbox" name="color[]" value="white" class="form-check-input" <?php if (in_array('white', $color_request ?? [])) { ?>checked<?php } ?>> Абсолютно белый</label></div>
+                                                        <div class="form-check"><label class="form-check-label"><input type="checkbox" name="color[]" value="light" class="form-check-input" <?php if (in_array('light', $color_request ?? [])) { ?>checked<?php } ?>> Светлый</label></div>
+                                                        <div class="form-check"><label class="form-check-label"><input type="checkbox" name="color[]" value="grey" class="form-check-input" <?php if (in_array('grey', $color_request ?? [])) { ?>checked<?php } ?>> Нейтральный</label></div>
+                                                        <div class="form-check"><label class="form-check-label"><input type="checkbox" name="color[]" value="dark" class="form-check-input" <?php if (in_array('dark', $color_request ?? [])) { ?>checked<?php } ?>> Темный</label></div>
+                                                        <div class="form-check"><label class="form-check-label"><input type="checkbox" name="color[]" value="black" class="form-check-input" <?php if (in_array('black', $color_request ?? [])) { ?>checked<?php } ?>> Абсолютно черный</label></div>
+                                                        <div class="form-check"><label class="form-check-label"><input type="checkbox" name="color[]" value="color" class="form-check-input" <?php if (in_array('color', $color_request ?? [])) { ?>checked<?php } ?>> Яркие цвета</label></div>
+                                                        <div class="form-check"><label class="form-check-label"><input type="checkbox" name="color[]" value="multi" class="form-check-input" <?php if (in_array('multi', $color_request ?? [])) { ?>checked<?php } ?>> Локации разных цветов</label></div>
+                                                    </div>
+                                                </div>
+
+
+
+
+                                                <div><div>
+                                                    <foreach name=s path="455" type=content sort="_sort">
+                                                        <if <foreach[s]._tab> == "Возможности"><if (<foreach[s]._type> == '5' || <foreach[s]._type> == '4') && <foreach[s]._code> != 'halogen'>
+
+                                                        <div class="form-check"><label class="form-check-label"><input type="checkbox" name="<foreach[s]._code>" value="on" <if <var['cgi:<foreach[s]._code>']> == 'on'>checked</if> id="<foreach[s]._code>" class="form-check-input"> <foreach[s]._description></label></div>
+                                                        <if <foreach[s]._code> == 'cyclorama'>
+                                                        <div class="form-check ml-3"><label class="form-check-label"><input type="checkbox" name="cyclorama_white" value="on" <if <var['cgi:cyclorama_white']> == 'on'>checked</if> id="cyclorama_white" class="form-check-input"> Белая</label></div>
+                                                        <div class="form-check ml-3"><label class="form-check-label"><input type="checkbox" name="cyclorama_black" value="on" <if <var['cgi:cyclorama_black']> == 'on'>checked</if> id="cyclorama_black" class="form-check-input"> Черная</label></div>
+                                                        <div class="form-check ml-3"><label class="form-check-label"><input type="checkbox" name="cyclorama_color" value="on" <if <var['cgi:cyclorama_color']> == 'on'>checked</if> id="cyclorama_color" class="form-check-input"> Цветная</label></div>
+                                                        </if>
+
+                                                        </if>
+
+                                                        <if <foreach[s]._type> == '13'>
+                                                </div>
+                                                </div>
+                                                <div class='filterblock'>
+                                                    <a class="name collapsed" data-toggle="collapse" href="#collapse<foreach[s]._count>" role="button" aria-expanded="false" aria-controls="collapse<foreach[s]._count>"><foreach[s]._description></a>
+                                                    <div class="collapse show mobile-hidden pl-4" id="collapse<foreach[s]._count>">
+
+                                                        <if <foreach[s]._description> =="Оборудование">
+                                                        <div class="form-check"><label class="form-check-label"><input type="checkbox" name="video" value="on" <if <var['cgi:video']> == 'on'>checked</if> class="form-check-input"> Видео-свет</label></div>
+                                                        </if>
+                                                        <if <foreach[s]._description> =="Возможности">
+                                                        <div class="form-check"><label class="form-check-label"><input type="checkbox" name="animals" value="on" <if <var['cgi:animals']> == 'on'>checked</if> id="animals" class="form-check-input"> Съемка с животными</label></div>
+                                                        </if>
+                                                        </if>
+                                                        </if>
+                                                        </foreach>
+
+                                                    </div></div>
+
+
+
+
+
+
+
+
+                                                <div class='filterblock'>
+                                                    <a class="name collapsed" data-toggle="collapse" href="#collapseCeiling" role="button" aria-expanded="false" aria-controls="collapseCeiling">Высота потолков</a>
+                                                    <div class="collapse" id="collapseCeiling">
+                                                        <div class="form-group">
+                                                            <div class="row">
+                                                                <div class='col'>от</div><div class='col  p-0'><input id="ceiling_start" name="ceiling_start" type="text" value="<var[cgi:ceiling_start]>" class="blank" placeholder="<var[ceiling_min]>"></div><div class='col p-0'>см</div>
+                                                                <div class='col p-0'>до</div><div class='col  p-0'><input id="ceiling_end" 	name="ceiling_end" type="text" value="<var[cgi:ceiling_end]>" class="blank" placeholder="<var[ceiling_max]>"></div><div class='col'>см</div>
+                                                            </div>
+                                                            <input id="ceilingSlider" type="text" class="slider-track" value="" data-slider-min="<var[ceiling_min]>" data-slider-max="<var[ceiling_max]>" data-slider-step="10" data-slider-value="[<?php print $ceiling_min .','. $ceiling_max;?>]"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class='filterblock'>
+                                                    <a class="name collapsed" data-toggle="collapse" href="#collapseLight" role="button" aria-expanded="false" aria-controls="collapseLight">Свет</a>
+                                                    <div class="collapse pl-4" id="collapseLight">
+                                                        <foreach name=light path="main.data.light.*" sort="_name" where="add != '0'">
+                                                            <div class="form-check"><label class="form-check-label"><input type="checkbox" name="light[]" value="<foreach[light]._id>" class="form-check-input" <?php if (in_array(<foreach[light]._id.raw>, $light ?? [])) { ?>checked<?php } ?>> <foreach[light]._name></label></div>
+                                                        </foreach>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class='filterblock'>
+                                                    <a class="name collapsed" data-toggle="collapse" href="#collapseGrim" role="button" aria-expanded="false" aria-controls="collapseGrim">Тип зала</a>
+                                                    <div class="collapse pl-4" id="collapseGrim">
+                                                        <div class="form-check"><label class="form-check-label"><input type="radio" name="place" value="" class="form-check-input"> Все</label></div>
+                                                        <div class="form-check"><label class="form-check-label"><input type="radio" name="place" value="place" class="form-check-input" <if <var['cgi:place']> == 'place'>checked</if>> Залы для съемок</label></div>
+                                                        <div class="form-check"><label class="form-check-label"><input type="radio" name="place" value="grim"  class="form-check-input" <if <var['cgi:place']> == 'place'>checked</if>> Гримерки</label></div>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="text-right"><a href="?" class="btn btn-sm btn-outline-secondary my-3">Сбросить параметры</a></div>
+
+
+
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="fixed-bottom filter-count">
+                                            <div class="row">
+                                                <a href="#" id="filterPopup" class="filterPopup d-lg-none col-6">Фильтр <i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                                                <input type="submit" id="ys_button" value="Обновляем..."  class="btn btn-danger col-6 col-lg-12 text-center">
+                                            </div>
+                                        </div>
+
+                                    </form>
+
+                                    <div id="ys_div">
+                                        Найдено <span id="ys_div_count"  class="badge badge-danger">x</span><br>
+                                        <a href="javascript: void(0);" onclick="$('#ys_form').submit();" class="btn btn-danger btn-sm mt-2">показать <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                    </div>
+
+
+                                </aside>
+</file>
+
+{{<publish id="176">}}
+
