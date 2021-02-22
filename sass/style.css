@@ -11881,7 +11881,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
 .vtb-best__header {
   width: 100%;
   position: relative;
-  padding: 24px 21px 40px 37px;
+  padding: 24px 21px 0 37px;
 }
 /* line 7, _vtbbest.scss */
 .vtb-best__header__banner {
@@ -12027,5 +12027,1312 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
 .vtb-best__header__banner__point.active:before {
   background-color: white;
 }
+/* line 142, _vtbbest.scss */
+.vtb-best__body {
+  width: 100%;
+  position: relative;
+  padding: 24px 21px 40px 37px;
+}
+/* line 147, _vtbbest.scss */
+.vtb-best__exp {
+  width: 100%;
+  position: relative;
+}
+/* line 150, _vtbbest.scss */
+.vtb-best__exp__title {
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  font-style: normal;
+  color: #23262F;
+  margin-bottom: 24px;
+  margin-top: 0;
+  display: block;
+}
+/* line 162, _vtbbest.scss */
+.vtb-best__exp__row-one {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 166, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  height: 280px;
+  box-shadow: 0px 1.12176px 2.24352px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+/* line 177, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face {
+  position: relative;
+  height: 100%;
+  flex-shrink: 1;
+  flex-grow: 1;
+  background-color: rgba(51, 84, 155, 0.8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8px 8px 16px 8px;
+  overflow: hidden;
+}
+/* line 193, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__bg {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  right: -274px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: rgba(0, 170, 255, 0.2);
+}
+/* line 202, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__bg:before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  left: 24px;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: rgba(0, 170, 255, 0.4);
+}
+/* line 212, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__bg:after {
+  content: "";
+  position: absolute;
+  width: 315px;
+  height: 315px;
+  left: 40px;
+  bottom: 40px;
+  border-radius: 50%;
+  background-color: #00aaff;
+}
+/* line 223, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__head {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+/* line 231, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__head__group {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 8px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color: #414141;
+  font-size: 13px;
+  font-weight: 400;
+}
+/* line 243, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__head__tag {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 8px;
+  border-radius: 4px;
+  background-color: #00AAFF;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 400;
+}
+/* line 255, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__head__tag.hidden span {
+  display: none;
+}
+/* line 259, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__head__tag .icon__reward {
+  width: 10px;
+  height: 25px;
+  display: inline-block;
+  background: url("../assets/img/vtb_best/reward.svg") no-repeat center;
+  background-size: contain;
+  vertical-align: top;
+}
+/* line 267, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__head__tag i {
+  line-height: 25px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
+  height: 25px;
+}
+/* line 275, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__head__tag span {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 6px;
+}
+/* line 286, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__text {
+  position: relative;
+  display: inline-block;
+  max-width: 350px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 0;
+  margin-top: auto;
+  padding-left: 8px;
+}
+/* line 298, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__like {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  background-color: rgba(27, 82, 201, 0.2);
+  cursor: pointer;
+}
+/* line 308, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__like:hover:after {
+  background-size: 35px;
+}
+/* line 312, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__like:before {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  left: 5px;
+  bottom: 1px;
+  border-radius: 50%;
+  background-color: rgba(27, 82, 201, 0.4);
+}
+/* line 322, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__like:after {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+  background-color: #1b52c9;
+  background-image: url("../assets/img/vtb_best/like.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+/* line 338, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__info {
+  position: relative;
+  width: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 16px 16px 16px 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+/* line 350, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__info__user {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+  height: 40px;
+  position: relative;
+}
+/* line 359, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__info__user__avatar {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  overflow: hidden;
+  background-size: cover;
+}
+/* line 370, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__info__user__name {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 20px;
+  color: #242424;
+  font-weight: 400;
+}
+/* line 379, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__info__text {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #23262F;
+  margin-bottom: 8px;
+  overflow: hidden;
+  max-height: 166px;
+}
+/* line 390, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__info__date {
+  display: inline-block;
+  margin-top: auto;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #97A4B2;
+}
+/* line 402, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face {
+  background-color: rgba(0, 170, 255, 0.8);
+}
+/* line 404, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg {
+  background-color: rgba(51, 84, 155, 0.2);
+}
+/* line 406, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg:before {
+  background-color: rgba(51, 84, 155, 0.4);
+}
+/* line 409, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg:after {
+  background-color: #33549b;
+}
+/* line 414, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face__head__tag {
+  background-color: #33549b;
+}
+/* line 418, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face__like {
+  background-color: rgba(0, 170, 255, 0.2);
+}
+/* line 420, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face__like:before {
+  background-color: rgba(0, 170, 255, 0.4);
+}
+/* line 423, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face__like:after {
+  background-color: #00aaff;
+}
+/* line 432, _vtbbest.scss */
+.vtb-best__exp__row-three {
+  width: calc(100% + 20px);
+  position: relative;
+  left: -10px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+/* line 442, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card {
+  position: relative;
+  width: calc((100% / 3) - 20px);
+  margin: 0 10px 20px 10px;
+  min-width: 200px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  box-shadow: 0px 1.12176px 2.24352px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+/* line 457, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: rgba(51, 84, 155, 0.8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8px 8px 26px 8px;
+  overflow: hidden;
+}
+/* line 473, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__bg {
+  position: absolute;
+  width: 222px;
+  height: 222px;
+  right: -48px;
+  top: -164px;
+  border-radius: 50%;
+  background-color: rgba(0, 170, 255, 0.2);
+}
+/* line 481, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__bg:before {
+  content: "";
+  position: absolute;
+  width: 195px;
+  height: 195px;
+  left: 13px;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: rgba(0, 170, 255, 0.4);
+}
+/* line 491, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__bg:after {
+  content: "";
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  left: 22px;
+  bottom: 22px;
+  border-radius: 50%;
+  background-color: #00aaff;
+}
+/* line 502, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__head {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+/* line 510, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__head__group {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 8px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color: #414141;
+  font-size: 13px;
+  font-weight: 400;
+}
+/* line 522, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__head__tag {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 8px;
+  border-radius: 4px;
+  background-color: #00AAFF;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 400;
+}
+/* line 534, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__head__tag.hidden span {
+  display: none;
+}
+/* line 538, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__head__tag .icon__reward {
+  width: 10px;
+  height: 25px;
+  display: inline-block;
+  background: url("../assets/img/vtb_best/reward.svg") no-repeat center;
+  background-size: contain;
+  vertical-align: top;
+}
+/* line 546, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__head__tag i {
+  line-height: 25px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
+  height: 25px;
+}
+/* line 554, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__head__tag span {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 6px;
+}
+/* line 565, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__text {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 0;
+  margin-top: auto;
+  padding-left: 8px;
+}
+/* line 576, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__like {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  background-color: rgba(27, 82, 201, 0.2);
+  cursor: pointer;
+}
+/* line 586, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__like:hover:after {
+  background-size: 35px;
+}
+/* line 590, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__like:before {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  left: 5px;
+  bottom: 1px;
+  border-radius: 50%;
+  background-color: rgba(27, 82, 201, 0.4);
+}
+/* line 600, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__like:after {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+  background-color: #1b52c9;
+  background-image: url("../assets/img/vtb_best/like.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+/* line 616, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__info {
+  position: relative;
+  width: 100%;
+  height: 175px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 0 16px 16px 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+/* line 628, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__info__user {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 40px;
+  position: relative;
+  top: -15px;
+}
+/* line 637, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__info__user__avatar {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  overflow: hidden;
+  background-size: cover;
+}
+/* line 648, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__info__user__name {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 20px;
+  color: #242424;
+  font-weight: 400;
+}
+/* line 657, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__info__text {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #23262F;
+  margin-bottom: 8px;
+  overflow: hidden;
+  max-height: 80px;
+}
+/* line 668, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__info__date {
+  display: inline-block;
+  margin-top: auto;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #97A4B2;
+}
+/* line 680, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face {
+  background-color: rgba(0, 170, 255, 0.8);
+}
+/* line 682, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg {
+  background-color: rgba(51, 84, 155, 0.2);
+}
+/* line 684, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg:before {
+  background-color: rgba(51, 84, 155, 0.4);
+}
+/* line 687, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg:after {
+  background-color: #33549b;
+}
+/* line 692, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face__head__tag {
+  background-color: #33549b;
+}
+/* line 696, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face__like {
+  background-color: rgba(0, 170, 255, 0.2);
+}
+/* line 698, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face__like:before {
+  background-color: rgba(0, 170, 255, 0.4);
+}
+/* line 701, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face__like:after {
+  background-color: #00aaff;
+}
+/* line 710, _vtbbest.scss */
+.vtb-best__exp__row-two {
+  width: calc(100% + 20px);
+  position: relative;
+  left: -10px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+/* line 720, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card {
+  position: relative;
+  width: calc((100% / 2) - 20px);
+  margin: 0 10px 20px 10px;
+  overflow: hidden;
+  min-width: 240px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  box-shadow: 0px 1.12176px 2.24352px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+/* line 735, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: rgba(51, 84, 155, 0.8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8px 8px 26px 8px;
+  overflow: hidden;
+}
+/* line 751, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__bg {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: -88px;
+  top: -210px;
+  border-radius: 50%;
+  background-color: rgba(0, 170, 255, 0.2);
+}
+/* line 759, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__bg:before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  left: 18px;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: rgba(0, 170, 255, 0.4);
+}
+/* line 769, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__bg:after {
+  content: "";
+  position: absolute;
+  width: 238px;
+  height: 238px;
+  left: 30px;
+  bottom: 30px;
+  border-radius: 50%;
+  background-color: #00aaff;
+}
+/* line 780, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__head {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+/* line 788, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__head__group {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 8px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color: #414141;
+  font-size: 13px;
+  font-weight: 400;
+}
+/* line 800, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__head__tag {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 8px;
+  border-radius: 4px;
+  background-color: #00AAFF;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 400;
+}
+/* line 812, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__head__tag.hidden span {
+  display: none;
+}
+/* line 816, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__head__tag .icon__reward {
+  width: 10px;
+  height: 25px;
+  display: inline-block;
+  background: url("../assets/img/vtb_best/reward.svg") no-repeat center;
+  background-size: contain;
+  vertical-align: top;
+}
+/* line 824, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__head__tag i {
+  line-height: 25px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
+  height: 25px;
+}
+/* line 832, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__head__tag span {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 6px;
+}
+/* line 843, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__text {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 0;
+  margin-top: auto;
+  padding-left: 8px;
+}
+/* line 854, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__like {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  background-color: rgba(27, 82, 201, 0.2);
+  cursor: pointer;
+}
+/* line 864, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__like:hover:after {
+  background-size: 35px;
+}
+/* line 868, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__like:before {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  left: 5px;
+  bottom: 1px;
+  border-radius: 50%;
+  background-color: rgba(27, 82, 201, 0.4);
+}
+/* line 878, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__like:after {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+  background-color: #1b52c9;
+  background-image: url("../assets/img/vtb_best/like.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+/* line 894, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__info {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 0 16px 16px 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+/* line 906, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__info__user {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-bottom: 0;
+  height: 40px;
+  position: relative;
+  top: -15px;
+}
+/* line 916, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__info__user__avatar {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  overflow: hidden;
+  background-size: cover;
+}
+/* line 927, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__info__user__name {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 20px;
+  color: #242424;
+  font-weight: 400;
+}
+/* line 936, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__info__text {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #23262F;
+  margin-bottom: 8px;
+  overflow: hidden;
+  max-height: 80px;
+}
+/* line 947, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__info__date {
+  display: inline-block;
+  margin-top: auto;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #97A4B2;
+}
+/* line 959, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face {
+  background-color: rgba(0, 170, 255, 0.8);
+}
+/* line 961, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg {
+  background-color: rgba(51, 84, 155, 0.2);
+}
+/* line 963, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg:before {
+  background-color: rgba(51, 84, 155, 0.4);
+}
+/* line 966, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg:after {
+  background-color: #33549b;
+}
+/* line 971, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face__head__tag {
+  background-color: #33549b;
+}
+/* line 975, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face__like {
+  background-color: rgba(0, 170, 255, 0.2);
+}
+/* line 977, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face__like:before {
+  background-color: rgba(0, 170, 255, 0.4);
+}
+/* line 980, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face__like:after {
+  background-color: #00aaff;
+}
+/* line 991, _vtbbest.scss */
+.vtb-best__optional {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(140.21deg, #f9f9f9 12.25%, white 65.75%);
+  padding: 24px 32px;
+}
+/* line 997, _vtbbest.scss */
+.vtb-best__optional__banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+  margin-bottom: 30px;
+}
+/* line 1006, _vtbbest.scss */
+.vtb-best__optional__banner__title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 16px;
+  color: #23262F;
+}
+/* line 1015, _vtbbest.scss */
+.vtb-best__optional__banner__img {
+  display: block;
+  margin: 0 auto 16px auto;
+}
+/* line 1019, _vtbbest.scss */
+.vtb-best__optional__banner__text {
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 16px;
+  color: #242424;
+}
+/* line 1029, _vtbbest.scss */
+.vtb-best__optional__banner__link {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 46px;
+  height: 48px;
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  width: auto;
+  color: #FFFFFF;
+  padding: 0 40px;
+  background-color: #00AAFF;
+  border: 1px solid #00AAFF;
+  border-radius: 3px;
+}
+/* line 1043, _vtbbest.scss */
+.vtb-best__optional__banner__link:hover {
+  border: 1px solid #002882;
+}
+/* line 1048, _vtbbest.scss */
+.vtb-best__optional__contest {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+  margin-top: 75px;
+  margin-bottom: 40px;
+  border: 2px solid rgba(51, 84, 155, 0.35);
+  padding: 0 16px 24px 16px;
+}
+/* line 1060, _vtbbest.scss */
+.vtb-best__optional__contest__title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 16px;
+  color: #23262F;
+  text-align: center;
+  margin-top: -20px;
+}
+/* line 1071, _vtbbest.scss */
+.vtb-best__optional__contest__img {
+  position: relative;
+  top: -45px;
+  display: block;
+  margin: 0 auto;
+}
+/* line 1077, _vtbbest.scss */
+.vtb-best__optional__contest__text {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 16px;
+  color: #242424;
+}
+/* line 1087, _vtbbest.scss */
+.vtb-best__optional__contest__link {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 46px;
+  height: 48px;
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  width: auto;
+  color: #00AAFF;
+  border: 1px solid #00AAFF;
+  padding: 0 40px;
+  background-color: transparent;
+  border-radius: 3px;
+}
+/* line 1101, _vtbbest.scss */
+.vtb-best__optional__contest__link:hover {
+  border: 1px solid #002882;
+}
+/* line 1106, _vtbbest.scss */
+.vtb-best__optional__renewal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+  margin-bottom: 40px;
+}
+/* line 1115, _vtbbest.scss */
+.vtb-best__optional__renewal__title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 16px;
+  color: #23262F;
+}
+/* line 1124, _vtbbest.scss */
+.vtb-best__optional__renewal__text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 8px;
+  color: #242424;
+}
+/* line 1133, _vtbbest.scss */
+.vtb-best__optional__renewal__link {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 46px;
+  height: 48px;
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  width: auto;
+  color: #00AAFF;
+  border: 1px solid #00AAFF;
+  padding: 0 40px;
+  background-color: transparent;
+  border-radius: 3px;
+  margin: 8px auto 0 auto;
+}
+/* line 1148, _vtbbest.scss */
+.vtb-best__optional__renewal__link:hover {
+  border: 1px solid #002882;
+}
+/* line 1153, _vtbbest.scss */
+.vtb-best__optional__contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+}
+/* line 1161, _vtbbest.scss */
+.vtb-best__optional__contact__title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #23262F;
+}
+/* line 1170, _vtbbest.scss */
+.vtb-best__optional__contact__link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #002882;
+}
+/* line 1178, _vtbbest.scss */
+.vtb-best__optional__contact__link:hover {
+  color: #00AAFF;
+}
 
+@media screen and (max-width: 1199px) {
+  /* line 1187, _vtbbest.scss */
+  .vtb-best__exp__row-one .vtb-best__exp__card {
+    height: 260px;
+  }
+
+  /* line 1190, _vtbbest.scss */
+  .vtb-best__exp__row-one .vtb-best__exp__card__info {
+    width: 200px;
+    padding: 12px 12px 12px 16px;
+  }
+
+  /* line 1194, _vtbbest.scss */
+  .vtb-best__exp__row-one .vtb-best__exp__card__face__like {
+    top: 40px;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 1199, _vtbbest.scss */
+  .vtb-best__exp__row-one .vtb-best__exp__card {
+    height: 280px;
+  }
+
+  /* line 1202, _vtbbest.scss */
+  .vtb-best__exp__row-one .vtb-best__exp__card__face__like {
+    top: 10px;
+  }
+
+  /* line 1205, _vtbbest.scss */
+  .vtb-best__exp__row-one .vtb-best__exp__card__info {
+    width: 250px;
+    padding: 16px 16px 16px 21px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 1211, _vtbbest.scss */
+  .vtb-best__exp__row-one .vtb-best__exp__card__info {
+    width: 180px;
+    padding: 12px 12px 12px 16px;
+  }
+
+  /* line 1215, _vtbbest.scss */
+  .vtb-best__exp__row-one .vtb-best__exp__card__face__like {
+    top: 50px;
+  }
+
+  /* line 1218, _vtbbest.scss */
+  .vtb-best__exp__row-one .vtb-best__exp__card__face__bg {
+    top: -20px;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 574px) {
+  /* line 1224, _vtbbest.scss */
+  .vtb-best__exp__row-one .vtb-best__exp__card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  /* line 1228, _vtbbest.scss */
+  .vtb-best__exp__row-one .vtb-best__exp__card__face {
+    width: 100%;
+    min-height: 180px;
+  }
+
+  /* line 1232, _vtbbest.scss */
+  .vtb-best__exp__row-one .vtb-best__exp__card__info {
+    width: 100%;
+    padding: 16px 16px 16px 21px;
+  }
+
+  /* line 1236, _vtbbest.scss */
+  .vtb-best__exp__row-one .vtb-best__exp__card {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+
+  /* line 1240, _vtbbest.scss */
+  .vtb-best__exp__row-three, .vtb-best__exp__row-two {
+    width: 100%;
+    left: 0;
+  }
+  /* line 1243, _vtbbest.scss */
+  .vtb-best__exp__row-three .vtb-best__exp__card__face, .vtb-best__exp__row-two .vtb-best__exp__card__face {
+    height: 180px;
+  }
+  /* line 1246, _vtbbest.scss */
+  .vtb-best__exp__row-three .vtb-best__exp__card__face__bg, .vtb-best__exp__row-two .vtb-best__exp__card__face__bg {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -80px;
+    top: -210px;
+    border-radius: 50%;
+    background-color: rgba(0, 170, 255, 0.2);
+  }
+  /* line 1254, _vtbbest.scss */
+  .vtb-best__exp__row-three .vtb-best__exp__card__face__bg:before, .vtb-best__exp__row-two .vtb-best__exp__card__face__bg:before {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    left: 18px;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: rgba(0, 170, 255, 0.4);
+  }
+  /* line 1264, _vtbbest.scss */
+  .vtb-best__exp__row-three .vtb-best__exp__card__face__bg:after, .vtb-best__exp__row-two .vtb-best__exp__card__face__bg:after {
+    content: "";
+    position: absolute;
+    width: 238px;
+    height: 238px;
+    left: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    background-color: #00aaff;
+  }
+  /* line 1275, _vtbbest.scss */
+  .vtb-best__exp__row-three .vtb-best__exp__card__info, .vtb-best__exp__row-two .vtb-best__exp__card__info {
+    height: auto;
+  }
+
+  /* line 1279, _vtbbest.scss */
+  .vtb-best__exp__row-three .vtb-best__exp__card {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+
+  /* line 1283, _vtbbest.scss */
+  .vtb-best__exp__row-two .vtb-best__exp__card {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+
+  /* line 1288, _vtbbest.scss */
+  .vtb-best__exp__row-three .vtb-best__exp__card__face__text, .vtb-best__exp__row-two .vtb-best__exp__card__face__text, .vtb-best__exp__row-one .vtb-best__exp__card__face__text {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 0;
+  }
+  /* line 1293, _vtbbest.scss */
+  .vtb-best__exp__row-three .vtb-best__exp__card, .vtb-best__exp__row-two .vtb-best__exp__card, .vtb-best__exp__row-one .vtb-best__exp__card {
+    min-width: auto;
+  }
+  /* line 1296, _vtbbest.scss */
+  .vtb-best__exp__row-three .vtb-best__exp__card__face, .vtb-best__exp__row-two .vtb-best__exp__card__face, .vtb-best__exp__row-one .vtb-best__exp__card__face {
+    padding: 8px;
+  }
+  /* line 1299, _vtbbest.scss */
+  .vtb-best__exp__row-three .vtb-best__exp__card__face__like, .vtb-best__exp__row-two .vtb-best__exp__card__face__like, .vtb-best__exp__row-one .vtb-best__exp__card__face__like {
+    top: -5px;
+    right: -5px;
+    width: 57px;
+    height: 57px;
+  }
+  /* line 1304, _vtbbest.scss */
+  .vtb-best__exp__row-three .vtb-best__exp__card__face__like:before, .vtb-best__exp__row-two .vtb-best__exp__card__face__like:before, .vtb-best__exp__row-one .vtb-best__exp__card__face__like:before {
+    width: 47px;
+    height: 47px;
+  }
+  /* line 1308, _vtbbest.scss */
+  .vtb-best__exp__row-three .vtb-best__exp__card__face__like:after, .vtb-best__exp__row-two .vtb-best__exp__card__face__like:after, .vtb-best__exp__row-one .vtb-best__exp__card__face__like:after {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 1317, _vtbbest.scss */
+  .vtb-best__exp__row-three .vtb-best__exp__card__face__head__tag span, .vtb-best__exp__row-two .vtb-best__exp__card__face__head__tag span, .vtb-best__exp__row-one .vtb-best__exp__card__face__head__tag span {
+    display: none;
+  }
+  /* line 1320, _vtbbest.scss */
+  .vtb-best__exp__row-three .vtb-best__exp__card__face, .vtb-best__exp__row-two .vtb-best__exp__card__face, .vtb-best__exp__row-one .vtb-best__exp__card__face {
+    min-height: 170px;
+  }
+}
 /* новые стили лучшие практики */
