@@ -143,6 +143,9 @@
       width: 100%;
       position: relative;
       padding: 24px 21px 40px 37px;
+      &.mod-wide{
+        padding: 24px 37px 40px 37px;
+      }
     }
     &__exp{
       width: 100%;
@@ -340,6 +343,45 @@
                   background-repeat: no-repeat;
                   background-position: center;
                   background-size: 30px;
+                }
+              }
+              &__reward{
+                position: absolute;
+                top: 60px;
+                right: 46px;
+                width: 77px;
+                height: 77px;
+                border-radius: 50%;
+                background-color: rgba(27, 82, 201, 0.2);
+                cursor: pointer;
+                &:hover{
+                  &:after{
+                    background-size: 32px;
+                  }
+                }
+                &:before{
+                  content: "";
+                  position: absolute;
+                  width: 67px;
+                  height: 67px;
+                  left: 5px;
+                  bottom: 1px;
+                  border-radius: 50%;
+                  background-color: rgba(27, 82, 201, 0.4);
+                }
+                &:after{
+                  content: "";
+                  position: absolute;
+                  width: 56px;
+                  height: 56px;
+                  left: 10px;
+                  top: 10px;
+                  border-radius: 50%;
+                  background-color: rgba(27, 82, 201, 1);
+                  background-image: url("../assets/img/vtb_best/reward2.svg");
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: 26px;
                 }
               }
             }
@@ -1295,6 +1337,20 @@
               }
             }
           }
+        }
+      }
+      &.mod-wide{
+        .vtb-best__exp__row-one .vtb-best__exp__card{
+          height: 350px;
+        }
+        .vtb-best__exp__row-one .vtb-best__exp__card__face__like{
+          top: 40px;
+        }
+        .vtb-best__exp__row-one .vtb-best__exp__card__face__reward{
+          top: 90px;
+        }
+        .vtb-best__exp__row-three .vtb-best__exp__card__face{
+          height: 180px;
         }
       }
     }
