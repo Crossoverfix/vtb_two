@@ -12141,8 +12141,13 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   color: #414141;
   font-size: 13px;
   font-weight: 400;
+  text-decoration: none;
 }
 /* line 243, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__head__group:hover {
+  opacity: 0.8;
+}
+/* line 247, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__face__head__tag {
   display: inline-block;
   margin: 0 8px 8px 0;
@@ -12155,11 +12160,11 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   font-size: 13px;
   font-weight: 400;
 }
-/* line 255, _vtbbest.scss */
+/* line 259, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__face__head__tag.hidden span {
   display: none;
 }
-/* line 259, _vtbbest.scss */
+/* line 263, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__face__head__tag .icon__reward {
   width: 10px;
   height: 25px;
@@ -12168,7 +12173,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background-size: contain;
   vertical-align: top;
 }
-/* line 267, _vtbbest.scss */
+/* line 271, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__face__head__tag i {
   line-height: 25px;
   color: #FFFFFF;
@@ -12177,7 +12182,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   display: inline-block;
   height: 25px;
 }
-/* line 275, _vtbbest.scss */
+/* line 279, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__face__head__tag span {
   display: inline-block;
   height: 25px;
@@ -12187,7 +12192,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   font-weight: 400;
   margin-left: 6px;
 }
-/* line 286, _vtbbest.scss */
+/* line 290, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__face__text {
   position: relative;
   display: inline-block;
@@ -12199,8 +12204,13 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   margin-bottom: 0;
   margin-top: auto;
   padding-left: 8px;
+  text-decoration: none;
 }
-/* line 298, _vtbbest.scss */
+/* line 302, _vtbbest.scss */
+.vtb-best__exp__row-one .vtb-best__exp__card__face__text:hover {
+  opacity: 0.8;
+}
+/* line 306, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__face__like {
   position: absolute;
   top: 10px;
@@ -12211,11 +12221,11 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background-color: rgba(27, 82, 201, 0.2);
   cursor: pointer;
 }
-/* line 308, _vtbbest.scss */
+/* line 316, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__face__like:hover:after {
   background-size: 35px;
 }
-/* line 312, _vtbbest.scss */
+/* line 320, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__face__like:before {
   content: "";
   position: absolute;
@@ -12226,7 +12236,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   border-radius: 50%;
   background-color: rgba(27, 82, 201, 0.4);
 }
-/* line 322, _vtbbest.scss */
+/* line 330, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__face__like:after {
   content: "";
   position: absolute;
@@ -12241,7 +12251,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background-position: center;
   background-size: 30px;
 }
-/* line 338, _vtbbest.scss */
+/* line 346, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__info {
   position: relative;
   width: 250px;
@@ -12255,7 +12265,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   flex-wrap: nowrap;
   height: 100%;
 }
-/* line 350, _vtbbest.scss */
+/* line 358, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__info__user {
   width: 100%;
   display: flex;
@@ -12266,7 +12276,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   height: 40px;
   position: relative;
 }
-/* line 359, _vtbbest.scss */
+/* line 367, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__info__user__avatar {
   position: relative;
   width: 40px;
@@ -12278,7 +12288,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   overflow: hidden;
   background-size: cover;
 }
-/* line 370, _vtbbest.scss */
+/* line 378, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__info__user__name {
   position: relative;
   display: inline-block;
@@ -12287,7 +12297,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   color: #242424;
   font-weight: 400;
 }
-/* line 379, _vtbbest.scss */
+/* line 387, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__info__text {
   display: inline-block;
   width: 100%;
@@ -12299,7 +12309,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   overflow: hidden;
   max-height: 166px;
 }
-/* line 390, _vtbbest.scss */
+/* line 398, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card__info__date {
   display: inline-block;
   margin-top: auto;
@@ -12309,39 +12319,39 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   line-height: 18px;
   color: #97A4B2;
 }
-/* line 402, _vtbbest.scss */
+/* line 410, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face {
   background-color: rgba(0, 170, 255, 0.8);
 }
-/* line 404, _vtbbest.scss */
+/* line 412, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg {
   background-color: rgba(51, 84, 155, 0.2);
 }
-/* line 406, _vtbbest.scss */
+/* line 414, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg:before {
   background-color: rgba(51, 84, 155, 0.4);
 }
-/* line 409, _vtbbest.scss */
+/* line 417, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg:after {
   background-color: #33549b;
 }
-/* line 414, _vtbbest.scss */
+/* line 422, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face__head__tag {
   background-color: #33549b;
 }
-/* line 418, _vtbbest.scss */
+/* line 426, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face__like {
   background-color: rgba(0, 170, 255, 0.2);
 }
-/* line 420, _vtbbest.scss */
+/* line 428, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face__like:before {
   background-color: rgba(0, 170, 255, 0.4);
 }
-/* line 423, _vtbbest.scss */
+/* line 431, _vtbbest.scss */
 .vtb-best__exp__row-one .vtb-best__exp__card.invert .vtb-best__exp__card__face__like:after {
   background-color: #00aaff;
 }
-/* line 432, _vtbbest.scss */
+/* line 440, _vtbbest.scss */
 .vtb-best__exp__row-three {
   width: calc(100% + 20px);
   position: relative;
@@ -12353,7 +12363,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-/* line 442, _vtbbest.scss */
+/* line 450, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card {
   position: relative;
   width: calc((100% / 3) - 20px);
@@ -12370,7 +12380,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   box-shadow: 0px 1.12176px 2.24352px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
 }
-/* line 457, _vtbbest.scss */
+/* line 465, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face {
   position: relative;
   width: 100%;
@@ -12388,7 +12398,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   padding: 8px 8px 26px 8px;
   overflow: hidden;
 }
-/* line 473, _vtbbest.scss */
+/* line 481, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face__bg {
   position: absolute;
   width: 222px;
@@ -12398,7 +12408,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   border-radius: 50%;
   background-color: rgba(0, 170, 255, 0.2);
 }
-/* line 481, _vtbbest.scss */
+/* line 489, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face__bg:before {
   content: "";
   position: absolute;
@@ -12409,7 +12419,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   border-radius: 50%;
   background-color: rgba(0, 170, 255, 0.4);
 }
-/* line 491, _vtbbest.scss */
+/* line 499, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face__bg:after {
   content: "";
   position: absolute;
@@ -12420,7 +12430,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   border-radius: 50%;
   background-color: #00aaff;
 }
-/* line 502, _vtbbest.scss */
+/* line 510, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face__head {
   width: 100%;
   position: relative;
@@ -12430,7 +12440,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-/* line 510, _vtbbest.scss */
+/* line 518, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face__head__group {
   display: inline-block;
   margin: 0 8px 8px 0;
@@ -12442,8 +12452,13 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   color: #414141;
   font-size: 13px;
   font-weight: 400;
+  text-decoration: none;
 }
-/* line 522, _vtbbest.scss */
+/* line 530, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__head__group:hover {
+  opacity: 0.8;
+}
+/* line 534, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face__head__tag {
   display: inline-block;
   margin: 0 8px 8px 0;
@@ -12456,11 +12471,11 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   font-size: 13px;
   font-weight: 400;
 }
-/* line 534, _vtbbest.scss */
+/* line 546, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face__head__tag.hidden span {
   display: none;
 }
-/* line 538, _vtbbest.scss */
+/* line 550, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face__head__tag .icon__reward {
   width: 10px;
   height: 25px;
@@ -12469,7 +12484,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background-size: contain;
   vertical-align: top;
 }
-/* line 546, _vtbbest.scss */
+/* line 558, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face__head__tag i {
   line-height: 25px;
   color: #FFFFFF;
@@ -12478,7 +12493,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   display: inline-block;
   height: 25px;
 }
-/* line 554, _vtbbest.scss */
+/* line 566, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face__head__tag span {
   display: inline-block;
   height: 25px;
@@ -12488,8 +12503,9 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   font-weight: 400;
   margin-left: 6px;
 }
-/* line 565, _vtbbest.scss */
+/* line 577, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face__text {
+  text-decoration: none;
   position: relative;
   display: inline-block;
   font-size: 15px;
@@ -12500,7 +12516,11 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   margin-top: auto;
   padding-left: 8px;
 }
-/* line 576, _vtbbest.scss */
+/* line 588, _vtbbest.scss */
+.vtb-best__exp__row-three .vtb-best__exp__card__face__text:hover {
+  opacity: 0.8;
+}
+/* line 592, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face__like {
   position: absolute;
   top: 10px;
@@ -12511,11 +12531,11 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background-color: rgba(27, 82, 201, 0.2);
   cursor: pointer;
 }
-/* line 586, _vtbbest.scss */
+/* line 602, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face__like:hover:after {
   background-size: 35px;
 }
-/* line 590, _vtbbest.scss */
+/* line 606, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face__like:before {
   content: "";
   position: absolute;
@@ -12526,7 +12546,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   border-radius: 50%;
   background-color: rgba(27, 82, 201, 0.4);
 }
-/* line 600, _vtbbest.scss */
+/* line 616, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__face__like:after {
   content: "";
   position: absolute;
@@ -12541,7 +12561,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background-position: center;
   background-size: 30px;
 }
-/* line 616, _vtbbest.scss */
+/* line 632, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__info {
   position: relative;
   width: 100%;
@@ -12555,7 +12575,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   justify-content: flex-start;
   flex-wrap: nowrap;
 }
-/* line 628, _vtbbest.scss */
+/* line 644, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__info__user {
   width: 100%;
   display: flex;
@@ -12566,7 +12586,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   position: relative;
   top: -15px;
 }
-/* line 637, _vtbbest.scss */
+/* line 653, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__info__user__avatar {
   position: relative;
   width: 40px;
@@ -12578,7 +12598,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   overflow: hidden;
   background-size: cover;
 }
-/* line 648, _vtbbest.scss */
+/* line 664, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__info__user__name {
   position: relative;
   display: inline-block;
@@ -12587,7 +12607,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   color: #242424;
   font-weight: 400;
 }
-/* line 657, _vtbbest.scss */
+/* line 673, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__info__text {
   display: inline-block;
   width: 100%;
@@ -12599,7 +12619,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   overflow: hidden;
   max-height: 80px;
 }
-/* line 668, _vtbbest.scss */
+/* line 684, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card__info__date {
   display: inline-block;
   margin-top: auto;
@@ -12609,39 +12629,39 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   line-height: 18px;
   color: #97A4B2;
 }
-/* line 680, _vtbbest.scss */
+/* line 696, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face {
   background-color: rgba(0, 170, 255, 0.8);
 }
-/* line 682, _vtbbest.scss */
+/* line 698, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg {
   background-color: rgba(51, 84, 155, 0.2);
 }
-/* line 684, _vtbbest.scss */
+/* line 700, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg:before {
   background-color: rgba(51, 84, 155, 0.4);
 }
-/* line 687, _vtbbest.scss */
+/* line 703, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg:after {
   background-color: #33549b;
 }
-/* line 692, _vtbbest.scss */
+/* line 708, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face__head__tag {
   background-color: #33549b;
 }
-/* line 696, _vtbbest.scss */
+/* line 712, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face__like {
   background-color: rgba(0, 170, 255, 0.2);
 }
-/* line 698, _vtbbest.scss */
+/* line 714, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face__like:before {
   background-color: rgba(0, 170, 255, 0.4);
 }
-/* line 701, _vtbbest.scss */
+/* line 717, _vtbbest.scss */
 .vtb-best__exp__row-three .vtb-best__exp__card.invert .vtb-best__exp__card__face__like:after {
   background-color: #00aaff;
 }
-/* line 710, _vtbbest.scss */
+/* line 726, _vtbbest.scss */
 .vtb-best__exp__row-two {
   width: calc(100% + 20px);
   position: relative;
@@ -12653,7 +12673,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-/* line 720, _vtbbest.scss */
+/* line 736, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card {
   position: relative;
   width: calc((100% / 2) - 20px);
@@ -12670,7 +12690,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   box-shadow: 0px 1.12176px 2.24352px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
 }
-/* line 735, _vtbbest.scss */
+/* line 751, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face {
   position: relative;
   width: 100%;
@@ -12688,7 +12708,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   padding: 8px 8px 26px 8px;
   overflow: hidden;
 }
-/* line 751, _vtbbest.scss */
+/* line 767, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face__bg {
   position: absolute;
   width: 300px;
@@ -12698,7 +12718,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   border-radius: 50%;
   background-color: rgba(0, 170, 255, 0.2);
 }
-/* line 759, _vtbbest.scss */
+/* line 775, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face__bg:before {
   content: "";
   position: absolute;
@@ -12709,7 +12729,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   border-radius: 50%;
   background-color: rgba(0, 170, 255, 0.4);
 }
-/* line 769, _vtbbest.scss */
+/* line 785, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face__bg:after {
   content: "";
   position: absolute;
@@ -12720,7 +12740,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   border-radius: 50%;
   background-color: #00aaff;
 }
-/* line 780, _vtbbest.scss */
+/* line 796, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face__head {
   width: 100%;
   position: relative;
@@ -12730,7 +12750,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-/* line 788, _vtbbest.scss */
+/* line 804, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face__head__group {
   display: inline-block;
   margin: 0 8px 8px 0;
@@ -12742,8 +12762,13 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   color: #414141;
   font-size: 13px;
   font-weight: 400;
+  text-decoration: none;
 }
-/* line 800, _vtbbest.scss */
+/* line 816, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__head__group:hover {
+  opacity: 0.8;
+}
+/* line 820, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face__head__tag {
   display: inline-block;
   margin: 0 8px 8px 0;
@@ -12756,11 +12781,11 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   font-size: 13px;
   font-weight: 400;
 }
-/* line 812, _vtbbest.scss */
+/* line 832, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face__head__tag.hidden span {
   display: none;
 }
-/* line 816, _vtbbest.scss */
+/* line 836, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face__head__tag .icon__reward {
   width: 10px;
   height: 25px;
@@ -12769,7 +12794,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background-size: contain;
   vertical-align: top;
 }
-/* line 824, _vtbbest.scss */
+/* line 844, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face__head__tag i {
   line-height: 25px;
   color: #FFFFFF;
@@ -12778,7 +12803,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   display: inline-block;
   height: 25px;
 }
-/* line 832, _vtbbest.scss */
+/* line 852, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face__head__tag span {
   display: inline-block;
   height: 25px;
@@ -12788,7 +12813,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   font-weight: 400;
   margin-left: 6px;
 }
-/* line 843, _vtbbest.scss */
+/* line 863, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face__text {
   position: relative;
   display: inline-block;
@@ -12799,8 +12824,13 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   margin-bottom: 0;
   margin-top: auto;
   padding-left: 8px;
+  text-decoration: none;
 }
-/* line 854, _vtbbest.scss */
+/* line 874, _vtbbest.scss */
+.vtb-best__exp__row-two .vtb-best__exp__card__face__text:hover {
+  opacity: 0.8;
+}
+/* line 878, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face__like {
   position: absolute;
   top: 10px;
@@ -12811,11 +12841,11 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background-color: rgba(27, 82, 201, 0.2);
   cursor: pointer;
 }
-/* line 864, _vtbbest.scss */
+/* line 888, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face__like:hover:after {
   background-size: 35px;
 }
-/* line 868, _vtbbest.scss */
+/* line 892, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face__like:before {
   content: "";
   position: absolute;
@@ -12826,7 +12856,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   border-radius: 50%;
   background-color: rgba(27, 82, 201, 0.4);
 }
-/* line 878, _vtbbest.scss */
+/* line 902, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__face__like:after {
   content: "";
   position: absolute;
@@ -12841,7 +12871,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background-position: center;
   background-size: 30px;
 }
-/* line 894, _vtbbest.scss */
+/* line 918, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__info {
   position: relative;
   width: 100%;
@@ -12855,7 +12885,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   justify-content: flex-start;
   flex-wrap: nowrap;
 }
-/* line 906, _vtbbest.scss */
+/* line 930, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__info__user {
   width: 100%;
   display: flex;
@@ -12867,7 +12897,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   position: relative;
   top: -15px;
 }
-/* line 916, _vtbbest.scss */
+/* line 940, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__info__user__avatar {
   position: relative;
   width: 40px;
@@ -12879,7 +12909,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   overflow: hidden;
   background-size: cover;
 }
-/* line 927, _vtbbest.scss */
+/* line 951, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__info__user__name {
   position: relative;
   display: inline-block;
@@ -12888,7 +12918,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   color: #242424;
   font-weight: 400;
 }
-/* line 936, _vtbbest.scss */
+/* line 960, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__info__text {
   display: inline-block;
   width: 100%;
@@ -12900,7 +12930,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   overflow: hidden;
   max-height: 80px;
 }
-/* line 947, _vtbbest.scss */
+/* line 971, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card__info__date {
   display: inline-block;
   margin-top: auto;
@@ -12910,39 +12940,39 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   line-height: 18px;
   color: #97A4B2;
 }
-/* line 959, _vtbbest.scss */
+/* line 983, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face {
   background-color: rgba(0, 170, 255, 0.8);
 }
-/* line 961, _vtbbest.scss */
+/* line 985, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg {
   background-color: rgba(51, 84, 155, 0.2);
 }
-/* line 963, _vtbbest.scss */
+/* line 987, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg:before {
   background-color: rgba(51, 84, 155, 0.4);
 }
-/* line 966, _vtbbest.scss */
+/* line 990, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face__bg:after {
   background-color: #33549b;
 }
-/* line 971, _vtbbest.scss */
+/* line 995, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face__head__tag {
   background-color: #33549b;
 }
-/* line 975, _vtbbest.scss */
+/* line 999, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face__like {
   background-color: rgba(0, 170, 255, 0.2);
 }
-/* line 977, _vtbbest.scss */
+/* line 1001, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face__like:before {
   background-color: rgba(0, 170, 255, 0.4);
 }
-/* line 980, _vtbbest.scss */
+/* line 1004, _vtbbest.scss */
 .vtb-best__exp__row-two .vtb-best__exp__card.invert .vtb-best__exp__card__face__like:after {
   background-color: #00aaff;
 }
-/* line 991, _vtbbest.scss */
+/* line 1015, _vtbbest.scss */
 .vtb-best__optional {
   width: 100%;
   height: 100%;
@@ -12950,7 +12980,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background: linear-gradient(140.21deg, #f9f9f9 12.25%, white 65.75%);
   padding: 24px 32px;
 }
-/* line 997, _vtbbest.scss */
+/* line 1021, _vtbbest.scss */
 .vtb-best__optional__banner {
   width: 100%;
   display: flex;
@@ -12961,7 +12991,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   position: relative;
   margin-bottom: 30px;
 }
-/* line 1006, _vtbbest.scss */
+/* line 1030, _vtbbest.scss */
 .vtb-best__optional__banner__title {
   font-size: 20px;
   line-height: 24px;
@@ -12971,12 +13001,12 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   margin-bottom: 16px;
   color: #23262F;
 }
-/* line 1015, _vtbbest.scss */
+/* line 1039, _vtbbest.scss */
 .vtb-best__optional__banner__img {
   display: block;
   margin: 0 auto 16px auto;
 }
-/* line 1019, _vtbbest.scss */
+/* line 1043, _vtbbest.scss */
 .vtb-best__optional__banner__text {
   font-size: 13px;
   line-height: 20px;
@@ -12987,7 +13017,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   margin-bottom: 16px;
   color: #242424;
 }
-/* line 1029, _vtbbest.scss */
+/* line 1053, _vtbbest.scss */
 .vtb-best__optional__banner__link {
   text-decoration: none;
   font-size: 17px;
@@ -13003,11 +13033,11 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   border: 1px solid #00AAFF;
   border-radius: 3px;
 }
-/* line 1043, _vtbbest.scss */
+/* line 1067, _vtbbest.scss */
 .vtb-best__optional__banner__link:hover {
   border: 1px solid #002882;
 }
-/* line 1048, _vtbbest.scss */
+/* line 1072, _vtbbest.scss */
 .vtb-best__optional__contest {
   width: 100%;
   display: flex;
@@ -13021,7 +13051,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   border: 2px solid rgba(51, 84, 155, 0.35);
   padding: 0 16px 24px 16px;
 }
-/* line 1060, _vtbbest.scss */
+/* line 1084, _vtbbest.scss */
 .vtb-best__optional__contest__title {
   font-size: 20px;
   line-height: 24px;
@@ -13033,14 +13063,14 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   text-align: center;
   margin-top: -20px;
 }
-/* line 1071, _vtbbest.scss */
+/* line 1095, _vtbbest.scss */
 .vtb-best__optional__contest__img {
   position: relative;
   top: -45px;
   display: block;
   margin: 0 auto;
 }
-/* line 1077, _vtbbest.scss */
+/* line 1101, _vtbbest.scss */
 .vtb-best__optional__contest__text {
   font-size: 14px;
   line-height: 20px;
@@ -13051,7 +13081,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   margin-bottom: 16px;
   color: #242424;
 }
-/* line 1087, _vtbbest.scss */
+/* line 1111, _vtbbest.scss */
 .vtb-best__optional__contest__link {
   text-decoration: none;
   font-size: 17px;
@@ -13067,11 +13097,11 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   background-color: transparent;
   border-radius: 3px;
 }
-/* line 1101, _vtbbest.scss */
+/* line 1125, _vtbbest.scss */
 .vtb-best__optional__contest__link:hover {
   border: 1px solid #002882;
 }
-/* line 1106, _vtbbest.scss */
+/* line 1130, _vtbbest.scss */
 .vtb-best__optional__renewal {
   width: 100%;
   display: flex;
@@ -13082,7 +13112,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   position: relative;
   margin-bottom: 40px;
 }
-/* line 1115, _vtbbest.scss */
+/* line 1139, _vtbbest.scss */
 .vtb-best__optional__renewal__title {
   font-size: 20px;
   line-height: 24px;
@@ -13092,7 +13122,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   margin-bottom: 16px;
   color: #23262F;
 }
-/* line 1124, _vtbbest.scss */
+/* line 1148, _vtbbest.scss */
 .vtb-best__optional__renewal__text {
   font-size: 14px;
   line-height: 20px;
@@ -13102,7 +13132,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   margin-bottom: 8px;
   color: #242424;
 }
-/* line 1133, _vtbbest.scss */
+/* line 1157, _vtbbest.scss */
 .vtb-best__optional__renewal__link {
   text-decoration: none;
   font-size: 17px;
@@ -13119,11 +13149,11 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   border-radius: 3px;
   margin: 8px auto 0 auto;
 }
-/* line 1148, _vtbbest.scss */
+/* line 1172, _vtbbest.scss */
 .vtb-best__optional__renewal__link:hover {
   border: 1px solid #002882;
 }
-/* line 1153, _vtbbest.scss */
+/* line 1177, _vtbbest.scss */
 .vtb-best__optional__contact {
   width: 100%;
   display: flex;
@@ -13133,7 +13163,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   flex-wrap: nowrap;
   position: relative;
 }
-/* line 1161, _vtbbest.scss */
+/* line 1185, _vtbbest.scss */
 .vtb-best__optional__contact__title {
   font-size: 20px;
   line-height: 24px;
@@ -13143,7 +13173,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   margin-bottom: 20px;
   color: #23262F;
 }
-/* line 1170, _vtbbest.scss */
+/* line 1194, _vtbbest.scss */
 .vtb-best__optional__contact__link {
   display: inline-block;
   text-decoration: none;
@@ -13153,98 +13183,287 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
   margin-bottom: 15px;
   color: #002882;
 }
-/* line 1178, _vtbbest.scss */
+/* line 1202, _vtbbest.scss */
 .vtb-best__optional__contact__link:hover {
   color: #00AAFF;
 }
+/* line 1208, _vtbbest.scss */
+.vtb-best__one-header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  min-height: 150px;
+  padding: 18px 20px 9px 37px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+/* line 1221, _vtbbest.scss */
+.vtb-best__one-header__bg {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: -88px;
+  top: -210px;
+  border-radius: 50%;
+  background-color: rgba(0, 170, 255, 0.2);
+}
+/* line 1229, _vtbbest.scss */
+.vtb-best__one-header__bg:before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  left: 18px;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: rgba(0, 170, 255, 0.4);
+}
+/* line 1239, _vtbbest.scss */
+.vtb-best__one-header__bg:after {
+  content: "";
+  position: absolute;
+  width: 238px;
+  height: 238px;
+  left: 30px;
+  bottom: 30px;
+  border-radius: 50%;
+  background-color: #00aaff;
+}
+/* line 1250, _vtbbest.scss */
+.vtb-best__one-header__tags {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+/* line 1257, _vtbbest.scss */
+.vtb-best__one-header__tags a {
+  display: inline-block;
+  margin: 0 10px 8px 0;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 8px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color: #414141;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+}
+/* line 1269, _vtbbest.scss */
+.vtb-best__one-header__tags a:hover {
+  opacity: 0.8;
+}
+/* line 1273, _vtbbest.scss */
+.vtb-best__one-header__tags .colored {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 8px;
+  border-radius: 4px;
+  background-color: #00AAFF;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 400;
+}
+/* line 1285, _vtbbest.scss */
+.vtb-best__one-header__tags .colored.hidden span {
+  display: none;
+}
+/* line 1289, _vtbbest.scss */
+.vtb-best__one-header__tags .colored .icon__reward {
+  width: 10px;
+  height: 25px;
+  display: inline-block;
+  background: url("../assets/img/vtb_best/reward.svg") no-repeat center;
+  background-size: contain;
+  vertical-align: top;
+}
+/* line 1297, _vtbbest.scss */
+.vtb-best__one-header__tags .colored i {
+  line-height: 25px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
+  height: 25px;
+}
+/* line 1305, _vtbbest.scss */
+.vtb-best__one-header__tags .colored span {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 6px;
+}
+/* line 1316, _vtbbest.scss */
+.vtb-best__one-header__title {
+  position: relative;
+  display: inline-block;
+  max-width: 350px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 7px;
+  margin-top: 0;
+}
+/* line 1327, _vtbbest.scss */
+.vtb-best__one-header__like {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-left: auto;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 6px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+/* line 1340, _vtbbest.scss */
+.vtb-best__one-header__like .icon__heart {
+  width: 14px;
+  height: 12px;
+  flex-shrink: 0;
+  display: inline-block;
+  background: url("../assets/img/vtb_best/heart.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 1348, _vtbbest.scss */
+.vtb-best__one-header__like .icon__heart-fill {
+  width: 14px;
+  height: 12px;
+  flex-shrink: 0;
+  display: inline-block;
+  background: url("../assets/img/vtb_best/heart.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 1356, _vtbbest.scss */
+.vtb-best__one-header__like span {
+  display: inline-block;
+  flex-shrink: 0;
+  margin-left: 2px;
+  color: #00AAFF;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+/* line 1365, _vtbbest.scss */
+.vtb-best__one-header__like:hover {
+  background-color: #ebebeb;
+}
+/* line 1375, _vtbbest.scss */
+.vtb__body.mod-best {
+  flex-wrap: wrap;
+}
+/* line 1380, _vtbbest.scss */
+.vtb__column-one {
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
 
 @media screen and (max-width: 1199px) {
-  /* line 1187, _vtbbest.scss */
+  /* line 1389, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card {
     height: 260px;
   }
 
-  /* line 1190, _vtbbest.scss */
+  /* line 1392, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__info {
     width: 200px;
     padding: 12px 12px 12px 16px;
   }
 
-  /* line 1194, _vtbbest.scss */
+  /* line 1396, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__face__like {
     top: 40px;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 1199, _vtbbest.scss */
+  /* line 1401, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card {
     height: 280px;
   }
 
-  /* line 1202, _vtbbest.scss */
+  /* line 1404, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__face__like {
     top: 10px;
   }
 
-  /* line 1205, _vtbbest.scss */
+  /* line 1407, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__info {
     width: 250px;
     padding: 16px 16px 16px 21px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 1211, _vtbbest.scss */
+  /* line 1413, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__info {
     width: 180px;
     padding: 12px 12px 12px 16px;
   }
 
-  /* line 1215, _vtbbest.scss */
+  /* line 1417, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__face__like {
     top: 50px;
   }
 
-  /* line 1218, _vtbbest.scss */
+  /* line 1420, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__face__bg {
     top: -20px;
     transform: translateY(0);
   }
 }
 @media screen and (max-width: 574px) {
-  /* line 1224, _vtbbest.scss */
+  /* line 1426, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card {
     flex-direction: column;
     height: auto;
   }
 
-  /* line 1228, _vtbbest.scss */
+  /* line 1430, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__face {
     width: 100%;
     min-height: 180px;
   }
 
-  /* line 1232, _vtbbest.scss */
+  /* line 1434, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__info {
     width: 100%;
     padding: 16px 16px 16px 21px;
   }
 
-  /* line 1236, _vtbbest.scss */
+  /* line 1438, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card {
     width: 100%;
     margin: 0 0 15px 0;
   }
 
-  /* line 1240, _vtbbest.scss */
+  /* line 1442, _vtbbest.scss */
   .vtb-best__exp__row-three, .vtb-best__exp__row-two {
     width: 100%;
     left: 0;
   }
-  /* line 1243, _vtbbest.scss */
+  /* line 1445, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face, .vtb-best__exp__row-two .vtb-best__exp__card__face {
     height: 180px;
   }
-  /* line 1246, _vtbbest.scss */
+  /* line 1448, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__bg, .vtb-best__exp__row-two .vtb-best__exp__card__face__bg {
     position: absolute;
     width: 300px;
@@ -13254,7 +13473,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
     border-radius: 50%;
     background-color: rgba(0, 170, 255, 0.2);
   }
-  /* line 1254, _vtbbest.scss */
+  /* line 1456, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__bg:before, .vtb-best__exp__row-two .vtb-best__exp__card__face__bg:before {
     content: "";
     position: absolute;
@@ -13265,7 +13484,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
     border-radius: 50%;
     background-color: rgba(0, 170, 255, 0.4);
   }
-  /* line 1264, _vtbbest.scss */
+  /* line 1466, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__bg:after, .vtb-best__exp__row-two .vtb-best__exp__card__face__bg:after {
     content: "";
     position: absolute;
@@ -13276,61 +13495,61 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
     border-radius: 50%;
     background-color: #00aaff;
   }
-  /* line 1275, _vtbbest.scss */
+  /* line 1477, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__info, .vtb-best__exp__row-two .vtb-best__exp__card__info {
     height: auto;
   }
 
-  /* line 1279, _vtbbest.scss */
+  /* line 1481, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card {
     width: 100%;
     margin: 0 0 15px 0;
   }
 
-  /* line 1283, _vtbbest.scss */
+  /* line 1485, _vtbbest.scss */
   .vtb-best__exp__row-two .vtb-best__exp__card {
     width: 100%;
     margin: 0 0 15px 0;
   }
 
-  /* line 1288, _vtbbest.scss */
+  /* line 1490, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__text, .vtb-best__exp__row-two .vtb-best__exp__card__face__text, .vtb-best__exp__row-one .vtb-best__exp__card__face__text {
     font-size: 15px;
     line-height: 18px;
     padding: 0;
   }
-  /* line 1293, _vtbbest.scss */
+  /* line 1495, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card, .vtb-best__exp__row-two .vtb-best__exp__card, .vtb-best__exp__row-one .vtb-best__exp__card {
     min-width: auto;
   }
-  /* line 1296, _vtbbest.scss */
+  /* line 1498, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face, .vtb-best__exp__row-two .vtb-best__exp__card__face, .vtb-best__exp__row-one .vtb-best__exp__card__face {
     padding: 8px;
   }
-  /* line 1299, _vtbbest.scss */
+  /* line 1501, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__like, .vtb-best__exp__row-two .vtb-best__exp__card__face__like, .vtb-best__exp__row-one .vtb-best__exp__card__face__like {
     top: -5px;
     right: -5px;
     width: 57px;
     height: 57px;
   }
-  /* line 1304, _vtbbest.scss */
+  /* line 1506, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__like:before, .vtb-best__exp__row-two .vtb-best__exp__card__face__like:before, .vtb-best__exp__row-one .vtb-best__exp__card__face__like:before {
     width: 47px;
     height: 47px;
   }
-  /* line 1308, _vtbbest.scss */
+  /* line 1510, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__like:after, .vtb-best__exp__row-two .vtb-best__exp__card__face__like:after, .vtb-best__exp__row-one .vtb-best__exp__card__face__like:after {
     width: 40px;
     height: 40px;
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 1317, _vtbbest.scss */
+  /* line 1519, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__head__tag span, .vtb-best__exp__row-two .vtb-best__exp__card__face__head__tag span, .vtb-best__exp__row-one .vtb-best__exp__card__face__head__tag span {
     display: none;
   }
-  /* line 1320, _vtbbest.scss */
+  /* line 1522, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face, .vtb-best__exp__row-two .vtb-best__exp__card__face, .vtb-best__exp__row-one .vtb-best__exp__card__face {
     min-height: 170px;
   }

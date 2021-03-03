@@ -239,6 +239,10 @@
                   color: #414141;
                   font-size: 13px;
                   font-weight: 400;
+                  text-decoration: none;
+                  &:hover{
+                    opacity: 0.8;
+                  }
                 }
                 &__tag{
                   display: inline-block;
@@ -294,6 +298,10 @@
                 margin-bottom: 0;
                 margin-top: auto;
                 padding-left: 8px;
+                text-decoration: none;
+                &:hover{
+                  opacity: 0.8;
+                }
               }
               &__like{
                 position: absolute;
@@ -518,6 +526,10 @@
                   color: #414141;
                   font-size: 13px;
                   font-weight: 400;
+                  text-decoration: none;
+                  &:hover{
+                    opacity: 0.8;
+                  }
                 }
                 &__tag{
                   display: inline-block;
@@ -563,6 +575,7 @@
                 }
               }
               &__text{
+                text-decoration: none;
                 position: relative;
                 display: inline-block;
                 font-size: 15px;
@@ -572,6 +585,9 @@
                 margin-bottom: 0;
                 margin-top: auto;
                 padding-left: 8px;
+                &:hover{
+                  opacity: 0.8;
+                }
               }
               &__like{
                 position: absolute;
@@ -796,6 +812,10 @@
                   color: #414141;
                   font-size: 13px;
                   font-weight: 400;
+                  text-decoration: none;
+                  &:hover{
+                    opacity: 0.8;
+                  }
                 }
                 &__tag{
                   display: inline-block;
@@ -850,6 +870,10 @@
                 margin-bottom: 0;
                 margin-top: auto;
                 padding-left: 8px;
+                text-decoration: none;
+                &:hover{
+                  opacity: 0.8;
+                }
               }
               &__like{
                 position: absolute;
@@ -1180,6 +1204,184 @@
           }
         }
       }
+    }
+    &__one-header{
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      min-height: 150px;
+      padding: 18px 20px 9px 37px;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+      &__bg{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        right: -88px;
+        top: -210px;
+        border-radius: 50%;
+        background-color: rgba(0, 170, 255, 0.2);
+        &:before{
+          content: "";
+          position: absolute;
+          width: 260px;
+          height: 260px;
+          left: 18px;
+          bottom: 0;
+          border-radius: 50%;
+          background-color: rgba(0, 170, 255, 0.4);
+        }
+        &:after{
+          content: "";
+          position: absolute;
+          width: 238px;
+          height: 238px;
+          left: 30px;
+          bottom: 30px;
+          border-radius: 50%;
+          background-color: rgba(0, 170, 255, 1);
+        }
+      }
+      &__tags{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        a{
+          display: inline-block;
+          margin: 0 10px 8px 0;
+          height: 25px;
+          line-height: 25px;
+          padding: 0 8px;
+          border-radius: 4px;
+          background-color: #FFFFFF;
+          color: #414141;
+          font-size: 13px;
+          font-weight: 400;
+          text-decoration: none;
+          &:hover{
+            opacity: 0.8;
+          }
+        }
+        .colored{
+          display: inline-block;
+          margin: 0 8px 8px 0;
+          height: 25px;
+          line-height: 25px;
+          padding: 0 8px;
+          border-radius: 4px;
+          background-color: #00AAFF;
+          color: #FFFFFF;
+          font-size: 13px;
+          font-weight: 400;
+          &.hidden{
+            span{
+              display: none;
+            }
+          }
+          .icon__reward{
+            width: 10px;
+            height: 25px;
+            display: inline-block;
+            background: url("../assets/img/vtb_best/reward.svg")no-repeat center;
+            background-size: contain;
+            vertical-align: top;
+          }
+          i{
+            line-height: 25px;
+            color: #FFFFFF;
+            font-size: 13px;
+            font-weight: 400;
+            display: inline-block;
+            height: 25px;
+          }
+          span{
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            color: #FFFFFF;
+            font-size: 13px;
+            font-weight: 400;
+            margin-left: 6px;
+          }
+        }
+      }
+      &__title{
+        position: relative;
+        display: inline-block;
+        max-width: 350px;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 500;
+        color: #FFFFFF;
+        margin-bottom: 7px;
+        margin-top: 0;
+      }
+      &__like{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-left: auto;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 6px;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        .icon__heart{
+          width: 14px;
+          height: 12px;
+          flex-shrink: 0;
+          display: inline-block;
+          background: url("../assets/img/vtb_best/heart.svg")no-repeat center;
+          background-size: contain;
+        }
+        .icon__heart-fill{
+          width: 14px;
+          height: 12px;
+          flex-shrink: 0;
+          display: inline-block;
+          background: url("../assets/img/vtb_best/heart.svg")no-repeat center; // сюда залитое сердечко
+          background-size: contain;
+        }
+        span{
+          display: inline-block;
+          flex-shrink: 0;
+          margin-left: 2px;
+          color: #00AAFF;
+          font-size: 13px;
+          line-height: 18px;
+          font-weight: 400;
+        }
+        &:hover{
+          background-color: #ebebeb;
+        }
+      }
+    }
+    &__one-card{
+
+    }
+  }
+  &__body{
+    &.mod-best{
+      flex-wrap: wrap;
+    }
+  }
+  &__column{
+    &-one{
+      width: 100%;
+      position: relative;
+      flex-shrink: 0;
+      flex-grow: 1;
     }
   }
 }

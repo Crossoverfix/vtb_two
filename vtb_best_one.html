@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Meeting Room</title>
+    <link href="sass/style.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.4.1.js"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="container-fluid header__wrap">
+            <div class="container header__origin">
+                <a href="#" class="header__logo">
+                    <img src="assets/img/ico/logo_vtb.svg" alt="logo">
+                </a>
+                <form class="header__search">
+                    <div class="header__search__field">
+                        <label class="header__search__field__text">
+                            <input type="text" name="search" placeholder="Поиск по порталу">
+                        </label>
+                        <label class="header__search__field__submit">
+                            <input type="submit">
+                        </label>
+                    </div>
+                    <div class="header__search__type">
+                        <label>
+                            <input type="radio" name="type" value="first">
+                            <span>По сотрудникам</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="type" value="second" checked>
+                            <span>По порталу</span>
+                        </label>
+                    </div>
+                </form>
+                <a href="#" class="header__search__collapse" data-js-collapse="search"></a>
+            </div>
+            <div class="container-small header__user">
+                <a href="#" class="header__user__wrap">
+                    <div class="header__user__wrap__avatar" style="background: url('assets/img/photo/avatar_hot.jpg')"></div>
+                    <span>Анастасия Гайнуллова</span>
+                </a>
+                <a href="#" class="header__user__collapse" data-js-collapse="nav-bar"></a>
+            </div>
+        </div>
+    </div>
+    <div class="header__mobil__search">
+        <form class="header__search">
+            <div class="header__search__field">
+                <label class="header__search__field__text">
+                    <input type="text" name="search" placeholder="Поиск по порталу">
+                </label>
+                <label class="header__search__field__submit">
+                    <input type="submit">
+                </label>
+            </div>
+            <div class="header__search__type">
+                <label>
+                    <input type="radio" name="type" value="first">
+                    <span>По сотрудникам</span>
+                </label>
+                <label>
+                    <input type="radio" name="type" value="second" checked>
+                    <span>По порталу</span>
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="header__nav">
+        <nav class="container-fluid header__nav__wrap">
+            <ul>
+                <li><a href="#">О Банке</a></li>
+                <li><a href="#">Cотруднику</a></li>
+                <li><a href="#">Департаменты</a></li>
+                <li><a href="#">Филиалы</a></li>
+                <li><a href="#">Сервисы</a></li>
+                <li><a href="#">Справочники</a></li>
+                <li><a href="#">Процессы</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="container-fluid">
+    <div class="breadcrumb">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="meeting_room.html">Библиотека лучших практик</a></li>
+        </ul>
+    </div>
+    <div class="pages-header">
+        <span class="pages-header__title">Библиотека лучших практик</span>
+    </div>
+    <div class="vtb__pages">
+        <div class="vtb__content">
+            <div class="vtb__header">
+                <label class="vtb-checklist__construct__bar__switch">
+                    <input type="checkbox">
+                    <div class="switch__body">
+                        <div class="switch__body__position"></div>
+                        <span class="switch__body__name checked">Рекомендованые</span>
+                    </div>
+                </label>
+                <div class="vtb__btn-menu">
+                    <a href="#" class="vtb__btn-menu__link">
+                        <span class="vtb__btn-menu__title">Меню</span>
+                        <i class="icon-menu"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="vtb__body mod-best">
+                <div class="vtb__column-one">
+                    <div class="vtb-best__one-header" style="background-image: url('assets/img/vtb_best/banner2.jpg')">
+                        <div class="vtb-best__one-header__bg"></div>
+                        <div class="vtb-best__one-header__tags">
+                            <a href="#">Лучшая практика</a>
+                            <a href="#" class="colored"><i class="icon__reward"></i><span>Конкурс практик 2020</span></a>
+                        </div>
+                        <h3 class="vtb-best__one-header__title">У клиента было сформировано негативное отношение к банку</h3>
+                        <a href="#" class="vtb-best__one-header__like"><i class="icon__heart"></i><span>2</span></a>
+                    </div>
+                </div>
+                <div class="vtb__column-big">
+                    <div class="vtb-marketing__content">
+                        <div class="vtb-best__one-card">
+                            <div class="vtb-best__one-card__category">
+                                <span class="vtb-best__one-card__category__name">Категория клиента</span>
+                                <span class="vtb-best__one-card__category__value">Привилегия</span>
+                            </div>
+                            <div class="vtb-best__one-card__tags">
+                                <a href="#" class="vtb-best__one-card__tags__link">Сохранение клиента</a>
+                                <a href="#" class="vtb-best__one-card__tags__link">Кредитные карты</a>
+                                <a href="#" class="vtb-best__one-card__tags__link">Сейфовые ячейки</a>
+                            </div>
+                            <p class="vtb-best__one-card__title">История о сейфовой ячейке</p>
+                            <p class="vtb-best__one-card__text">Примерно год назад в наш офис обратилась Анна Г. с целю закрытия договора по сейфовой ячейке и расторжения ДКО (цели продления ячейки на тот момент не было, и т.к. клиент является госслужащим открытые счета не нужны). После закрытия договора ИБС, выяснилось, что клиент ранее (в иной ТП) закрывала договор по кредитной карте, но карта не была закрыта и была так же списана сумма комиссии за обслуживание. Ввиду характера и принципиальной точки зрения у Анны данная ситуация вызвала негативную реакцию (очень негативную).</p>
+                            <p class="vtb-best__one-card__text">С клиентом была проведена беседа в ходе которой удалось урегулировать ситуацию без претензионной работы и жалобы на сайте Banki.ru (все вопросы были урегулированы). Спустя некоторое время у Анны возникла необходимость оформить договор ИБС. В ходе оформления договора ИБС и общения (доверительного отношения, обусловленного предоставлением клиенту полной и достоверной информации по всем интересующим вопросам, корректного и быстрого решения вопросов), у клиента была выявлена потребность в кредитных средствах (на этот момент клиент уже имела несколько одобренных предложений в др. банках).</p>
+                            <p class="vtb-best__one-card__text">Спустя несколько дней Анна решила оформить договор у нас, аргументировав это высоким уровнем обслуживания и предложенными условиями по договору. На сегодняшний день наши деловые отношения поддерживаются, и более того на обслуживании были клиенты которым Анна рекомендовала нас!</p>
+                            <p class="vtb-best__one-card__text">Очень приятно, когда клиенты оценивают старания сотрудников и в дальнейшем поддерживают деловые отношения.</p>
+                            <p class="vtb-best__one-card__text">Желаю НАМ ВСЕМ только положительных и лояльных клиентов.</p>
+                            <div class="vtb-best__one-card__btn-group"></div>
+                            <div class="vtb-best__one-card__optional-file"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vtb__column-small">
+                    <div class="vtb-best__optional">
+                        <div class="vtb-best__optional__banner">
+                            <span class="vtb-best__optional__banner__title">Поделиться опытом</span>
+                            <img src="assets/img/vtb_best/optional_banner.png" alt="banner" class="vtb-best__optional__banner__img">
+                            <span class="vtb-best__optional__banner__text">Расскажите о своей истории клиентского обслуживания, сделайте свой опыт полезным  для других сотрудников</span>
+                            <a href="#" class="vtb-best__optional__banner__link">Поделиться историей</a>
+                        </div>
+                        <div class="vtb-best__optional__contest">
+                            <img src="assets/img/vtb_best/optional_contest.png" alt="contest" class="vtb-best__optional__contest__img">
+                            <span class="vtb-best__optional__contest__title">Внимание, Конкурс</span>
+                            <span class="vtb-best__optional__contest__text">Расскажите о своей истории клиентского обслуживания, сделайте свой опыт полезным  для других сотрудников</span>
+                            <a href="#" class="vtb-best__optional__contest__link">Поделиться историей</a>
+                        </div>
+                        <div class="vtb-best__optional__renewal">
+                            <span class="vtb-best__optional__renewal__title">Подпишитесь на обновления</span>
+                            <span class="vtb-best__optional__renewal__text">Библиотека лучших практик — прекрасный ресурс, который позволяет знакомиться и переиспользовать опыт коллег для решения трудных ситуации при работе с клиентами!</span>
+                            <span class="vtb-best__optional__renewal__text">
+Делайте поиск, подписывайтесь на обновления — и вы всегда будете в курсе последних идей и решений по вопросу, который может у вас возникнуть!</span>
+                            <a href="#" class="vtb-best__optional__renewal__link">Подписаться</a>
+                        </div>
+                        <div class="vtb-best__optional__contact">
+                            <span class="vtb-best__optional__contact__title">Контакты для связи</span>
+                            <a href="#" class="vtb-best__optional__contact__link">Отдел сервисов исследований клиентов</a>
+                            <a href="#" class="vtb-best__optional__contact__link">Написать нам</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vtb__column-one">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="container-fluid footer__wrap">
+            <span class="footer__copyright">© 2018 Корпоративный портал, Банк ВТБ</span>
+            <div class="footer__link">
+                <a href="#">Карта портала</a>
+                <a href="#">Поддержка пользователей</a>
+                <a href="#">Помощь по порталу</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/script.js" defer></script>
+<script src="assets/js/business.js" defer></script>
+</body>
+</html>
