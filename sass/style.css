@@ -14157,12 +14157,393 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
 .vtb-best__change__more:hover {
   border: 1px solid #002882;
 }
-/* line 2091, _vtbbest.scss */
+/* line 2089, _vtbbest.scss */
+.vtb-best__new-req {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+/* line 2097, _vtbbest.scss */
+.vtb-best__new-req__white {
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  background-color: #FFFFFF;
+  padding: 24px 106px 16px 64px;
+  box-sizing: border-box;
+}
+/* line 2107, _vtbbest.scss */
+.vtb-best__new-req__white .mod-name-value {
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+}
+/* line 2112, _vtbbest.scss */
+.vtb-best__new-req__white .mod-name-value:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 10px;
+  border-bottom: 2px dotted #DAE1E6;
+}
+/* line 2123, _vtbbest.scss */
+.vtb-best__new-req__white .mod-name-value .vtb-best__new-req__name {
+  position: relative;
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #676C77;
+  padding-right: 10px;
+  background-color: #FFFFFF;
+}
+/* line 2136, _vtbbest.scss */
+.vtb-best__new-req__white .mod-name-value .vtb-best__new-req__value {
+  margin-left: auto;
+  position: relative;
+  padding: 0 10px;
+  display: inline-block;
+  width: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #242424;
+  background-color: #FFFFFF;
+}
+/* line 2153, _vtbbest.scss */
+.vtb-best__new-req__grey {
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  background-color: #F7F8F9;
+  padding: 24px 106px 16px 64px;
+  box-sizing: border-box;
+}
+/* line 2163, _vtbbest.scss */
+.vtb-best__new-req__grey .mod-name-value {
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+}
+/* line 2168, _vtbbest.scss */
+.vtb-best__new-req__grey .mod-name-value:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 10px;
+  border-bottom: 2px dotted #DAE1E6;
+}
+/* line 2179, _vtbbest.scss */
+.vtb-best__new-req__grey .mod-name-value .vtb-best__new-req__name {
+  position: relative;
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #676C77;
+  padding-right: 10px;
+  background-color: #F7F8F9;
+}
+/* line 2192, _vtbbest.scss */
+.vtb-best__new-req__grey .mod-name-value .vtb-best__new-req__value {
+  margin-left: auto;
+  position: relative;
+  padding: 0 10px;
+  display: inline-block;
+  width: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #242424;
+  background-color: #F7F8F9;
+}
+/* line 2209, _vtbbest.scss */
+.vtb-best__new-req__row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 16px;
+}
+/* line 2219, _vtbbest.scss */
+.vtb-best__new-req__2-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  width: calc((100% / 3) * 2);
+}
+/* line 2228, _vtbbest.scss */
+.vtb-best__new-req__1-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  width: calc(100% / 3);
+}
+/* line 2237, _vtbbest.scss */
+.vtb-best__new-req__1-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  width: 50%;
+}
+/* line 2246, _vtbbest.scss */
+.vtb-best__new-req__full {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+/* line 2255, _vtbbest.scss */
+.vtb-best__new-req__text {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #242424;
+}
+/* line 2262, _vtbbest.scss */
+.vtb-best__new-req__in-text {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #242424;
+  padding-right: 10px;
+}
+/* line 2270, _vtbbest.scss */
+.vtb-best__new-req__title {
+  width: 100%;
+  display: inline-block;
+  color: #23262F;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+/* line 2279, _vtbbest.scss */
+.vtb-best__new-req__sub-title {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #242424;
+}
+/* line 2286, _vtbbest.scss */
+.vtb-best__new-req__input {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+  border: 1px solid #E6ECF2;
+  border-radius: 3px;
+  height: 30px;
+  background-color: #FFFFFF;
+}
+/* line 2298, _vtbbest.scss */
+.vtb-best__new-req__input input {
+  height: 28px;
+  line-height: 28px;
+  width: 100%;
+  padding: 0 9px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #414141;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+/* line 2310, _vtbbest.scss */
+.vtb-best__new-req__input textarea {
+  line-height: 28px;
+  width: 100%;
+  height: 100%;
+  padding: 5px 9px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #414141;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+/* line 2323, _vtbbest.scss */
+.vtb-best__new-req__input.input-req input {
+  font-size: 22px;
+}
+/* line 2327, _vtbbest.scss */
+.vtb-best__new-req__input.input-text-area {
+  height: 72px;
+}
+/* line 2330, _vtbbest.scss */
+.vtb-best__new-req__input i {
+  flex-shrink: 0;
+  display: block;
+  width: 11px;
+  margin-right: 9px;
+  height: 10px;
+  cursor: pointer;
+}
+/* line 2337, _vtbbest.scss */
+.vtb-best__new-req__input i.icon__drop {
+  background: url("../assets/img/vtb_best/drop.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 2341, _vtbbest.scss */
+.vtb-best__new-req__input i.icon__req {
+  background: url("../assets/img/vtb_best/requery.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 2347, _vtbbest.scss */
+.vtb-best__new-req__input-optional {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+/* line 2355, _vtbbest.scss */
+.vtb-best__new-req__input-optional__select {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+/* line 2363, _vtbbest.scss */
+.vtb-best__new-req__input-optional__select__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+  color: #00AAFF;
+  margin-right: 10px;
+  flex-shrink: 0;
+  margin-bottom: 8px;
+}
+/* line 2377, _vtbbest.scss */
+.vtb-best__new-req__input-optional__select__item a.item-delet {
+  display: inline-block;
+  line-height: 14px;
+  height: 14px;
+  width: 10px;
+  margin-right: 9px;
+  text-decoration: none;
+  background: url("../assets/img/vtb_best/cross.svg") no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+/* line 2388, _vtbbest.scss */
+.vtb-best__new-req__input-optional__select__item a.item-delet:hover {
+  opacity: 0.6;
+}
+/* line 2395, _vtbbest.scss */
+.vtb-best__new-req__spaces {
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin-left: 12px;
+  flex-shrink: 0;
+}
+/* line 2402, _vtbbest.scss */
+.vtb-best__new-req__about {
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin-left: 12px;
+  flex-shrink: 0;
+  background: url("../assets/img/vtb_best/about.svg") no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  position: relative;
+}
+/* line 2412, _vtbbest.scss */
+.vtb-best__new-req__about input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+}
+/* line 2424, _vtbbest.scss */
+.vtb-best__new-req .flex-a-start {
+  align-items: flex-start;
+}
+/* line 2427, _vtbbest.scss */
+.vtb-best__new-req .flex-a-center {
+  align-items: center;
+}
+/* line 2430, _vtbbest.scss */
+.vtb-best__new-req .flex-a-end {
+  align-items: flex-end;
+}
+/* line 2435, _vtbbest.scss */
+.vtb-best__new-req .flex-wrap-no {
+  flex-wrap: nowrap;
+}
+/* line 2438, _vtbbest.scss */
+.vtb-best__new-req .flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+/* line 2446, _vtbbest.scss */
 .vtb__body.mod-best {
   flex-wrap: wrap;
   background-color: #FFFFFF;
 }
-/* line 2097, _vtbbest.scss */
+/* line 2452, _vtbbest.scss */
 .vtb__column-one {
   width: 100%;
   position: relative;
@@ -14171,92 +14552,92 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 2106, _vtbbest.scss */
+  /* line 2461, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card {
     height: 260px;
   }
 
-  /* line 2109, _vtbbest.scss */
+  /* line 2464, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__info {
     width: 200px;
     padding: 12px 12px 12px 16px;
   }
 
-  /* line 2113, _vtbbest.scss */
+  /* line 2468, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__face__like {
     top: 40px;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 2118, _vtbbest.scss */
+  /* line 2473, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card {
     height: 280px;
   }
 
-  /* line 2121, _vtbbest.scss */
+  /* line 2476, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__face__like {
     top: 10px;
   }
 
-  /* line 2124, _vtbbest.scss */
+  /* line 2479, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__info {
     width: 250px;
     padding: 16px 16px 16px 21px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 2130, _vtbbest.scss */
+  /* line 2485, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__info {
     width: 180px;
     padding: 12px 12px 12px 16px;
   }
 
-  /* line 2134, _vtbbest.scss */
+  /* line 2489, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__face__like {
     top: 50px;
   }
 
-  /* line 2137, _vtbbest.scss */
+  /* line 2492, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__face__bg {
     top: -20px;
     transform: translateY(0);
   }
 }
 @media screen and (max-width: 574px) {
-  /* line 2143, _vtbbest.scss */
+  /* line 2498, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card {
     flex-direction: column;
     height: auto;
   }
 
-  /* line 2147, _vtbbest.scss */
+  /* line 2502, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__face {
     width: 100%;
     min-height: 180px;
   }
 
-  /* line 2151, _vtbbest.scss */
+  /* line 2506, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card__info {
     width: 100%;
     padding: 16px 16px 16px 21px;
   }
 
-  /* line 2155, _vtbbest.scss */
+  /* line 2510, _vtbbest.scss */
   .vtb-best__exp__row-one .vtb-best__exp__card {
     width: 100%;
     margin: 0 0 15px 0;
   }
 
-  /* line 2159, _vtbbest.scss */
+  /* line 2514, _vtbbest.scss */
   .vtb-best__exp__row-three, .vtb-best__exp__row-two {
     width: 100%;
     left: 0;
   }
-  /* line 2162, _vtbbest.scss */
+  /* line 2517, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face, .vtb-best__exp__row-two .vtb-best__exp__card__face {
     height: 180px;
   }
-  /* line 2165, _vtbbest.scss */
+  /* line 2520, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__bg, .vtb-best__exp__row-two .vtb-best__exp__card__face__bg {
     position: absolute;
     width: 300px;
@@ -14266,7 +14647,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
     border-radius: 50%;
     background-color: rgba(0, 170, 255, 0.2);
   }
-  /* line 2173, _vtbbest.scss */
+  /* line 2528, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__bg:before, .vtb-best__exp__row-two .vtb-best__exp__card__face__bg:before {
     content: "";
     position: absolute;
@@ -14277,7 +14658,7 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
     border-radius: 50%;
     background-color: rgba(0, 170, 255, 0.4);
   }
-  /* line 2183, _vtbbest.scss */
+  /* line 2538, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__bg:after, .vtb-best__exp__row-two .vtb-best__exp__card__face__bg:after {
     content: "";
     position: absolute;
@@ -14288,61 +14669,61 @@ table.tabl_abs.tabl_right.tabl_abs_2 tr td:nth-last-child(2) {
     border-radius: 50%;
     background-color: #00aaff;
   }
-  /* line 2194, _vtbbest.scss */
+  /* line 2549, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__info, .vtb-best__exp__row-two .vtb-best__exp__card__info {
     height: auto;
   }
 
-  /* line 2198, _vtbbest.scss */
+  /* line 2553, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card {
     width: 100%;
     margin: 0 0 15px 0;
   }
 
-  /* line 2202, _vtbbest.scss */
+  /* line 2557, _vtbbest.scss */
   .vtb-best__exp__row-two .vtb-best__exp__card {
     width: 100%;
     margin: 0 0 15px 0;
   }
 
-  /* line 2207, _vtbbest.scss */
+  /* line 2562, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__text, .vtb-best__exp__row-two .vtb-best__exp__card__face__text, .vtb-best__exp__row-one .vtb-best__exp__card__face__text {
     font-size: 15px;
     line-height: 18px;
     padding: 0;
   }
-  /* line 2212, _vtbbest.scss */
+  /* line 2567, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card, .vtb-best__exp__row-two .vtb-best__exp__card, .vtb-best__exp__row-one .vtb-best__exp__card {
     min-width: auto;
   }
-  /* line 2215, _vtbbest.scss */
+  /* line 2570, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face, .vtb-best__exp__row-two .vtb-best__exp__card__face, .vtb-best__exp__row-one .vtb-best__exp__card__face {
     padding: 8px;
   }
-  /* line 2218, _vtbbest.scss */
+  /* line 2573, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__like, .vtb-best__exp__row-two .vtb-best__exp__card__face__like, .vtb-best__exp__row-one .vtb-best__exp__card__face__like {
     top: -5px;
     right: -5px;
     width: 57px;
     height: 57px;
   }
-  /* line 2223, _vtbbest.scss */
+  /* line 2578, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__like:before, .vtb-best__exp__row-two .vtb-best__exp__card__face__like:before, .vtb-best__exp__row-one .vtb-best__exp__card__face__like:before {
     width: 47px;
     height: 47px;
   }
-  /* line 2227, _vtbbest.scss */
+  /* line 2582, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__like:after, .vtb-best__exp__row-two .vtb-best__exp__card__face__like:after, .vtb-best__exp__row-one .vtb-best__exp__card__face__like:after {
     width: 40px;
     height: 40px;
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 2236, _vtbbest.scss */
+  /* line 2591, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face__head__tag span, .vtb-best__exp__row-two .vtb-best__exp__card__face__head__tag span, .vtb-best__exp__row-one .vtb-best__exp__card__face__head__tag span {
     display: none;
   }
-  /* line 2239, _vtbbest.scss */
+  /* line 2594, _vtbbest.scss */
   .vtb-best__exp__row-three .vtb-best__exp__card__face, .vtb-best__exp__row-two .vtb-best__exp__card__face, .vtb-best__exp__row-one .vtb-best__exp__card__face {
     min-height: 170px;
   }
